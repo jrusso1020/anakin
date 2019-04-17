@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from 'src/components/layout'
+import SEO from 'src/components/seo'
 
 class About extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
+          title='All posts'
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>About Me</h1>
@@ -26,10 +26,10 @@ class About extends React.Component {
           <br/>
           <br/>
           I am currently a fullstack engineer working fulltime in NYC for
-          <a href="https://secure.rocketsofawesome.com" target="_blank" rel="noopener noreferrer"> Rockets of Awesome, </a>
+          <a href='https://secure.rocketsofawesome.com' target='_blank' rel='noopener noreferrer'> Rockets of Awesome, </a>
           a child clothing subscription service and ecommerce brand.
           Outside of my fulltime job, I work with a startup called
-          <a href="https://iteratelabs.co" target="_blank" rel="noopener noreferrer"> Iterate Labs </a>
+          <a href='https://iteratelabs.co' target='_blank' rel='noopener noreferrer'> Iterate Labs </a>
           which is a pre-seed startup that wants
           to use data-driven insights to develop safer and more comfortable workplaces.
           I graduated from Cornell University in 2017 with a B.S. in Computer Science,

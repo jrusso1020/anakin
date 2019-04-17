@@ -1,8 +1,21 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import styled, {css} from 'styled-components'
 
-import Sidebar from './sidebar'
-import { rhythm, scale } from "../utils/typography"
+import Navbar from './navbar'
+import { rhythm, scale } from 'src/utils/typography'
+import { mobile } from 'src/utils/media'
+
+const BodyContainer = styled.div`
+  margin-left: calc(320px - 1em);
+  margin-right: auto;
+  max-width: ${rhythm(28)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  ${mobile(css`
+    margin-left: 0;
+    margin-right: 0;
+  `)}
+`
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -51,20 +64,9 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div
-      style={{
-        paddingRight: rhythm(1)
-      }}
-    >
-      <Sidebar location={location} />
-      <div
-        style={{
-          marginLeft: `calc(320px - 1em)`,
-          marginRight: `auto`,
-          maxWidth: rhythm(28),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+    <div>
+      <Navbar location={location} />
+      <BodyContainer>
         <header>{header}</header>
         <main>{children}</main>
         <footer>
@@ -72,7 +74,7 @@ const Layout = ({ location, title, children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
         </footer>
-      </div>
+      </BodyContainer>
     </div>
   )
 }

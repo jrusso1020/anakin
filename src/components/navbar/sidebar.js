@@ -1,10 +1,11 @@
-import React from "react"
-import styled from 'styled-components'
+import React from 'react'
+import styled, { css }  from 'styled-components'
 
-import { rhythm } from "../utils/typography"
-import { colors } from '../utils/colors'
-import Bio from "./bio"
-import Navbar from './navbar'
+import { rhythm } from "src/utils/typography"
+import { colors } from 'src/utils/colors'
+import { mobile } from 'src/utils/media'
+import Bio from './bio'
+import DesktopNavbar from './desktopNavbar'
 
 const Container = styled.div`
   color: ${colors.keppel};
@@ -18,12 +19,15 @@ const Container = styled.div`
   position: fixed;
   padding-top: ${rhythm(2)};
   background-color: ${colors.mirage};
+  ${mobile(css`
+    display: none;
+  `)}
 `
 
 const Sidebar = ({ location }) => (
   <Container>
     <Bio />
-    <Navbar />
+    <DesktopNavbar />
   </Container>
 )
 

@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Blog`,
@@ -7,6 +9,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        content: path.join(__dirname, 'content')
+      }
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

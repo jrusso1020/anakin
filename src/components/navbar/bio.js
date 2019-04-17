@@ -5,14 +5,64 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
+import styled, { css } from 'styled-components'
 
-import Location from '../../content/assets/location.svg'
-import Github from '../../content/assets/github.svg'
-import LinkedIn from '../../content/assets/linkedIn.svg'
-import { rhythm } from "../utils/typography"
+import Location from 'content/assets/location.svg'
+import Github from 'content/assets/github.svg'
+import LinkedIn from 'content/assets/linkedIn.svg'
+import { rhythm } from 'src/utils/typography'
+import { mobile } from 'src/utils/media'
+
+const Container = styled.div`
+  margin-bottom: ${rhythm(2.5)};
+  ${mobile(css`
+    padding: ${rhythm(3)} ${rhythm(3 / 4)};
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+  `)}
+`
+
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: ${rhythm(1)};
+  text-align: left;
+`
+
+const StyledImage = styled(Image)`
+  min-width: 100;
+  border-radius: 100%;
+  margin: auto 0;
+  ${mobile(css`
+    min-width: 50;
+  `)}
+`
+
+const H3 = styled.h3`
+  ${mobile(css`
+    margin-left: ${rhythm(1)};
+  `)}
+`
+
+const P = styled.p`
+  font-size: 0.8em;
+  ${mobile(css`
+    display: none;
+  `)}
+`
+
+const List = styled.ul`
+  list-style: none;
+  padding-left: none;
+  font-size: 1em;
+  ${mobile(css`
+    display: none;
+  `)}
+`
 
 function Bio() {
   return (
@@ -21,44 +71,23 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              marginBottom: rhythm(2.5),
-            }}
-          >
-            <div style={{
-              display: `flex`,
-              justifyContent: `center`,
-              marginBottom: rhythm(1),
-              textAlign: `left`
-            }}>
-              <Image
+          <Container>
+            <ImageContainer>
+              <StyledImage
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author}
-                style={{
-                  minWidth: 100,
-                  borderRadius: `100%`,
-                  margin: `auto 0`
-                }}
                 imgStyle={{
                   borderRadius: `50%`,
                 }}
               />
-            </div>
-            <h3>{author}</h3>
-            <p style={{
-              fontSize: `0.8em`
-            }}>
+            </ImageContainer>
+            <H3>{author}</H3>
+            <P>
               Fullstack engineer who knows absolutely nothing
               about writing. A collection of ramblings
               on things I find interesting.
-            </p>
-            <ul style={{
-              listStyle: `none`,
-              paddingLeft: `none`,
-              fontSize: `1em`
-            }}
-            >
+            </P>
+            <List >
               <li><Location style={{height: `1em`}}/>New York, NY</li>
               <li>
                 <Github style={{height: `1em`}}/>
@@ -84,8 +113,8 @@ function Bio() {
                   LinkedIn
                 </a>
               </li>
-            </ul>
-          </div>
+            </List>
+          </Container>
         )
       }}
     />

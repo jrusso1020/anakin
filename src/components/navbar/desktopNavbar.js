@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
 
 import NavLink from './navLink'
@@ -10,8 +10,7 @@ const NavList = styled.ul`
 const NavListItem = styled.li`
   marginBottom: 0;
 `
-const Navbar = ({ location }) => {
-  console.log(NavLink)
+const DesktopNavbar = ({ location }) => {
   return <nav>
     <NavList>
       <NavListItem>
@@ -30,4 +29,4 @@ const Navbar = ({ location }) => {
   </nav>
 }
 
-export default Navbar
+export default DesktopNavbar

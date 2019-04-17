@@ -1,14 +1,11 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { colors } from '../utils/colors'
+import { colors } from 'src/utils/colors'
 
 const NavLink = styled(Link)`
   text-decoration: none;
   box-shadow: none;
-  color: ${props => {
-    console.log('color', props.color)
-    return props.color ? props.color : colors.keppel
-  }};
+  color: ${props => props.color ? props.color : colors.keppel};
   font-weight: ${props => props.fontWeight || 200};
   &.active {
     font-weight: bold;
