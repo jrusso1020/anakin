@@ -1,8 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from 'src/components/layout'
+import H1 from 'src/components/H1'
 import SEO from 'src/components/seo'
+import { colors } from 'src/utils/colors'
+
+const P = styled.p`
+  color: ${colors.mirage}
+`
 
 class About extends React.Component {
   render() {
@@ -15,13 +22,13 @@ class About extends React.Component {
           title='All posts'
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h1>About Me</h1>
-        <p>
+        <H1>About Me</H1>
+        <P>
           Hi I'm James Russo and this is where I'll be writing down
           my thoughts and experiences in topics such as software, web development, and technology.
           However, fairwarning any number of other topics can pop up into this blog.
           This is my first attempt at a blog, and as an engineer I apologize in advance for my
-          writing skills.
+          writing and design skills.
           Hopefully they will improve as I work on this more and more.
           <br/>
           <br/>
@@ -37,7 +44,7 @@ class About extends React.Component {
           and Blockchain under Emin Gun Sirer and Soumya Basu.
           Now adays I mostly use technologies such as Ruby on Rails, Flask and Python, React + Redux,
           Postgresql, AWS, and many more web devleopment technologies.
-        </p>
+        </P>
       </Layout>
     )
   }

@@ -1,9 +1,20 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'
 import { rhythm } from 'src/utils/typography'
+import { colors } from 'src/utils/colors'
+
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  color: ${colors.keppel};
+`
+
+const H3 = styled.h3`
+  margin-bottom: ${rhythm( 1 /4 )};
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,15 +32,11 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <H3>
+                <StyledLink to={node.fields.slug}>
                   {title}
-                </Link>
-              </h3>
+                </StyledLink>
+              </H3>
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{

@@ -2,13 +2,14 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Blog`,
+    title: `Bored Hacking`,
     author: `James Russo`,
     description: `Blog discussing software engineering, web development, technology, and life `,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-plugin-root-import',
       options: {

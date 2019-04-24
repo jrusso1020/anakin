@@ -15,6 +15,7 @@ import Github from 'content/assets/github.svg'
 import LinkedIn from 'content/assets/linkedIn.svg'
 import { rhythm } from 'src/utils/typography'
 import { mobile } from 'src/utils/media'
+import { colors } from 'src/utils/colors'
 
 const Container = styled.div`
   margin-bottom: ${rhythm(2.5)};
@@ -43,6 +44,7 @@ const StyledImage = styled(Image)`
 `
 
 const H3 = styled.h3`
+  color: ${colors.keppel};
   ${mobile(css`
     margin-left: ${rhythm(1)};
   `)}
@@ -64,6 +66,22 @@ const List = styled.ul`
   `)}
 `
 
+const LocationSvg = styled(Location)`
+  height: 1em;
+`
+
+const GithubSvg = styled(Github)`
+  height: 1em;
+`
+
+const LinkedInSvg = styled(LinkedIn)`
+  height: 1em;
+`
+
+const StyledLink = styled.a`
+  color: currentColor;
+`
+
 function Bio() {
   return (
     <StaticQuery
@@ -83,35 +101,29 @@ function Bio() {
             </ImageContainer>
             <H3>{author}</H3>
             <P>
-              Fullstack engineer who knows absolutely nothing
-              about writing. A collection of ramblings
-              on things I find interesting.
+              Fullstack engineer who knows nothing about design.
+              <br />
+              Example: this website.
             </P>
             <List >
-              <li><Location style={{height: `1em`}}/>New York, NY</li>
+              <li><LocationSvg />New York, NY</li>
               <li>
-                <Github style={{height: `1em`}}/>
-                <a
-                  style={{
-                    color: `currentColor`
-                  }}
+                <GithubSvg />
+                <StyledLink
                   rel="noopener noreferrer"
                   href="https://github.com/jrusso1020"
                   target="_blank">
                   Github
-                </a>
+                </StyledLink>
               </li>
               <li>
-                <LinkedIn style={{height: `1em`}}/>
-                <a
-                  style={{
-                    color: `currentColor`
-                  }}
+                <LinkedInSvg />
+                <StyledLink
                   href="https://www.linkedin.com/in/james-russo-56026897/"
                   rel="noopener noreferrer"
                   target="_blank">
                   LinkedIn
-                </a>
+                </StyledLink>
               </li>
             </List>
           </Container>

@@ -3,8 +3,10 @@ import { Link } from 'gatsby'
 import styled, {css} from 'styled-components'
 
 import Navbar from './navbar'
-import { rhythm, scale } from 'src/utils/typography'
+import H1 from './H1'
+import { rhythm } from 'src/utils/typography'
 import { mobile } from 'src/utils/media'
+import { colors } from 'src/utils/colors'
 
 const BodyContainer = styled.div`
   margin-left: calc(320px - 1em);
@@ -17,50 +19,40 @@ const BodyContainer = styled.div`
   `)}
 `
 
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: ${props => props.color ? props.color : colors.keppel};
+`
+
+const H3 = styled.h3`
+  font-family: Montserrat, sans-serif;
+  margin-top: 0;
+`
+
+const Footer = styled.footer`
+  color: ${props => props.color ? props.color : colors.mirage}
+`
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `#3AAFA9`,
-          }}
-          to={`/`}
-        >
+      <H1>
+        <StyledLink to={`/`}>
           {title}
-        </Link>
-      </h1>
+        </StyledLink>
+      </H1>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+      <H3>
+        <StyledLink to={`/`}>
           {title}
-        </Link>
-      </h3>
+        </StyledLink>
+      </H3>
     )
   }
   return (
@@ -69,11 +61,11 @@ const Layout = ({ location, title, children }) => {
       <BodyContainer>
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <Footer>
           © {new Date().getFullYear()} James Russo. All Rights Reserved, Built with
           {` `}
           <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
-        </footer>
+        </Footer>
       </BodyContainer>
     </div>
   )
