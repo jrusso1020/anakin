@@ -33,17 +33,24 @@ class About extends React.Component {
           <br/>
           <br/>
           I am currently a fullstack engineer working fulltime in NYC for
-          <a href='https://secure.rocketsofawesome.com' target='_blank' rel='noopener noreferrer'> Rockets of Awesome, </a>
+          <a href='https://secure.rocketsofawesome.com' target='_blank' rel='noopener noreferrer'> Rockets of Awesome</a>,
           a child clothing subscription service and ecommerce brand.
           Outside of my fulltime job, I work with a startup called
           <a href='https://iteratelabs.co' target='_blank' rel='noopener noreferrer'> Iterate Labs </a>
           which is a pre-seed startup that wants
           to use data-driven insights to develop safer and more comfortable workplaces.
-          I graduated from Cornell University in 2017 with a B.S. in Computer Science,
+          I graduated from <a href='https://cornell.edu' target='_blank' rel='noopener noreferrer'> Cornell University </a>
+          in 2017 with a B.S. in Computer Science,
           where I concentrated in Machine Learning and also did research in Systems, Security,
-          and Blockchain under Emin Gun Sirer and Soumya Basu.
+          and Blockchain under
+          <a href='http://hackingdistributed.com/' target='_blank' rel='noopener noreferrer'> Emin Gun Sirer </a> and
+          <a href='http://www.soumyabasu.com/' target='_blank' rel='noopener noreferrer'> Soumya Basu </a>.
           Now adays I mostly use technologies such as Ruby on Rails, Flask and Python, React + Redux,
-          Postgresql, AWS, and many more web devleopment technologies.
+          Postgresql, AWS, and other web devleopment technologies but I'm constantly
+          evaluating and learning about new tehcnologies. Some of my favorite websites to read and stay up to date
+          with tech and web development are
+          <a href='https://news.ycombinator.com/' target='_blank' rel='noopener noreferrer'> Hacker News </a>
+          and <a href='https://techcruch.com' target='_blank' rel='noopener noreferrer'> TechCrunch</a>.
         </P>
       </Layout>
     )
