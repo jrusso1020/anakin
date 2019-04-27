@@ -1,13 +1,24 @@
 const path = require('path')
+const URL = require('url').URL
+
+const siteAddress = new URL("https://boredhacking.com")
 
 module.exports = {
   siteMetadata: {
     title: `Bored Hacking`,
     author: `James Russo`,
     description: `Blog discussing software engineering, web development, technology, and life `,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: siteAddress,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "www.boredhacking.com",
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
     {
@@ -66,15 +77,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-139172752-1`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Bored Hacking`,
+        short_name: `boredhacking`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
