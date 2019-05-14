@@ -29,6 +29,7 @@ const Nav = styled.nav`
   justify-content: flex-end;
   position: fixed;
   width: 100%;
+  z-index: 1;
 `
 
 const Container = styled.div`
