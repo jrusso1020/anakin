@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "www.boredhacking.com",
+        bucketName: "boredhacking.com",
         protocol: siteAddress.protocol.slice(0, -1),
         hostname: siteAddress.hostname,
       },
