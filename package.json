@@ -37,6 +37,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
+    "sharp": "^0.22.1",
     "styled-components": "^4.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
@@ -64,6 +65,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby-plugin-s3 deploy"
+    "deploy": "gatsby-plugin-s3 deploy --yes"
   }
 }
