@@ -1,7 +1,7 @@
 ---
 title: Setting Up AWS Elastic Kubernetes Service (EKS) and Deploying
 date: "2019-05-15"
-description: This is a tutorial on how to setup an AWS Elastic Kubenertes Service (EKS) cluster and deploy a Docker container service to EKS. We will mostly follow the AWS tutorial but make some changes to deploy your personal containers instead of the ones provided by the EKS tutorial. This process was used to deploy our Next.js Application.
+description: This is a tutorial on how to setup an AWS Elastic Kubernetes Service (EKS) cluster and deploy a Docker container service to EKS. We will mostly follow the AWS tutorial but make some changes to deploy your personal containers instead of the ones provided by the EKS tutorial. This process was used to deploy our Next.js Application.
 ---
 
 In a previous [post](/next-js-docker-ecr) I talked about setting up a Next.js Docker container and deploying it to Elastic Container Registry (ECR). This was the first step for us to get our Next.js app ready to deploy to Elastic Kubernetes Service (EKS), but you could use any other Docker image with this tutorial to deploy to EKS.
@@ -86,8 +86,8 @@ This command should take about 10-15 minutes to run and you should see an output
 Now that you have created and deployed your cluster you should be ready to deploy your application to your worker nodes.
 
 ### Deploying your application to EKS worker nodes
-The following steps are what differs from AWS's tutorial. There are two approaches. One approach is to create a deployment file, which will contain the information needed to deploy your application's Docker image(s) to your worker nodes and setup a load balancer in front of them. You then apply this deployment to your EKS cluster using `kubectl`. The second approach is to run individual commands using `kubectl` to manually create the loadbalancer and set the Docker image(s) on the worker nodes. We took the first approach by taking information from this [tutorial](https://blog.alterway.fr/en/kubernetes-101-launch-your-first-kubernetes-app.html), so I will go over that one.
-First you need to setup your `deployment.yml` so that you can tell your EKS cluster how you want to deploy your application(s) to it. This is similar to what our YAML file looks like for deploying our Next.js app to EKS and putting a loadbalancer in front of it.
+The following steps are what differs from AWS's tutorial. There are two approaches. One approach is to create a deployment file, which will contain the information needed to deploy your application's Docker image(s) to your worker nodes and setup a load balancer in front of them. You then apply this deployment to your EKS cluster using `kubectl`. The second approach is to run individual commands using `kubectl` to manually create the load balancer and set the Docker image(s) on the worker nodes. We took the first approach by taking information from this [tutorial](https://blog.alterway.fr/en/kubernetes-101-launch-your-first-kubernetes-app.html), so I will go over that one.
+First you need to setup your `deployment.yml` so that you can tell your EKS cluster how you want to deploy your application(s) to it. This is similar to what our YAML file looks like for deploying our Next.js app to EKS and putting a load balancer in front of it.
 ```yaml
 apiVersion: apps/v1beta1
 kind: Deployment
@@ -156,7 +156,7 @@ spec:
 
 You can see that we run the load balancer on `port` 80 but set the `targetPort` to 3000 so it forwards the traffic to our Docker container's port.
 
-Once you have created your `deployment.yml`, you can deploy your stack using the command `kubectl create -f deployment.yml`. This will start your first depoyment to your stack and give you some output telling you what's being created. You can then run the command `kubectl get services` to get your load balancer information and the external IP that it is accessbile on. The result of this will look something like this.
+Once you have created your `deployment.yml`, you can deploy your stack using the command `kubectl create -f deployment.yml`. This will start your first deployment to your stack and give you some output telling you what's being created. You can then run the command `kubectl get services` to get your load balancer information and the external IP that it is accessible on. The result of this will look something like this.
 
 ```
 NAME                  TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)        AGE
@@ -181,3 +181,4 @@ This command rolls out an updated image to your `app-staging` containers. You ju
 4. https://blog.alterway.fr/en/kubernetes-101-launch-your-first-kubernetes-app.html
 5. https://codeburst.io/getting-started-with-kubernetes-deploy-a-docker-container-with-kubernetes-in-5-minutes-eb4be0e96370
 6. https://www.edureka.co/blog/amazon-eks/
+7. https://github.com/weaveworks/eksctl

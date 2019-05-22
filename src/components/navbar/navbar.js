@@ -10,8 +10,8 @@ const Container = styled.div`
 
 const Navbar = ({ location }) => (
   <Container>
-    <Sidebar />
-    <MobileNavbar />
+    <Sidebar location={location} />
+    <MobileNavbar location={location} />
   </Container>
 )
 

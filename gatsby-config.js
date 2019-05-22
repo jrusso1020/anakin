@@ -8,7 +8,8 @@ module.exports = {
     title: `Bored Hacking`,
     author: `James Russo`,
     description: `Blog discussing software engineering, web development, technology, and life `,
-    siteUrl: siteAddress,
+    siteUrl: "https://boredhacking.com",
+    image: "/images/boredhacking.jpg"
   },
   plugins: [
     {
@@ -25,7 +26,8 @@ module.exports = {
       resolve: 'gatsby-plugin-root-import',
       options: {
         src: path.join(__dirname, 'src'),
-        content: path.join(__dirname, 'content')
+        content: path.join(__dirname, 'content'),
+        images: path.join(__dirname, 'static/images')
       }
     },
     {
@@ -48,6 +50,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: `images`,
       },
     },
     {
@@ -137,7 +146,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/profile-pic.jpg`,
+        icon: `static/images/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-offline`,

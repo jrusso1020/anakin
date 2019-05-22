@@ -27,7 +27,7 @@ const Container = styled.div`
 const Sidebar = ({ location }) => (
   <Container>
     <Bio />
-    <DesktopNavbar />
+    <DesktopNavbar location={location} />
   </Container>
 )
 

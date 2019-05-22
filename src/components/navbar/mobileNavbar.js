@@ -44,12 +44,14 @@ const MobileNavbar = ({ location }) => {
       <NavList>
         <NavListItem>
           <NavLink
+            partiallyActive={location.pathname !== '/about'}
             to={`/`}>
             Blog
           </NavLink>
         </NavListItem>
         <NavListItem>
           <NavLink
+            partiallyActive={location.pathname === '/about'}
             to={`/about`}>
             About
           </NavLink>

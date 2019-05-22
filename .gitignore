@@ -60,6 +60,7 @@ public
 
 # Mac files
 .DS_Store
+*.icloud
 
 # Yarn
 yarn-error.log
