@@ -7,7 +7,7 @@ description: In order to hide your IP address and to try and limit throttling wh
 *Edited 2019-07-13 based on concerns*
 
 ## Disclaimer
-*I do not condone the use of this information for creating illegal web crawlers. This was more an exercise for personal entertainment and I wanted to share it with others. Another thing to note is that some sites are able to automatically block IP's that are Tor exit nodes, so this may not work for some sites that go to these measures.*
+*I do not condone the use of this information for creating illegal web crawlers. This was more an informational exercise and I wanted to share it with others. Another thing to note is that some sites are able to automatically block IP's that are Tor exit nodes, so this may not work for some sites that go to these measures.*
 
 ### The Problem
 The other day I was starting the search for a new aparment in New York City, which I have done a couple of times now, and was frustrated that StreetEasy doesn't allow you to filter apartments that are available after a certain date. After a quick search I realized that people have been requesting this feature for [years](https://streeteasy.com/talk/discussion/40436-search-listing-available-after-date) (since Oct 2015 to be exact), and it was nowhere in sight and there didn't seem to be any services out there that did it either. So I had a thought, I used to web scrape sites using Python, why not try it on StreetEasy and filter the apartments myself. Spoiler alert I wasn't able to do this for a reason I will explain in more detail, but this led me to use a lot of old tools I hadn't used in a while and come up with a script for scraping through Tor and switching IP's between requests.
