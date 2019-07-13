@@ -4,11 +4,6 @@ date: "2019-07-08"
 description: In order to hide your IP address and to try and limit throttling when web scraping, it might be a good idea to use a proxy such as Tor. This post describes how to use Python based web scraping tools and Tor to hide yourself when scraping websites for data. However, it can also be used more broadly when using Python to make requests to hide your actual IP. I do not condone the use of this information for any illegal or illicit activity.
 ---
 
-*Edited 2019-07-13 based on concerns*
-
-## Disclaimer
-*I've read through the [Terms of Use and Privacy Policy](https://www.zillow.com/corp/Terms.htm) for StreetEasy and their [Robots.txt](https://streeteasy.com/robots.txt) and didn't see any terms saying there site couldn't be crawled for personal use. I believe this is most likely because of the technology they use to block crawling in general. However, it is an important thing to make sure you always check these for sites when crawling so that you are following their guidelines. I do not condone the use of this information for creating illegal web crawlers. This was more an exercise for personal entertainment and I wanted to share it with others. Another thing to note is that some sites are able to automatically block IP's that are Tor exit nodes, so this may not work for some sites that go to these measures.*
-
 ### The Problem
 The other day I was starting the search for a new aparment in New York City, which I have done a couple of times now, and was frustrated that StreetEasy doesn't allow you to filter apartments that are available after a certain date. After a quick search I realized that people have been requesting this feature for [years](https://streeteasy.com/talk/discussion/40436-search-listing-available-after-date) (since Oct 2015 to be exact), and it was nowhere in sight and there didn't seem to be any services out there that did it either. So I had a thought, I used to web scrape sites using Python, why not try it on StreetEasy and filter the apartments myself. Spoiler alert I wasn't able to do this for a reason I will explain in more detail, but this led me to use a lot of old tools I hadn't used in a while and come up with a script for scraping through Tor and switching IP's between requests.
 
