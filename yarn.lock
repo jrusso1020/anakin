@@ -5812,7 +5812,7 @@ gatsby-plugin-sharp@^2.0.28:
     sharp "^0.21.3"
     svgo "^0.7.2"
 
-gatsby-plugin-styled-components@^3.0.7:
+gatsby-plugin-styled-components@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.2.tgz#1f8ab130e2fdc02fbc8b158b237e7f620d15c2a9"
   integrity sha512-9MjGXl5ddN2L7jKlSjrobtxbR1gIIpBOmFcfkmNPdL/7rMUkWR6bLmAQ6fUPGCIwTLyvYsNjBZhtAwhUY+NTBw==
