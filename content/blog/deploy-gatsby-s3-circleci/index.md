@@ -91,11 +91,7 @@ jobs:
       - run:
           name: Deploy
           command: |
-            if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              GATSBY_ACTIVE_ENV=staging npm run build && npm run deploy
-            else
-              GATSBY_ACTIVE_ENV=production npm run build && npm run deploy
-            fi
+            npm run build && npm run deploy
 workflows:
   version: 2.1
   build:
