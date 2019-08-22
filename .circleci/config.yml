@@ -11,16 +11,16 @@ jobs:
           name: Update npm
           command: 'sudo npm install -g npm@latest'
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
           name: Install npm wee
-          command: npm install
+          command: npm install && npm rebuild
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - node_modules
       - save_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ~/anakin
   build_and_deploy:
@@ -29,9 +29,9 @@ jobs:
     working_directory: ~/anakin
     steps:
       - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
           name: Deploy
           command: |
