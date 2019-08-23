@@ -6335,19 +6335,19 @@ gatsby-react-router-scroll@^2.1.5:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-remark-copy-linked-files@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.1.8.tgz#67729fe0ce228fbc2df719c9217c7710fafeea3b"
-  integrity sha512-zAEZWdzi6JVSTgxOI2oQC23EE0KMPK3p1Emjx+EHScxEeFPinqVjCJ26AOEwPac7sS/syJT2JN9QvDIFKlZJlw==
+gatsby-remark-copy-linked-files@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.1.10.tgz#a27bb914c7d3699457054114c9cbdd1812cba67a"
+  integrity sha512-w6xe3OeJwDkBHQfcs2Ek9Dahu6z15yITVHh+vvRmeoJL2x6DjlwTdm+pmF3j2P+zxKtn46+sFrPoOlQdW/C5Zw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
     cheerio "^1.0.0-rc.3"
     fs-extra "^4.0.3"
     is-relative-url "^2.0.0"
-    lodash "^4.17.14"
+    lodash "^4.17.15"
     path-is-inside "^1.0.2"
-    probe-image-size "^4.0.0"
-    unist-util-visit "^1.3.0"
+    probe-image-size "^4.1.1"
+    unist-util-visit "^1.4.1"
 
 gatsby-remark-embed-gist@^1.1.7:
   version "1.1.9"
@@ -11765,7 +11765,7 @@ private@^0.1.6, private@^0.1.8:
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
   integrity sha512-VvivMrbvd2nKkiG38qjULzlc+4Vx4wm/whI9pQD35YrARNnhxeiRktSOhSukRLFNlzg6Br/cJPet5J/u19r/mg==
 
-probe-image-size@^4.0.0, probe-image-size@^4.1.1:
+probe-image-size@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-4.1.1.tgz#c836c53154b6dd04dbcf66af2bbd50087b15e1dc"
   integrity sha512-42LqKZqTLxH/UvAZ2/cKhAsR4G/Y6B7i7fI2qtQu9hRBK4YjS6gqO+QRtwTjvojUx4+/+JuOMzLoFyRecT9qRw==
