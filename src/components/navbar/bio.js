@@ -47,6 +47,7 @@ const H3 = styled.h3`
   color: ${colors.keppel};
   ${mobile(css`
     margin-left: ${rhythm(1)};
+    margin-top: 0;
   `)}
 `
 
@@ -62,7 +63,7 @@ const List = styled.ul`
   padding-left: none;
   font-size: 1em;
   ${mobile(css`
-    display: none;
+    margin-left: 1.75rem;
   `)}
 `
 
@@ -99,33 +100,35 @@ function Bio() {
                 }}
               />
             </ImageContainer>
-            <H3>{author}</H3>
-            <P>
-              Fullstack engineer who knows nothing about design.
-              <br />
-              Example: this website.
-            </P>
-            <List >
-              <li><LocationSvg />New York, NY</li>
-              <li>
-                <GithubSvg />
-                <StyledLink
-                  rel="noopener noreferrer"
-                  href="https://github.com/jrusso1020"
-                  target="_blank">
-                  Github
-                </StyledLink>
-              </li>
-              <li>
-                <LinkedInSvg />
-                <StyledLink
-                  href="https://www.linkedin.com/in/james-russo-56026897/"
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  LinkedIn
-                </StyledLink>
-              </li>
-            </List>
+            <div>
+              <H3>{author}</H3>
+              <P>
+                Fullstack engineer who knows nothing about design.
+                <br />
+                Example: this website.
+              </P>
+              <List >
+                <li><LocationSvg />New York, NY</li>
+                <li>
+                  <GithubSvg />
+                  <StyledLink
+                    rel="noopener noreferrer"
+                    href="https://github.com/jrusso1020"
+                    target="_blank">
+                    Github
+                  </StyledLink>
+                </li>
+                <li>
+                  <LinkedInSvg />
+                  <StyledLink
+                    href="https://www.linkedin.com/in/james-russo-56026897/"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    LinkedIn
+                  </StyledLink>
+                </li>
+              </List>
+            </div>
           </Container>
         )
       }}

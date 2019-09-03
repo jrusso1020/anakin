@@ -1,23 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
+import { CSSTransition } from 'react-transition-group'
 
 import { rhythm } from 'src/utils/typography'
 import { mobile } from 'src/utils/media'
 import { colors } from 'src/utils/colors'
+import Hamburger from 'content/assets/hamburger.svg'
 import NavLink from './navLink'
 import Bio from './bio'
 
 const NavList = styled.ul`
   list-style-type: none;
-  display: flex;
   margin-left: 0;
   margin-bottom: 0;
-  align-items: center;
+  margin-top: 28px;
+  background-color: ${colors.mirage};
+  width: 100%;
+  &.slide-enter {
+    transform: translateY(-100%);
+    transition: .3s cubic-bezier(0, 1, 0.5, 1);
+  }
+
+  &.slide-enter-active {
+    transform: translateY(0%);
+  }
+
+  &.slide-exit {
+    transform: translateY(0%);
+    transition: .3s ease-in-out;
+  }
+
+  &.slide-exit-active {
+    transform: translateY(-100%);
+  }
 `
 
 const NavListItem = styled.li`
   margin-bottom: 0;
-  margin-right: ${rhythm(1)};
+  padding: 20px;
 `
 
 const Nav = styled.nav`
@@ -25,8 +45,6 @@ const Nav = styled.nav`
   padding-bottom: ${rhythm(1)};
   background-color: ${colors.mirage};
   height: ${rhythm(2)};
-  display: flex;
-  justify-content: flex-end;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -34,29 +52,48 @@ const Nav = styled.nav`
 
 const Container = styled.div`
   display: none;
+  color: ${colors.keppel};
   ${mobile(css`
     display: block;
   `)}
 `
+
+const HamburgerMenu = styled(Hamburger)`
+  position: absolute;
+  top: 12px;
+  right: 0;
+  margin-right: 20px;
+`
+
 const MobileNavbar = ({ location }) => {
+  const [showNav, setShowNav] = useState(false)
+
   return <Container>
     <Nav>
-      <NavList>
-        <NavListItem>
-          <NavLink
-            partiallyActive={location.pathname !== '/about/'}
-            to={`/`}>
-            Blog
-          </NavLink>
-        </NavListItem>
-        <NavListItem>
-          <NavLink
-            partiallyActive={location.pathname === '/about/'}
-            to={`/about/`}>
-            About
-          </NavLink>
-        </NavListItem>
-      </NavList>
+      <HamburgerMenu onClick={() => setShowNav(!showNav)} />
+      <CSSTransition
+        in={showNav}
+        classNames="slide"
+        timeout={300}
+        unmountOnExit
+      >
+        {() => <NavList>
+          <NavListItem>
+            <NavLink
+              partiallyActive={location.pathname !== '/about/'}
+              to={`/`}>
+              Blog
+            </NavLink>
+          </NavListItem>
+          <NavListItem>
+            <NavLink
+              partiallyActive={location.pathname === '/about/'}
+              to={`/about/`}>
+              About
+            </NavLink>
+          </NavListItem>
+        </NavList>}
+      </CSSTransition>
     </Nav>
     <Bio />
   </Container>
