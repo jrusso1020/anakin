@@ -4771,7 +4771,7 @@ dom-converter@^0.2:
   dependencies:
     utila "~0.4"
 
-dom-helpers@^3.2.1:
+dom-helpers@^3.2.1, dom-helpers@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
   integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
@@ -5845,10 +5845,10 @@ file-type@^10.7.0:
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-10.9.0.tgz#f6c12c7cb9e6b8aeefd6917555fd4f9eadf31891"
   integrity sha512-9C5qtGR/fNibHC5gzuMmmgnjH3QDDLKMa8lYe9CiZVmAnI4aUaoMh40QyUPzzs0RYo837SOBKh7TYwle4G8E4w==
 
-file-type@^12.2.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.2.0.tgz#bc4bce830e38a96a0ecfea0e2dfcee2855ed1380"
-  integrity sha512-bkDBeH5doAqP69axEO69OviLlWbrZ10Ne2OPHaxBgG+fyT0w/2zfMzJz21SPwq5Iq0aN70q7RN3KRcdUY427Mg==
+file-type@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.3.0.tgz#74d755e5dc9c5cbc7ee6f182529b453906ac88c2"
+  integrity sha512-4E4Esq9KLwjYCY32E7qSmd0h7LefcniZHX+XcdJ4Wfx1uGJX7QCigiqw/U0yT7WOslm28yhxl87DJ0wHYv0RAA==
 
 file-type@^3.8.0:
   version "3.9.0"
@@ -6535,18 +6535,18 @@ gatsby-remark-smartypants@^2.1.5:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-filesystem@^2.1.18:
-  version "2.1.18"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.18.tgz#fcf80c62f243f4bfdb5ff4b17e8b0a79ace3730d"
-  integrity sha512-+LHqeDsK61F1BKiH1QGUNhZBH33tQVqB/iRw4AfKf/IlhfsJo5TzpzouAQv3aZXVj+5L05MSLmP9negHPGerag==
+gatsby-source-filesystem@^2.1.20:
+  version "2.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.20.tgz#ef39ae9d138976b2db74bbf558bc960c39daaa5e"
+  integrity sha512-HB422d3/aKTD1nXIoHhTaJTDMfVcE4kFgL05IfxQAyJjK9a1UfqEwx3MNUxOBR3ODEq0c5pdYvF69gii+pjf9g==
   dependencies:
     "@babel/runtime" "^7.5.5"
     better-queue "^3.8.10"
     bluebird "^3.5.5"
     chokidar "3.0.2"
-    file-type "^12.2.0"
+    file-type "^12.3.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.0.6"
+    gatsby-core-utils "^1.0.7"
     got "^7.1.0"
     md5-file "^3.2.3"
     mime "^2.4.4"
@@ -12398,6 +12398,16 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
+
+react-transition-group@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.2.2.tgz#8b5252410180c27fd7eebf50b185256b41799b16"
+  integrity sha512-uP0tjqewtvjb7kGZFpZYPoD/NlVZmIgts9eTt1w35pAaEApPxQGv94lD3VkqyXf2aMqrSGwhs6EV/DLaoKbLSw==
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    dom-helpers "^3.4.0"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react-typography@^0.16.19:
   version "0.16.19"
