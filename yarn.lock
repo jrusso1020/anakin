@@ -6456,16 +6456,16 @@ gatsby-plugin-s3@^0.3.2:
     stream-to-promise "^2.2.0"
     yargs "^12.0.5"
 
-gatsby-plugin-sharp@^2.2.23:
-  version "2.2.23"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.2.23.tgz#735ced3af92e17d27efabe79514378718b99d43a"
-  integrity sha512-ENNKQEwYaOomQvbS7i6Rz2aw5tH+a2xOu1dV77cTEl4nE4Fcg5k0EJSfGqLod1nS0sd/sXoVnIwZd08zCFTq+w==
+gatsby-plugin-sharp@^2.2.24:
+  version "2.2.24"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.2.24.tgz#7032282d3b849de4166c4c0914dc4ab016c50c0f"
+  integrity sha512-9tMWXju/R2yssmA2+uBxioSlwq1+X/fA4Pa86vqnmt2JNb/urcDvLhKilC0CySnyBskYEnRsvRDdAuAb1KQHDw==
   dependencies:
     "@babel/runtime" "^7.6.0"
     async "^2.6.3"
     bluebird "^3.5.5"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.0.8"
+    gatsby-core-utils "^1.0.9"
     got "^8.3.2"
     imagemin "^6.1.0"
     imagemin-mozjpeg "^8.0.0"
