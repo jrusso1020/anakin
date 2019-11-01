@@ -1,6 +1,6 @@
 ---
 title: When should you use Gatsby?
-date: "2019-11-1"
+date: "2019-11-01"
 description: Gatsby.js is an up and coming technology for building simple statically generated websites. It has seen a huge adoption, and seemingly everyone in frontend development has heard about it or is talking about it. However, this has led to people trying to use Gatsby in the wrong places instead of other technologies better suited for that situation. This post talks about me falling into this subgroup as well as some of the cases where you should use Gatsby and when you shouldn't use Gatsby.
 ---
 
