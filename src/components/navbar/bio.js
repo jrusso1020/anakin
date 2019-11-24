@@ -81,6 +81,7 @@ const LinkedInSvg = styled(LinkedIn)`
 
 const StyledLink = styled.a`
   color: currentColor;
+  box-shadow: 0 1px 0 0 ${colors.swansDown};
 `
 
 function Bio() {
