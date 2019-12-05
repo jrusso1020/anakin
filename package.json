@@ -35,7 +35,7 @@
     "react-helmet": "^5.2.0",
     "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
-    "sharp": "^0.23.3",
+    "sharp": "^0.23.4",
     "styled-components": "^4.4.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
