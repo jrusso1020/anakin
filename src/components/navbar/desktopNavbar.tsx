@@ -10,7 +10,12 @@ const NavList = styled.ul`
 const NavListItem = styled.li`
   marginBottom: 0;
 `
-const DesktopNavbar = ({ location }) => {
+
+interface Props {
+  location: Location
+}
+
+const DesktopNavbar = ({ location }: Props) => {
   return <nav>
     <NavList>
       <NavListItem>

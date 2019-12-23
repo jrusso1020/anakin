@@ -4,15 +4,15 @@ import styled from 'styled-components'
 import Sidebar from './sidebar'
 import MobileNavbar from './mobileNavbar'
 
-const Container = styled.div`
+interface Props {
+  location: Location
+}
 
-`
-
-const Navbar = ({ location }) => (
-  <Container>
+const Navbar = ({ location }: Props) => (
+  <div>
     <Sidebar location={location} />
     <MobileNavbar location={location} />
-  </Container>
+  </div>
 )
 
 export default Navbar

@@ -24,7 +24,11 @@ const Container = styled.div`
   `)}
 `
 
-const Sidebar = ({ location }) => (
+interface Props {
+  location: Location
+}
+
+const Sidebar = ({ location }: Props) => (
   <Container>
     <Bio />
     <DesktopNavbar location={location} />

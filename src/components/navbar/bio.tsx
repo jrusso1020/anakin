@@ -84,7 +84,7 @@ const StyledLink = styled.a`
   box-shadow: 0 1px 0 0 ${colors.swansDown};
 `
 
-function Bio() {
+const Bio = () => {
   return (
     <StaticQuery
       query={bioQuery}

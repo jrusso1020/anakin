@@ -65,7 +65,11 @@ const HamburgerMenu = styled(Hamburger)`
   margin-right: 20px;
 `
 
-const MobileNavbar = ({ location }) => {
+interface Props {
+  location: Location
+}
+
+const MobileNavbar = ({ location }: Props) => {
   const [showNav, setShowNav] = useState(false)
 
   return <Container>

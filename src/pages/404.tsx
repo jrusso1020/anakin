@@ -11,19 +11,26 @@ const P = styled.p`
   color: ${colors.mirage}
 `
 
-class NotFoundPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
-        <H1>Not Found</H1>
-        <P>You just hit a route that doesn&#39;t exist... the sadness.</P>
-      </Layout>
-    )
+interface Props {
+  data: {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    };
   }
+}
+
+const NotFoundPage = ({ data }: Props) => {
+  const siteTitle = data.site.siteMetadata.title
+
+  return (
+    <Layout location={this.props.location} title={siteTitle}>
+      <SEO title="404: Not Found" />
+      <H1>Not Found</H1>
+      <P>You just hit a route that doesn&#39;t exist... the sadness.</P>
+    </Layout>
+  )
 }
 
 export default NotFoundPage

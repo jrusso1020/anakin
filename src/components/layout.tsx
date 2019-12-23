@@ -34,7 +34,13 @@ const Footer = styled.footer`
   color: ${props => props.color ? props.color : colors.mirage}
 `
 
-const Layout = ({ location, title, children }) => {
+interface Props {
+  location: Location
+  title: string
+  children?: any
+}
+
+const Layout = ({ location, title, children }: Props) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
