@@ -88,7 +88,7 @@ Before starting there are some requirements
 1. Install Tor on your computer, for macs this can be accomplished using homebrew `brew install tor`. You can then run it constantly in the background using the command `brew services start tor` or run it manually using the command `tor`.
 2. Make sure you have firefox installed on your computer, this will be required if you want to use the same selenium code above. You can use other browsers but the `my_proxy` method will need to change slightly
 3. Install selenium, stem, and beautiful soup Python libraries using the command `pip install selenium stem bs4`
-4. You will also need to update your `torrc` and restart Tor so that you can make requests to the Tor controller. On a mac you can find your `torrc` file at `/usr/local/etc/torrc.sample`. Rename it to `torrc` by doing `mv /usr/local/etc/torrc.sample /usr/local/etc/torrc` and then uncomment the following lines (I will copy the full torrc at the bottom of this post)
+4. You will also need to update your `torrc` and restart Tor so that you can make requests to the Tor controller. On a mac you can find your `torrc` file at `/usr/local/etc/tor/torrc.sample`. Rename it to `torrc` by doing `mv /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc` and then uncomment the following lines (I will copy the full torrc at the bottom of this post)
 ```
 ControlPort 9051
 CookieAuthentication 1
