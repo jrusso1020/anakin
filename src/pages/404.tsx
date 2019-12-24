@@ -12,6 +12,7 @@ const P = styled.p`
 `
 
 interface Props {
+  location: Location
   data: {
     site: {
       siteMetadata: {
@@ -21,11 +22,11 @@ interface Props {
   }
 }
 
-const NotFoundPage = ({ data }: Props) => {
+const NotFoundPage = ({ data, location }: Props) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={this.props.location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO title="404: Not Found" />
       <H1>Not Found</H1>
       <P>You just hit a route that doesn&#39;t exist... the sadness.</P>
