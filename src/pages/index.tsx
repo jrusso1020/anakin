@@ -48,7 +48,7 @@ const BlogIndex = ({ data, location }: Props) => {
                 {title}
               </StyledLink>
             </H3>
-            <small>{node.frontmatter.date}</small>
+            <small>{node.frontmatter.date} | <b>{node.fields.readingTime.text}</b> </small>
             <p
               dangerouslySetInnerHTML={{
                 __html: node.frontmatter.description || node.excerpt,
@@ -81,6 +81,11 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
