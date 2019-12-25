@@ -20,14 +20,14 @@ plugins: [
 ]
 ```
 Next you must add the following to your `package.json` so that you can use the `npm run deploy` command to deploy your application to S3
-```
+```js
 "scripts": {
    ...
    "deploy": "gatsby-plugin-s3 deploy -y"
 }
 ```
 In order to deploy your application to an S3 bucket programmatically you need to setup an AWS IAM user with the correct privileges. The easiest is to have admin privileges on the account you can also add a policy to it that looks like the following
-```
+```js
 {
   "Version": "2012-10-17",
   "Statement": [

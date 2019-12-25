@@ -96,7 +96,7 @@ CookieAuthentication 1
 
 Now let's talk about the code a little
 
-```
+```python
 # signal TOR for a new connection
 def switchIP():
     with Controller.from_port(port = 9051) as controller:
@@ -105,9 +105,9 @@ def switchIP():
 ```
 This method is what allows us to switch our IP. It issues a signal (`Signal.NEWNYM`) to the Tor Controller Port, which tells Tor that we want a new circuit for traffic to be routed through. This will give us a new exit node which means our traffic looks like it's coming from a different IP.
 
-```
+```python
 # get a new selenium webdriver with tor as the proxy
-def my_proxy(PROXY_HOST,PROXY_PORT):
+def my_proxy(PROXY_HOST, PROXY_PORT):
     fp = webdriver.FirefoxProfile()
     # Direct = 0, Manual = 1, PAC = 2, AUTODETECT = 4, SYSTEM = 5
     fp.set_preference("network.proxy.type", 1)
@@ -120,7 +120,7 @@ def my_proxy(PROXY_HOST,PROXY_PORT):
 ```
 This method sets up our selenium webdriver to use the Firefox browser in headless mode and to use Tor as a proxy to route our traffic through. This ensures that all of our requests to our selenium webdriver go through Tor and look like they are coming from our exit node.
 
-```
+```python
 for x in range(10):
     proxy = my_proxy("127.0.0.1", 9050)
     proxy.get("https://whatsmyip.com/")
