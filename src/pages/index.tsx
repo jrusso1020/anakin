@@ -48,7 +48,7 @@ const BlogIndex = ({ data, location }: Props) => {
                 {title}
               </StyledLink>
             </H3>
-            <small>{node.frontmatter.date} | <b>{node.fields.readingTime.text}</b> </small>
+            <small>{node.frontmatter.date} | <b>{node.timeToRead} min read</b> </small>
             <p
               dangerouslySetInnerHTML={{
                 __html: node.frontmatter.description || node.excerpt,
@@ -73,6 +73,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          timeToRead
           excerpt
           fields {
             slug
@@ -81,11 +82,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-          }
-          fields {
-            readingTime {
-              text
-            }
           }
         }
       }

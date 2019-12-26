@@ -30,8 +30,6 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
     title: post.frontmatter.title,
   }
 
-  console.log('post', post.fields)
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -47,7 +45,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
           marginTop: rhythm(-1),
         }}
       >
-        {post.frontmatter.date} | <b>{post.fields.readingTime.text}</b>
+        {post.frontmatter.date} | <b>{post.timeToRead} min read</b>
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
@@ -98,16 +96,12 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
+      timeToRead
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
-      }
-      fields {
-        readingTime {
-          text
-        }
       }
     }
   }
