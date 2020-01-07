@@ -48,6 +48,7 @@ interface Props {
 }
 
 const TagsPage = ({
+  location,
   data: {
     allMarkdownRemark: { group },
     site: {
