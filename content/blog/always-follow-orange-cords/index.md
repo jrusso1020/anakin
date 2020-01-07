@@ -2,6 +2,7 @@
 title: Always Follow Orange Cords
 date: "2019-12-23"
 description: In software development there are a number of things that once had a purpose but after years of refactoring and feature development may no longer serve a purpose. It's important to never accept something as necessary without understanding why it exists and if it's still useful. When you can, take your time to follow and understand every code and system you see so you can become a better developer and help your fellow developers.
+tags: ["process", "software development", "orange cords"]
 ---
 
 ## "Always Remove Orange Cords"

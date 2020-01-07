@@ -2,6 +2,7 @@
 title: Deploying a New Docker Image to an EKS Cluster on Codeship
 date: "2019-05-19"
 description: This is a tutorial about how to deploy a new Docker image to your Kubernetes worker nodes with Codeship when you've deployed your cluster on EKS. This was based on a combination of tutorials found on Codeship and comments and extraneous links. The documentation on Codeship requires you to look in multiple places and is outdated in some cases, so hopefully this aggregates it in one place and updates it.
+tags: ["Docker", "EKS", "AWS", "Kubernetes", "Codeship", "devops"]
 ---
 
 In two of my previous posts we [created a Docker image for a Next.js application and pushed it to ECR](/next-js-docker-ecr), and then we also talked about [setting up and deploying an application to EKS](/setup-deployment-on-eks). This post details how to setup auto deployments to EKS on Codeship for your application's Docker images. We ran into quite a few problems trying to follow Codeship's documentation, so hopefully this post can help some other's get through the issues we encountered.

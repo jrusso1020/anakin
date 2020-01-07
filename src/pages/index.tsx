@@ -1,20 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import styled from 'styled-components'
+import { graphql } from 'gatsby'
 
 import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'
-import { rhythm } from 'src/utils/typography'
-import { colors } from 'src/utils/colors'
-
-const StyledLink = styled(Link)`
-  box-shadow: none;
-  color: ${colors.keppel};
-`
-
-const H3 = styled.h3`
-  margin-bottom: ${rhythm( 1 /4 )};
-`
+import PostPreview from 'src/components/postPreview'
 
 interface Props {
   location: Location
@@ -39,24 +28,9 @@ const BlogIndex = ({ data, location }: Props) => {
         keywords={[`boredhacking`, `bored hacking`, `bored`, `hacking`, `james russo`,
           `james`, `russo`, `blog`, `gatsby`, `javascript`, `react`]}
       />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <div key={node.fields.slug}>
-            <H3>
-              <StyledLink to={node.fields.slug}>
-                {title}
-              </StyledLink>
-            </H3>
-            <small>{node.frontmatter.date} | <b>{node.timeToRead} min read</b> </small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
-              }}
-            />
-          </div>
-        )
-      })}
+      {posts.map(({ node }, index) => (
+        <PostPreview key={`postPreview-${index}`} node={node} />
+      ))}
     </Layout>
   )
 }
@@ -82,6 +56,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

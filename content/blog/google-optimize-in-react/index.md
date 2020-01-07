@@ -2,6 +2,7 @@
 title: Setting Up Google Optimize in a React App Using Segment
 date: "2019-04-27"
 description: Setting up Google Optimize for A/B experiments in a Single Page Application(SPA)
+tags: ["Google Optimize", "React", "Segment.io", "a/b testing"]
 ---
 We recently decided to migrate to Google Optimize(GO or Optimize from here on) as our A/B experiment test system for our frontend SPA which is built using React and Redux. We weren't quite getting everything we wanted out of our previous vendor, and GO seemed like a promising system with simple integration to Universal Analytics, Google Tag Manager, and all of Google's products which some of which we use heavily. However, there aren't very many resources online that talk about using GO for a SPA, so I hope this post can be used by other developers to skip some of the pitfalls we fell into.
 

@@ -1,11 +1,15 @@
 import React from 'react'
+import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from "disqus-react"
+import styled from 'styled-components'
 
 import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'
 import H1 from 'src/components/H1'
+import Tags from 'src/components/tags'
 import { rhythm, scale } from 'src/utils/typography'
+import { colors } from 'src/utils/colors'
 
 interface Props {
   location: Location
@@ -35,18 +39,20 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        keywords={post.frontmatter.tags}
       />
       <H1>{post.frontmatter.title}</H1>
       <p
         style={{
           ...scale(-1 / 5),
           display: `block`,
-          marginBottom: rhythm(1),
+          marginBottom: rhythm(0.5),
           marginTop: rhythm(-1),
         }}
       >
         {post.frontmatter.date} | <b>{post.timeToRead} min read</b>
       </p>
+      <Tags tags={post.frontmatter.tags} />
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
         style={{
@@ -66,14 +72,14 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         <li>
           {previous && (
             <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
+              {previous.frontmatter.title}
             </Link>
           )}
         </li>
         <li>
           {next && (
             <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
+              {next.frontmatter.title}
             </Link>
           )}
         </li>
@@ -102,6 +108,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

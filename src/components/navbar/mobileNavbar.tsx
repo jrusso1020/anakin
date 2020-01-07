@@ -71,7 +71,6 @@ interface Props {
 
 const MobileNavbar = ({ location }: Props) => {
   const [showNav, setShowNav] = useState(false)
-
   return <Container>
     <Nav>
       <HamburgerMenu onClick={() => setShowNav(!showNav)} />
@@ -84,7 +83,7 @@ const MobileNavbar = ({ location }: Props) => {
         {() => <NavList>
           <NavListItem>
             <NavLink
-              partiallyActive={location.pathname !== '/about/'}
+              partiallyActive={!["/about/"].includes(location.pathname) && !location.pathname.includes('tags')}
               to={`/`}>
               Blog
             </NavLink>
@@ -94,6 +93,13 @@ const MobileNavbar = ({ location }: Props) => {
               partiallyActive={location.pathname === '/about/'}
               to={`/about/`}>
               About
+            </NavLink>
+          </NavListItem>
+          <NavListItem>
+            <NavLink
+              partiallyActive={location.pathname.includes('tags')}
+              to={`/tags/`}>
+              Tags
             </NavLink>
           </NavListItem>
         </NavList>}

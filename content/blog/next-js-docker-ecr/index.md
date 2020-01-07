@@ -2,6 +2,7 @@
 title: Setting Up a Next.js Docker Container and Publishing it to AWS ECR
 date: "2019-05-13"
 description: This is a tutorial on how to setup a simple Docker image for a Next.js application so that we can deploy the Docker image to a container registry. We will use AWS Elastic Container Registry (ECR) in this tutorial as our Docker container registry. This way we can access our Docker image from other machines and deploy the image to something like AWS Elastic Kubernetes Server (EKS) or AWS Elastic Container Service (ECS).
+tags: ["Next.js", "Docker", "AWS", "ECR", "devops"]
 ---
 
 The first step in "dockerizing" an application is to download Docker onto your local machine. Personally we develop locally on macs, so we downloaded [Docker for Mac](https://docs.docker.com/v17.12/docker-for-mac/install/#what-to-know-before-you-install) using the tutorial in that link. Once you have Docker installed locally, you need to create a `Dockerfile` in the root of your Next.js application. We created the following `Dockerfile` for our Next.js app.

@@ -2,6 +2,7 @@
 title: Deploying a Gatsby Application to an S3 Bucket Using CircleCI
 date: "2019-08-15"
 description: This is a tutorial about how to deploy a Gatsby.js application to an S3 bucket using CircleCI.
+tags: ["Gatsby", "S3", "AWS", "circleCI", "devops"]
 ---
 
 So you've created your first Gatsby.js application and you'd like to deploy it on AWS instead of Netlify like everyone else. I personally chose AWS because this was an application for work and the rest of our stack is hosted on AWS as well. My approach (and many others) to deploying applications is to first do it manually and then automate it using CI/CD such as CircleCI. So in this tutorial I will start with the initial manual process, which is documented elsewhere as well, and then move to the automated process.

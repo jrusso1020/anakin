@@ -2,6 +2,7 @@
 title: Hello World
 date: "2019-04-23"
 description: Welcome to James Russo's Blog about technology
+tags: ["hello-world"]
 ---
 
 Hi I'm James Russo and this is my first attempt at a blog, so bear with me on this. I am well aware of my level of writing, so I apologize in advance if any of my posts are hard to read or understand. I'll try not to repeat too much of what is already in my [About Me](/about) section, so head over there if you want to find out more about me.

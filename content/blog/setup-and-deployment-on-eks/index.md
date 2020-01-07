@@ -2,6 +2,7 @@
 title: Setting Up AWS Elastic Kubernetes Service (EKS) and Deploying
 date: "2019-05-15"
 description: This is a tutorial on how to setup an AWS Elastic Kubernetes Service (EKS) cluster and deploy a Docker container service to EKS. We will mostly follow the AWS tutorial but make some changes to deploy your personal containers instead of the ones provided by the EKS tutorial. This process was used to deploy our Next.js Application.
+tags: ["AWS", "EKS", "Docker", "devops"]
 ---
 
 In a previous [post](/next-js-docker-ecr) I talked about setting up a Next.js Docker container and deploying it to Elastic Container Registry (ECR). This was the first step for us to get our Next.js app ready to deploy to Elastic Kubernetes Service (EKS), but you could use any other Docker image with this tutorial to deploy to EKS.

@@ -2,6 +2,7 @@
 title: Avoiding Webscraping Throttling Using Python and Tor as a Proxy
 date: "2019-07-08"
 description: In order to hide your IP address and to try and limit throttling when web scraping, it might be a good idea to use a proxy such as Tor. This post describes how to use Python based web scraping tools and Tor to hide yourself when scraping websites for data. However, it can also be used more broadly when using Python to make requests to hide your actual IP. I do not condone the use of this information for any illegal or illicit activity.
+tags: ["webscraping", "Python", "Tor", "proxy"]
 ---
 
 *Edited 2019-07-13 based on concerns*

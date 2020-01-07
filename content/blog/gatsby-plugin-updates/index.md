@@ -2,6 +2,7 @@
 title: Gatsby Plugin Updates Are Annoying
 date: "2019-11-17"
 description: Gatsby.js is a fantastic framework for developing statically generated websites using React. Plugins are a necessary part of Gatsby that allow you to quickly and easily add functionality to your Gatsby generated site. However, a lot of these plugins are updated very frequently and at the same time which can lead to a rather annoying number of pull requests when coupled with Dependabot.
+tags: ["Gatsby", "gatsby-plugins"]
 ---
 
 ## Disclaimer
