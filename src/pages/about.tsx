@@ -42,13 +42,14 @@ const About = ({ data, location }: Props) => {
         Hopefully they will improve as I work on this more and more.
         <br/>
         <br/>
+        Currently working at <a href='https://brex.com' target='_blank' rel='noopener noreferrer'> Brex </a>
+        on the Cash team building modern technology to replace antiquated banking systems.
         I was previously a fullstack engineer working full time in NYC for
         <a href='https://secure.rocketsofawesome.com' target='_blank' rel='noopener noreferrer'> Rockets of Awesome</a>,
         a child clothing subscription service and ecommerce brand.
-        Recently I started working full time on a startup called
+        I also was the first engineer at a startup called
         <a href='https://iteratelabs.co' target='_blank' rel='noopener noreferrer'> Iterate Labs </a>
-        which is a pre-seed startup that wants
-        to use data-driven insights to develop safer and more comfortable workplaces.
+        which wants to use data-driven insights to develop safer and more comfortable workplaces.
         I graduated from <a href='https://cornell.edu' target='_blank' rel='noopener noreferrer'> Cornell University </a>
         in 2017 with a B.S. in Computer Science,
         where I concentrated in Machine Learning and also did research in Systems, Security,

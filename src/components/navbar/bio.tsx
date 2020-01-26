@@ -51,6 +51,15 @@ const H3 = styled.h3`
   `)}
 `
 
+const H5 = styled.h5`
+  color: ${colors.keppel};
+  margin-top: 0;
+  ${mobile(css`
+    margin-left: ${rhythm(1)};
+    margin-bottom: ${rhythm(.5)};
+  `)}
+`
+
 const P = styled.p`
   font-size: 0.8em;
   ${mobile(css`
@@ -103,6 +112,9 @@ const Bio = () => {
             </ImageContainer>
             <div>
               <H3>{author}</H3>
+              <H5>
+                Engineering at <StyledLink rel="noopener noreferrer" href="https://brex.com" target="_blank">Brex</StyledLink>
+              </H5>
               <P>
                 Fullstack engineer who knows nothing about design.
                 <br />
