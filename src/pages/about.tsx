@@ -56,7 +56,7 @@ const About = ({ data, location }: Props) => {
         and Blockchain under
         <a href='http://hackingdistributed.com/' target='_blank' rel='noopener noreferrer'> Emin Gun Sirer </a> and
         <a href='http://www.soumyabasu.com/' target='_blank' rel='noopener noreferrer'> Soumya Basu </a>.
-        Now adays I mostly use technologies such as Ruby on Rails, Flask and Python, React + Redux, Next.js,
+        Now adays I mostly use technologies such as Elixir, Ruby on Rails, Flask and Python, React + Redux, Next.js, Gatsby.js,
         Postgresql, AWS, Kubernetes, and Docker to name a few but I'm constantly
         evaluating and learning about new tehcnologies. Some of my favorite websites to read and stay up to date
         with tech and web development are
