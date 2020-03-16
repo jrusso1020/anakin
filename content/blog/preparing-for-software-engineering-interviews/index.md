@@ -1,7 +1,7 @@
 ---
 title: Preparing for Software Engineering Interviews
 date: "2020-02-16"
-description: Software engineering interviews can be incredibly stressful and difficult. Recently, I went looking for a new job and threw myself back into this anxiety inducing process. Here are some tips and tricks I used to prep during my interview process that I believe helped me perform better and feel more prepared. This is by no means a fool proof guide to getting a job, but can hopefully help you to perform better. Look for my followup article about what to do during and after interviews [here](/technical-software-interview-tips/).
+description: Software engineering interviews can be incredibly stressful and difficult. Recently, I went looking for a new job and threw myself back into this anxiety inducing process. Here are some tips and tricks I used to prep during my interview process that I believe helped me perform better and feel more prepared. This is by no means a fool proof guide to getting a job, but can hopefully help you to perform better.
 tags: ["interviews", "tips", "technical interviews", "software engineering interviews"]
 ---
 ### Background

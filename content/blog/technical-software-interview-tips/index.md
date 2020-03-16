@@ -1,7 +1,7 @@
 ---
 title: Technical Software Engineer Interview Tips
 date: "2020-02-17"
-description: Software engineering interviews can be incredibly stressful and difficult. Recently, I went looking for a new job and threw myself back into this anxiety inducing process. In order to perform better in my interviews I came up with a 7 step game plan for technical interviews. This is by no means a fool proof guide to passing technical interviews, but can definitely help you to perform better. Previously I discussed some ways I prepared for these interviews [here](/preparing-for-software-engineering-interviews/).
+description: Software engineering interviews can be incredibly stressful and difficult. Recently, I went looking for a new job and threw myself back into this anxiety inducing process. In order to perform better in my interviews I came up with a 7 step game plan for technical interviews. This is by no means a fool proof guide to passing technical interviews, but can definitely help you to perform better.
 tags: ["interviews", "tips", "technical interviews", "software engineering interviews"]
 ---
 ### Background
