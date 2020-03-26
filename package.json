@@ -37,7 +37,7 @@
     "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
     "sharp": "^0.25.2",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typescript": "^3.8.3",
