@@ -6301,10 +6301,10 @@ gatsby-page-utils@^0.1.2:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-catch-links@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.2.2.tgz#bb7f85c62eb75f1b119c023cb70f0e32982b4c18"
-  integrity sha512-m+o/JtjaPMEDj0Yb8dTjN9Y1lFabo337KJ/fOuKHgvlIWGobLE23qlu8QqCgmXAwqxwc2OzvJz7OixWaTTQSCw==
+gatsby-plugin-catch-links@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.2.3.tgz#f6fe2eada9ca0a03688c895cec585084656f8870"
+  integrity sha512-EHacyfSRF6wgxxJhpNgr1P+0IAEZ/GghWu3rw7XsLEfXJGYqHAJEOR8+lDsMP9TxMMjGRfomYO+3cwqswxMkiQ==
   dependencies:
     "@babel/runtime" "^7.8.7"
     escape-string-regexp "^1.0.5"
