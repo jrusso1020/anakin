@@ -29,18 +29,20 @@ module.exports = {
   },
   testURL: `http://localhost`,
   setupFiles: [`<rootDir>/loadershim.js`],
-  setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"]
+  setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
 }
 ```
 
 This will ensure that the setup file is loaded in after the enviornment is loaded. This way any needed packages and other values will be setup and loaded in this file.
 
 Now in `setup-test-env.js` we need to mock `Sentry` globally so that we can use it in our code run by our tests and not get an error that `Sentry` is not defined. This can be accomplished with the following line's of code
+
 ```js
 // setup-test-env.js
-import * as Sentry from '@sentry/browser'
+import * as Sentry from "@sentry/browser"
 
 global.Sentry = Sentry
-jest.mock('@sentry/browser')
+jest.mock("@sentry/browser")
 ```
+
 And just like that you should be able to run your tests and mock the global `Sentry` value so that your code is able to call the global `Sentry` object without raising any error's.

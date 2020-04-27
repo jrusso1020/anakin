@@ -1,11 +1,11 @@
 import React from "react"
 import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
-import { colors } from 'src/utils/colors'
+import Layout from "src/components/layout"
+import SEO from "src/components/seo"
+import { colors } from "src/utils/colors"
 
 const Tags = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ interface Props {
       siteMetadata: {
         title: string
       }
-    };
+    }
   }
 }
 
@@ -58,16 +58,33 @@ const TagsPage = ({
 }: Props) => (
   <Layout location={location} title={title}>
     <SEO
-      title='All posts'
-      keywords={[`boredhacking`, `bored hacking`, `bored`, `hacking`, `james russo`,
-        `james`, `russo`, `blog`, `gatsby`, `javascript`, `react`, `tags`]}
+      title="All posts"
+      keywords={[
+        `boredhacking`,
+        `bored hacking`,
+        `bored`,
+        `hacking`,
+        `james russo`,
+        `james`,
+        `russo`,
+        `blog`,
+        `gatsby`,
+        `javascript`,
+        `react`,
+        `tags`,
+      ]}
     />
     <div>
       <h1>Tags</h1>
       <Tags>
         {group.map((tag, index) => (
           <TagContainer key={`container-${index}`}>
-            <Tag key={`tag-${index}`} to={`/tags/${kebabCase(tag.fieldValue)}/`}>{tag.fieldValue} ({tag.totalCount})</Tag>
+            <Tag
+              key={`tag-${index}`}
+              to={`/tags/${kebabCase(tag.fieldValue)}/`}
+            >
+              {tag.fieldValue} ({tag.totalCount})
+            </Tag>
           </TagContainer>
         ))}
       </Tags>

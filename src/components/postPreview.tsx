@@ -1,10 +1,10 @@
-import React from 'react'
-import {Link} from 'gatsby'
-import styled from 'styled-components'
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
 
-import Tags from 'src/components/tags'
-import { rhythm } from 'src/utils/typography'
-import { colors } from 'src/utils/colors'
+import Tags from "src/components/tags"
+import { rhythm } from "src/utils/typography"
+import { colors } from "src/utils/colors"
 
 const StyledLink = styled(Link)`
   box-shadow: none;
@@ -12,7 +12,7 @@ const StyledLink = styled(Link)`
 `
 
 const H3 = styled.h3`
-  margin-bottom: ${rhythm( 1 /4 )};
+  margin-bottom: ${rhythm(1 / 4)};
 `
 
 interface Props {
@@ -24,11 +24,11 @@ const PostPreview = ({ node }: Props) => {
   return (
     <div key={node.fields.slug}>
       <H3>
-        <StyledLink to={node.fields.slug}>
-          {title}
-        </StyledLink>
+        <StyledLink to={node.fields.slug}>{title}</StyledLink>
       </H3>
-      <small>{node.frontmatter.date} | <b>{node.timeToRead} min read</b> </small>
+      <small>
+        {node.frontmatter.date} | <b>{node.timeToRead} min read</b>{" "}
+      </small>
       <Tags tags={node.frontmatter.tags} />
       <p
         dangerouslySetInnerHTML={{

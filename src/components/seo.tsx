@@ -5,9 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
   description?: string
@@ -34,7 +34,9 @@ const SEO = ({ description, keywords, title, image }: Props) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const siteImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.defaultImage}`
+  const siteImage = `${site.siteMetadata.siteUrl}${
+    image || site.siteMetadata.defaultImage
+  }`
   return (
     <Helmet
       title={title}
@@ -46,7 +48,7 @@ const SEO = ({ description, keywords, title, image }: Props) => {
         },
         {
           name: `image`,
-          content: siteImage
+          content: siteImage,
         },
         {
           property: `og:title`,
@@ -54,7 +56,7 @@ const SEO = ({ description, keywords, title, image }: Props) => {
         },
         {
           name: `og:image`,
-          content: siteImage
+          content: siteImage,
         },
         {
           property: `og:description`,
@@ -70,7 +72,7 @@ const SEO = ({ description, keywords, title, image }: Props) => {
         },
         {
           name: `twitter:image`,
-          content: siteImage
+          content: siteImage,
         },
         {
           name: `twitter:creator`,
@@ -84,15 +86,14 @@ const SEO = ({ description, keywords, title, image }: Props) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )}
+      ].concat(
+        keywords.length > 0
+          ? {
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
+          : []
+      )}
     >
       <html lang="en" />
     </Helmet>

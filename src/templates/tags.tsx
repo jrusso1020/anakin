@@ -1,12 +1,12 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
-import PostPreview from 'src/components/postPreview'
-import { rhythm } from 'src/utils/typography'
-import { colors } from 'src/utils/colors'
+import Layout from "src/components/layout"
+import SEO from "src/components/seo"
+import PostPreview from "src/components/postPreview"
+import { rhythm } from "src/utils/typography"
+import { colors } from "src/utils/colors"
 
 const StyledLink = styled(Link)`
   box-shadow: none;
@@ -14,7 +14,7 @@ const StyledLink = styled(Link)`
 `
 
 const H3 = styled.h3`
-  margin-bottom: ${rhythm( 1 /4 )};
+  margin-bottom: ${rhythm(1 / 4)};
 `
 
 interface Props {
@@ -25,7 +25,7 @@ interface Props {
       siteMetadata: {
         title: string
       }
-    };
+    }
   }
   pageContext: any
 }
@@ -40,8 +40,8 @@ const Tags = ({ pageContext, data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title='Tags'
-        description='Tags used on blog posts for boredhacking.com'
+        title="Tags"
+        description="Tags used on blog posts for boredhacking.com"
       />
       <h1>{tagHeader}</h1>
       {edges.map(({ node }, index) => (

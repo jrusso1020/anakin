@@ -2,13 +2,13 @@
 title: When should you use Gatsby?
 date: "2019-11-01"
 description: Gatsby.js is an up and coming technology for building simple statically generated websites. It has seen a huge adoption, and seemingly everyone in frontend development has heard about it or is talking about it. However, this has led to people trying to use Gatsby in the wrong places instead of other technologies better suited for that situation. This post talks about me falling into this subgroup as well as some of the cases where you should use Gatsby and when you shouldn't use Gatsby.
-tags: ["Gatsby", "overuse"]
+tags: ["Gatsby", "Gatsby.js", "overuse"]
 ---
-
 
 [Gatsby.js](https://www.gatsbyjs.org/) is one of the most popular frontend frameworks currently and a huge buzzword in frontend web development. For anyone who isn't aware of Gatsby.js yet, it is a frontend framework that allows you to develop a statically generated website using React. This allows you to get the development benefits of React, and also get the SEO, page load, etc. benefits of a statically generated website. Sounds great right? Well not so fast. I believe many people are too quick to reach for Gatsby when starting a new frontend application, and many people are using it in places where they really shouldn't. I too was a victim of this thinking, and started a project with Gatsby that I really shouldn't have (more on this in a bit). I have also heard of others including companies using Gatsby either when they could probably benefit better from another framework. Don't get me wrong though I do really like Gatsby, this site is built using Gatsby! When Gatsby is used correctly it can be great. In this post I will try to go over some of the reasons and situations you should use Gatsby, but also outline some situations where you should not and you are better off gravitating to another framework like [Next.js](https://nextjs.org/). These lists and ideas are definitely not exhaustive or the only opinion, but I think they are a good rule of thumb to go by. I may update this page as new things come to light from my and others experience.
 
 ## My Mistake
+
 Recently I needed to create an admin interface at work. I had started working with Gatsby when creating this blog and had really loved the experience. The idea that I can code in React and use all the libraries and techniques I'm used to, while also getting the benefits of a statically generated website is awesome. The plugin system for Gatsby is also very cool, and allows you to easily add in Gatsby plugins to get the functionality you would normally have to do a lot more setup for. I have experience with plain React and Create React App(CRA) as well as server side rendered(SSR) React using Next.js, but my first thought was to reach for Gatsby again to create this admin interface for a backend API that already had been started. This was a bad choice for a few reasons.
 
 Let me start by outlining some of the basic requirements for this admin interface.
@@ -31,10 +31,10 @@ While developing the application everything seemed to be going great. We are a s
 
 I couldn't just wait for this problem to be figured out or try to solve it myself (without knowing Gatsby’s codebase), because who knows how long it has existed and how long it would take to solve. I needed to move quickly because this was a necessary part of our software architecture, and we needed to continue development. So begrudging thel solution I chose was to rewrite the application not using Gatsby. So I chose to rewrite the application using Next.js, which I also had used before and knew the file structure was very similar to Gatsby. The main differences to convert the application was to remove all the Gatsby methods and use built in Next.js methods instead, replace all the Gatsby plugin functionality that we needed, and setup the tests to work in the new project. The final difference would be getting the application deployed, which as stated previously required deploying a running server. All in all moving the app’s components and pages over, replacing the Gatsby methods with Next methods, and getting the app to run took about a day. Then getting the tests to run took about another day or so, and deploying the application took about half a day. However, the deployment went fairly quickly because we use Kubernetes, and all we had to do was set up our docker container and repo, our deployment files, and our Kubernetes cluster to deploy this new application. If I had gone with my gut and thought through it more, I could have started in Next.js from the beginning and none of this would have happened. Therefore, I thought it would be nice to outline my problem as well as some of the tell tell signs of when to/not to use Gatsby.
 
-*Disclaimer: All of this could have been found earlier if I had done more rigorous testing on staging from the beginning and is something I would normally do, but working alone and for a very small startup when trying to move fast I had forgone this more rigorous testing. So remember always rigorously test on staging.*
-
+_Disclaimer: All of this could have been found earlier if I had done more rigorous testing on staging from the beginning and is something I would normally do, but working alone and for a very small startup when trying to move fast I had forgone this more rigorous testing. So remember always rigorously test on staging._
 
 ## When you Should Use Gatsby
+
 First let's talk about some of the great places you should use Gatsby.
 
 1. For simple personal websites with a lot of content that doesn't change too often.
@@ -54,6 +54,7 @@ First let's talk about some of the great places you should use Gatsby.
 While this list is definitely not exhausted (and may be added to), I think these are some of the base cases when you should use Gatsby. I would say one major thing to note when Gatsby should be used is when you know what information is going to be on all or most of the pages at build time and you can easily/quickly rebuild the pages when something is added or changed. I say easily/quickly rebuild the pages because all though in some cases you may know what all of the pages are at build time and what will be on them, the larger your site grows the longer the build will take and the more you should think about not using Gatsby.
 
 ## When you Shouldn't Use Gatsby
+
 Now let's discuss some of the times where you probably shouldn't use Gatsby.
 
 1. Applications that are mostly behind authentication that can't show data until the user is logged in (like my example above). If the authenticated pages are mostly static for some reason, then it might still be better to use Gatsby. But if the data on the pages changes per user then it is probably best not to use Gatsby.
@@ -64,9 +65,10 @@ Now let's discuss some of the times where you probably shouldn't use Gatsby.
 
 4. Sites where most pages don't get page data until the page is rendered in the browser. You will not get you statically generated page benefits if most of your data comes after the page is rendered
 
-5. Sites with CMS's that change a lot. This also may not be an *always* case, but if your site has a frequently updated CMS then Gatsby may not be a good option because the build step will slow down changes. Also if your site has a CMS but you don't use GraphQL to build the pages, then you probably aren't using Gatsby right and should look at another solution.
+5. Sites with CMS's that change a lot. This also may not be an _always_ case, but if your site has a frequently updated CMS then Gatsby may not be a good option because the build step will slow down changes. Also if your site has a CMS but you don't use GraphQL to build the pages, then you probably aren't using Gatsby right and should look at another solution.
 
 I would say two general rules on when you shouldn't use gatsby are 1) When the site has a lot of dynamic or constantly changing pages/data that doesn't remain constant 2) or when build times will grow exponentially over time and limit your deployment speed.
 
 ## Alternatives
+
 There are a number of alternative approaches you can use instead of Gatsby and when you should use them depends on your use case. There is always the general Create React App (Vanilla React) approach which is the simplest approach. You can SSR parts of your app or all of your app which will get you closer to if not all of Gatsby's benefits. You can do this by either implementing SSR in your Vanilla React application yourself, or if you have the luxury/freedom of starting an app from scratch you can use a framework like Next.js. Next.js is a SSR framework for React very similar to Gatsby but it allows you to better handle more complicated applications that are sure to grow or have a lot of dynamic content. When Gatsby isn’t the best choice, there is a very good chance that Next.js will be a good alternative. Next.js allows you to make requests server side and then render server side which will speed up your applications load time and initial page render in the browser as well as give you SEO benefits, among many other benefits. I do not see Gatsby and Next as battling frameworks but instead as frameworks for different use cases, and I think it is important to note that. Once again this is not an exhaustive list of alternatives but if you are already familiar with React I think they are worth knowing about. I hope this post helps others avoid the problem I encountered, as well as bring some awareness to the different use cases and solutions available.

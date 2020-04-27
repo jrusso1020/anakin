@@ -1,14 +1,14 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
 
-import Layout from 'src/components/layout'
-import H1 from 'src/components/H1'
-import SEO from 'src/components/seo'
-import { colors } from 'src/utils/colors'
+import Layout from "src/components/layout"
+import H1 from "src/components/H1"
+import SEO from "src/components/seo"
+import { colors } from "src/utils/colors"
 
 const P = styled.p`
-  color: ${colors.mirage}
+  color: ${colors.mirage};
 `
 
 interface Props {
@@ -18,7 +18,7 @@ interface Props {
       siteMetadata: {
         title: string
       }
-    };
+    }
   }
 }
 

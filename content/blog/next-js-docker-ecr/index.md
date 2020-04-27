@@ -29,8 +29,7 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 ```
 
-The first line `FROM node:10-alpine` is the base Docker image we used to create our application's image. We developed our application using node version 10.15.3 so we used a base container with the corresponding node version. Another thing to note here is that it is an *alpine* container. The main reason for using alpine containers as your base image is that they are smaller. They remove unnecessary bloat your application doesn't need to run. By switching our application from using the `node:10` base image to `node:10-alpine`, we were able to shrink our Docker image from over 400kb to around 70kb (more than 75% savings in size). To learn about more reasons why an alpine image is normally better for creating Docker images, take a look at the following [link](https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image
-).
+The first line `FROM node:10-alpine` is the base Docker image we used to create our application's image. We developed our application using node version 10.15.3 so we used a base container with the corresponding node version. Another thing to note here is that it is an _alpine_ container. The main reason for using alpine containers as your base image is that they are smaller. They remove unnecessary bloat your application doesn't need to run. By switching our application from using the `node:10` base image to `node:10-alpine`, we were able to shrink our Docker image from over 400kb to around 70kb (more than 75% savings in size). To learn about more reasons why an alpine image is normally better for creating Docker images, take a look at the following [link](https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image).
 
 The next line is `ENV PORT 3000`, which sets our application's port that it will run on within the Docker container. We also set some other environment variables in our real `Dockerfile`. Since this is a frontend application without any secure credentials in it, we found it easiest to just set all of our environment variables directly in the `Dockerfile`. There are two other approaches to setting a Docker image's environment variables we came across while developing. The first is to use a `docker_compose.yml` file that you do not commit to your github repo and use locally to create the Docker image. You can either put the environment variables directly in the `docker_compose.yml` or have it use your `.env` file. Here is a [link](https://docs.docker.com/compose/environment-variables/) describing how to do this from Docker's documentation. Another approach that we came across is to create a secret Docker image that just sets environment variables and then use that as one of your base images in your `Dockerfile`. You would build and push this Docker image to a registry locally so that your secrets are never linked, and you can still use them in your application. But once again we found this unnecessary since our environment variables for our frontend application are viewable when you visit our web app in the browser anyways.
 
@@ -39,6 +38,7 @@ The next two lines `RUN mkdir -p /usr/src/app` and `WORKDIR /usr/src/app` create
 Finally we copy the rest of our application using `COPY . /usr/src/app` into the app's directory and call `RUN npm run build` to create our production build files. `EXPOSE 3000` exposes port 3000 on the container, and finally we run the last command `CMD [ "npm", "start" ]` to startup our production build of our web application in the container. With that we have a docker image that we can build and run locally, or deploy to an Docker registry and run on a server.
 
 ### Deploying to ECR
+
 Now that we have our `Dockerfile` we can create our Docker image and deploy it to our Docker image registry which in this case will be AWS Elastic Container Registry (ECR).
 
 1. First step is to make sure you have an AWS account and to download the aws-cli. This can be achieved by using the following [tutorial](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
@@ -52,6 +52,8 @@ Now that we have our `Dockerfile` we can create our Docker image and deploy it t
 This shows you how to deploy to ECR using manual commands, but we have setup our CI/CD platform to run the commands for us so we have automatic deployments when we push to our staging or production branches on Github.
 
 ### Additional Resources
+
 The following resources were used to come up with this approach and write this post
+
 1. [https://medium.com/@khwsc1/a-simple-react-next-js-app-development-on-docker-6f0bd3f78c2c](https://medium.com/@khwsc1/a-simple-react-next-js-app-development-on-docker-6f0bd3f78c2c)
 2. [https://medium.com/google-cloud/next-js-tutorial-deploy-to-docker-on-google-cloud-container-engine-6b0c19dd8ecb](https://medium.com/google-cloud/next-js-tutorial-deploy-to-docker-on-google-cloud-container-engine-6b0c19dd8ecb)

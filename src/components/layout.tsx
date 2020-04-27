@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled, {css} from 'styled-components'
+import React from "react"
+import { Link } from "gatsby"
+import styled, { css } from "styled-components"
 
-import Navbar from './navbar'
-import H1 from './H1'
-import { rhythm } from 'src/utils/typography'
-import { mobile } from 'src/utils/media'
-import { colors } from 'src/utils/colors'
+import Navbar from "./navbar"
+import H1 from "./H1"
+import { rhythm } from "src/utils/typography"
+import { mobile } from "src/utils/media"
+import { colors } from "src/utils/colors"
 
 const BodyContainer = styled.div`
   margin-left: calc(320px - 1em);
@@ -22,7 +22,7 @@ const BodyContainer = styled.div`
 const StyledLink = styled(Link)`
   box-shadow: none;
   text-decoration: none;
-  color: ${props => props.color ? props.color : colors.keppel};
+  color: ${(props) => (props.color ? props.color : colors.keppel)};
 `
 
 const H3 = styled.h3`
@@ -31,7 +31,7 @@ const H3 = styled.h3`
 `
 
 const Footer = styled.footer`
-  color: ${props => props.color ? props.color : colors.mirage}
+  color: ${(props) => (props.color ? props.color : colors.mirage)};
 `
 
 interface Props {
@@ -47,17 +47,13 @@ const Layout = ({ location, title, children }: Props) => {
   if (location.pathname === rootPath) {
     header = (
       <H1>
-        <StyledLink to={`/`}>
-          {title}
-        </StyledLink>
+        <StyledLink to={`/`}>{title}</StyledLink>
       </H1>
     )
   } else {
     header = (
       <H3>
-        <StyledLink to={`/`}>
-          {title}
-        </StyledLink>
+        <StyledLink to={`/`}>{title}</StyledLink>
       </H3>
     )
   }
@@ -68,9 +64,16 @@ const Layout = ({ location, title, children }: Props) => {
         <header>{header}</header>
         <main>{children}</main>
         <Footer>
-          © {new Date().getFullYear()} James Russo. All Rights Reserved, Built with
+          © {new Date().getFullYear()} James Russo. All Rights Reserved, Built
+          with
           {` `}
-          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
+          <a
+            href="https://www.gatsbyjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby
+          </a>
         </Footer>
       </BodyContainer>
     </div>

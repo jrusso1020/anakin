@@ -5,44 +5,98 @@ description: In order to hide your IP address and to try and limit throttling wh
 tags: ["webscraping", "Python", "Tor", "proxy"]
 ---
 
-*Edited 2019-07-13 based on concerns*
+_Edited 2019-07-13 based on concerns_
 
 ## Disclaimer
-*I do not condone the use of this information for creating illegal web crawlers. This was more an informational exercise and I wanted to share it with others. Another thing to note is that some sites are able to automatically block IP's that are Tor exit nodes, so this may not work for some sites that go to these measures.*
+
+_I do not condone the use of this information for creating illegal web crawlers. This was more an informational exercise and I wanted to share it with others. Another thing to note is that some sites are able to automatically block IP's that are Tor exit nodes, so this may not work for some sites that go to these measures._
 
 ### The Problem
+
 The other day I was starting the search for a new aparment in New York City, which I have done a couple of times now, and was frustrated that StreetEasy doesn't allow you to filter apartments that are available after a certain date. After a quick search I realized that people have been requesting this feature for [years](https://streeteasy.com/talk/discussion/40436-search-listing-available-after-date) (since Oct 2015 to be exact), and it was nowhere in sight and there didn't seem to be any services out there that did it either. So I had a thought, I used to web scrape sites using Python, why not try it on StreetEasy and filter the apartments myself. Spoiler alert I wasn't able to do this for a reason I will explain in more detail, but this led me to use a lot of old tools I hadn't used in a while and come up with a script for scraping through Tor and switching IP's between requests.
 
 ### The Roadblock
+
 So first let me quickly describe the reason I wasn't able to scrape StreetEasy. At first glance, there appeared to be a few different StreetEasy scraping scripts on Github. However, I thought it was simple enough I'd prefer to do it myself. It had been a while since I had scraped sites and I wanted to do it all (mostly) on my own. However, the first task in my iterative approach was to just get a listing page for a StreetEasy search. This quickly led me to receive the following html
 
 ```html
-<body background="" style="margin: 0; padding: 0; font-family:Arial,FreeSans,sans-serif">
-<table cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 10px; margin-left: 0"><tbody><tr><td style="padding: 12px 2%;">
-<table cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 96%;"><tbody><tr><td style="padding: 12px 2%;">
-<div><img src="http://streeteasy-public.s3.amazonaws.com/StreetEasy_logo_blue.png" width="450px"/><br/><br/></div>
-<div>
-<h2 style="margin-top: 0;">Pardon Our Interruption</h2>
-<p>As you were browsing, something about your browser
-        made us think you were a bot. There are a few reasons why this might happen:</p>
-<ul>
-<li>You're a power user moving through this website with super-human speed</li>
-<li>You've disabled JavaScript in your web browser</li>
-<li>A third-party browser plugin, such as Ghostery or NoScript, is preventing JavaScript from running.
-          Additional information is available in this <a href="http://ds.tl/help-third-party-plugins" target="_blank" title="Third party browser plugins that block javascript">support article.</a></li>
-</ul>
-<p>After completing the CAPTCHA below, you will immediately regain access to the site.</p>
-</div>
+<body
+  background=""
+  style="margin: 0; padding: 0; font-family:Arial,FreeSans,sans-serif"
+>
+  <table
+    cellpadding="0"
+    cellspacing="0"
+    style="width: 100%; margin-top: 10px; margin-left: 0"
+  >
+    <tbody>
+      <tr>
+        <td style="padding: 12px 2%;">
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            style="margin: 0 auto; width: 96%;"
+          >
+            <tbody>
+              <tr>
+                <td style="padding: 12px 2%;">
+                  <div>
+                    <img
+                      src="http://streeteasy-public.s3.amazonaws.com/StreetEasy_logo_blue.png"
+                      width="450px"
+                    /><br /><br />
+                  </div>
+                  <div>
+                    <h2 style="margin-top: 0;">Pardon Our Interruption</h2>
+                    <p>
+                      As you were browsing, something about your browser made us
+                      think you were a bot. There are a few reasons why this
+                      might happen:
+                    </p>
+                    <ul>
+                      <li>
+                        You're a power user moving through this website with
+                        super-human speed
+                      </li>
+                      <li>You've disabled JavaScript in your web browser</li>
+                      <li>
+                        A third-party browser plugin, such as Ghostery or
+                        NoScript, is preventing JavaScript from running.
+                        Additional information is available in this
+                        <a
+                          href="http://ds.tl/help-third-party-plugins"
+                          target="_blank"
+                          title="Third party browser plugins that block javascript"
+                          >support article.</a
+                        >
+                      </li>
+                    </ul>
+                    <p>
+                      After completing the CAPTCHA below, you will immediately
+                      regain access to the site.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 ```
 
 My initial thought was since I was using the `requests` library that I wasn't rendering JavaScript so after doing some googling I came across two ways to render JavaScript in Python. I could use the new `requests-html` library or I could use `selenium`. However, I quickly realized neither was able to give me the result I wanted, I was still getting the same html page that said "Pardon Our Interruption". So now I decided to take a closer look at the scraping scripts I saw on [Github])(https://github.com/purcelba/streeteasy_scrape) earlier. A few of them had warnings about how their scripts no longer worked because StreetEasy started using [Distil Networks](https://www.distilnetworks.com/) to protect them from unwanted bots and web scrapers. After a couple of google searches, I quickly realized I wasn't going to break through Distil Networks checks very easily and decided to table the web scraping of StreetEasy. Nevertheless, I had come back to web scraping after years and was interested in what I could do with it.
 
 ### The Final Result
+
 When I initially thought I was going to web scrape StreetEasy, I wanted a way to do it without getting throttled because I knew I was going to have to go to a lot of individual listing pages to get information. I originally thought this was going to be the biggest problem for me to overcome so I put some thought into it. While in college, I had done some research on [Tor](https://www.torproject.org/) and the dark web under [Soumya Basu](http://www.soumyabasu.com/). A brief synopsis of Tor without getting into two much detail is that it's an onion router. Tor itself stands for The Onion Router (big surprise I know). What Tor does is it routes your traffic through multiple nodes(computers/servers) in a circuit, and then when your HTTP request reaches your end server it looks like it came from the last node in the Tor circuit. Generally there are three hops in the circuit, and it will send your request to a node then that node only knows where to send the message to next until you reach your final destination like google.com. How it does that is by encrypting your request in multiple layers, and at each node a layer is decrypted so it knows where to send the request next until we reach the last(exit) node and the entire message is decrypted and it knows what request you are looking to make. Then the traffic is rerouted back through all the nodes in a similar way until it reaches you. The reason it's called an onion router is because of the decryption and peeling away of the message at each node (like an onion).
 
 Through my research I had become acquainted with the [Stem](https://stem.torproject.org/) Python package that would allow you to interact with Tor in Python. I knew you could use Tor as a proxy and route your HTTP requests through it in Python, so I thought this could be a good solution to the throttling problem. I imagined the throttling would be IP based, so I could use Tor and change my exit node between requests so that my web scraper wasn't throttled. However, this ended not being the biggest problem I had sadly.
 
 Still, I wanted to give it a go because I thought it could be an interesting application in theory. So the general idea behind it was as follows
+
 1. Run Tor on your computer
 2. Use Tor as a proxy for selenium in Python
 3. Make a request to a website
@@ -50,6 +104,7 @@ Still, I wanted to give it a go because I thought it could be an interesting app
 5. Repeat steps 3 and 4 until all your requests are made
 
 The code for this is as follows (I saved this as a file called scrape.py and ran it as `python scrape.py`). This was developed using python 3.7.2 (I use [Anaconda](https://www.anaconda.com/) and conda for Python version management)
+
 ```python
 from stem import Signal
 from stem.control import Controller
@@ -86,10 +141,12 @@ for x in range(10):
 ```
 
 Before starting there are some requirements
+
 1. Install Tor on your computer, for macs this can be accomplished using homebrew `brew install tor`. You can then run it constantly in the background using the command `brew services start tor` or run it manually using the command `tor`.
 2. Make sure you have firefox installed on your computer, this will be required if you want to use the same selenium code above. You can use other browsers but the `my_proxy` method will need to change slightly
 3. Install selenium, stem, and beautiful soup Python libraries using the command `pip install selenium stem bs4`
 4. You will also need to update your `torrc` and restart Tor so that you can make requests to the Tor controller. On a mac you can find your `torrc` file at `/usr/local/etc/tor/torrc.sample`. Rename it to `torrc` by doing `mv /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc` and then uncomment the following lines (I will copy the full torrc at the bottom of this post)
+
 ```
 ControlPort 9051
 CookieAuthentication 1
@@ -104,6 +161,7 @@ def switchIP():
         controller.authenticate()
         controller.signal(Signal.NEWNYM)
 ```
+
 This method is what allows us to switch our IP. It issues a signal (`Signal.NEWNYM`) to the Tor Controller Port, which tells Tor that we want a new circuit for traffic to be routed through. This will give us a new exit node which means our traffic looks like it's coming from a different IP.
 
 ```python
@@ -119,6 +177,7 @@ def my_proxy(PROXY_HOST, PROXY_PORT):
     options.headless = True
     return webdriver.Firefox(options=options, firefox_profile=fp)
 ```
+
 This method sets up our selenium webdriver to use the Firefox browser in headless mode and to use Tor as a proxy to route our traffic through. This ensures that all of our requests to our selenium webdriver go through Tor and look like they are coming from our exit node.
 
 ```python
@@ -131,7 +190,9 @@ for x in range(10):
     print(soup.find("span", {"id": "ipv6"}))
     switchIP()
 ```
+
 This last bit of code just sends a request to https://whatsmyip.com/ so that we can check the IP of our request through our selenium webdriver. We print out the ipv4 and ipv6 addresses of the exit node of our Tor circuit because sometimes it's ipv4 and sometimes it's ipv6. Then after that we request a new IP by requesting a new Tor circuit to be built. If everything goes well you should get a result in your terminal that looks something like
+
 ```
 <span class="pull-right" id="ipv4">2a0b:f4c1::7</span>
 None
@@ -154,11 +215,13 @@ None
 <span class="pull-right" id="ipv4">2a0b:f4c1::7</span>
 None
 ```
+
 As you can see my IP address changes between calls, which is exactly what we are looking for. The server we are making the request to thinks that we are the Tor exit node, and each request we made looks like it's coming from a different computer. The `None` values are because if you have an ipv4 value than it doesn't show anything for `ipv6`.
 
 And just like that you can hide your real IP when making HTTP requests using Python. I hope this is hepful, and if you have any questions or corrections feel free to leave a comment below!
 
 ### Additional Resources
+
 1. https://hackernoon.com/web-scraping-tutorial-with-python-tips-and-tricks-db070e70e071
 2. https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html
 3. https://stackoverflow.com/questions/30286293/make-requests-using-python-over-tor
@@ -167,6 +230,7 @@ And just like that you can hide your real IP when making HTTP requests using Pyt
 6. https://stackoverflow.com/questions/15459170/trouble-authenticating-tor-with-python
 
 ### Full Torrc
+
 ```
 ## Configuration file for a typical Tor user
 ## Last updated 22 December 2017 for Tor 0.3.2.8-rc.

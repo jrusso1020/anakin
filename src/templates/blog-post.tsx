@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react"
 import kebabCase from "lodash/kebabCase"
-import { Link, graphql } from 'gatsby'
+import { Link, graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
-import H1 from 'src/components/H1'
-import Tags from 'src/components/tags'
-import { rhythm, scale } from 'src/utils/typography'
-import { colors } from 'src/utils/colors'
+import Layout from "src/components/layout"
+import SEO from "src/components/seo"
+import H1 from "src/components/H1"
+import Tags from "src/components/tags"
+import { rhythm, scale } from "src/utils/typography"
+import { colors } from "src/utils/colors"
 
 interface Props {
   location: Location
@@ -19,7 +19,7 @@ interface Props {
       siteMetadata: {
         title: string
       }
-    };
+    }
   }
   pageContext: any
 }

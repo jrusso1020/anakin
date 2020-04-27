@@ -1,9 +1,9 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
-import PostPreview from 'src/components/postPreview'
+import Layout from "src/components/layout"
+import SEO from "src/components/seo"
+import PostPreview from "src/components/postPreview"
 
 interface Props {
   location: Location
@@ -13,7 +13,7 @@ interface Props {
       siteMetadata: {
         title: string
       }
-    };
+    }
   }
 }
 
@@ -24,9 +24,20 @@ const BlogIndex = ({ data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title='All posts'
-        keywords={[`boredhacking`, `bored hacking`, `bored`, `hacking`, `james russo`,
-          `james`, `russo`, `blog`, `gatsby`, `javascript`, `react`]}
+        title="All posts"
+        keywords={[
+          `boredhacking`,
+          `bored hacking`,
+          `bored`,
+          `hacking`,
+          `james russo`,
+          `james`,
+          `russo`,
+          `blog`,
+          `gatsby`,
+          `javascript`,
+          `react`,
+        ]}
       />
       {posts.map(({ node }, index) => (
         <PostPreview key={`postPreview-${index}`} node={node} />

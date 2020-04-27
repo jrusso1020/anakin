@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import kebabCase from "lodash/kebabCase"
-import { Link, graphql } from 'gatsby'
-import styled from 'styled-components'
+import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
-import { colors } from 'src/utils/colors'
+import { colors } from "src/utils/colors"
 
 const Tags = styled.div`
   display: flex;
@@ -40,7 +40,9 @@ const TagsComponent = ({ tags }: Props) => (
   <Tags>
     {tags.map((tag, index) => (
       <TagContainer key={`container-${index}`}>
-        <Tag key={`tag-${index}`} to={`/tags/${kebabCase(tag)}/`}>{tag}</Tag>
+        <Tag key={`tag-${index}`} to={`/tags/${kebabCase(tag)}/`}>
+          {tag}
+        </Tag>
       </TagContainer>
     ))}
   </Tags>

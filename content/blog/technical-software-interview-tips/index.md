@@ -2,12 +2,21 @@
 title: Technical Software Engineer Interview Tips
 date: "2020-02-17"
 description: Software engineering interviews can be incredibly stressful and difficult. Recently, I went looking for a new job and threw myself back into this anxiety inducing process. In order to perform better in my interviews I came up with a 7 step game plan for technical interviews. This is by no means a fool proof guide to passing technical interviews, but can definitely help you to perform better.
-tags: ["interviews", "tips", "technical interviews", "software engineering interviews"]
+tags:
+  [
+    "interviews",
+    "tips",
+    "technical interviews",
+    "software engineering interviews",
+  ]
 ---
+
 ### Background
+
 Late last year I decided to start interviewing for new jobs. It had been over two years since I had last interviewed, and although I had been working and performing interviews for my employers this doesn't directly translate into keeping up your interview skills(although it does help). So during my preparation which I discussed in a [previous post](/preparing-for-software-engineering-interviews/) I came up with a gameplan to help me perform better during technical interviews. I definitely don't think I am a technical interview master like some of the people you see on youtube and on blog posts, but these methods definitely helped me to perform better.
 
 ### Algorithms and Data Structures Coding Challenges
+
 As mentioned during my previous post, I felt it was important to come up with a game plan for all of my coding challenges. Previously I felt like I would just go into technical interviews preparing for questions but when I was in the actual interview I never seemed to follow any set procedure. This would lead me to getting stuck and not being able to find a way out. So in order to combat this and make sure I always had a method where I could keep making progress I came up with the following 7 point plan. This plan may not work completely for everyone, but feel free to create your own or adapt mine to your style.
 
 1. **Restate the problem back to your interviewer in your own words, make sure you understand the question, and ask any clarifying questions.**
@@ -20,7 +29,7 @@ You may not always automatically see a solution to a technical question and that
 
 Start from the input and verbally work to an output, stating exactly how you are solving the problem to the interviewer. Using this method you should start to see a way you can solve this in code. However, it may not always be completely clear from one round of this how you can go from the spoken version to the code version. Maybe your example problem was not complex enough, feel free to do this more than once if necessary using slightly different inputs or statements of the problem. Don't just solve the same problem over and over again because the odds of seeing it differently with the same input are not high. But if you solve the same problem with different inputs, you may see a pattern or method common to both that you can use. Just make sure not to spend too much time on this part.
 
-3. *(OPTIONAL)* **Write a couple of simple tests at the beginning**
+3. _(OPTIONAL)_ **Write a couple of simple tests at the beginning**
 
 I made this step optional because in practice I never really wrote tests before writing code. However, by doing step 2 I would generally come up with at least 1 test assertion that I would use later. Some companies have a large focus on Test Driven Development which involves writing tests before actually coding up a solution. If interviewing for organizations like this it might be wise to write a few simple tests before coding, however remember you only have a certain set of time. Prioritize finish the coding solution.
 
