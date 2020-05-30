@@ -46,21 +46,28 @@ const About = ({ data, location }: Props) => {
       <H1>About Me</H1>
       <P>
         Hi I'm James Russo and this is where I'll be writing down my thoughts
-        and experiences in topics such as software, web development, and
-        technology. However, fairwarning any number of other topics can pop up
-        into this blog. This is my first attempt at a blog, and as an engineer I
-        apologize in advance for my writing and design skills. Hopefully they
-        will improve as I work on this more and more.
+        and experiences mostly involving such software and web development.
+        However, fairwarning any number of other topics can pop up into this
+        blog. This is my first attempt at a blog, and as an engineer I apologize
+        in advance for my writing and design skills. Hopefully they will improve
+        as I work on this more and more.
         <br />
-        <br />
-        Currently working at{" "}
+        <br />I am currently working at{" "}
         <a href="https://brex.com" target="_blank" rel="noopener noreferrer">
           {" "}
           Brex{" "}
         </a>
-        on the Cash team building modern technology to replace antiquated
-        banking systems. I was previously a fullstack engineer working full time
-        in NYC for
+        on the{" "}
+        <a
+          href="https://brex.com/product/cash-management-account/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Cash{" "}
+        </a>{" "}
+        team building modern technology to replace antiquated banking systems.
+        Previously I worked as a fullstack engineer working full time in NYC for
         <a
           href="https://secure.rocketsofawesome.com"
           target="_blank"
@@ -87,7 +94,7 @@ const About = ({ data, location }: Props) => {
         </a>
         in 2017 with a B.S. in Computer Science, where I concentrated in Machine
         Learning and also did research in Systems, Security, and Blockchain
-        under
+        technologies under
         <a
           href="http://hackingdistributed.com/"
           target="_blank"
@@ -105,11 +112,21 @@ const About = ({ data, location }: Props) => {
           {" "}
           Soumya Basu{" "}
         </a>
-        . Now adays I mostly use technologies such as Elixir, Ruby on Rails,
-        Flask and Python, React + Redux, Next.js, Gatsby.js, Postgresql, AWS,
-        Kubernetes, and Docker to name a few but I'm constantly evaluating and
-        learning about new tehcnologies. Some of my favorite websites to read
-        and stay up to date with tech and web development are
+        .
+        <br />
+        <br />
+        On a day to day basis, I actively use Elixir, Postgresql, GraphQL,
+        Protocol Buffers, gRPC, and React with Typescript to name a few. I also
+        actively use AWS Technologies, Kubernetes, and Docker. But in the
+        past(and still occasionally), I have worked on projects in Ruby on
+        Rails, Flask and Python, React + Redux, Next.js, Express + Node.js, and
+        Gatsby.js. However, I'm constantly evaluating and learning about new
+        technologies and will try to talk about what I'm using and find
+        interesting on this blog.
+        <br />
+        <br />
+        Some of my favorite websites to read and stay up to date with tech and
+        web development are
         <a
           href="https://news.ycombinator.com/"
           target="_blank"
@@ -126,6 +143,97 @@ const About = ({ data, location }: Props) => {
         >
           {" "}
           TechCrunch
+        </a>
+        . I also read the following newsletters on a weekly or daily basis for
+        tech and software related news and information{" "}
+        <a
+          href="https://labnotes.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Lab Notes{" "}
+        </a>
+        ,
+        <a
+          href="http://softwareleadweekly.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Software Lead Weekly{" "}
+        </a>
+        ,
+        <a
+          href="http://www.founderweekly.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Founder Weekly{" "}
+        </a>
+        ,
+        <a
+          href="https://javascriptweekly.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Javascript Weekly{" "}
+        </a>
+        ,
+        <a
+          href="https://rubyweekly.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Ruby Weekly{" "}
+        </a>
+        , and
+        <a
+          href="https://elixirweekly.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Elixir Weekly{" "}
+        </a>
+        . A few other weekly or daily newsletters I follow are{" "}
+        <a
+          href="https://signup.axios.com/2019/mikeallen.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Axios AM{" "}
+        </a>
+        ,
+        <a
+          href="https://www.theskimm.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          The Daily Skimm{" "}
+        </a>
+        ,
+        <a
+          href="https://www.tldrnewsletter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          TLDR{" "}
+        </a>
+        , and{" "}
+        <a
+          href="https://thisweekinfintech.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          This Week in Fintech{" "}
         </a>
         .
       </P>
