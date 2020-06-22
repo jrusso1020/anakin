@@ -7152,7 +7152,7 @@ gatsby-plugin-styled-components@^3.3.5:
   dependencies:
     "@babel/runtime" "^7.10.2"
 
-gatsby-plugin-typescript@^2.4.6, gatsby-plugin-typescript@^2.4.7:
+gatsby-plugin-typescript@^2.4.7:
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.7.tgz#42b470745beba7dac2d7db4e905d768cf03d684f"
   integrity sha512-bxwWlsK46PHGT3JDU5gbtVKwwDUyt/+GNMh+9qNDCLM31ksPwla4dJQ9rZ05SveEZ3/OgSuZxmT+MJdUzxIy/A==
