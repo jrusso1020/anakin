@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   setup:
     docker:
-      - image: circleci/node:10.15.3
+      - image: circleci/node:14.4.0
     working_directory: ~/anakin
     steps:
       - checkout
