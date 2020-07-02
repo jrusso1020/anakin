@@ -6637,10 +6637,10 @@ gatsby-plugin-catch-links@^2.3.9:
     "@babel/runtime" "^7.10.3"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-feed@^2.5.9:
-  version "2.5.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.9.tgz#00c89316107181b531baad32b4c7d637a6e51fb1"
-  integrity sha512-dlNzzopONhMrIbX8DLMspheDBjpoGHlfZsfBq1j+dTVbysX7O1PZYnonXS2qRE643uBZZHnhd97ZiNw1pCinZA==
+gatsby-plugin-feed@^2.5.10:
+  version "2.5.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.10.tgz#2c08eb4e29139ce7230c18cdca65d7bbb282118d"
+  integrity sha512-mowkzuGDqETYgi6IsKaMVIlzm1fkUfuLbMPIS1mpTdgCCtwXQ82SMQePoFwPQ/eHbsOwl8++tENhP3OkMOqYig==
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@hapi/joi" "^15.1.1"
