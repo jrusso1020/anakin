@@ -46,11 +46,11 @@ const About = ({ data, location }: Props) => {
       <H1>About Me</H1>
       <P>
         Hi I'm James Russo and this is where I'll be writing down my thoughts
-        and experiences mostly involving such software and web development.
-        However, fairwarning any number of other topics can pop up into this
-        blog. This is my first attempt at a blog, and as an engineer I apologize
-        in advance for my writing and design skills. Hopefully they will improve
-        as I work on this more and more.
+        and experiences mostly involving software and web development. However,
+        fairwarning any number of other topics can pop up into this blog. This
+        is my first attempt at a blog, and as an engineer I apologize in advance
+        for my writing and design skills. Hopefully they will improve as I work
+        on this more and more.
         <br />
         <br />I am currently working at{" "}
         <a href="https://brex.com" target="_blank" rel="noopener noreferrer">
@@ -67,7 +67,7 @@ const About = ({ data, location }: Props) => {
           Cash{" "}
         </a>{" "}
         team building modern technology to replace antiquated banking systems.
-        Previously I worked as a fullstack engineer working full time in NYC for
+        Previously I worked as a fullstack engineer in NYC for
         <a
           href="https://secure.rocketsofawesome.com"
           target="_blank"
@@ -76,8 +76,8 @@ const About = ({ data, location }: Props) => {
           {" "}
           Rockets of Awesome
         </a>
-        , a child clothing subscription service and ecommerce brand. I also was
-        the first engineer at a startup called
+        , a childrens clothing subscription service and ecommerce brand. I also
+        was the first engineer at an IoT and Analytics startup called
         <a
           href="https://iteratelabs.co"
           target="_blank"
@@ -87,13 +87,13 @@ const About = ({ data, location }: Props) => {
           Iterate Labs{" "}
         </a>
         which wants to use data-driven insights to develop safer and more
-        comfortable workplaces. I graduated from{" "}
+        comfortable workplaces. In 2017, I graduated from{" "}
         <a href="https://cornell.edu" target="_blank" rel="noopener noreferrer">
           {" "}
           Cornell University{" "}
         </a>
-        in 2017 with a B.S. in Computer Science, where I concentrated in Machine
-        Learning and also did research in Systems, Security, and Blockchain
+        with a B.S. in Computer Science, where I concentrated in Machine
+        Learning and also researched Systems, Security, and Blockchain
         technologies under
         <a
           href="http://hackingdistributed.com/"
@@ -120,9 +120,9 @@ const About = ({ data, location }: Props) => {
         actively use AWS Technologies, Kubernetes, and Docker. But in the
         past(and still occasionally), I have worked on projects in Ruby on
         Rails, Flask and Python, React + Redux, Next.js, Express + Node.js, and
-        Gatsby.js. However, I'm constantly evaluating and learning about new
-        technologies and will try to talk about what I'm using and find
-        interesting on this blog.
+        Gatsby.js. However, I'm constantly evaluating and learning new
+        technologies and will try to talk about anything I find interesting on
+        this blog.
         <br />
         <br />
         Some of my favorite websites to read and stay up to date with tech and
