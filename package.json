@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
