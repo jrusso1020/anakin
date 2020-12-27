@@ -4,6 +4,7 @@ date: "2019-08-15"
 description: This is a tutorial about how to deploy a Gatsby.js application to an S3 bucket using CircleCI.
 tags: ["Gatsby", "Gatsby.js", "S3", "AWS", "circleCI", "devops"]
 ---
+
 _Edited 2020-12-26 to split up build and deploy steps to run build on every branch_
 
 So you've created your first Gatsby.js application and you'd like to deploy it on AWS instead of Netlify like everyone else. I personally chose AWS because this was an application for work and the rest of our stack is hosted on AWS as well. My approach (and many others) to deploying applications is to first do it manually and then automate it using CI/CD such as CircleCI. So in this tutorial I will start with the initial manual process, which is documented elsewhere as well, and then move to the automated process.
@@ -152,7 +153,6 @@ workflows:
             branches:
               only:
                 - main
-
 ```
 
 As you can see there are three jobs in the config file. The first downloads the dependencies, the second builds the project, and then the final handles the deploy step. Once you create this file you have to go into CircleCI and set your environment variables. Under Settings in the CircleCI project, you can go to AWS Permissions and set your access key and secret key that were created for the manual steps. I also set another environment variable for the aws region of my bucket using the AWS_DEFAULT_REGION key.
@@ -240,6 +240,7 @@ deploy:
         command: |
           yarn run deploy
 ```
+
 Lasty we have our deploy step which attaches the workspace from the previous step and restores the necessary caches. It then runs the deploy script to s3.
 
 Finally we have the workflow which handles only deploying on pushes to our main branch.

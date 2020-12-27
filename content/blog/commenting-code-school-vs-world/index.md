@@ -2,7 +2,13 @@
 title: "Commenting Code: School vs Industry"
 date: "2020-12-26"
 description: Back in school, teachers and TAs made it commenting your code seem like a necessity that everyone constantly does as a software engineer. Without comments, you shouldn't consider your code complete. However, since working in industry I find it much different in practice. This post outlines my own observations on when software engineers actually comment their code and when it's important.
-tags: ["software engineering", "software development", "commenting code", “documenting code”]
+tags:
+  [
+    "software engineering",
+    "software development",
+    "commenting code",
+    “documenting code”,
+  ]
 ---
 
 ## Commenting Code in School
@@ -14,7 +20,9 @@ In school, professors and teaching assistants constantly talked about the need t
 A junior engineer might quickly notice the lack of comments in a real codebase. In a production codebase engineers should strive to break up and write their code in a readable and digestible way. This in turn leads to less inline comments being needed. Code reviews, linting tools, and formatting tools can help ensure readable and digestible code by automatically looking for code smells(a sign of a deeper problem) and readability issues in your code. Properly naming your functions and variables can go a long way instead of using comments. Clearly written code can help cut down on unnecessary comments. However, this doesn't mean that comments don't exist in industry codebases.
 
 ### Comments for Complexity or Edge Cases
+
 I've seen three main reasons for commenting code in professional codebases. The first normally occurs around a particularly complex bit of code, sometimes written to handle edge cases. Generally speaking, software engineers generally write straightforward code, similar to other code paths. However, every once in a while, someone has to solve a particular nuanced business case, handle a weird edge case, or use a rarely used piece of a programming language/framework/library. It might be necessary to write comments in your code to let future users know what you are doing and why. One example from my recent work, I had to write some complex date and datetime manipulation logic for scheduling. This was a little more complex than the day to day work of CRUD operations, so it made sense to write comments about what the code was doing and why. It also had a lot of edge cases that required proper code documentation as well. This allows future code readers to know why the code has added complexity and what it is trying to accomplish. Below is an example of a nuanced business function. The TLDR is that the function takes a date and a day of the week, the date can be the same day of the week or an earlier date. If it's an earlier date we want to push it forward to the right day of the week (in practice this is explained in the functions documentation).
+
 ```Elixir
 def push_forward_to_correct_day(%Date{} = date, day_of_week) do
   # gets the numerical day of week expected to send on value [1,7](mon-sun)
@@ -38,7 +46,9 @@ end
 ```
 
 ### Comments for TODOs
+
 Another reason for commenting code is leaving TODOs or other notes for things that weren't handled yet but should be. This isn't something I necessarily agree with, and think engineers should strive to limit as much as possible. TODOs in general should be seen as technical debt since you are aware of something more that you could do to improve your codebase. TODOs are a good way to callout things that need to be done, but more often than not, they will not be handled in a timely manner and if they could be handled with a little more time you should do your best to handle it. Nevertheless, if you are in the process of developing or refactoring, it is okay to leave yourself TODOs to remember to come back to them. Startups need to move fast and therefore acquire a lot of TODOs and other tech debt, so they are common in such an environment.
+
 ```Elixir
 # TODO: Make this function handle other currencies besides USD
 def add_balances(usd_balance_amount, usd_balance_amount) do
@@ -47,6 +57,7 @@ end
 ```
 
 ### Documenting your code inline
+
 The third main reason I've seen in practice for commenting code is to document your code inline. Documentation in general is a whole other topic we'll discuss next, but inline documentation is a good practice to have. This doesn't mean commenting every line of your code, but is generally used as a way to document your functions/methods(functionality as well as parameters and return values) and modules/classes. Some languages have ways to generate documentation from inline documentation, and if you are using one of these languages take advantage of it and write documentation! Elixir is a language that is great for this because you can write method documentation and module documentation that you can auto generate and even deploy and host publicly for free. This provides a great developer experience for open source projects and can even be used to host internal documentation. Elixir even goes a step further and allows you to define and run tests for functions in your documentation, which documents your functionality with examples and adds tests. Check out an [example in the Elixir codebase](https://github.com/elixir-lang/elixir/blob/master/lib/elixir/lib/calendar/date.ex) to see what good inline documentation looks like.
 
 ## Code Documentation
