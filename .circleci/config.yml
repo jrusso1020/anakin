@@ -44,11 +44,11 @@ jobs:
           command: |
             yarn run build
       - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ checksum ".cache" }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
           paths:
             - ./.cache
       - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ checksum "public" }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-public
           paths:
             - ./public
   deploy:
@@ -61,9 +61,9 @@ jobs:
       - restore_cache:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ checksum ".cache" }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
       - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ checksum "public" }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-public
       - run:
           name: Deploy
           command: |
