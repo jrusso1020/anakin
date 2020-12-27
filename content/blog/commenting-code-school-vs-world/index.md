@@ -1,5 +1,5 @@
 ---
-title: Commenting Code: School vs Industry
+title: "Commenting Code: School vs Industry"
 date: "2020-12-26"
 description: Back in school, teachers and TAs made it commenting your code seem like a necessity that everyone constantly does as a software engineer. Without comments, you shouldn't consider your code complete. However, since working in industry I find it much different in practice. This post outlines my own observations on when software engineers actually comment their code and when it's important.
 tags: ["software engineering", "software development", "commenting code", “documenting code”]

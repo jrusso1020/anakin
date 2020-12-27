@@ -1,7 +1,7 @@
 ---
 version: 2.1
 jobs:
-  setup_and_lint:
+  dependencies:
     docker:
       - image: circleci/node:15.5.0
     working_directory: ~/anakin
@@ -21,13 +21,6 @@ jobs:
           name: Install Dependencies
           command: |
             yarn install --immutable
-            echo "--- Prettier"
-            yarn run format
-            FORMAT_RESULT=$?
-            if [ $FORMAT_RESULT -ne 0 ]; then
-              echo "^^^ +++"
-              exit 1
-            fi
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -37,7 +30,24 @@ jobs:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ~/anakin
-  build_and_deploy:
+  build:
+    docker:
+      - image: circleci/node:15.5.0
+    working_directory: ~/anakin
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Build
+          command: |
+            yarn run build
+      - save_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/anakin
+  deploy:
     docker:
       - image: circleci/node:15.5.0
     working_directory: ~/anakin
@@ -49,15 +59,18 @@ jobs:
       - run:
           name: Deploy
           command: |
-            yarn run build && yarn run deploy
+            yarn run deploy
 workflows:
   version: 2.1
   build:
     jobs:
-      - setup_and_lint
-      - build_and_deploy:
+      - dependencies
+      - build:
           requires:
-            - setup_and_lint
+            - dependencies
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only:
