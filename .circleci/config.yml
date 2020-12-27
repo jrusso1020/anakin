@@ -43,14 +43,6 @@ jobs:
           name: Build
           command: |
             yarn run build
-      - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
-          paths:
-            - ./.cache
-      - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - ~/anakin
       - persist_to_workspace:
           root: .
           paths:
@@ -62,10 +54,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Deploy
           command: |
