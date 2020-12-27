@@ -49,9 +49,6 @@ jobs:
       - run:
           name: Deploy
           command: |
-            yarn set version 2.4.0
-            yarn global add gatsby-cli
-            yarn add gatsby-plugin-s3
             yarn run build && yarn run deploy
 workflows:
   version: 2.1
