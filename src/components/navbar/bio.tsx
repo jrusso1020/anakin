@@ -5,17 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
-import styled, { css } from 'styled-components'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
+import styled, { css } from "styled-components"
 
-import Location from 'content/assets/location.svg'
-import Github from 'content/assets/github.svg'
-import LinkedIn from 'content/assets/linkedIn.svg'
-import { rhythm } from 'src/utils/typography'
-import { mobile } from 'src/utils/media'
-import { colors } from 'src/utils/colors'
+import Location from "content/assets/location.svg"
+import Github from "content/assets/github.svg"
+import LinkedIn from "content/assets/linkedIn.svg"
+import { rhythm } from "src/utils/typography"
+import { mobile } from "src/utils/media"
+import { colors } from "src/utils/colors"
 
 const Container = styled.div`
   margin-bottom: ${rhythm(2.5)};
@@ -56,7 +56,7 @@ const H5 = styled.h5`
   margin-top: 0;
   ${mobile(css`
     margin-left: ${rhythm(1)};
-    margin-bottom: ${rhythm(.5)};
+    margin-bottom: ${rhythm(0.5)};
   `)}
 `
 
@@ -97,7 +97,7 @@ const Bio = () => {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author } = data.site.siteMetadata
         return (
           <Container>
@@ -113,21 +113,32 @@ const Bio = () => {
             <div>
               <H3>{author}</H3>
               <H5>
-                Engineering at <StyledLink rel="noopener noreferrer" href="https://brex.com" target="_blank">Brex</StyledLink>
+                Engineering at{" "}
+                <StyledLink
+                  rel="noopener noreferrer"
+                  href="https://brex.com"
+                  target="_blank"
+                >
+                  Brex
+                </StyledLink>
               </H5>
               <P>
                 Fullstack engineer who knows nothing about design.
                 <br />
                 Example: this website.
               </P>
-              <List >
-                <li><LocationSvg />New York, NY</li>
+              <List>
+                <li>
+                  <LocationSvg />
+                  New York, NY
+                </li>
                 <li>
                   <GithubSvg />
                   <StyledLink
                     rel="noopener noreferrer"
                     href="https://github.com/jrusso1020"
-                    target="_blank">
+                    target="_blank"
+                  >
                     Github
                   </StyledLink>
                 </li>
@@ -136,7 +147,8 @@ const Bio = () => {
                   <StyledLink
                     href="https://www.linkedin.com/in/james-russo-56026897/"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                  >
                     LinkedIn
                   </StyledLink>
                 </li>
