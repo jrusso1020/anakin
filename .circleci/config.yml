@@ -1,24 +1,38 @@
 ---
 version: 2.1
 jobs:
-  setup:
+  setup_and_lint:
     docker:
-      - image: circleci/node:14.4.0
+      - image: circleci/node:15.5.0
     working_directory: ~/anakin
     steps:
       - checkout
       - run:
           name: Update npm
           command: 'sudo npm install -g npm@latest'
-      - restore_cache:
-          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
-          name: Install npm wee
-          command: npm install && npm rebuild
+          name: Install Yarn 2
+          command: npm install -g yarn@berry
+      - restore_cache:
+          - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          - yarn-packages-v1-{{ .Branch }}
+          - yarn-packages-v1
+      - run:
+          name: Install Dependencies
+          command: |
+            yarn install --frozen-lockfile --cache-folder ~/.cache/yarn
+            echo "--- Prettier"
+            yarn run format
+            FORMAT_RESULT=$?
+            if $FORMAT_RESULT -ne 0 ]; then
+              echo "^^^ +++"
+              exit 1
+            fi
       - save_cache:
-          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
+          name: Save Yarn Package Cache
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ~/.cache/yarn
       - save_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
@@ -31,19 +45,19 @@ jobs:
       - restore_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Deploy
           command: |
-            npm run build && npm run deploy
+            yarn run build && yarn run deploy
 workflows:
   version: 2.1
   build:
     jobs:
-      - setup
+      - setup_and_lint
       - build_and_deploy:
           requires:
-            - setup
+            - setup_and_lint
           filters:
             branches:
               only:
