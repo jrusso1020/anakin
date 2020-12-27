@@ -44,9 +44,13 @@ jobs:
           command: |
             yarn run build
       - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-repo-{{ .Branch }}-{{ checksum ".cache" }}
           paths:
-            - ~/anakin
+            - ./.cache
+      - save_cache:
+          key: v1-repo-{{ .Branch }}-{{ checksum "public" }}
+          paths:
+            - ./public
   deploy:
     docker:
       - image: circleci/node:15.5.0
@@ -56,6 +60,10 @@ jobs:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ checksum ".cache" }}
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ checksum "public" }}
       - run:
           name: Deploy
           command: |
