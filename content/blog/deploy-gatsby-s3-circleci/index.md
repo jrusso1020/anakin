@@ -4,6 +4,7 @@ date: "2019-08-15"
 description: This is a tutorial about how to deploy a Gatsby.js application to an S3 bucket using CircleCI.
 tags: ["Gatsby", "Gatsby.js", "S3", "AWS", "circleCI", "devops"]
 ---
+_Edited 2020-12-26 to split up build and deploy steps to run build on every branch_
 
 So you've created your first Gatsby.js application and you'd like to deploy it on AWS instead of Netlify like everyone else. I personally chose AWS because this was an application for work and the rest of our stack is hosted on AWS as well. My approach (and many others) to deploying applications is to first do it manually and then automate it using CI/CD such as CircleCI. So in this tutorial I will start with the initial manual process, which is documented elsewhere as well, and then move to the automated process.
 
@@ -67,122 +68,201 @@ Okay let's start but just looking at the `.circleci/config.yml` file that will b
 ---
 version: 2.1
 jobs:
-  setup:
+  dependencies:
     docker:
-      - image: circleci/node:10.15.3
-    working_directory: ~/application
+      - image: circleci/node:15.5.0
+    working_directory: ~/anakin
     steps:
       - checkout
       - run:
-          name: Update npm
-          command: "sudo npm install -g npm@latest"
+          name: Install Yarn 2
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            yarn set version 2.4.0
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          keys:
+            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-v1-{{ .Branch }}
+            - yarn-packages-v1
       - run:
-          name: Install npm wee
-          command: npm install
+          name: Install Dependencies
+          command: |
+            yarn install --immutable
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          name: Save Yarn Package Cache
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ./.yarn/cache
       - save_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - ~/application
-  build_and_deploy:
+            - ~/anakin
+  build:
     docker:
-      - image: circleci/node:10.15.3
-    working_directory: ~/application
+      - image: circleci/node:15.5.0
+    working_directory: ~/anakin
     steps:
       - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Build
+          command: |
+            yarn run build
+      - save_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
+          paths:
+            - ./.cache
+      - save_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/anakin
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  deploy:
+    docker:
+      - image: circleci/node:15.5.0
+    working_directory: ~/anakin
+    steps:
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Deploy
           command: |
-            npm run build && npm run deploy
+            yarn run deploy
 workflows:
   version: 2.1
   build:
     jobs:
-      - setup
-      - build_and_deploy:
+      - dependencies
+      - build:
           requires:
-            - setup
+            - dependencies
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only:
-                - master
+                - main
+
 ```
 
-As you can see there are two jobs in the config file. The first sets up your project and then the second and final handles the build and deploy steps. Technically you can break up build and deploy into individual steps but I just kept them the same. Once you create this file you have to go into CircleCI and set your environment variables. Under Settings in the CircleCI project, you can go to AWS Permissions and set your access key and secret key that were created for the manual steps. I also set another environment variable for the aws region of my bucket using the AWS_DEFAULT_REGION key.
+As you can see there are three jobs in the config file. The first downloads the dependencies, the second builds the project, and then the final handles the deploy step. Once you create this file you have to go into CircleCI and set your environment variables. Under Settings in the CircleCI project, you can go to AWS Permissions and set your access key and secret key that were created for the manual steps. I also set another environment variable for the aws region of my bucket using the AWS_DEFAULT_REGION key.
 
 Now let's take a look at our config file piece by piece. The first job looks like so
 
 ```yaml
-setup:
+dependencies:
   docker:
-    - image: circleci/node:10.15.3
-  working_directory: ~/application
+    - image: circleci/node:15.5.0
+  working_directory: ~/anakin
   steps:
     - checkout
     - run:
-        name: Update npm
-        command: "sudo npm install -g npm@latest"
+        name: Install Yarn 2
+        command: |
+          curl -o- -L https://yarnpkg.com/install.sh | bash
+          yarn set version 2.4.0
     - restore_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
+        keys:
+          - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          - yarn-packages-v1-{{ .Branch }}
+          - yarn-packages-v1
     - run:
-        name: Install npm wee
-        command: npm install
+        name: Install Dependencies
+        command: |
+          yarn install --immutable
     - save_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
+        name: Save Yarn Package Cache
+        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
         paths:
-          - node_modules
+          - ./.yarn/cache
     - save_cache:
-        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
         paths:
-          - ~/white-glove
+          - ~/anakin
 ```
 
-This uses the docker image that is the same node version used locally for development and sets the working directory. Then in the steps first we checkout the code. Then we make sure we are using the latest npm version. Next we try to restore the cache for our node_modules if it exists for this same `package.json`. Next we install all of our node modules. The final two steps are saving caches for our node_modules and repository to be used by the next jobs.
+This uses the docker image that is the same node version used locally for development and sets the working directory. Then in the steps first we checkout the code. Then install yarn and set the proper version. Next we try to restore the cache for our yarn packages if it exists for this same `yarn.lock`. Next we install all of our dependencies. The final two steps are saving caches for our yarn downloaded dependencies and the repository to be used by the next jobs.
 
 ```yaml
-build_and_deploy:
+build:
   docker:
-    - image: circleci/node:10.15.3
-  working_directory: ~/white-glove
+    - image: circleci/node:15.5.0
+  working_directory: ~/anakin
   steps:
     - restore_cache:
-        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
     - restore_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
+        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    - run:
+        name: Build
+        command: |
+          yarn run build
+    - save_cache:
+        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
+        paths:
+          - ./.cache
+    - save_cache:
+        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+        paths:
+          - ~/anakin
+    - persist_to_workspace:
+        root: .
+        paths:
+          - .
+```
+
+This code restores the caches we created in the last step so we don't need to checkout code again or reinstall modules. It then builds the project. Lastly it saves the dependecies again to the cache and persists the workspace to be used by the next job. This is necessary since the build step creates the artifacts we will use for deployment
+
+```yaml
+deploy:
+  docker:
+    - image: circleci/node:15.5.0
+  working_directory: ~/anakin
+  steps:
+    - attach_workspace:
+        at: .
+    - restore_cache:
+        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+    - restore_cache:
+        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
     - run:
         name: Deploy
         command: |
-          npm run build && npm run deploy
+          yarn run deploy
 ```
+Lasty we have our deploy step which attaches the workspace from the previous step and restores the necessary caches. It then runs the deploy script to s3.
 
-This code restores the caches we created in the last step so we don't need to checkout code again or reinstall modules. It then builds and deploys our code using the commands we ran locally.
-
-Finally we have the workflow which handles only deploying on pushes to certain branches
+Finally we have the workflow which handles only deploying on pushes to our main branch.
 
 ```yaml
 workflows:
   version: 2.1
   build:
     jobs:
-      - setup
-      - build_and_deploy:
+      - dependencies
+      - build:
           requires:
-            - setup
+            - dependencies
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only:
-                - master
+                - main
 ```
 
-As you can see we run the `setup` job every time but we only run the `build_and_deploy` job when the branch is the master branch and we require the `setup` job to be run first. You can also add in a test job to occur after setup and to be run every time, and be required by `build_and_deploy` but that's a relatively simple addon. Another add on is to handle pushing to either staging or production based on the branch, but that is also covered by other documentation.
+As you can see we run the `dependencies` job every time followed by the `build` job, but we only run the `deploy` job when the branch is the main branch and we require the `build` job to be run first. Running the `dependencies` job and `build` job on every branch allows us to catch build errors before they are merged to main. You can also add in a test job to occur after setup and to be run every time, and be required by `deploy` but that's a relatively simple addon. Another add on is to handle pushing to either staging or production based on the branch, but that is also covered by other documentation.
 
 Now if you have setup your project on CircleCI, you should be able to push to your master branch and see that your application is deployed to your S3 bucket!
 
