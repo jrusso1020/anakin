@@ -1,11 +1,11 @@
-import React from 'react'
-import styled, { css }  from 'styled-components'
+import React from "react"
+import styled, { css } from "styled-components"
 
 import { rhythm } from "src/utils/typography"
-import { colors } from 'src/utils/colors'
-import { mobile } from 'src/utils/media'
-import Bio from './bio'
-import DesktopNavbar from './desktopNavbar'
+import { colors } from "src/utils/colors"
+import { mobile } from "src/utils/media"
+import Bio from "./bio"
+import DesktopNavbar from "./desktopNavbar"
 
 const Container = styled.div`
   color: ${colors.keppel};

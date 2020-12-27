@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
-import Sidebar from './sidebar'
-import MobileNavbar from './mobileNavbar'
+import Sidebar from "./sidebar"
+import MobileNavbar from "./mobileNavbar"
 
 interface Props {
   location: Location

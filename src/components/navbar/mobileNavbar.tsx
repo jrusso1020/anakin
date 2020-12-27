@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components'
-import { CSSTransition } from 'react-transition-group'
+import React, { useState } from "react"
+import styled, { css } from "styled-components"
+import { CSSTransition } from "react-transition-group"
 
-import { rhythm } from 'src/utils/typography'
-import { mobile } from 'src/utils/media'
-import { colors } from 'src/utils/colors'
-import Hamburger from 'content/assets/hamburger.svg'
-import NavLink from './navLink'
-import Bio from './bio'
+import { rhythm } from "src/utils/typography"
+import { mobile } from "src/utils/media"
+import { colors } from "src/utils/colors"
+import Hamburger from "content/assets/hamburger.svg"
+import NavLink from "./navLink"
+import Bio from "./bio"
 
 const NavList = styled.ul`
   list-style-type: none;
@@ -18,7 +18,7 @@ const NavList = styled.ul`
   width: 100%;
   &.slide-enter {
     transform: translateY(-100%);
-    transition: .3s cubic-bezier(0, 1, 0.5, 1);
+    transition: 0.3s cubic-bezier(0, 1, 0.5, 1);
   }
 
   &.slide-enter-active {
@@ -27,7 +27,7 @@ const NavList = styled.ul`
 
   &.slide-exit {
     transform: translateY(0%);
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   &.slide-exit-active {
@@ -71,42 +71,52 @@ interface Props {
 
 const MobileNavbar = ({ location }: Props) => {
   const [showNav, setShowNav] = useState(false)
-  return <Container>
-    <Nav>
-      <HamburgerMenu onClick={() => setShowNav(!showNav)} />
-      <CSSTransition
-        in={showNav}
-        classNames="slide"
-        timeout={300}
-        unmountOnExit
-      >
-        {() => <NavList>
-          <NavListItem>
-            <NavLink
-              partiallyActive={!["/about/"].includes(location.pathname) && !location.pathname.includes('tags')}
-              to={`/`}>
-              Blog
-            </NavLink>
-          </NavListItem>
-          <NavListItem>
-            <NavLink
-              partiallyActive={location.pathname === '/about/'}
-              to={`/about/`}>
-              About
-            </NavLink>
-          </NavListItem>
-          <NavListItem>
-            <NavLink
-              partiallyActive={location.pathname.includes('tags')}
-              to={`/tags/`}>
-              Tags
-            </NavLink>
-          </NavListItem>
-        </NavList>}
-      </CSSTransition>
-    </Nav>
-    <Bio />
-  </Container>
+  return (
+    <Container>
+      <Nav>
+        <HamburgerMenu onClick={() => setShowNav(!showNav)} />
+        <CSSTransition
+          in={showNav}
+          classNames="slide"
+          timeout={300}
+          unmountOnExit
+        >
+          {() => (
+            <NavList>
+              <NavListItem>
+                <NavLink
+                  partiallyActive={
+                    !["/about/"].includes(location.pathname) &&
+                    !location.pathname.includes("tags")
+                  }
+                  to={`/`}
+                >
+                  Blog
+                </NavLink>
+              </NavListItem>
+              <NavListItem>
+                <NavLink
+                  partiallyActive={location.pathname === "/about/"}
+                  to={`/about/`}
+                >
+                  About
+                </NavLink>
+              </NavListItem>
+              <NavListItem>
+                <NavLink
+                  partiallyActive={location.pathname.includes("tags")}
+                  to={`/tags/`}
+                >
+                  Tags
+                </NavLink>
+              </NavListItem>
+            </NavList>
+          )}
+        </CSSTransition>
+      </Nav>
+      <Bio />
+    </Container>
+  )
 }
 
 export default MobileNavbar
