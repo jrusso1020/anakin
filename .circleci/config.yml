@@ -51,7 +51,7 @@ jobs:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-public
           paths:
             - ./public
-       - save_cache:
+      - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
