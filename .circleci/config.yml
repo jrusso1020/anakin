@@ -8,23 +8,23 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@latest'
-      - run:
           name: Install Yarn 2
-          command: npm install -g yarn@berry
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            yarn set version 2.4.0
       - restore_cache:
-          - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-          - yarn-packages-v1-{{ .Branch }}
-          - yarn-packages-v1
+          keys:
+            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-v1-{{ .Branch }}
+            - yarn-packages-v1
       - run:
           name: Install Dependencies
           command: |
-            yarn install --frozen-lockfile --cache-folder ~/.cache/yarn
+            yarn install --immutable
             echo "--- Prettier"
             yarn run format
             FORMAT_RESULT=$?
-            if $FORMAT_RESULT -ne 0 ]; then
+            if [ $FORMAT_RESULT -ne 0 ]; then
               echo "^^^ +++"
               exit 1
             fi
@@ -32,7 +32,7 @@ jobs:
           name: Save Yarn Package Cache
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
-            - ~/.cache/yarn
+            - ./.yarn/cache
       - save_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
