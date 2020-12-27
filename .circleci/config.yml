@@ -48,31 +48,24 @@ jobs:
           paths:
             - ./.cache
       - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-public
-          paths:
-            - ./public
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-          paths:
-            - ./.yarn/cache
-      - save_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ~/anakin
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
   deploy:
     docker:
       - image: circleci/node:15.5.0
     working_directory: ~/anakin
     steps:
+      - attach_workspace:
+          at: .
       - restore_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-      - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
-      - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-public
       - run:
           name: Deploy
           command: |
