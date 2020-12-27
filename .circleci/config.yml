@@ -49,7 +49,7 @@ jobs:
       - run:
           name: Deploy
           command: |
-            yarn global add gatsby-cli && yarn run build && yarn run deploy
+            yarn global add gatsby-cli && yarn add gatsby-plugin-s3 && yarn run build && yarn run deploy
 workflows:
   version: 2.1
   build:
