@@ -111,14 +111,6 @@ jobs:
           name: Build
           command: |
             yarn run build
-      - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
-          paths:
-            - ./.cache
-      - save_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - ~/anakin
       - persist_to_workspace:
           root: .
           paths:
@@ -130,17 +122,13 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Deploy
           command: |
             yarn run deploy
 workflows:
   version: 2.1
-  build:
+  build_and_deploy:
     jobs:
       - dependencies
       - build:
@@ -207,21 +195,13 @@ build:
         name: Build
         command: |
           yarn run build
-    - save_cache:
-        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}-cache
-        paths:
-          - ./.cache
-    - save_cache:
-        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-        paths:
-          - ~/anakin
     - persist_to_workspace:
         root: .
         paths:
           - .
 ```
 
-This code restores the caches we created in the last step so we don't need to checkout code again or reinstall modules. It then builds the project. Lastly it saves the dependecies again to the cache and persists the workspace to be used by the next job. This is necessary since the build step creates the artifacts we will use for deployment
+This code restores the caches we created in the last step so we don't need to checkout code again or reinstall modules. It then builds the project. Lastly it persists the workspace to be used by the next job. This is necessary since the build step creates the artifacts we will use for deployment.
 
 ```yaml
 deploy:
@@ -231,24 +211,20 @@ deploy:
   steps:
     - attach_workspace:
         at: .
-    - restore_cache:
-        key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-    - restore_cache:
-        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
     - run:
         name: Deploy
         command: |
           yarn run deploy
 ```
 
-Lasty we have our deploy step which attaches the workspace from the previous step and restores the necessary caches. It then runs the deploy script to s3.
+Lasty we have our deploy step which attaches the workspace from the previous step. It then runs the deploy script to s3.
 
 Finally we have the workflow which handles only deploying on pushes to our main branch.
 
 ```yaml
 workflows:
   version: 2.1
-  build:
+  build_and_deploy:
     jobs:
       - dependencies
       - build:

@@ -60,7 +60,7 @@ jobs:
             yarn run deploy
 workflows:
   version: 2.1
-  build:
+  build_and_deploy:
     jobs:
       - dependencies
       - build:
