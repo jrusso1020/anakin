@@ -78,14 +78,20 @@ const List = styled.ul`
 
 const LocationSvg = styled(Location)`
   height: 1em;
+  top: 0.05em;
+  position: relative;
 `
 
 const GithubSvg = styled(Github)`
   height: 1em;
+  top: 0.1em;
+  position: relative;
 `
 
 const LinkedInSvg = styled(LinkedIn)`
   height: 1em;
+  top: 0.1em;
+  position: relative;
 `
 
 const StyledLink = styled.a`

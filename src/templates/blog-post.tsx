@@ -8,6 +8,7 @@ import Layout from "src/components/layout"
 import SEO from "src/components/seo"
 import H1 from "src/components/H1"
 import Tags from "src/components/tags"
+import BlogDateAndTime from "src/components/blogDateAndTime"
 import { rhythm, scale } from "src/utils/typography"
 import { colors } from "src/utils/colors"
 
@@ -42,16 +43,18 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         keywords={post.frontmatter.tags}
       />
       <H1>{post.frontmatter.title}</H1>
-      <p
+      <div
         style={{
           ...scale(-1 / 5),
-          display: `block`,
           marginBottom: rhythm(0.5),
           marginTop: rhythm(-1),
         }}
       >
-        {post.frontmatter.date} | <b>{post.timeToRead} min read</b>
-      </p>
+        <BlogDateAndTime
+          date={post.frontmatter.date}
+          timeToRead={post.timeToRead}
+        />
+      </div>
       <Tags tags={post.frontmatter.tags} />
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr

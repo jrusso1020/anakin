@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Tags from "src/components/tags"
+import BlogDateAndTime from "src/components/blogDateAndTime"
 import { rhythm } from "src/utils/typography"
 import { colors } from "src/utils/colors"
 
@@ -27,7 +28,10 @@ const PostPreview = ({ node }: Props) => {
         <StyledLink to={node.fields.slug}>{title}</StyledLink>
       </H3>
       <small>
-        {node.frontmatter.date} | <b>{node.timeToRead} min read</b>{" "}
+        <BlogDateAndTime
+          date={node.frontmatter.date}
+          timeToRead={node.timeToRead}
+        />
       </small>
       <Tags tags={node.frontmatter.tags} />
       <p
