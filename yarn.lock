@@ -4493,7 +4493,7 @@ __metadata:
     "@types/styled-components": ^5.1.7
     babel-plugin-styled-components: ^1.12.0
     disqus-react: ^1.0.10
-    gatsby: ^2.29.2
+    gatsby: ^2.29.3
     gatsby-cli: ^2.16.2
     gatsby-image: ^2.8.0
     gatsby-plugin-catch-links: ^2.7.0
@@ -4520,7 +4520,7 @@ __metadata:
     gatsby-transformer-sharp: ^2.9.0
     lodash: ^4.17.20
     prettier: ^2.2.1
-    prismjs: ^1.22.0
+    prismjs: ^1.23.0
     react: ^16.14.0
     react-dom: ^16.14.0
     react-helmet: ^6.1.0
@@ -9518,9 +9518,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^2.29.2":
-  version: 2.29.2
-  resolution: "gatsby@npm:2.29.2"
+"gatsby@npm:^2.29.3":
+  version: 2.29.3
+  resolution: "gatsby@npm:2.29.3"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -9680,7 +9680,7 @@ fsevents@~2.1.2:
     react-dom: ^16.4.2
   bin:
     gatsby: ./cli.js
-  checksum: 0921b4a0f8df09fe70d04bf69ef49a2344fa24dbb7578b14137a72f9b3050d453e5f5a7064f2b61a698175213f4a4719cc31e6849bc343477d5c2dd26e3cf831
+  checksum: f27c4ef00fb238114aafacd9811dfb584345dcf406e6b69f430492ab58e64f67bb91a5d8f4d56d05afb222d3cc13ee6865cda9cf02b08ad33a5efa66beaa0a64
   languageName: node
   linkType: hard
 
@@ -15881,15 +15881,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prismjs@npm:^1.22.0":
-  version: 1.22.0
-  resolution: "prismjs@npm:1.22.0"
+"prismjs@npm:^1.23.0":
+  version: 1.23.0
+  resolution: "prismjs@npm:1.23.0"
   dependencies:
     clipboard: ^2.0.0
   dependenciesMeta:
     clipboard:
       optional: true
-  checksum: c9370f1f6a8c419cf7d712527dede91de33080ecdd9265cf6a7f0938cfe75e954dae4a02915ac8b9df4485f0c9fbab94a7babfedb7076a83ed57b9b132255e34
+  checksum: 9d55785f1ea68e2a2e6b0a5ea1241811ed986182af76053ecf50245521414597d70b17dc5804a7ad961dfd459e6883a89ad3f86bb064ac3484e3ef24b7891f4f
   languageName: node
   linkType: hard
 
