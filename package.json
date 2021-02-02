@@ -53,7 +53,7 @@
     "yarn": "^1.22.10"
   },
   "devDependencies": {
-    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-root-import": "^2.0.6",
     "prettier": "^2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
