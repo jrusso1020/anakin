@@ -2,7 +2,7 @@
 title: Deploying a Gatsby Application to an S3 Bucket Using CircleCI
 date: "2019-08-15"
 description: This is a tutorial about how to deploy a Gatsby.js application to an S3 bucket using CircleCI.
-tags: ["Gatsby", "Gatsby.js", "S3", "AWS", "circleCI", "devops"]
+tags: ["Gatsby", "Gatsby.js", "S3", "AWS", "circleCI", "devops", "yarn 2"]
 ---
 
 _Edited 2020-12-26 to split up build and deploy steps to run build on every branch_
