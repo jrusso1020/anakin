@@ -4482,14 +4482,14 @@ __metadata:
     "@types/styled-components": ^5.1.7
     babel-plugin-styled-components: ^1.12.0
     disqus-react: ^1.0.11
-    gatsby: ^2.32.0
+    gatsby: ^2.32.4
     gatsby-cli: ^2.19.1
     gatsby-image: ^2.9.0
     gatsby-plugin-catch-links: ^2.9.0
     gatsby-plugin-feed: ^2.13.0
     gatsby-plugin-google-analytics: ^2.11.0
     gatsby-plugin-manifest: ^2.12.0
-    gatsby-plugin-offline: ^3.9.0
+    gatsby-plugin-offline: ^3.10.1
     gatsby-plugin-react-helmet: ^3.9.0
     gatsby-plugin-react-svg: ^3.0.0
     gatsby-plugin-root-import: ^2.0.6
@@ -9148,20 +9148,20 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "gatsby-plugin-offline@npm:3.9.0"
+"gatsby-plugin-offline@npm:^3.10.1":
+  version: 3.10.1
+  resolution: "gatsby-plugin-offline@npm:3.10.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     cheerio: ^1.0.0-rc.3
-    gatsby-core-utils: ^1.9.0
+    gatsby-core-utils: ^1.10.0
     glob: ^7.1.6
     idb-keyval: ^3.2.0
     lodash: ^4.17.20
     workbox-build: ^4.3.1
   peerDependencies:
     gatsby: ^2.4.0
-  checksum: d8c6eec8c6ce5ed62f351bb3a38b80f97e55a14fd198da33f9dde4baecbdc76c37e3a5408398c15c95850a50ee38d7be6531b96cebf866affc89e3a25778a625
+  checksum: 0a85b6f088b9aafd5735558e1ba14dd0e68ae0e8295984d04bf70ca878bfd1b8935f8ea0efc875db87bd63a2bd3082e3e62e0986bec9b089c1264c2800a6cad5
   languageName: node
   linkType: hard
 
@@ -9638,9 +9638,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^2.32.0":
-  version: 2.32.3
-  resolution: "gatsby@npm:2.32.3"
+"gatsby@npm:^2.32.4":
+  version: 2.32.4
+  resolution: "gatsby@npm:2.32.4"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -9779,7 +9779,6 @@ fsevents@~2.3.1:
     string-similarity: ^1.2.2
     strip-ansi: ^5.2.0
     style-loader: ^0.23.1
-    terminal-link: ^2.1.1
     terser-webpack-plugin: ^2.3.8
     tmp: ^0.2.1
     true-case-path: ^2.2.1
@@ -9802,7 +9801,7 @@ fsevents@~2.3.1:
     react-dom: ^16.4.2 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: b4d57d3449a5e5ed7e638539fff429d2c9f42317cfc5aa9f1c5f377980204e0dccbc554a8480fe1b9501975e12246bf736d8605ec9c17b68545af84383fc9c48
+  checksum: f43a5035568704c9b290a2e260e50a10eed553d683c464fea8d9ef189e5bb393d917bd106ffff47158971ea7ffd7cd73e01f21fdaad8c60ae7357f4603b2f0e0
   languageName: node
   linkType: hard
 
@@ -18949,16 +18948,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"supports-hyperlinks@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "supports-hyperlinks@npm:2.1.0"
-  dependencies:
-    has-flag: ^4.0.0
-    supports-color: ^7.0.0
-  checksum: 8b3b6d71ee298d7f9a3ff4bfb928bd037c0b691b01bdfebb77deb3384976cd78c180d564dc3689ce5fe254d323252f7064efa1364bf24ab81efa6b080e51eddb
-  languageName: node
-  linkType: hard
-
 "svg-react-loader@npm:^0.4.4, svg-react-loader@npm:^0.4.6":
   version: 0.4.6
   resolution: "svg-react-loader@npm:0.4.6"
@@ -19107,16 +19096,6 @@ fsevents@~2.3.1:
   version: 2.2.1
   resolution: "term-size@npm:2.2.1"
   checksum: a013f688f6fc1b6410be3b2f7a04c3a9169e97186949b0bc33cc7c1943b0c88d9a943f81e518d9227cb817803e7a18c702f2971eafd6d8659ce4a1df94094246
-  languageName: node
-  linkType: hard
-
-"terminal-link@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "terminal-link@npm:2.1.1"
-  dependencies:
-    ansi-escapes: ^4.2.1
-    supports-hyperlinks: ^2.0.0
-  checksum: f84553e11e9dc9034c9a62aeada2985e2c50adf161b773b3e4a5cf174b0d14f6b8868eb1dcdf91c3f71e3d932a3be158b8742c2a43ee459e9b88a246d78a6dc1
   languageName: node
   linkType: hard
 
