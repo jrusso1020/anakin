@@ -4484,13 +4484,13 @@ __metadata:
     disqus-react: ^1.0.11
     gatsby: ^2.32.4
     gatsby-cli: ^2.19.1
-    gatsby-image: ^2.9.0
+    gatsby-image: ^2.11.0
     gatsby-plugin-catch-links: ^2.9.0
     gatsby-plugin-feed: ^2.13.0
     gatsby-plugin-google-analytics: ^2.11.0
     gatsby-plugin-manifest: ^2.12.0
     gatsby-plugin-offline: ^3.10.1
-    gatsby-plugin-react-helmet: ^3.9.0
+    gatsby-plugin-react-helmet: ^3.10.0
     gatsby-plugin-react-svg: ^3.0.0
     gatsby-plugin-root-import: ^2.0.6
     gatsby-plugin-s3: ^0.3.8
@@ -9039,14 +9039,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-image@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "gatsby-image@npm:2.9.0"
+"gatsby-image@npm:^2.11.0":
+  version: 2.11.0
+  resolution: "gatsby-image@npm:2.11.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     object-fit-images: ^3.2.4
     prop-types: ^15.7.2
-  checksum: 457b841999780ec1ee87b6d56afd820143498a4b49749eece5cf65bbab1066c7cf454e23ccc3f2e70f3ec4675fa95a72279f8dce63e75e4f397a216c45ce6dba
+  checksum: fb7e3bd8641c43872b1c8c8e665b9919fc972f04ecc4a6699d166585337ca359b498ba17352175352cfa248d8e49be9dd01e1c61ab32f50d683d439695c8bd40
   languageName: node
   linkType: hard
 
@@ -9183,15 +9183,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-react-helmet@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "gatsby-plugin-react-helmet@npm:3.9.0"
+"gatsby-plugin-react-helmet@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "gatsby-plugin-react-helmet@npm:3.10.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     gatsby: ^2.0.0
     react-helmet: ^5.1.3 || ^6.0.0
-  checksum: 71375100115f6e5b2f1544ac81a2d52ae45f29b77cc48695a006b8922ac900ef9c13d8b963b3a1197402c487ca73d2aba1b770e529cb8b7cd8261568474cf5b6
+  checksum: b46787121c0ce732ac38277c038efa9abdd05b10abf18e7602b3a675d6230f04461cb2d690a5c16554514648e8e94983e19f17fef66eb53278c7c322f8258715
   languageName: node
   linkType: hard
 
