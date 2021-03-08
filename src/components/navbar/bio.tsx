@@ -7,7 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled, { css } from "styled-components"
 
 import Location from "content/assets/location.svg"
@@ -34,7 +34,7 @@ const ImageContainer = styled.div`
   text-align: left;
 `
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(GatsbyImage)`
   min-width: 100;
   border-radius: 100%;
   margin: auto 0;
@@ -109,7 +109,7 @@ const Bio = () => {
           <Container>
             <ImageContainer>
               <StyledImage
-                fixed={data.avatar.childImageSharp.fixed}
+                image={data.avatar.childImageSharp.gatsbyImageData}
                 alt={author}
                 imgStyle={{
                   borderRadius: `50%`,
@@ -171,9 +171,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 100, height: 100) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 100, height: 100)
       }
     }
     site {

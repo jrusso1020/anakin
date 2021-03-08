@@ -11,7 +11,7 @@ jobs:
           name: Install Yarn 2
           command: |
             curl -o- -L https://yarnpkg.com/install.sh | bash
-            yarn set version 2.4.0
+            yarn set version 2.4.1
       - restore_cache:
           keys:
             - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
