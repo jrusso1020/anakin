@@ -32,7 +32,7 @@
     "gatsby-plugin-styled-components": "^4.0.0",
     "gatsby-plugin-typescript": "^3.0.0",
     "gatsby-plugin-typography": "^3.0.0",
-    "gatsby-react-router-scroll": "^4.0.1",
+    "gatsby-react-router-scroll": "^4.5.0",
     "gatsby-remark-copy-linked-files": "^3.0.0",
     "gatsby-remark-embed-gist": "^1.2.1",
     "gatsby-remark-images": "^4.0.0",
