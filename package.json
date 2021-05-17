@@ -14,7 +14,7 @@
     "babel-preset-gatsby": "^1.0.0",
     "css.escape": "^1.5.1",
     "disqus-react": "^1.0.11",
-    "event-source-polyfill": "^1.0.22",
+    "event-source-polyfill": "^1.0.24",
     "gatsby": "^3.5.0",
     "gatsby-cli": "^3.5.0",
     "gatsby-legacy-polyfills": "^1.0.0",
