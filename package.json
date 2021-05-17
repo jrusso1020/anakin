@@ -53,7 +53,7 @@
     "react-helmet": "^6.1.0",
     "react-is": "^17.0.1",
     "react-transition-group": "^4.4.1",
-    "react-typography": "^0.16.19",
+    "react-typography": "^0.16.20",
     "regenerator-runtime": "^0.13.7",
     "shallow-compare": "^1.2.2",
     "sharp": "^0.27.2",
