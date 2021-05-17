@@ -17,26 +17,26 @@ First off there are lots of great things about the Elixir programming language. 
 Elixir does a really good job when it comes to documentation. Via hexdocs, developers can easily write documentation inline with their code and then generate and host it for free! This makes it incredibly low effort to create documentation for your OSS. The Elixir language and other libraries developed by the core team take full advantage of hexdocs, creating very robust documentation. Hexdocs are very well designed which makes them incredibly easy to read and navigate as well. You can even write and run tests from documentation which is a great way to write multi-purpose code examples in your documentation. Just take a look at the [Elixir DateTime docs](https://hexdocs.pm/elixir/DateTime.html#content), the below `@doc` module attribute will generate the hexdocs and the examples will be run during tests just by adding `doctest DateTime` to the xxx_test.exs file.
 ```elixir
 @doc """
-  Compares two datetime structs.
-  Returns `:gt` if the first datetime is later than the second
-  and `:lt` for vice versa. If the two datetimes are equal
-  `:eq` is returned.
-  Note that both UTC and Standard offsets will be taken into
-  account when comparison is done.
-  ## Examples
-      iex> dt1 = %DateTime{year: 2000, month: 2, day: 29, zone_abbr: "AMT",
-      ...>                 hour: 23, minute: 0, second: 7, microsecond: {0, 0},
-      ...>                 utc_offset: -14400, std_offset: 0, time_zone: "America/Manaus"}
-      iex> dt2 = %DateTime{year: 2000, month: 2, day: 29, zone_abbr: "CET",
-      ...>                 hour: 23, minute: 0, second: 7, microsecond: {0, 0},
-      ...>                 utc_offset: 3600, std_offset: 0, time_zone: "Europe/Warsaw"}
-      iex> DateTime.compare(dt1, dt2)
-      :gt
-  """
-  @doc since: "1.4.0"
-  @spec compare(Calendar.datetime(), Calendar.datetime()) :: :lt | :eq | :gt
-  def compare(...) do
-  ...
+Compares two datetime structs.
+Returns `:gt` if the first datetime is later than the second
+and `:lt` for vice versa. If the two datetimes are equal
+`:eq` is returned.
+Note that both UTC and Standard offsets will be taken into
+account when comparison is done.
+## Examples
+    iex> dt1 = %DateTime{year: 2000, month: 2, day: 29, zone_abbr: "AMT",
+    ...>                 hour: 23, minute: 0, second: 7, microsecond: {0, 0},
+    ...>                 utc_offset: -14400, std_offset: 0, time_zone: "America/Manaus"}
+    iex> dt2 = %DateTime{year: 2000, month: 2, day: 29, zone_abbr: "CET",
+    ...>                 hour: 23, minute: 0, second: 7, microsecond: {0, 0},
+    ...>                 utc_offset: 3600, std_offset: 0, time_zone: "Europe/Warsaw"}
+    iex> DateTime.compare(dt1, dt2)
+    :gt
+"""
+@doc since: "1.4.0"
+@spec compare(Calendar.datetime(), Calendar.datetime()) :: :lt | :eq | :gt
+def compare(...) do
+...
 ```
 
 ### Pattern Matching
@@ -105,5 +105,7 @@ That being said, there are still a lot of good things about Ruby and some things
 Personally, the greatest thing about Ruby is the massive community and resources around it. Ruby started in 1995 whereas Elixir is a lot newer, being initially released in 2011. Ruby and Ruby on Rails have gained massive user bases and because of this have a huge number of resources. One of the best things about Ruby is the fact that there will almost always be a library(gem) for what you want to do and they generally are well maintained. On top of that there's a plethora of tutorials and resources to learn Ruby. A big pain point with Elixir is the smaller community and lack of open source libraries. Although there are a lot of learning resources for new Elixir developers. There's also a lot of great libraries built by the core Elixir team for most needs, but there's still not a lot of libraries in comparison to other languages. At Brex, we have needed to write a number of internal Elixir libraries for our specific needs or for third party services which don’t have an SDK in Elixir. A couple of other issues are that a lot of Elixir libraries aren't well maintained and go dormant often or are maintained by a single maintainer which makes it hard to get updates in a timely manner. That being said Elixir is still a fairly young language and with its continued growth hopefully it will improve.
 
 ### Monkey Patching
+_Edit: Since initially publishing this article I have gotten comments/emails about how you can implement monkey patching in Elixir. It involves copying the given libraries full module into your codebase and changing the necessary code to fit your needs. This will override the libraries implementation with your custom code. Although I was familiar with hot code releading in Elixir this did not come to mind as Monkey Patching. I think the main reason I have not seen this in Elixir is because it is an antipattern that should be avoided. For what it is worth, I think what I truly miss is Ruby's ability to easily override a libraries singular function with ease but in Elixir this would require redefining the whole module and changing bits and pieces. I will leave the original paragraph below though for posterity._
+
 Monkey patching is a way to extend or change a Ruby class, including within libraries, dynamically by writing code directly into your project. This makes it incredibly easy to personalize or customize library functionality for your personal needs or patch a bug as a stop gap until the underlying library can be fixed. In Elixir you can wrap open source libraries with your own code to extend or personalize it but this can be a lot of boilerplate and extra code to just add a simple change. More often than not this may also involve writing a macro which [should generally be avoided whenever possible](https://hexdocs.pm/elixir/master/library-guidelines.html#avoid-macros). However, this doesn't allow you to fix bugs in an underlying library like monkey patching does. You would need to fork a library and make the change yourself then point your project to your branch in order to do this without waiting for the underlying library to be fixed.
 
