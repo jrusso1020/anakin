@@ -40,7 +40,7 @@
     "gatsby-remark-responsive-iframe": "^3.0.0",
     "gatsby-remark-smartypants": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-remark": "^4.3.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "lodash": "^4.17.21",
     "mitt": "^2.1.0",
