@@ -29,7 +29,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^3.5.0",
-    "gatsby-plugin-styled-components": "^4.0.0",
+    "gatsby-plugin-styled-components": "^4.6.0",
     "gatsby-plugin-typescript": "^3.0.0",
     "gatsby-plugin-typography": "^3.0.0",
     "gatsby-react-router-scroll": "^4.5.0",
