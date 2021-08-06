@@ -149,6 +149,7 @@ module.exports = {
         icon: `static/images/profile-pic.jpg`,
       },
     },
+    `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
