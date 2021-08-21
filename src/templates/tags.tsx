@@ -55,7 +55,7 @@ const Tags = ({ pageContext, data, location }: Props) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     site {
       siteMetadata {
         title

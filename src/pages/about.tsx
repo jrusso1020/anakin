@@ -57,7 +57,30 @@ const About = ({ data, location }: Props) => {
           {" "}
           Brex{" "}
         </a>
-        on the{" "}
+        building internal developer tools like a CLI using
+        <a href="https://golang.org/" target="_blank" rel="noopener noreferrer">
+          {" "}
+          Golang{" "}
+        </a>
+        +
+        <a
+          href="https://github.com/spf13/cobra"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Cobra{" "}
+        </a>
+        and a developer portal using
+        <a
+          href="https://backstage.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Backstage{" "}
+        </a>
+        . Previously I worked on the{" "}
         <a
           href="https://brex.com/product/cash-management-account/"
           target="_blank"
@@ -66,8 +89,8 @@ const About = ({ data, location }: Props) => {
           {" "}
           Cash{" "}
         </a>{" "}
-        team building modern technology to replace antiquated banking systems.
-        Previously I worked as a fullstack engineer in NYC for
+        team at Brex building modern technology to replace antiquated banking
+        systems. Before Brex, I worked as a fullstack engineer in NYC for
         <a
           href="https://secure.rocketsofawesome.com"
           target="_blank"
@@ -115,12 +138,12 @@ const About = ({ data, location }: Props) => {
         .
         <br />
         <br />
-        On a day to day basis, I actively use Elixir, Postgresql, GraphQL,
+        On a day to day basis, I actively use Golang, Postgresql, GraphQL,
         Protocol Buffers, gRPC, and React with Typescript to name a few. I also
         actively use AWS Technologies, Kubernetes, and Docker. But in the
-        past(and still occasionally), I have worked on projects in Ruby on
-        Rails, Flask and Python, React + Redux, Next.js, Express + Node.js, and
-        Gatsby.js. However, I'm constantly evaluating and learning new
+        past(and still occasionally), I have worked on projects in Elixir, Ruby
+        on Rails, Flask and Python, React + Redux, Next.js, Express + Node.js,
+        and Gatsby.js. However, I'm constantly evaluating and learning new
         technologies and will try to talk about anything I find interesting on
         this blog.
         <br />
