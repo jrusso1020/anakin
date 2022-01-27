@@ -8,10 +8,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install Yarn 2
+          name: Install Yarn
           command: |
             curl -o- -L https://yarnpkg.com/install.sh | bash
-            yarn set version 2.4.2
+            yarn set version 3.1.1
       - restore_cache:
           keys:
             - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
