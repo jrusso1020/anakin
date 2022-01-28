@@ -30,6 +30,19 @@ jobs:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ~/anakin
+  format:
+    docker:
+      - image: cimg/node:16.13.2
+    working_directory: ~/anakin
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Build
+          command: |
+            yarn prettier --list-different src/**/*.{ts,tsx} content/blog/**/index.md
   build:
     docker:
       - image: cimg/node:16.13.2
@@ -67,9 +80,13 @@ workflows:
       - build:
           requires:
             - dependencies
+      - format:
+          requires:
+            - dependencies
       - deploy:
           requires:
             - build
+            - format
           filters:
             branches:
               only:
