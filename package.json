@@ -10,7 +10,7 @@
     "@types/styled-components": "^5.1.23",
     "anser": "^2.1.1",
     "babel-plugin-styled-components": "^2.0.2",
-    "babel-preset-gatsby": "^2.7.0",
+    "babel-preset-gatsby": "^2.8.0",
     "css.escape": "^1.5.1",
     "disqus-react": "^1.1.2",
     "event-source-polyfill": "^1.0.25",
