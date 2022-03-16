@@ -18,7 +18,7 @@
     "gatsby-cli": "^4.7.0",
     "gatsby-legacy-polyfills": "^2.6.0",
     "gatsby-link": "^4.6.0",
-    "gatsby-plugin-catch-links": "^4.7.0",
+    "gatsby-plugin-catch-links": "^4.9.0",
     "gatsby-plugin-feed": "^4.7.0",
     "gatsby-plugin-google-analytics": "^4.7.0",
     "gatsby-plugin-image": "^2.7.0",
