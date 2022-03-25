@@ -14,7 +14,7 @@
     "css.escape": "^1.5.1",
     "disqus-react": "^1.1.2",
     "event-source-polyfill": "^1.0.25",
-    "gatsby": "^4.7.2",
+    "gatsby": "^4.10.3",
     "gatsby-cli": "^4.10.0",
     "gatsby-legacy-polyfills": "^2.6.0",
     "gatsby-link": "^4.6.0",
