@@ -4817,10 +4817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.9":
-  version: 17.0.10
-  resolution: "@types/node@npm:17.0.10"
-  checksum: 979e83d642a2b4f18fa1a4233f884822c05abc7acd0836024aa964187f8446432b21f7913e72fe2b3927c4a811c27a0b6cd60ac7c4ac6a6762cfbab70782aa6a
+"@types/node@npm:^18.11.2":
+  version: 18.11.2
+  resolution: "@types/node@npm:18.11.2"
+  checksum: 0ff5c90fb9ab653e018b858479aea4d2f763b07b31f9502383d408936f525ca37cac82ea27774a0dd0356ff9badba2792a6a3fff94f79fd7c82ee2a892c43ed5
   languageName: node
   linkType: hard
 
@@ -6376,7 +6376,7 @@ __metadata:
   resolution: "boredhacking@workspace:."
   dependencies:
     "@mikaelkristiansson/domready": ^1.0.11
-    "@types/node": ^17.0.9
+    "@types/node": ^18.11.2
     "@types/styled-components": ^5.1.25
     anser: ^2.1.1
     babel-plugin-styled-components: ^2.0.2
