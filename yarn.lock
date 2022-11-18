@@ -6433,7 +6433,7 @@ __metadata:
     svg-react-loader: ^0.4.6
     typeface-merriweather: ^1.1.13
     typeface-montserrat: ^1.1.13
-    typescript: ^4.6.3
+    typescript: ^4.9.3
     typography: ^0.16.19
     typography-theme-wordpress-2016: ^0.16.19
   languageName: unknown
@@ -19900,23 +19900,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:^4.9.3":
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=493e53"
+"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: fe6bdc1afb2f145ddb7b0a3a31f96352209f6a5704d97f038414ea22ff9d8dd42f32cfb6652e30458d7d958d2d4e85de2df11c574899c6f750a6b3c0e90a3a76
+  checksum: ef65c22622d864497d0a0c5db693523329b3284c15fe632e93ad9aa059e8dc38ef3bd767d6f26b1e5ecf9446f49bd0f6c4e5714a2eeaf352805dc002479843d1
   languageName: node
   linkType: hard
 
