@@ -6457,7 +6457,7 @@ __metadata:
     gatsby-remark-copy-linked-files: ^5.17.0
     gatsby-remark-embed-gist: ^1.2.1
     gatsby-remark-images: ^6.25.0
-    gatsby-remark-prismjs: ^6.7.0
+    gatsby-remark-prismjs: ^6.25.0
     gatsby-remark-responsive-iframe: ^5.17.0
     gatsby-remark-smartypants: ^5.17.0
     gatsby-source-filesystem: ^4.10.1
@@ -10941,9 +10941,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^6.7.0":
-  version: 6.7.0
-  resolution: "gatsby-remark-prismjs@npm:6.7.0"
+"gatsby-remark-prismjs@npm:^6.25.0":
+  version: 6.25.0
+  resolution: "gatsby-remark-prismjs@npm:6.25.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     parse-numeric-range: ^1.2.0
@@ -10951,7 +10951,7 @@ fsevents@~2.3.2:
   peerDependencies:
     gatsby: ^4.0.0-next
     prismjs: ^1.15.0
-  checksum: a2fb31388424e8e12111db87ea4392fba6c96918f5ad0158b2eb191ed6b2eba91886de6506cafc55e89206d01af7a06f70d70c2d06aec41cc8ec6578a7950ab6
+  checksum: c919174ab1a3453bff8ddc37b78abdee20eefe34089226b076bd1b63c9401ad56846c3d32e7393ff7d0e05b435382080052d96558c46d71ee3299e2af2f7d3e1
   languageName: node
   linkType: hard
 
