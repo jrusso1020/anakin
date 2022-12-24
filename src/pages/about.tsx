@@ -82,7 +82,7 @@ const About = ({ data, location }: Props) => {
         </a>
         . Previously I worked on the{" "}
         <a
-          href="https://brex.com/product/cash-management-account/"
+          href="https://www.brex.com/product/business-account"
           target="_blank"
           rel="noopener noreferrer"
         >
