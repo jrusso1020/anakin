@@ -6450,7 +6450,7 @@ __metadata:
     gatsby-plugin-root-import: ^2.0.8
     gatsby-plugin-s3: ^0.3.8
     gatsby-plugin-sharp: ^4.10.2
-    gatsby-plugin-styled-components: ^5.10.0
+    gatsby-plugin-styled-components: ^5.25.0
     gatsby-plugin-typescript: ^4.6.0
     gatsby-plugin-typography: ^4.25.0
     gatsby-react-router-scroll: ^5.6.0
@@ -10716,18 +10716,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "gatsby-plugin-styled-components@npm:5.10.0"
+"gatsby-plugin-styled-components@npm:^5.25.0":
+  version: 5.25.0
+  resolution: "gatsby-plugin-styled-components@npm:5.25.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     babel-plugin-styled-components: ">1.5.0"
     gatsby: ^4.0.0-next
-    react: ^16.9.0 || ^17.0.0
-    react-dom: ^16.9.0 || ^17.0.0
+    react: ^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0
+    react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0
     styled-components: ">=2.0.0"
-  checksum: 7de235429b094ea1d56826a1c3712a353188ec1ccb693e03a89744d92a2146a802ea7fc04fbef74d22c4f27c2e47df465191cba07a6a9257b63f248e858dcc7e
+  checksum: ce47704b1f08d2f4d671ed95ae6dbdc94ef4804cec78277cba3cdf8d3ca1c225820f8cc42c820ad96e4e6140556820181e45e30ddcd5778ec6cf6d27a1400e67
   languageName: node
   linkType: hard
 
