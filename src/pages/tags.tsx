@@ -1,5 +1,4 @@
 import React from "react"
-import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
@@ -46,6 +45,12 @@ interface Props {
     }
   }
 }
+
+const kebabCase = (string) =>
+  string
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .replace(/[\s_]+/g, "-")
+    .toLowerCase()
 
 const TagsPage = ({
   location,

@@ -70,19 +70,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-gist",
-            options: {
-              // Optional:
-
-              // the github handler whose gists are to be accessed
-              username: 'jrusso1020',
-
-              // a flag indicating whether the github default gist css should be included or not
-              // default: true
-              includeDefaultCss: true
-            }
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,

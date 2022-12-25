@@ -1,5 +1,4 @@
 const path = require(`path`)
-const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -56,12 +55,16 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
+  const kebabCase = string => string
+        .replace(/([a-z])([A-Z])/g, "$1-$2")
+        .replace(/[\s_]+/g, '-')
+        .toLowerCase();
   // Extract tag data from query
   const tags = result.data.tagsGroup.group
   // Make tag pages
   tags.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/tags/${kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
