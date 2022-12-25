@@ -27,12 +27,13 @@ const NotFoundPage = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
       <H1>Not Found</H1>
       <P>You just hit a route that doesn&#39;t exist... the sadness.</P>
     </Layout>
   )
 }
+
+export const Head = () => <SEO title="404: Not Found" />
 
 export default NotFoundPage
 

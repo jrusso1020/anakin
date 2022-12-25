@@ -23,28 +23,31 @@ const BlogIndex = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={[
-          `boredhacking`,
-          `bored hacking`,
-          `bored`,
-          `hacking`,
-          `james russo`,
-          `james`,
-          `russo`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-        ]}
-      />
       {posts.map(({ node }, index) => (
         <PostPreview key={`postPreview-${index}`} node={node} />
       ))}
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="All posts"
+    keywords={[
+      `boredhacking`,
+      `bored hacking`,
+      `bored`,
+      `hacking`,
+      `james russo`,
+      `james`,
+      `russo`,
+      `blog`,
+      `gatsby`,
+      `javascript`,
+      `react`,
+    ]}
+  />
+)
 
 export default BlogIndex
 
