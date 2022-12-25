@@ -62,23 +62,6 @@ const TagsPage = ({
   },
 }: Props) => (
   <Layout location={location} title={title}>
-    <SEO
-      title="All posts"
-      keywords={[
-        `boredhacking`,
-        `bored hacking`,
-        `bored`,
-        `hacking`,
-        `james russo`,
-        `james`,
-        `russo`,
-        `blog`,
-        `gatsby`,
-        `javascript`,
-        `react`,
-        `tags`,
-      ]}
-    />
     <div>
       <h1>Tags</h1>
       <Tags>
@@ -95,6 +78,26 @@ const TagsPage = ({
       </Tags>
     </div>
   </Layout>
+)
+
+export const Head = () => (
+  <SEO
+    title="All tags"
+    keywords={[
+      `boredhacking`,
+      `bored hacking`,
+      `bored`,
+      `hacking`,
+      `james russo`,
+      `james`,
+      `russo`,
+      `blog`,
+      `gatsby`,
+      `javascript`,
+      `react`,
+      `tags`,
+    ]}
+  />
 )
 
 export default TagsPage

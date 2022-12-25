@@ -40,11 +40,6 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-        keywords={post.frontmatter.tags}
-      />
       <H1>{post.frontmatter.title}</H1>
       <div
         style={{
@@ -94,6 +89,14 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
     </Layout>
   )
 }
+
+export const Head = ({ data: { markdownRemark: post } }) => (
+  <SEO
+    title={post.frontmatter.title}
+    description={post.frontmatter.description || post.excerpt}
+    keywords={post.frontmatter.tags}
+  />
+)
 
 export default BlogPostTemplate
 

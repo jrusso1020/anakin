@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
@@ -14,9 +13,10 @@ interface Props {
   keywords?: string[]
   title: string
   image?: string
+  children: React.ReactNode
 }
 
-const SEO = ({ description, keywords, title, image }: Props) => {
+const SEO = ({ description, keywords, title, image, children }: Props) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -34,69 +34,30 @@ const SEO = ({ description, keywords, title, image }: Props) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = site.siteMetadata?.title
   const siteImage = `${site.siteMetadata.siteUrl}${
     image || site.siteMetadata.defaultImage
   }`
+
   return (
-    <Helmet
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: `image`,
-          content: siteImage,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          name: `og:image`,
-          content: siteImage,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:image`,
-          content: siteImage,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(
-        keywords.length > 0
-          ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
-          : []
+    <>
+      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="image" content={siteImage} />
+      <meta property="og:title" content={title} />
+      <meta property="og:image" content={siteImage} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content={siteImage} />
+      <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {(keywords || []).length > 0 && (
+        <meta name="keywords" content={keywords.join(`, `)} />
       )}
-    >
-      <html lang="en" />
-    </Helmet>
+      {children}
+    </>
   )
 }
 

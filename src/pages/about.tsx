@@ -27,22 +27,6 @@ const About = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="About"
-        keywords={[
-          `boredhacking`,
-          `bored hacking`,
-          `bored`,
-          `hacking`,
-          `james russo`,
-          `james`,
-          `russo`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-        ]}
-      />
       <H1>About Me</H1>
       <P>
         Hi I'm James Russo and this is where I'll be writing down my thoughts
@@ -263,6 +247,25 @@ const About = ({ data, location }: Props) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="About"
+    keywords={[
+      `boredhacking`,
+      `bored hacking`,
+      `bored`,
+      `hacking`,
+      `james russo`,
+      `james`,
+      `russo`,
+      `blog`,
+      `gatsby`,
+      `javascript`,
+      `react`,
+    ]}
+  />
+)
 
 export default About
 

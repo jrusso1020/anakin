@@ -39,10 +39,6 @@ const Tags = ({ pageContext, data, location }: Props) => {
   } tagged with "${tag}"`
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="Tags"
-        description="Tags used on blog posts for boredhacking.com"
-      />
       <h1>{tagHeader}</h1>
       {edges.map(({ node }, index) => (
         <PostPreview key={`postPreview-${index}`} node={node} />
@@ -51,6 +47,13 @@ const Tags = ({ pageContext, data, location }: Props) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Tags"
+    description="Tags used on blog posts for boredhacking.com"
+  />
+)
 
 export default Tags
 
