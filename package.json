@@ -47,7 +47,7 @@
     "react-typography": "^0.16.20",
     "regenerator-runtime": "^0.13.7",
     "shallow-compare": "^1.2.2",
-    "sharp": "^0.30.0",
+    "sharp": "^0.31.3",
     "stack-trace": "^0.0.10",
     "styled-components": "^5.3.5",
     "svg-react-loader": "^0.4.6",
