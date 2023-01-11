@@ -1429,7 +1429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.20.7
   resolution: "@babel/runtime@npm:7.20.7"
   dependencies:
@@ -4421,7 +4421,7 @@ __metadata:
     gatsby-remark-smartypants: ^6.3.0
     gatsby-source-filesystem: ^5.3.1
     gatsby-transformer-remark: ^6.3.0
-    gatsby-transformer-sharp: ^5.3.0
+    gatsby-transformer-sharp: ^5.4.0
     mitt: ^3.0.0
     platform: ^1.3.6
     prettier: ^2.8.2
@@ -7739,6 +7739,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "gatsby-core-utils@npm:4.4.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.1.0
+    got: ^11.8.5
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 4f3634f727e6ed953c62e0500831b46aa974ef1281b03690b893e0f4d6d15891ce1dfe17e59137b1cecbc7726fb3744f96c1fdfdad462bb0ec1af6bb9d79dd17
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.3.0":
   version: 3.3.0
   resolution: "gatsby-graphiql-explorer@npm:3.3.0"
@@ -8085,6 +8108,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-utils@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "gatsby-plugin-utils@npm:4.4.0"
+  dependencies:
+    "@babel/runtime": ^7.20.7
+    fastq: ^1.13.0
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^4.4.0
+    gatsby-sharp: ^1.4.0
+    graphql-compose: ^9.0.10
+    import-from: ^4.0.0
+    joi: ^17.7.0
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    graphql: ^16.0.0
+  checksum: 35c04bd68a83443378b4d0dfd749022d58cb0fa85d0f305062b020f15b65cd0382a3abdf9f1cc633bfc4eac4e710bab09797d0b0e557f16f31d5d82f4e739cab
+  languageName: node
+  linkType: hard
+
 "gatsby-react-router-scroll@npm:^6.3.0":
   version: 6.3.0
   resolution: "gatsby-react-router-scroll@npm:6.3.0"
@@ -8202,6 +8245,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-sharp@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "gatsby-sharp@npm:1.4.0"
+  dependencies:
+    "@types/sharp": ^0.31.0
+    sharp: ^0.31.3
+  checksum: 916a57e1f5799ebf3639e159141196c2229fed7a96d04d414d3f67add1bae2cd18bf5f58b884cf19acd310da2a7093a7cdf06c930e7e59bbdba88d39d99016bf
+  languageName: node
+  linkType: hard
+
 "gatsby-source-filesystem@npm:^5.3.1":
   version: 5.3.1
   resolution: "gatsby-source-filesystem@npm:5.3.1"
@@ -8274,22 +8327,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^5.3.0":
-  version: 5.3.1
-  resolution: "gatsby-transformer-sharp@npm:5.3.1"
+"gatsby-transformer-sharp@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "gatsby-transformer-sharp@npm:5.4.0"
   dependencies:
-    "@babel/runtime": ^7.15.4
+    "@babel/runtime": ^7.20.7
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^4.3.1
+    gatsby-plugin-utils: ^4.4.0
     probe-image-size: ^7.2.3
     semver: ^7.3.8
-    sharp: ^0.31.2
+    sharp: ^0.31.3
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: 7ee8dbe3b7fc38f469de55b40315b6c2a9930c4acb8f6c0b141b2181e0c8fdebb029a9ccfd1ea0452c104f36d4ebd53d7d7561fc5ba928a7f1eb345b1a9ac2d3
+  checksum: c974ea4d119cb66144a89d7cab94c9056de18bc8a06e5bd1f1ec0a4675d37b0af4b52afa2ca18b0970e676ec69c17233fe383757df6bf08105730ff5ff503d01
   languageName: node
   linkType: hard
 
