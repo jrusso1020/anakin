@@ -4486,7 +4486,7 @@ __metadata:
     gatsby-remark-prismjs: ^7.3.0
     gatsby-remark-responsive-iframe: ^6.4.0
     gatsby-remark-smartypants: ^6.3.0
-    gatsby-source-filesystem: ^5.3.1
+    gatsby-source-filesystem: ^5.4.0
     gatsby-transformer-remark: ^6.3.0
     gatsby-transformer-sharp: ^5.4.0
     mitt: ^3.0.0
@@ -8394,15 +8394,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "gatsby-source-filesystem@npm:5.3.1"
+"gatsby-source-filesystem@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "gatsby-source-filesystem@npm:5.4.0"
   dependencies:
-    "@babel/runtime": ^7.15.4
+    "@babel/runtime": ^7.20.7
     chokidar: ^3.5.3
     file-type: ^16.5.4
     fs-extra: ^10.1.0
-    gatsby-core-utils: ^4.3.1
+    gatsby-core-utils: ^4.4.0
     md5-file: ^5.0.0
     mime: ^2.6.0
     pretty-bytes: ^5.6.0
@@ -8410,7 +8410,7 @@ __metadata:
     xstate: ^4.34.0
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 503e3ef06dde2195dbf367495ede3e65c9776f563aeae75366555cff1fd6399326dac51fc1802aebfbec092686ad9250d9711f437595f4023bbe5b0c51ec8bd9
+  checksum: 76ad17c080cc605ef14a1ff7dd915a223faab14056e1b5c40aa1572a336703588d6b13f0fadbe51153d1e9cf1ac49d321936e5c5ddd67b385207818de274d88f
   languageName: node
   linkType: hard
 
