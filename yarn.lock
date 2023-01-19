@@ -4483,7 +4483,7 @@ __metadata:
     gatsby-link: ^5.3.0
     gatsby-plugin-catch-links: ^5.4.0
     gatsby-plugin-feed: ^5.3.0
-    gatsby-plugin-google-gtag: ^5.3.0
+    gatsby-plugin-google-gtag: ^5.4.0
     gatsby-plugin-image: ^3.3.0
     gatsby-plugin-manifest: ^5.3.1
     gatsby-plugin-offline: ^6.3.0
@@ -8016,17 +8016,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-gtag@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "gatsby-plugin-google-gtag@npm:5.3.0"
+"gatsby-plugin-google-gtag@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "gatsby-plugin-google-gtag@npm:5.4.0"
   dependencies:
-    "@babel/runtime": ^7.15.4
+    "@babel/runtime": ^7.20.7
     minimatch: ^3.1.2
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: d8b01aa1f4c9c4ee4be29c7b76e5d530ff4c0646effd2701f98aed2a134ad3114987d723af5905d815ac2b4312ebcc300a62b2f89ce5fb54e6de70a4ed963041
+  checksum: 801b9d1c234c1e67d827311928a55fde95511571ecaf3322c8f9774b57abff3a6acaa6ddbd138d116281f95e53a9f66f5f082884fc41859c03bfd4a61e1407a4
   languageName: node
   linkType: hard
 
