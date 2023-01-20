@@ -4497,7 +4497,7 @@ __metadata:
     gatsby-react-router-scroll: ^6.4.0
     gatsby-remark-copy-linked-files: ^6.3.0
     gatsby-remark-images: ^7.4.0
-    gatsby-remark-prismjs: ^7.3.0
+    gatsby-remark-prismjs: ^7.4.0
     gatsby-remark-responsive-iframe: ^6.4.0
     gatsby-remark-smartypants: ^6.4.0
     gatsby-source-filesystem: ^5.4.0
@@ -8365,17 +8365,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^7.3.0":
-  version: 7.3.0
-  resolution: "gatsby-remark-prismjs@npm:7.3.0"
+"gatsby-remark-prismjs@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "gatsby-remark-prismjs@npm:7.4.0"
   dependencies:
-    "@babel/runtime": ^7.15.4
+    "@babel/runtime": ^7.20.7
     parse-numeric-range: ^1.2.0
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
     prismjs: ^1.15.0
-  checksum: 71ecc55c93ce1b04dd7aff78a63ea7bdab49b0c6994284dd7b139a3f478e6857bb9b52c0b838fc9596a8d41bc0faa3f732d4c4df43afd63a79facae9cf87b912
+  checksum: e513abbe579742481ab5e1cabd349943843e1322a6eb55724c057533b46e131c59f9882d7015c34398586932e4c157c816f25c4638e75efe062591b77b779797
   languageName: node
   linkType: hard
 
