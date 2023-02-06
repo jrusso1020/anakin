@@ -11,7 +11,7 @@
     "babel-preset-gatsby": "^3.5.0",
     "disqus-react": "^1.1.2",
     "event-source-polyfill": "^1.0.26",
-    "gatsby": "^5.4.2",
+    "gatsby": "^5.5.0",
     "gatsby-cli": "^5.4.0",
     "gatsby-link": "^5.4.0",
     "gatsby-plugin-catch-links": "^5.5.0",
