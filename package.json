@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "James Russo",
   "dependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.11.19",
     "@types/styled-components": "^5.1.25",
     "babel-plugin-styled-components": "^2.0.2",
     "babel-preset-gatsby": "^3.5.0",
