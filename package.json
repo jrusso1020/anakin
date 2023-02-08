@@ -26,7 +26,7 @@
     "gatsby-plugin-styled-components": "^6.5.0",
     "gatsby-plugin-typescript": "^5.5.0",
     "gatsby-plugin-typography": "^5.5.0",
-    "gatsby-react-router-scroll": "^6.5.0",
+    "gatsby-react-router-scroll": "^6.6.0",
     "gatsby-remark-copy-linked-files": "^6.5.0",
     "gatsby-remark-images": "^7.5.0",
     "gatsby-remark-prismjs": "^7.4.0",
