@@ -4557,7 +4557,7 @@ __metadata:
     event-source-polyfill: ^1.0.26
     gatsby: ^5.5.0
     gatsby-cli: ^5.5.0
-    gatsby-link: ^5.5.0
+    gatsby-link: ^5.6.0
     gatsby-plugin-catch-links: ^5.5.0
     gatsby-plugin-feed: ^5.6.0
     gatsby-plugin-google-gtag: ^5.5.0
@@ -7929,6 +7929,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-link@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "gatsby-link@npm:5.6.0"
+  dependencies:
+    "@types/reach__router": ^1.3.10
+    gatsby-page-utils: ^3.6.0
+    prop-types: ^15.8.1
+  peerDependencies:
+    "@gatsbyjs/reach-router": ^2.0.0
+    react: ^18.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^0.0.0
+  checksum: c16560fd07f4234c8455856dbc7fe2f2c92a7ca63138e9ed8a0ec7822267236c067b4798ee990bd91078deae4d49cb0df4c59edc793b6b2125e8b803a3ffe076
+  languageName: node
+  linkType: hard
+
 "gatsby-page-utils@npm:^3.5.0":
   version: 3.5.0
   resolution: "gatsby-page-utils@npm:3.5.0"
@@ -7942,6 +7957,22 @@ __metadata:
     lodash: ^4.17.21
     micromatch: ^4.0.5
   checksum: 8b88924bcbc450b1a3e2c1e7d881af66437452046e6e99779ca03bda2b9872442555bdd59b02f4de6fef2f87f0b69949fbcad48f38e7e4f14e56778e27cc723f
+  languageName: node
+  linkType: hard
+
+"gatsby-page-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-page-utils@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    bluebird: ^3.7.2
+    chokidar: ^3.5.3
+    fs-exists-cached: ^1.0.0
+    gatsby-core-utils: ^4.6.0
+    glob: ^7.2.3
+    lodash: ^4.17.21
+    micromatch: ^4.0.5
+  checksum: fc68181f02aa252c38c3fd925dce0ec3c9f5ffa84ad01cb7c094064242c4cf68308d73bf2c1dc1740e0c3ae30e434a705cbf07e89f671922762ae2533f3f7569
   languageName: node
   linkType: hard
 
