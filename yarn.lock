@@ -3254,15 +3254,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:^0.31.0":
-  version: 0.31.0
-  resolution: "@types/sharp@npm:0.31.0"
-  dependencies:
-    "@types/node": "*"
-  checksum: c7698de18183a0574bf2f703226a5a7dc32b8a7340b52790eff0f6775b8ad708b6782f48fcaaf4d1be15fd76215c81c3ea55595d55484bf7ce870923c8174294
-  languageName: node
-  linkType: hard
-
 "@types/sharp@npm:^0.31.1":
   version: 0.31.1
   resolution: "@types/sharp@npm:0.31.1"
@@ -4597,7 +4588,7 @@ __metadata:
     gatsby-remark-smartypants: ^6.4.0
     gatsby-source-filesystem: ^5.5.0
     gatsby-transformer-remark: ^6.6.0
-    gatsby-transformer-sharp: ^5.5.0
+    gatsby-transformer-sharp: ^5.6.0
     mitt: ^3.0.0
     platform: ^1.3.6
     prettier: ^2.8.4
@@ -8348,26 +8339,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "gatsby-plugin-utils@npm:4.5.0"
-  dependencies:
-    "@babel/runtime": ^7.20.7
-    fastq: ^1.13.0
-    fs-extra: ^11.1.0
-    gatsby-core-utils: ^4.5.0
-    gatsby-sharp: ^1.5.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.7.0
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 2edfad50d3dba1ad8c60b9dbfc0ecb7b8b3062ffb8ecb86914b4023fcb69ea00025c1a40e4adcd9a8ecfc49f8d5f338fcd7790f8c3f7b11d99367b8ca7762177
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.6.0":
   version: 4.6.0
   resolution: "gatsby-plugin-utils@npm:4.6.0"
@@ -8495,16 +8466,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-sharp@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "gatsby-sharp@npm:1.5.0"
-  dependencies:
-    "@types/sharp": ^0.31.0
-    sharp: ^0.31.3
-  checksum: 03c6f52ddc0c8c45f41b2593cf3f59cd1693e5549fdafacc1d4e12f810be632d0a4a173737682f67de46d848d08da1eedf0b482aa98c9795c976d485c8af124e
-  languageName: node
-  linkType: hard
-
 "gatsby-sharp@npm:^1.6.0":
   version: 1.6.0
   resolution: "gatsby-sharp@npm:1.6.0"
@@ -8606,22 +8567,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "gatsby-transformer-sharp@npm:5.5.0"
+"gatsby-transformer-sharp@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "gatsby-transformer-sharp@npm:5.6.0"
   dependencies:
-    "@babel/runtime": ^7.20.7
+    "@babel/runtime": ^7.20.13
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^11.1.0
-    gatsby-plugin-utils: ^4.5.0
+    gatsby-plugin-utils: ^4.6.0
     probe-image-size: ^7.2.3
     semver: ^7.3.8
     sharp: ^0.31.3
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: 7f1d8b56c831679906653a45380d7023591444c4eb77e5e559911d6a37ce8a0ee5bccb4428f55cbb45ae0341a12f6baa4380cbcfeb6a13c37c78bd21ea2182c0
+  checksum: ec87b86a8a06aad7fb6d91310decdd86cdc19dae86f9ebe2f95f9cc23807638e5ece98e3ff9442fb5f40cf45af4ac3ff7d8ff9c123626a87c76de3db6b195462
   languageName: node
   linkType: hard
 
