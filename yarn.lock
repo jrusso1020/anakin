@@ -4585,7 +4585,7 @@ __metadata:
     gatsby-plugin-react-svg: ^3.3.0
     gatsby-plugin-root-import: ^2.0.8
     gatsby-plugin-s3: ^0.3.8
-    gatsby-plugin-sharp: ^5.5.0
+    gatsby-plugin-sharp: ^5.6.0
     gatsby-plugin-styled-components: ^6.6.0
     gatsby-plugin-typescript: ^5.6.0
     gatsby-plugin-typography: ^5.5.0
@@ -8279,25 +8279,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "gatsby-plugin-sharp@npm:5.5.0"
+"gatsby-plugin-sharp@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "gatsby-plugin-sharp@npm:5.6.0"
   dependencies:
-    "@babel/runtime": ^7.20.7
+    "@babel/runtime": ^7.20.13
     async: ^3.2.4
     bluebird: ^3.7.2
     debug: ^4.3.4
     filenamify: ^4.3.0
     fs-extra: ^11.1.0
-    gatsby-core-utils: ^4.5.0
-    gatsby-plugin-utils: ^4.5.0
+    gatsby-core-utils: ^4.6.0
+    gatsby-plugin-utils: ^4.6.0
     lodash: ^4.17.21
     probe-image-size: ^7.2.3
     semver: ^7.3.8
     sharp: ^0.31.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 545e0f58e4b45eaf096ee75b90cdaff8904c519c88cddff529fc84e249c673c9d0bd795ea399b4b0c44363775ad327d65ae16aa3d940272bec0ddede7a32ec7d
+  checksum: 95b8931aeee5f886a5216ebcf95a2972fd060a982c268e154746a6268ff1db7e9a6bccb11eac50d97a88dbc78eae4010ff9034958207869a4059bb6b5d2859ca
   languageName: node
   linkType: hard
 
