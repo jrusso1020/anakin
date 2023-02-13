@@ -4579,7 +4579,7 @@ __metadata:
     gatsby-plugin-sharp: ^5.6.0
     gatsby-plugin-styled-components: ^6.6.0
     gatsby-plugin-typescript: ^5.6.0
-    gatsby-plugin-typography: ^5.5.0
+    gatsby-plugin-typography: ^5.6.0
     gatsby-react-router-scroll: ^6.6.0
     gatsby-remark-copy-linked-files: ^6.6.0
     gatsby-remark-images: ^7.5.0
@@ -8262,18 +8262,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typography@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "gatsby-plugin-typography@npm:5.5.0"
+"gatsby-plugin-typography@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "gatsby-plugin-typography@npm:5.6.0"
   dependencies:
-    "@babel/runtime": ^7.20.7
+    "@babel/runtime": ^7.20.13
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
     react-typography: ^0.16.1 || ^1.0.0-alpha.0
     typography: ^0.16.0 || ^1.0.0-alpha.0
-  checksum: de34835746f88b6ca153c4fca39242ed63182b835352ec9dd4607eb79ec50eb36060ba030188b364fa3ff337fc1f2cdda49f9cadf9adf090b86d96ce82545b75
+  checksum: cd863326c711a3df5aca6feda49528ba01c654e6d46e290c0d58765d8dd65988d42115606d9358a84a595546f7c3d59686dabf2ee52149f1490c9e85e4a838cb
   languageName: node
   linkType: hard
 
