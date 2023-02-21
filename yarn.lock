@@ -4585,7 +4585,7 @@ __metadata:
     gatsby-remark-images: ^7.6.0
     gatsby-remark-prismjs: ^7.6.0
     gatsby-remark-responsive-iframe: ^6.6.0
-    gatsby-remark-smartypants: ^6.6.0
+    gatsby-remark-smartypants: ^6.7.0
     gatsby-source-filesystem: ^5.6.0
     gatsby-transformer-remark: ^6.6.0
     gatsby-transformer-sharp: ^5.6.0
@@ -8355,9 +8355,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-smartypants@npm:^6.6.0":
-  version: 6.6.0
-  resolution: "gatsby-remark-smartypants@npm:6.6.0"
+"gatsby-remark-smartypants@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "gatsby-remark-smartypants@npm:6.7.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     retext: ^7.0.1
@@ -8365,7 +8365,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 118a02cdb809af1f3621983f563c14b95a8d0cb0c1628a556cc80f525afc64b0b4247c7ddde28afcd1ea70f31e9cfc8d3478d4ca88e9c119b37df04c0d2755aa
+  checksum: 4c0ce1b5c8138cfd40b08ccf8c15a3e0efe72a346fb7ea288cdbcfd67c0f67277c3a12d952e8dc94bbabe75aa13911919eb378fe25cff4a28b51bcad2cda6a9f
   languageName: node
   linkType: hard
 
