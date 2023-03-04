@@ -4785,7 +4785,7 @@ __metadata:
     gatsby-plugin-styled-components: ^6.6.0
     gatsby-plugin-typescript: ^5.6.0
     gatsby-plugin-typography: ^5.6.0
-    gatsby-react-router-scroll: ^6.6.0
+    gatsby-react-router-scroll: ^6.7.0
     gatsby-remark-copy-linked-files: ^6.6.0
     gatsby-remark-images: ^7.6.0
     gatsby-remark-prismjs: ^7.6.0
@@ -8713,6 +8713,20 @@ __metadata:
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
   checksum: 0f8aab2312cc5ed9e39b3fd4479ee5de10debdce4e468748047c7ecc8b767925b5e27899a3827b8bbe19e12e3a34dd9fffaf0f5541fa5e72070d02f0bccf0901
+  languageName: node
+  linkType: hard
+
+"gatsby-react-router-scroll@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "gatsby-react-router-scroll@npm:6.7.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    prop-types: ^15.8.1
+  peerDependencies:
+    "@gatsbyjs/reach-router": ^2.0.0
+    react: ^18.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^0.0.0
+  checksum: e70e4bc1739c7933f705b0ea74f3aaee35c37108705cc8e666bb93b19aba68bc81c7c7b50682f96ce660d1e3618384463146558da38b303ee26376331dde662b
   languageName: node
   linkType: hard
 
