@@ -39,7 +39,7 @@
     "gatsby-remark-smartypants": "^6.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-remark": "^6.6.0",
-    "gatsby-transformer-sharp": "^5.6.0",
+    "gatsby-transformer-sharp": "^5.7.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "mitt": "^3.0.0",
