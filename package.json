@@ -17,7 +17,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "event-source-polyfill": "^1.0.26",
     "gatsby": "^5.7.0",
-    "gatsby-cli": "^5.7.0",
+    "gatsby-cli": "^5.8.0",
     "gatsby-link": "^5.7.0",
     "gatsby-plugin-catch-links": "^5.8.0",
     "gatsby-plugin-feed": "^5.8.0",
