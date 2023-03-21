@@ -10,7 +10,7 @@
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "babel-plugin-styled-components": "^2.0.2",
-    "babel-preset-gatsby": "^3.7.0",
+    "babel-preset-gatsby": "^3.8.0",
     "disqus-react": "^1.1.2",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
