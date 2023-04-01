@@ -4778,7 +4778,7 @@ __metadata:
     eslint-config-prettier: ^8.8.0
     eslint-plugin-prettier: ^4.2.1
     event-source-polyfill: ^1.0.26
-    gatsby: ^5.8.0
+    gatsby: ^5.8.1
     gatsby-cli: ^5.8.0
     gatsby-link: ^5.8.0
     gatsby-plugin-catch-links: ^5.8.0
@@ -8376,7 +8376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^1.8.0":
+"gatsby-parcel-config@npm:1.8.0":
   version: 1.8.0
   resolution: "gatsby-parcel-config@npm:1.8.0"
   dependencies:
@@ -8893,9 +8893,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "gatsby@npm:5.8.0"
+"gatsby@npm:^5.8.1":
+  version: 5.8.1
+  resolution: "gatsby@npm:5.8.1"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -8983,7 +8983,7 @@ __metadata:
     gatsby-legacy-polyfills: ^3.8.0
     gatsby-link: ^5.8.0
     gatsby-page-utils: ^3.8.0
-    gatsby-parcel-config: ^1.8.0
+    gatsby-parcel-config: 1.8.0
     gatsby-plugin-page-creator: ^5.8.0
     gatsby-plugin-typescript: ^5.8.0
     gatsby-plugin-utils: ^4.8.0
@@ -9069,7 +9069,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 58a814dcf0c86b7d62fc6fce1f1ca03b2b09941b607f95348eca416583f9564299fcdf14ec84120a6b38d7aa713d41df7a93b62ee4d60ea38fc04693eb06d962
+  checksum: b0204a29930ec2e1103ea156c11932b450a12a49d2716b3035b7eb78d27795dfe7108d1cb97844b4db2b737f870a8147f6dfc52682fdba9513c43277949ecf33
   languageName: node
   linkType: hard
 
