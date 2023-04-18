@@ -31,7 +31,7 @@
     "gatsby-plugin-styled-components": "^6.9.0",
     "gatsby-plugin-typescript": "^5.8.0",
     "gatsby-plugin-typography": "^5.9.0",
-    "gatsby-react-router-scroll": "^6.8.0",
+    "gatsby-react-router-scroll": "^6.9.0",
     "gatsby-remark-copy-linked-files": "^6.8.0",
     "gatsby-remark-images": "^7.9.0",
     "gatsby-remark-prismjs": "^7.9.0",
