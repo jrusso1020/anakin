@@ -4790,7 +4790,7 @@ __metadata:
     gatsby: ^5.8.1
     gatsby-cli: ^5.8.0
     gatsby-link: ^5.8.0
-    gatsby-plugin-catch-links: ^5.8.0
+    gatsby-plugin-catch-links: ^5.9.0
     gatsby-plugin-feed: ^5.8.0
     gatsby-plugin-google-gtag: ^5.8.0
     gatsby-plugin-image: ^3.8.0
@@ -8428,15 +8428,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-catch-links@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "gatsby-plugin-catch-links@npm:5.8.0"
+"gatsby-plugin-catch-links@npm:^5.9.0":
+  version: 5.9.0
+  resolution: "gatsby-plugin-catch-links@npm:5.9.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     escape-string-regexp: ^1.0.5
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 848c3b01f084691eb5146b25c39331c0ec34dda86d8022d2a9170a65c464da78bca318feee90ff79ed1330992ebc88c5616d5d315f2917c5cb0ad6883a0b5e61
+  checksum: 21948712326676b3da3a0bad96c2200d883b426830d2e20cfc4f3f53fb9af7c71c4dbc7e3a91473fd4828e77481492f700bf5e59c05a513f90bf2ff54402d0d1
   languageName: node
   linkType: hard
 
