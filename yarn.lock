@@ -4684,7 +4684,7 @@ __metadata:
     gatsby-remark-responsive-iframe: ^6.9.0
     gatsby-remark-smartypants: ^6.9.0
     gatsby-source-filesystem: ^5.9.0
-    gatsby-transformer-remark: ^6.8.0
+    gatsby-transformer-remark: ^6.9.0
     gatsby-transformer-sharp: ^5.9.0
     husky: ^8.0.3
     lint-staged: ^13.2.1
@@ -7601,21 +7601,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastq@npm:^1.13.0, fastq@npm:^1.6.0":
-  version: 1.14.0
-  resolution: "fastq@npm:1.14.0"
-  dependencies:
-    reusify: ^1.0.4
-  checksum: da2c05ec1446ef77b8ba2b76619c90d483404f5087e71e77469fbee797280a1f4ef26a63be15b2377198bc20d09fdf25c7d6e1e492a1e568a29dfdd9bcb7538c
-  languageName: node
-  linkType: hard
-
 "fastq@npm:^1.15.0":
   version: 1.15.0
   resolution: "fastq@npm:1.15.0"
   dependencies:
     reusify: ^1.0.4
   checksum: 0170e6bfcd5d57a70412440b8ef600da6de3b2a6c5966aeaf0a852d542daff506a0ee92d6de7679d1de82e644bce69d7a574a6c93f0b03964b5337eed75ada1a
+  languageName: node
+  linkType: hard
+
+"fastq@npm:^1.6.0":
+  version: 1.14.0
+  resolution: "fastq@npm:1.14.0"
+  dependencies:
+    reusify: ^1.0.4
+  checksum: da2c05ec1446ef77b8ba2b76619c90d483404f5087e71e77469fbee797280a1f4ef26a63be15b2377198bc20d09fdf25c7d6e1e492a1e568a29dfdd9bcb7538c
   languageName: node
   linkType: hard
 
@@ -7689,7 +7689,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-type@npm:^16.5.3, file-type@npm:^16.5.4":
+"file-type@npm:^16.5.4":
   version: 16.5.4
   resolution: "file-type@npm:16.5.4"
   dependencies:
@@ -7948,17 +7948,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "fs-extra@npm:11.1.0"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^2.0.0
-  checksum: 5ca476103fa1f5ff4a9b3c4f331548f8a3c1881edaae323a4415d3153b5dc11dc6a981c8d1dd93eec8367ceee27b53f8bd27eecbbf66ffcdd04927510c171e7f
-  languageName: node
-  linkType: hard
-
 "fs-extra@npm:^11.1.1":
   version: 11.1.1
   resolution: "fs-extra@npm:11.1.1"
@@ -8160,30 +8149,6 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: a73fba96e12b4fa72a8765fbebf286836f8180b757677598b9800a07d9351c7b4ecb3f9728b62805c8a039a3a773bd0b4d6911e75ccc4f3ce1f7587725230643
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^4.8.0":
-  version: 4.8.0
-  resolution: "gatsby-core-utils@npm:4.8.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.13.0
-    file-type: ^16.5.3
-    fs-extra: ^11.1.0
-    got: ^11.8.5
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 6147c180162037b574873c1020538500d7c2f43f1a40fea04a13eb8c7e8197f4c1c177edf64cf4c7f55840ac7b79ea3278b82a93217a1766ef0ef501358eab9d
   languageName: node
   linkType: hard
 
@@ -8709,12 +8674,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:^6.8.0":
-  version: 6.8.0
-  resolution: "gatsby-transformer-remark@npm:6.8.0"
+"gatsby-transformer-remark@npm:^6.9.0":
+  version: 6.9.0
+  resolution: "gatsby-transformer-remark@npm:6.9.0"
   dependencies:
     "@babel/runtime": ^7.20.13
-    gatsby-core-utils: ^4.8.0
+    gatsby-core-utils: ^4.9.0
     gray-matter: ^4.0.3
     hast-util-raw: ^6.1.0
     hast-util-to-html: ^7.1.3
@@ -8729,7 +8694,7 @@ __metadata:
     remark-retext: ^4.0.0
     remark-stringify: ^9.0.1
     retext-english: ^3.0.4
-    sanitize-html: ^2.7.3
+    sanitize-html: ^2.10.0
     underscore.string: ^3.3.6
     unified: ^9.2.2
     unist-util-remove-position: ^3.0.0
@@ -8737,7 +8702,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: c60887f37aeae92efd73376ac0662d878bc338fe9f41b47edfade530d4c05a9bba57c07271c1798b885d1a712f664230a9ecc0cbe52b3cc9dfa25d0b2e691b9c
+  checksum: 4c1a680e0432aadaddf4bf8021bdab7a004e2505df5027e5e08ed9d735f5decfbb8702d6ef2e29c69f25afb3373c19003334134f390ac5c9f2bab315b9adeedf
   languageName: node
   linkType: hard
 
@@ -9222,7 +9187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:^11.8.5, got@npm:^11.8.6":
+"got@npm:^11.8.6":
   version: 11.8.6
   resolution: "got@npm:11.8.6"
   dependencies:
@@ -14928,9 +14893,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sanitize-html@npm:^2.7.3":
-  version: 2.8.1
-  resolution: "sanitize-html@npm:2.8.1"
+"sanitize-html@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "sanitize-html@npm:2.10.0"
   dependencies:
     deepmerge: ^4.2.2
     escape-string-regexp: ^4.0.0
@@ -14938,7 +14903,7 @@ __metadata:
     is-plain-object: ^5.0.0
     parse-srcset: ^1.0.2
     postcss: ^8.3.11
-  checksum: 0d35503b261800b736a02648e8b9b2a5206cbc621248cf8dd86d5b9bdd470d0146d74704222d287bd7359a599e8a186cc5b015401237b0244352f18f37465daa
+  checksum: 0cb2bb330ed966a4d667b1890322dd868a67f527f87c04d7e3be1688fcfda20f7452a9a7744870751f51e255742e7264a287d9bcfcd64d4cd74a3c99f99c73d2
   languageName: node
   linkType: hard
 
