@@ -12,7 +12,7 @@
     "babel-plugin-styled-components": "^2.1.1",
     "babel-preset-gatsby": "^3.9.0",
     "disqus-react": "^1.1.2",
-    "eslint": "^8.39.0",
+    "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "event-source-polyfill": "^1.0.26",
