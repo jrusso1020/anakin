@@ -4527,6 +4527,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.10.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@babel/types": ^7.20.7
+    gatsby-core-utils: ^4.10.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: 0406f917ae4088c54865cfedd1d203705f9d75ee70736aca66eb6b6bda7f4e26945f482828c57cccd72fab6f3fdc3fbea0714294e3ff6b4c091f10e5b2ac8313
+  languageName: node
+  linkType: hard
+
 "babel-plugin-remove-graphql-queries@npm:^5.9.0":
   version: 5.9.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.9.0"
@@ -4833,7 +4847,7 @@ __metadata:
     gatsby-plugin-catch-links: ^5.10.0
     gatsby-plugin-feed: ^5.9.0
     gatsby-plugin-google-gtag: ^5.9.0
-    gatsby-plugin-image: ^3.9.0
+    gatsby-plugin-image: ^3.10.0
     gatsby-plugin-manifest: ^5.9.0
     gatsby-plugin-offline: ^6.9.0
     gatsby-plugin-react-svg: ^3.3.0
@@ -8512,22 +8526,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "gatsby-plugin-image@npm:3.9.0"
+"gatsby-plugin-image@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "gatsby-plugin-image@npm:3.10.0"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/parser": ^7.20.13
     "@babel/runtime": ^7.20.13
     "@babel/traverse": ^7.20.13
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^5.9.0
+    babel-plugin-remove-graphql-queries: ^5.10.0
     camelcase: ^6.3.0
     chokidar: ^3.5.3
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.9.0
-    gatsby-plugin-utils: ^4.9.0
+    gatsby-core-utils: ^4.10.0
+    gatsby-plugin-utils: ^4.10.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.8.1
   peerDependencies:
@@ -8542,7 +8556,7 @@ __metadata:
       optional: true
     gatsby-source-filesystem:
       optional: true
-  checksum: 70039a91f0c1fb5b136a47941564f2a97ef86dfc48f306f53ac4f0f040dafb4d233ea45dc5ee2f9c3acbe8975148b3ce89019be8e5a0bef1c091b62d1a8f2019
+  checksum: d70a24fa6d0116deb50221a1a0ea25533e585f5501a5f6e2598b1468a1b923315caad90f972d1d03a8e32ac8767d5363c37cd4827d1c2b4987f8b8fd1e65d3f3
   languageName: node
   linkType: hard
 
@@ -8719,6 +8733,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-utils@npm:^4.10.0":
+  version: 4.10.0
+  resolution: "gatsby-plugin-utils@npm:4.10.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    fastq: ^1.15.0
+    fs-extra: ^11.1.1
+    gatsby-core-utils: ^4.10.0
+    gatsby-sharp: ^1.10.0
+    graphql-compose: ^9.0.10
+    import-from: ^4.0.0
+    joi: ^17.9.2
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    graphql: ^16.0.0
+  checksum: 9923390cc215c9bddf4c255c3393d624f14068e5c03ad83fb67ab9bea16295398ac9e9ca0803f9b30bf8715d7866f1fe3fc86330d7afdd828f7f3288ec6602ae
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-utils@npm:^4.9.0":
   version: 4.9.0
   resolution: "gatsby-plugin-utils@npm:4.9.0"
@@ -8843,6 +8877,15 @@ __metadata:
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
   checksum: 4611ba1a3fbf64a3d72a38d7b092cc01b7be5bbb6d00b12f65bd8b104053d32588240532acf45aa85017d5b75745749509bfc482980cde7f962a8c1bee7baa57
+  languageName: node
+  linkType: hard
+
+"gatsby-sharp@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "gatsby-sharp@npm:1.10.0"
+  dependencies:
+    sharp: ^0.32.1
+  checksum: a2c46bfc8450d65f9ad8d896766ca5d50cfbfd66196655490510d105d54d28745358f9c8fa83da8e957bbbbea85ddd9ed19a4febc497af857c2810549e9dc1ea
   languageName: node
   linkType: hard
 
@@ -10849,6 +10892,19 @@ __metadata:
     "@sideway/formula": ^3.0.1
     "@sideway/pinpoint": ^2.0.0
   checksum: 055df3841e00d7ed065ef1cc3330cf69097ab2ffec3083d8b1d6edfd2e25504bf2983f5249d6f0459bcad99fe21bb0c9f6f1cc03569713af27cd5eb00ee7bb7d
+  languageName: node
+  linkType: hard
+
+"joi@npm:^17.9.2":
+  version: 17.9.2
+  resolution: "joi@npm:17.9.2"
+  dependencies:
+    "@hapi/hoek": ^9.0.0
+    "@hapi/topo": ^5.0.0
+    "@sideway/address": ^4.1.3
+    "@sideway/formula": ^3.0.1
+    "@sideway/pinpoint": ^2.0.0
+  checksum: 8c3709849293411c524e5a679dba7b42598a29a663478941767b8d5b06288611dece58803c468a2c7320cc2429a3e71e3d94337fe47aefcf6c22174dbd90b601
   languageName: node
   linkType: hard
 
