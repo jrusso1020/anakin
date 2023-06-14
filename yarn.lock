@@ -3335,15 +3335,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:^0.31.1":
-  version: 0.31.1
-  resolution: "@types/sharp@npm:0.31.1"
-  dependencies:
-    "@types/node": "*"
-  checksum: 226871181fc88b5ef8a6bc32c1e14a3426cc45480ed49536c45bb5c166c089169b8fe3e5c57aea8c34cc40b08311a95d5582c1a2f540f4425eb66fea3d6e0489
-  languageName: node
-  linkType: hard
-
 "@types/styled-components@npm:^5.1.25":
   version: 5.1.26
   resolution: "@types/styled-components@npm:5.1.26"
@@ -4814,7 +4805,7 @@ __metadata:
     gatsby-cli: ^5.10.0
     gatsby-link: ^5.10.0
     gatsby-plugin-catch-links: ^5.10.0
-    gatsby-plugin-feed: ^5.9.0
+    gatsby-plugin-feed: ^5.10.0
     gatsby-plugin-google-gtag: ^5.10.0
     gatsby-plugin-image: ^3.10.0
     gatsby-plugin-manifest: ^5.10.0
@@ -8459,22 +8450,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "gatsby-plugin-feed@npm:5.9.0"
+"gatsby-plugin-feed@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "gatsby-plugin-feed@npm:5.10.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.9.0
+    gatsby-plugin-utils: ^4.10.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: d6467cca124072465db9299ba7d95f937b9cac143042dc16adb32d5c35ebe2e70cdc6b8d7965c12759d3d0ebbd2ebc2c514d912dceea567cbf364818785d2409
+  checksum: b7c70f9db4f652f81388b73d37aeb4d0bfd4a6da53fc3c8cba2eb48e578fc78d5284e592f0b00dcdbd4c82d0dead76f0a5922ee78314c1c1d22da17671a133cd
   languageName: node
   linkType: hard
 
@@ -8719,26 +8710,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.9.0":
-  version: 4.9.0
-  resolution: "gatsby-plugin-utils@npm:4.9.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.9.0
-    gatsby-sharp: ^1.9.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.1
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 1f10c8929134467cd76aef7daea72cc1ca13199996c5bf0fe8232ddd4df7e12f9b403c90d4d44b3f559449ec5671c961d4ba5b54a4f451109b44792b31e378ee
-  languageName: node
-  linkType: hard
-
 "gatsby-react-router-scroll@npm:^6.10.0":
   version: 6.10.0
   resolution: "gatsby-react-router-scroll@npm:6.10.0"
@@ -8852,16 +8823,6 @@ __metadata:
   dependencies:
     sharp: ^0.32.1
   checksum: a2c46bfc8450d65f9ad8d896766ca5d50cfbfd66196655490510d105d54d28745358f9c8fa83da8e957bbbbea85ddd9ed19a4febc497af857c2810549e9dc1ea
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "gatsby-sharp@npm:1.9.0"
-  dependencies:
-    "@types/sharp": ^0.31.1
-    sharp: ^0.31.3
-  checksum: 685321189904b2fc32e56c1a56f4b83a27252f3bf64862a5cf1f62de3338365db68d2bd0b335548491c97047a920fcfd806e5bd07cf9f1172323a07a38968bd9
   languageName: node
   linkType: hard
 
@@ -10842,19 +10803,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.9.1":
-  version: 17.9.1
-  resolution: "joi@npm:17.9.1"
-  dependencies:
-    "@hapi/hoek": ^9.0.0
-    "@hapi/topo": ^5.0.0
-    "@sideway/address": ^4.1.3
-    "@sideway/formula": ^3.0.1
-    "@sideway/pinpoint": ^2.0.0
-  checksum: 055df3841e00d7ed065ef1cc3330cf69097ab2ffec3083d8b1d6edfd2e25504bf2983f5249d6f0459bcad99fe21bb0c9f6f1cc03569713af27cd5eb00ee7bb7d
-  languageName: node
-  linkType: hard
-
 "joi@npm:^17.9.2":
   version: 17.9.2
   resolution: "joi@npm:17.9.2"
@@ -12519,15 +12467,6 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 3de396e23cc209f539c704583e8e99c148850226f6e389a641b92e8967953713228109f919765abc1f4355e801e8f41842f96210b8d61c7dcc10a477002dcf00
-  languageName: node
-  linkType: hard
-
-"node-addon-api@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "node-addon-api@npm:5.0.0"
-  dependencies:
-    node-gyp: latest
-  checksum: 7c5e2043ac37f6108784d94ed73a44ae6d3e68eb968de60680922fc6bc3d17fa69448c0feb4e0c9d3f4c74a0324822e566a8340a56916d9d6f23cb3e85620334
   languageName: node
   linkType: hard
 
@@ -15248,7 +15187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7":
   version: 7.3.8
   resolution: "semver@npm:7.3.8"
   dependencies:
@@ -15373,23 +15312,6 @@ __metadata:
   version: 1.1.0
   resolution: "shallowequal@npm:1.1.0"
   checksum: f4c1de0837f106d2dbbfd5d0720a5d059d1c66b42b580965c8f06bb1db684be8783538b684092648c981294bf817869f743a066538771dbecb293df78f765e00
-  languageName: node
-  linkType: hard
-
-"sharp@npm:^0.31.3":
-  version: 0.31.3
-  resolution: "sharp@npm:0.31.3"
-  dependencies:
-    color: ^4.2.3
-    detect-libc: ^2.0.1
-    node-addon-api: ^5.0.0
-    node-gyp: latest
-    prebuild-install: ^7.1.1
-    semver: ^7.3.8
-    simple-get: ^4.0.1
-    tar-fs: ^2.1.1
-    tunnel-agent: ^0.6.0
-  checksum: 29fd1dfbc616c6389f53f366cec342b4353d9f2a37e98952ca273db38dca57dfa0f336322d6d763f0fae876042ead22fd86ffe26d70c32ade2458d421db60d04
   languageName: node
   linkType: hard
 
