@@ -29,7 +29,7 @@
     "gatsby-plugin-s3": "^0.4.1",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-styled-components": "^6.10.0",
-    "gatsby-plugin-typescript": "^5.10.0",
+    "gatsby-plugin-typescript": "^5.11.0",
     "gatsby-plugin-typography": "^5.10.0",
     "gatsby-react-router-scroll": "^6.10.0",
     "gatsby-remark-copy-linked-files": "^6.11.0",
