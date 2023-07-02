@@ -91,7 +91,13 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": "eslint --cache --cache-location .eslintcache --fix"
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "eslint --cache --cache-location .eslintcache --fix",
+      "yarn format"
+    ],
+    "*.{json,md}": [
+      "yarn format"
+    ]
   },
   "packageManager": "yarn@3.3.0"
 }
