@@ -5239,7 +5239,7 @@ __metadata:
     typeface-merriweather: ^1.1.13
     typeface-montserrat: ^1.1.13
     typescript: ^5.1.6
-    typography: ^0.16.19
+    typography: ^0.16.24
     typography-theme-wordpress-2016: ^0.16.19
   languageName: unknown
   linkType: soft
@@ -17190,9 +17190,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typography@npm:^0.16.19":
-  version: 0.16.21
-  resolution: "typography@npm:0.16.21"
+"typography@npm:^0.16.24":
+  version: 0.16.24
+  resolution: "typography@npm:0.16.24"
   dependencies:
     compass-vertical-rhythm: ^1.4.5
     decamelize: ^1.2.0
@@ -17201,7 +17201,7 @@ __metadata:
     modularscale: ^1.0.2
     object-assign: ^4.1.0
     typography-normalize: ^0.16.19
-  checksum: cad1a696fcd22c104c2a48f7f940facc3d6b7ccde9253b72bf02ffe6350dcb2bb484da9d8934223bdbcec8e4d3b4d0a2badffc3695b74fdf997689e07d772643
+  checksum: 8bb8418911ba28c0d4dfe0b30fede8b9b7d490fe5f1f22fff57110dcfdc4347645fc45dd111402b73c684b4f66f6387a0151c112f3871aab16f7382d12cbba11
   languageName: node
   linkType: hard
 
