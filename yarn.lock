@@ -5241,7 +5241,7 @@ __metadata:
     shallow-compare: ^1.2.2
     sharp: ^0.32.2
     stack-trace: ^0.0.10
-    styled-components: ^6.0.3
+    styled-components: ^6.0.4
     svg-react-loader: ^0.4.6
     typeface-merriweather: ^1.1.13
     typeface-montserrat: ^1.1.13
@@ -16618,9 +16618,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "styled-components@npm:6.0.3"
+"styled-components@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "styled-components@npm:6.0.4"
   dependencies:
     "@babel/cli": ^7.21.0
     "@babel/core": ^7.21.0
@@ -16648,7 +16648,7 @@ __metadata:
   peerDependenciesMeta:
     babel-plugin-styled-components:
       optional: true
-  checksum: e02e6a38a7d484ed8ce1fa1f36b7934c1c1f57195d9c173853adc8cb89a209c23c79cf9f979ffff22829de5e817fb95aab04038c1270110956dfef168c480b13
+  checksum: 15c5701c2606cc343d1d7a9369bca96e76d3be755dfc61198ba8fcd2961a568f4230ffbfb9dda67691cd31cf40a0e455ba6379e26a33700f3c6e69d12814ff29
   languageName: node
   linkType: hard
 
