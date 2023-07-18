@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import styled from "styled-components"
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
 import { colors } from "src/utils/colors"
 
@@ -28,6 +28,7 @@ const Tag = styled(Link)`
   cursor: pointer;
   &:hover {
     text-decoration: underline;
+    box-shadow: none;
   }
 `
 

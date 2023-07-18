@@ -1,5 +1,6 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 import { rhythm } from "src/utils/typography"
 import { colors } from "src/utils/colors"

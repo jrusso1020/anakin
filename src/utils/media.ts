@@ -1,4 +1,4 @@
-import { css } from "styled-components"
+import { css } from "@emotion/react"
 
 export const mobile = (inner) => css`
   @media (max-width: ${800 / 16}em) {

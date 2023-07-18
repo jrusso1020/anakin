@@ -8,7 +8,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import styled, { css } from "styled-components"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 import Location from "content/assets/location.svg"
 import Github from "content/assets/github.svg"

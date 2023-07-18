@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 import Layout from "src/components/layout"
 import H1 from "src/components/H1"

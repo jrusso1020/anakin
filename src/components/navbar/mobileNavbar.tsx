@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import styled, { css } from "styled-components"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 import { CSSTransition } from "react-transition-group"
 
 import { rhythm } from "src/utils/typography"
