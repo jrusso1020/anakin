@@ -1,7 +1,6 @@
 import React, { Fragment } from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
-import Tags from "src/components/tags"
 import Calendar from "content/assets/calendar.svg"
 import Timer from "content/assets/timer.svg"
 import { rhythm } from "src/utils/typography"

@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled, { css } from "styled-components"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 import Navbar from "./navbar"
 import H1 from "./H1"
 import { rhythm } from "src/utils/typography"
 import { mobile } from "src/utils/media"
 import { colors } from "src/utils/colors"
+import GlobalStyles from "./globalStyles"
 
 const BodyContainer = styled.div`
   margin-left: calc(320px - 1em);
@@ -59,6 +61,7 @@ const Layout = ({ location, title, children }: Props) => {
   }
   return (
     <div>
+      <GlobalStyles />
       <Navbar location={location} />
       <BodyContainer>
         <header>{header}</header>

@@ -45,7 +45,6 @@ module.exports = {
         hostname: siteAddress.hostname,
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-plugin-root-import',
@@ -215,6 +214,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     {

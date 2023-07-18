@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 import { rhythm } from "src/utils/typography"
 import { colors } from "src/utils/colors"
