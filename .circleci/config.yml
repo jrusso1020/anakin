@@ -96,10 +96,14 @@ workflows:
       - format:
           requires:
             - dependencies
+      - type-check:
+          requires:
+            - dependencies
       - deploy:
           requires:
             - build
             - format
+            - type-check
           filters:
             branches:
               only:

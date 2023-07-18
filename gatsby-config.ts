@@ -43,7 +43,6 @@ const config: GatsbyConfig = {
     siteUrl: "https://boredhacking.com",
     image: "/images/boredhacking.jpg",
   },
-  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -251,6 +250,7 @@ const config: GatsbyConfig = {
     },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-slug`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-typography`,
