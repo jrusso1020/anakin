@@ -25,7 +25,7 @@ const DesktopNavbar = ({ location }: Props) => {
               !["/about/"].includes(location.pathname) &&
               !location.pathname.includes("tags")
             }
-            to={`/`}
+            to={"/"}
           >
             Blog
           </NavLink>
@@ -33,7 +33,7 @@ const DesktopNavbar = ({ location }: Props) => {
         <NavListItem>
           <NavLink
             partiallyActive={location.pathname === "/about/"}
-            to={`/about/`}
+            to={"/about/"}
           >
             About
           </NavLink>
@@ -41,7 +41,7 @@ const DesktopNavbar = ({ location }: Props) => {
         <NavListItem>
           <NavLink
             partiallyActive={location.pathname.includes("tags")}
-            to={`/tags/`}
+            to={"/tags/"}
           >
             Tags
           </NavLink>

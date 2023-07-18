@@ -49,13 +49,13 @@ const Layout = ({ location, title, children }: Props) => {
   if (location.pathname === rootPath) {
     header = (
       <H1>
-        <StyledLink to={`/`}>{title}</StyledLink>
+        <StyledLink to={"/"}>{title}</StyledLink>
       </H1>
     )
   } else {
     header = (
       <H3>
-        <StyledLink to={`/`}>{title}</StyledLink>
+        <StyledLink to={"/"}>{title}</StyledLink>
       </H3>
     )
   }
@@ -68,8 +68,7 @@ const Layout = ({ location, title, children }: Props) => {
         <main>{children}</main>
         <Footer>
           © {new Date().getFullYear()} James Russo. All Rights Reserved, Built
-          with
-          {` `}
+          with{" "}
           <a
             href="https://www.gatsbyjs.org"
             target="_blank"

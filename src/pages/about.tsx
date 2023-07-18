@@ -252,17 +252,17 @@ export const Head = () => (
   <SEO
     title="About"
     keywords={[
-      `boredhacking`,
-      `bored hacking`,
-      `bored`,
-      `hacking`,
-      `james russo`,
-      `james`,
-      `russo`,
-      `blog`,
-      `gatsby`,
-      `javascript`,
-      `react`,
+      "boredhacking",
+      "bored hacking",
+      "bored",
+      "hacking",
+      "james russo",
+      "james",
+      "russo",
+      "blog",
+      "gatsby",
+      "javascript",
+      "react",
     ]}
   />
 )

@@ -113,7 +113,7 @@ const Bio = () => {
                 image={data.avatar.childImageSharp.gatsbyImageData}
                 alt={author}
                 imgStyle={{
-                  borderRadius: `50%`,
+                  borderRadius: "50%",
                 }}
               />
             </ImageContainer>

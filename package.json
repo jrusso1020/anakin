@@ -6,8 +6,8 @@
   "author": "James Russo",
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "@emotion/serialize": "^1.1.2",
     "@emotion/styled": "^11.11.0",
-    "@types/node": "^20.4.2",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "babel-preset-gatsby": "^3.11.0",
@@ -64,6 +64,13 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-transition-group": "^4.4.6",
+    "@types/typography": "^0.16.4",
+    "@yarnpkg/sdks": "^3.0.0-rc.48",
+    "eslint-plugin-node": "^11.1.0",
     "gatsby-plugin-root-import": "^2.0.8",
     "prettier": "^2.8.8"
   },
@@ -91,12 +98,12 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "eslint --cache --cache-location .eslintcache --fix",
+      "eslint ./src/ --fix",
       "yarn format"
     ],
     "*.{json,md}": [
       "yarn format"
     ]
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.6.1"
 }

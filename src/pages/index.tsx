@@ -5,16 +5,44 @@ import Layout from "src/components/layout"
 import SEO from "src/components/seo"
 import PostPreview from "src/components/postPreview"
 
+interface SiteMetadata {
+  title: string
+}
+
+interface Frontmatter {
+  date: string
+  title: string
+  description: string
+  tags: string[]
+}
+
+interface Fields {
+  slug: string
+}
+
+interface Node {
+  timeToRead: number
+  excerpt: string
+  fields: Fields
+  frontmatter: Frontmatter
+}
+
+interface AllMarkdownRemark {
+  edges: {
+    node: Node
+  }[]
+}
+
+interface Query {
+  site: {
+    siteMetadata: SiteMetadata
+  }
+  allMarkdownRemark: AllMarkdownRemark
+}
+
 interface Props {
   location: Location
-  data: {
-    allMarkdownRemark: any
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-  }
+  data: Query
 }
 
 const BlogIndex = ({ data, location }: Props) => {
@@ -34,17 +62,17 @@ export const Head = () => (
   <SEO
     title="All posts"
     keywords={[
-      `boredhacking`,
-      `bored hacking`,
-      `bored`,
-      `hacking`,
-      `james russo`,
-      `james`,
-      `russo`,
-      `blog`,
-      `gatsby`,
-      `javascript`,
-      `react`,
+      "boredhacking",
+      "bored hacking",
+      "bored",
+      "hacking",
+      "james russo",
+      "james",
+      "russo",
+      "blog",
+      "gatsby",
+      "javascript",
+      "react",
     ]}
   />
 )

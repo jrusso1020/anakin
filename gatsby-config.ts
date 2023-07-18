@@ -1,16 +1,49 @@
-const path = require('path')
-const URL = require('url').URL
-
+import path from "path"
+import { URL } from "url"
 const siteAddress = new URL("https://boredhacking.com")
 
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+
+interface SiteMetadata {
+  siteUrl: string
+}
+
+interface Frontmatter {
+  title: string
+  date: string
+}
+
+interface Fields {
+  slug: string
+}
+
+interface Node {
+  excerpt: string
+  html: string
+  fields: Fields
+  frontmatter: Frontmatter
+}
+
+interface AllMarkdownRemark {
+  nodes: Node[]
+}
+
+interface Query {
+  site: {
+    siteMetadata: SiteMetadata
+  }
+  allMarkdownRemark: AllMarkdownRemark
+}
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Bored Hacking`,
     author: `James Russo`,
     description: `Blog discussing software engineering, web development, technology, and life `,
     siteUrl: "https://boredhacking.com",
-    image: "/images/boredhacking.jpg"
+    image: "/images/boredhacking.jpg",
   },
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -47,20 +80,20 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     {
-      resolve: 'gatsby-plugin-root-import',
+      resolve: "gatsby-plugin-root-import",
       options: {
-        src: path.join(__dirname, 'src'),
-        content: path.join(__dirname, 'content'),
-        images: path.join(__dirname, 'static/images')
-      }
+        src: path.join(__dirname, "src"),
+        content: path.join(__dirname, "content"),
+        images: path.join(__dirname, "static/images"),
+      },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -100,41 +133,41 @@ module.exports = {
             },
           },
           {
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            // Class prefix for <pre> tags containing syntax highlighting;
-            // defaults to 'language-' (eg <pre class="language-js">).
-            // If your site loads Prism into the browser at runtime,
-            // (eg for use with libraries like react-live),
-            // you may use this to prevent Prism from re-processing syntax.
-            // This is an uncommon use-case though;
-            // If you're unsure, it's best to use the default value.
-            classPrefix: "language-",
-            // This is used to allow setting a language for inline code
-            // (i.e. single backticks) by creating a separator.
-            // This separator is a string and will do no white-space
-            // stripping.
-            // A suggested value for English speakers is the non-ascii
-            // character '›'.
-            inlineCodeMarker: null,
-            // This lets you set up language aliases.  For example,
-            // setting this to '{ sh: "bash" }' will let you use
-            // the language "sh" which will highlight using the
-            // bash highlighter.
-            aliases: {},
-            // This toggles the display of line numbers globally alongside the code.
-            // To use it, add the following line in src/layouts/index.js
-            // right after importing the prism color scheme:
-            //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-            // Defaults to false.
-            // If you wish to only show line numbers on certain code blocks,
-            // leave false and use the {numberLines: true} syntax below
-            showLineNumbers: false,
-            // If setting this to true, the parser won't handle and highlight inline
-            // code used in markdown i.e. single backtick code like `this`.
-            noInlineHighlight: false,
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // Class prefix for <pre> tags containing syntax highlighting;
+              // defaults to 'language-' (eg <pre class="language-js">).
+              // If your site loads Prism into the browser at runtime,
+              // (eg for use with libraries like react-live),
+              // you may use this to prevent Prism from re-processing syntax.
+              // This is an uncommon use-case though;
+              // If you're unsure, it's best to use the default value.
+              classPrefix: "language-",
+              // This is used to allow setting a language for inline code
+              // (i.e. single backticks) by creating a separator.
+              // This separator is a string and will do no white-space
+              // stripping.
+              // A suggested value for English speakers is the non-ascii
+              // character '›'.
+              inlineCodeMarker: null,
+              // This lets you set up language aliases.  For example,
+              // setting this to '{ sh: "bash" }' will let you use
+              // the language "sh" which will highlight using the
+              // bash highlighter.
+              aliases: {},
+              // This toggles the display of line numbers globally alongside the code.
+              // To use it, add the following line in src/layouts/index.js
+              // right after importing the prism color scheme:
+              //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+              // Defaults to false.
+              // If you wish to only show line numbers on certain code blocks,
+              // leave false and use the {numberLines: true} syntax below
+              showLineNumbers: false,
+              // If setting this to true, the parser won't handle and highlight inline
+              // code used in markdown i.e. single backtick code like `this`.
+              noInlineHighlight: false,
+            },
           },
-        },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -171,15 +204,17 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
+            serialize: ({ query }: { query: Query }) => {
+              const { site, allMarkdownRemark } = query
+              return allMarkdownRemark.nodes.map((node) => {
+                return {
+                  ...node.frontmatter,
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                })
+                }
               })
             },
             query: `
@@ -225,3 +260,5 @@ module.exports = {
     },
   ],
 }
+
+export default config
