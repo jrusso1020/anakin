@@ -37,15 +37,16 @@ interface Query {
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Bored Hacking`,
-    author: `James Russo`,
-    description: `Blog discussing software engineering, web development, technology, and life `,
+    title: "Bored Hacking",
+    author: "James Russo",
+    description:
+      "Blog discussing software engineering, web development, technology, and life ",
     siteUrl: "https://boredhacking.com",
     image: "/images/boredhacking.jpg",
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "gatsby-plugin-google-gtag",
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
@@ -70,14 +71,14 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: `gatsby-plugin-s3`,
+      resolve: "gatsby-plugin-s3",
       options: {
         bucketName: "boredhacking.com",
         protocol: siteAddress.protocol.slice(0, -1),
         hostname: siteAddress.hostname,
       },
     },
-    `gatsby-plugin-catch-links`,
+    "gatsby-plugin-catch-links",
     {
       resolve: "gatsby-plugin-root-import",
       options: {
@@ -95,44 +96,44 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: "blog",
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`,
+        name: "assets",
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/images`,
-        name: `images`,
+        name: "images",
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 590,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: "margin-bottom: 1.0725rem",
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
               // defaults to 'language-' (eg <pre class="language-js">).
@@ -167,27 +168,27 @@ const config: GatsbyConfig = {
               noInlineHighlight: false,
             },
           },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Bored Hacking`,
-        short_name: `boredhacking`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `static/images/profile-pic.jpg`,
+        name: "Bored Hacking",
+        short_name: "boredhacking",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "static/images/profile-pic.jpg",
       },
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-feed",
       options: {
         query: `
           {
@@ -248,14 +249,14 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-slug`,
-    `gatsby-plugin-typescript`,
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-slug",
+    "gatsby-plugin-typescript",
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: "src/utils/typography",
       },
     },
   ],
