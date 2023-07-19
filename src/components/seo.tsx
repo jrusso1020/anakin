@@ -50,11 +50,11 @@ const SEO = ({ description, keywords, title, image, children }: Props) => {
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content={siteImage} />
-      <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
+      <meta name="twitter:creator" content={site.siteMetadata?.author || ""} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {(keywords || []).length > 0 && (
-        <meta name="keywords" content={keywords.join(`, `)} />
+        <meta name="keywords" content={keywords?.join(", ")} />
       )}
       {children}
     </>

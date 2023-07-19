@@ -11,7 +11,7 @@ jobs:
           name: Install Yarn
           command: |
             curl -o- -L https://yarnpkg.com/install.sh | bash
-            yarn set version 3.3.0
+            yarn set version 3.6.1
       - restore_cache:
           keys:
             - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -40,9 +40,22 @@ jobs:
       - restore_cache:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
-          name: Build
+          name: Format
           command: |
             yarn prettier --list-different src/**/*.{ts,tsx} content/blog/**/index.md
+  type-check:
+    docker:
+      - image: cimg/node:18.14.0
+    working_directory: ~/anakin
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Type Check
+          command: |
+            yarn type-check
   build:
     docker:
       - image: cimg/node:18.14.0
@@ -83,10 +96,14 @@ workflows:
       - format:
           requires:
             - dependencies
+      - type-check:
+          requires:
+            - dependencies
       - deploy:
           requires:
             - build
             - format
+            - type-check
           filters:
             branches:
               only:

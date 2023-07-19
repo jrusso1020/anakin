@@ -8,6 +8,33 @@ import PostPreview from "src/components/postPreview"
 import { rhythm } from "src/utils/typography"
 import { colors } from "src/utils/colors"
 
+interface QueryResult {
+  site: {
+    siteMetadata: {
+      title: string
+      author: string
+    }
+  }
+  allMarkdownRemark: {
+    totalCount: number
+    edges: {
+      node: {
+        timeToRead: number
+        excerpt: string
+        fields: {
+          slug: string
+        }
+        frontmatter: {
+          date: string
+          title: string
+          description: string
+          tags: string[]
+        }
+      }
+    }[]
+  }
+}
+
 const StyledLink = styled(Link)`
   box-shadow: none;
   color: ${colors.keppel};
@@ -19,14 +46,7 @@ const H3 = styled.h3`
 
 interface Props {
   location: Location
-  data: {
-    markdownRemark: any
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-  }
+  data: QueryResult
   pageContext: any
 }
 

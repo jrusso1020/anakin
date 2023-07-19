@@ -9,16 +9,31 @@ import Tags from "src/components/tags"
 import BlogDateAndTime from "src/components/blogDateAndTime"
 import { rhythm, scale } from "src/utils/typography"
 
-interface Props {
-  location: Location
-  data: {
-    markdownRemark: any
-    site: {
-      siteMetadata: {
-        title: string
-      }
+interface MarkdownRemarkI {
+  id: string
+  excerpt: string
+  timeToRead: string
+  html: string
+  frontmatter: {
+    title: string
+    date: string
+    description?: string
+    tags: string[]
+  }
+}
+interface BlogPostBySlugQuery {
+  site: {
+    siteMetadata: {
+      title: string
+      author: string
     }
   }
+  markdownRemark: MarkdownRemarkI
+}
+
+interface Props {
+  location: Location
+  data: BlogPostBySlugQuery
   pageContext: any
 }
 
@@ -32,8 +47,8 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
     title: post.frontmatter.title,
   }
 
-  const kebabCase = (string) =>
-    string
+  const kebabCase = (str: string) =>
+    str
       .replace(/([a-z])([A-Z])/g, "$1-$2")
       .replace(/[\s_]+/g, "-")
       .toLowerCase()
@@ -63,10 +78,10 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
 
       <ul
         style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
-          listStyle: `none`,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          listStyle: "none",
           padding: 0,
         }}
       >
@@ -90,7 +105,11 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => (
+export const Head = ({
+  data: { markdownRemark: post },
+}: {
+  data: { markdownRemark: MarkdownRemarkI }
+}) => (
   <SEO
     title={post.frontmatter.title}
     description={post.frontmatter.description || post.excerpt}

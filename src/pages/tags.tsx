@@ -32,22 +32,27 @@ const Tag = styled(Link)`
   }
 `
 
-interface Props {
-  location: Location
-  data: {
-    allMarkdownRemark: {
-      group: any
+interface QueryResult {
+  site: {
+    siteMetadata: {
+      title: string
     }
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
+  }
+  allMarkdownRemark: {
+    group: {
+      fieldValue: string
+      totalCount: number
+    }[]
   }
 }
 
-const kebabCase = (string) =>
-  string
+interface Props {
+  location: Location
+  data: QueryResult
+}
+
+const kebabCase = (str: string) =>
+  str
     .replace(/([a-z])([A-Z])/g, "$1-$2")
     .replace(/[\s_]+/g, "-")
     .toLowerCase()
@@ -84,18 +89,18 @@ export const Head = () => (
   <SEO
     title="All tags"
     keywords={[
-      `boredhacking`,
-      `bored hacking`,
-      `bored`,
-      `hacking`,
-      `james russo`,
-      `james`,
-      `russo`,
-      `blog`,
-      `gatsby`,
-      `javascript`,
-      `react`,
-      `tags`,
+      "boredhacking",
+      "bored hacking",
+      "bored",
+      "hacking",
+      "james russo",
+      "james",
+      "russo",
+      "blog",
+      "gatsby",
+      "javascript",
+      "react",
+      "tags",
     ]}
   />
 )
