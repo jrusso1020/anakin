@@ -73,7 +73,7 @@
     "@yarnpkg/sdks": "^3.0.0-rc.48",
     "eslint-plugin-node": "^11.1.0",
     "gatsby-plugin-root-import": "^2.0.8",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
