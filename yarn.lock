@@ -5142,7 +5142,7 @@ __metadata:
     gatsby-plugin-typography: ^5.12.0
     gatsby-react-router-scroll: ^6.12.0
     gatsby-remark-copy-linked-files: ^6.12.0
-    gatsby-remark-images: ^7.11.0
+    gatsby-remark-images: ^7.12.0
     gatsby-remark-prismjs: ^7.12.0
     gatsby-remark-responsive-iframe: ^6.11.1
     gatsby-remark-smartypants: ^6.11.0
@@ -8726,30 +8726,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-core-utils@npm:4.11.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    got: ^11.8.6
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: b7119119c8726af7ec2fd6a03bf6edd93d8c43fd8b4441be1e5cc356ed6d21f762d7e21a535128652b48326427d66a444544af967a9769a003c614213c07747e
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^4.12.0":
   version: 4.12.0
   resolution: "gatsby-core-utils@npm:4.12.0"
@@ -9155,14 +9131,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^7.11.0":
-  version: 7.11.0
-  resolution: "gatsby-remark-images@npm:7.11.0"
+"gatsby-remark-images@npm:^7.12.0":
+  version: 7.12.0
+  resolution: "gatsby-remark-images@npm:7.12.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.11.0
+    gatsby-core-utils: ^4.12.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -9172,7 +9148,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: 7abbac1ee927b0f2df87ed8049cfa21eb1def3d21b10968dbc88a6a8acaf16703df6506d87fc30b1694ec7d44c197ab2dfc84ce5816159f3c39761f436087057
+  checksum: d363d8f2176f99f364275bd85313f3ef7b0a2841ceb371703748e9566c78bc8b1e9cb1ee64f1508110386564c86ac85b5a767980651a389f9bd3457efdce5f86
   languageName: node
   linkType: hard
 
