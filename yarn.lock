@@ -5128,7 +5128,7 @@ __metadata:
     gatsby-link: ^5.12.0
     gatsby-plugin-catch-links: ^5.12.0
     gatsby-plugin-emotion: ^8.12.0
-    gatsby-plugin-feed: ^5.11.0
+    gatsby-plugin-feed: ^5.12.0
     gatsby-plugin-google-gtag: ^5.12.0
     gatsby-plugin-image: ^3.12.0
     gatsby-plugin-manifest: ^5.12.0
@@ -8870,21 +8870,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:^5.11.0":
-  version: 5.11.0
-  resolution: "gatsby-plugin-feed@npm:5.11.0"
+"gatsby-plugin-feed@npm:^5.12.0":
+  version: 5.12.0
+  resolution: "gatsby-plugin-feed@npm:5.12.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.11.0
+    gatsby-plugin-utils: ^4.12.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 34fa73524b9a27e07026824ddb959d751130597b928954f1df3d23adfecb4cf9a70872a5dc572a3375beb0c233f2fb7c8f5655a8f9cc72afea78a7d2e072edf9
+  checksum: bcbd5c4424a51deb0b4b1ed915fd96edbf85557696bc1aae78992597320db8101703d33cbe3ade67dc46358374b4ee4f9c81e730a0c056b1672f41b987972ee1
   languageName: node
   linkType: hard
 
@@ -9103,26 +9103,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-plugin-utils@npm:4.11.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.11.0
-    gatsby-sharp: ^1.11.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 4fedc7119f67d5b6793099865c5cc08e00882bd13bdd5ce5c23f46499423040ef3e06ba2384a570f347709dc99bee62bdc8ed829fb595adc745b0a5835f03594
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.12.0":
   version: 4.12.0
   resolution: "gatsby-plugin-utils@npm:4.12.0"
@@ -9261,15 +9241,6 @@ __metadata:
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
   checksum: ba9c279cc78ab47e8230f651923e2bc3d4c724e5ef4c202c18caeb635577c80740362656f468aaea40283dfad0bba6df3df20c621221a47dfcbbb8e8d488395c
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "gatsby-sharp@npm:1.11.0"
-  dependencies:
-    sharp: ^0.32.1
-  checksum: 966ad189135b5aae97f01af5a737755198ac28ebae6fcc9e3ad4dcf9f81354c6d094156fcb8177908c6b46f098963b2567d43c4c30d30675818fa4039db412ce
   languageName: node
   linkType: hard
 
