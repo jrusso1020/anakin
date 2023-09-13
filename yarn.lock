@@ -3566,10 +3566,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/typography@npm:^0.16.4":
-  version: 0.16.4
-  resolution: "@types/typography@npm:0.16.4"
-  checksum: 92fd3cd242ab1ff4632927c7aa3d71be18162883064cc301330d53a8f13a90970c844062a7bb1503dda25e5e6f93c38d1b620dcc21720ec6ce1f36903faee054
+"@types/typography@npm:^0.16.5":
+  version: 0.16.5
+  resolution: "@types/typography@npm:0.16.5"
+  checksum: 54f538ee350538ea3bff5a002d53261bedd2e720b3850143e1af2a7ea07c374932289724e8d70bacef8eb98ea9437c4617937afd1ab47dd4802ca26807a38a61
   languageName: node
   linkType: hard
 
@@ -5112,7 +5112,7 @@ __metadata:
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
     "@types/react-transition-group": ^4.4.6
-    "@types/typography": ^0.16.4
+    "@types/typography": ^0.16.5
     "@typescript-eslint/eslint-plugin": ^6.7.0
     "@typescript-eslint/parser": ^6.7.0
     "@yarnpkg/sdks": ^3.0.0-rc.50
