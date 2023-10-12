@@ -5186,7 +5186,7 @@ __metadata:
     gatsby-plugin-google-gtag: ^5.12.1
     gatsby-plugin-image: ^3.12.1
     gatsby-plugin-manifest: ^5.12.1
-    gatsby-plugin-offline: ^6.12.0
+    gatsby-plugin-offline: ^6.12.1
     gatsby-plugin-react-svg: ^3.3.0
     gatsby-plugin-root-import: ^2.0.8
     gatsby-plugin-s3: ^0.4.1
@@ -9004,9 +9004,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.12.0":
-  version: 6.12.0
-  resolution: "gatsby-plugin-offline@npm:6.12.0"
+"gatsby-plugin-offline@npm:^6.12.1":
+  version: 6.12.1
+  resolution: "gatsby-plugin-offline@npm:6.12.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: ^1.0.0-rc.10
@@ -9019,7 +9019,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 792c225e59acc1f56aac2bffd889d122975cb4532efec225f09aaa7bc28703edc695a0c86ed6b4aafd1a0f65faa5b285ca0c9ff408f6fdbf350fa94273a1d6b9
+  checksum: 7933c25eed702a3f984ed475728f309869596ce55bbf6a1741eea00e2aaf52b41d51bad725cc28d4f339e993d8c9678a476b49f02d0021f93efa9a971520e271
   languageName: node
   linkType: hard
 
