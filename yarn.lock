@@ -3598,14 +3598,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.21":
-  version: 18.2.21
-  resolution: "@types/react@npm:18.2.21"
+"@types/react@npm:^18.2.29":
+  version: 18.2.29
+  resolution: "@types/react@npm:18.2.29"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: ffed203bfe7aad772b8286f7953305c9181ac3a8f27d3f5400fbbc2a8e27ca8e5bbff818ee014f39ca0d19d2b3bb154e5bdbec7e232c6f80b59069375aa78349
+  checksum: 3d09ac61a683fa976512a28ac175b9d823f0368adc5fb2abf53f64ab030e8ad866a201a8029f92ff48246c8e326f7517ebe165f976ecb412627c65c6f9a7c9d3
   languageName: node
   linkType: hard
 
@@ -5208,7 +5208,7 @@ __metadata:
     "@emotion/serialize": ^1.1.2
     "@emotion/styled": ^11.11.0
     "@types/node": ^20.8.7
-    "@types/react": ^18.2.21
+    "@types/react": ^18.2.29
     "@types/react-dom": ^18.2.13
     "@types/react-transition-group": ^4.4.7
     "@types/typography": ^0.16.6
