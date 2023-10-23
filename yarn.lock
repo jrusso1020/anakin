@@ -5247,7 +5247,7 @@ __metadata:
     gatsby-remark-smartypants: ^6.12.0
     gatsby-source-filesystem: ^5.12.0
     gatsby-transformer-remark: ^6.12.0
-    gatsby-transformer-sharp: ^5.12.1
+    gatsby-transformer-sharp: ^5.12.2
     husky: ^8.0.3
     lint-staged: ^14.0.1
     mitt: ^3.0.1
@@ -9428,22 +9428,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-transformer-sharp@npm:5.12.1"
+"gatsby-transformer-sharp@npm:^5.12.2":
+  version: 5.12.2
+  resolution: "gatsby-transformer-sharp@npm:5.12.2"
   dependencies:
     "@babel/runtime": ^7.20.13
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.12.1
+    gatsby-plugin-utils: ^4.12.2
     probe-image-size: ^7.2.3
     semver: ^7.5.3
     sharp: ^0.32.6
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: f466ecbda026993c15e5991aa8cb25782bb2774562e7484883b6348f06b422e925f59d7d6491fef38d6b2ed42c5c9be91b0bc9277d62f28c574a6440b31cb722
+  checksum: 4fe4e30c724574d44bc800bfcbe66597dc0719e0566388e101868e9e8a20b7a5bf6eda6b410c02e96c4e3abe622cfbad9691f3d2e6879d7e21412d00b129b263
   languageName: node
   linkType: hard
 
