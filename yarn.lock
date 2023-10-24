@@ -5249,7 +5249,7 @@ __metadata:
     gatsby-plugin-react-svg: ^3.3.0
     gatsby-plugin-root-import: ^2.0.8
     gatsby-plugin-s3: ^0.4.1
-    gatsby-plugin-sharp: ^5.12.1
+    gatsby-plugin-sharp: ^5.12.2
     gatsby-plugin-slug: ^2.0.0
     gatsby-plugin-typescript: ^5.12.0
     gatsby-plugin-typography: ^5.12.0
@@ -9153,9 +9153,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-plugin-sharp@npm:5.12.1"
+"gatsby-plugin-sharp@npm:^5.12.2":
+  version: 5.12.2
+  resolution: "gatsby-plugin-sharp@npm:5.12.2"
   dependencies:
     "@babel/runtime": ^7.20.13
     async: ^3.2.4
@@ -9164,14 +9164,14 @@ __metadata:
     filenamify: ^4.3.0
     fs-extra: ^11.1.1
     gatsby-core-utils: ^4.12.0
-    gatsby-plugin-utils: ^4.12.1
+    gatsby-plugin-utils: ^4.12.2
     lodash: ^4.17.21
     probe-image-size: ^7.2.3
     semver: ^7.5.3
     sharp: ^0.32.6
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 0741ff9ed9456ed1e905bb898a3a5547e833059b10561bc0a7bc247d34d72d24dbe69248d63a1f93c7d3d50bc058405dbcac7a7b1056a9ba1c025e23702ce730
+  checksum: fbc0b9aa84db6b4ad052c884751172acd7e152c6b6b5794349896e91e442a6ebefe3690fb84cac56e5c0bad9e0f6cdc597d3658b83ff180bafc2d831c3035fb9
   languageName: node
   linkType: hard
 
