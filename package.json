@@ -34,7 +34,7 @@
     "gatsby-plugin-typography": "^5.12.0",
     "gatsby-react-router-scroll": "^6.12.0",
     "gatsby-remark-copy-linked-files": "^6.12.0",
-    "gatsby-remark-images": "^7.12.1",
+    "gatsby-remark-images": "^7.12.2",
     "gatsby-remark-prismjs": "^7.12.0",
     "gatsby-remark-responsive-iframe": "^6.12.0",
     "gatsby-remark-smartypants": "^6.12.0",
