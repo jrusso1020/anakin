@@ -5257,7 +5257,7 @@ __metadata:
     gatsby-plugin-emotion: ^8.12.0
     gatsby-plugin-feed: ^5.12.2
     gatsby-plugin-google-gtag: ^5.12.2
-    gatsby-plugin-image: ^3.12.2
+    gatsby-plugin-image: ^3.12.3
     gatsby-plugin-manifest: ^5.12.1
     gatsby-plugin-offline: ^6.12.2
     gatsby-plugin-react-svg: ^3.3.0
@@ -9053,22 +9053,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^3.12.2":
-  version: 3.12.2
-  resolution: "gatsby-plugin-image@npm:3.12.2"
+"gatsby-plugin-image@npm:^3.12.3":
+  version: 3.12.3
+  resolution: "gatsby-plugin-image@npm:3.12.3"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/parser": ^7.20.13
     "@babel/runtime": ^7.20.13
     "@babel/traverse": ^7.20.13
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^5.12.0
+    babel-plugin-remove-graphql-queries: ^5.12.1
     camelcase: ^6.3.0
     chokidar: ^3.5.3
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.12.0
-    gatsby-plugin-utils: ^4.12.2
+    gatsby-core-utils: ^4.12.1
+    gatsby-plugin-utils: ^4.12.3
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.8.1
   peerDependencies:
@@ -9083,7 +9083,7 @@ __metadata:
       optional: true
     gatsby-source-filesystem:
       optional: true
-  checksum: cee53ae7dee6bc4e31d373c53f3f7d591ee6492e8398d8da92be05c30894a3c31a50acfc275b11ec87470fc4ff6b7cc2015da4a94df50d15b9fe2e8d25622f87
+  checksum: 7e260c192155c8c53f61e7843a8a44831edf77a93f4084ac337b5514a6dfa98748bd36723a069f8afa9ef51572382c715175aefb6d3f7304f37d28d9a6111ce9
   languageName: node
   linkType: hard
 
