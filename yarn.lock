@@ -5244,7 +5244,7 @@ __metadata:
     gatsby-plugin-feed: ^5.12.3
     gatsby-plugin-google-gtag: ^5.12.3
     gatsby-plugin-image: ^3.12.3
-    gatsby-plugin-manifest: ^5.12.1
+    gatsby-plugin-manifest: ^5.12.3
     gatsby-plugin-offline: ^6.12.3
     gatsby-plugin-react-svg: ^3.3.0
     gatsby-plugin-root-import: ^2.0.8
@@ -9073,18 +9073,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-plugin-manifest@npm:5.12.1"
+"gatsby-plugin-manifest@npm:^5.12.3":
+  version: 5.12.3
+  resolution: "gatsby-plugin-manifest@npm:5.12.3"
   dependencies:
     "@babel/runtime": ^7.20.13
-    gatsby-core-utils: ^4.12.0
-    gatsby-plugin-utils: ^4.12.1
+    gatsby-core-utils: ^4.12.1
+    gatsby-plugin-utils: ^4.12.3
     semver: ^7.5.3
     sharp: ^0.32.6
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 420e20a62bfb476457d7a280e3781c94f617fd06ce0136ba5cc3ad2ebc8e93ece36a6180996e539f65218991ab4d92f52aa127d047de8a8c46c807f92088bc3c
+  checksum: 33db61915fd5b36083a3dd4988023d4cae8590c7045c1f5e610678f6b6dcbe154e19d6166c396eb11a34730b0d9e2a046105a1e2a87ee3053baa41aaeda03ea6
   languageName: node
   linkType: hard
 
@@ -9237,26 +9237,6 @@ __metadata:
     react-typography: ^0.16.1 || ^1.0.0-alpha.0
     typography: ^0.16.0 || ^1.0.0-alpha.0
   checksum: 60152249c80fea8fbcfb7146ad1d4e12bb5c1ce8f3820422b62805cba5763cddd11a0b1002f264ed349229bcf039b4c2451e7e8c2661482691a576464d1dd266
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^4.12.1":
-  version: 4.12.1
-  resolution: "gatsby-plugin-utils@npm:4.12.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.12.0
-    gatsby-sharp: ^1.12.1
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: dccddc61929d23189bc6b29c168745bb65e08318a551a97127593746d1507f39aa84580eb0f025bbfda10d0d2f2358489a3181039eba4c68dcc3a68f6cf3595b
   languageName: node
   linkType: hard
 
