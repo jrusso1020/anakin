@@ -3530,12 +3530,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.9.3":
-  version: 20.9.3
-  resolution: "@types/node@npm:20.9.3"
+"@types/node@npm:^20.9.4":
+  version: 20.9.4
+  resolution: "@types/node@npm:20.9.4"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 0cfbfd2a8bd18acc75aa4d7685c7dcf56344f48addd4041d306dc194f3132f8014d56fd49fcb26bcdf400b883f9527e5e2beaf52dfce029cef15c69b8ed2e72a
+  checksum: 619144cfee8235f692009e4268a8b80ef4ec496670273ab1cef04e4a053b471f391af6701e65f2f91a107256933d902b6caec079d551b109e981b0b706624815
   languageName: node
   linkType: hard
 
@@ -5230,7 +5230,7 @@ __metadata:
     "@emotion/react": ^11.11.1
     "@emotion/serialize": ^1.1.2
     "@emotion/styled": ^11.11.0
-    "@types/node": ^20.9.3
+    "@types/node": ^20.9.4
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.17
     "@types/react-transition-group": ^4.4.9
