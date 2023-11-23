@@ -5245,7 +5245,7 @@ __metadata:
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^5.0.1
     event-source-polyfill: ^1.0.26
-    gatsby: ^5.12.10
+    gatsby: ^5.12.11
     gatsby-cli: ^5.12.4
     gatsby-link: ^5.12.1
     gatsby-plugin-catch-links: ^5.12.0
@@ -9463,9 +9463,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.12.10":
-  version: 5.12.10
-  resolution: "gatsby@npm:5.12.10"
+"gatsby@npm:^5.12.11":
+  version: 5.12.11
+  resolution: "gatsby@npm:5.12.11"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -9642,7 +9642,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: cbb6768ad1cec1a462a019d24e05f25ed634af955bc82ef24353f6f178ca1b60b31b8f6ed22afc0024f90ca0f65f4dd3891136fd6176bcbdd95454c281a21cf0
+  checksum: eb225dfc256f6ff0eb4ee14f6ba5b1b4b74ace008ff518aa9808f2ff3e82b6cc7e83ed576af88fa37efc8ab1da97e9057a3b7ac8f7f3a5bb4a3bb1db7adb3984
   languageName: node
   linkType: hard
 
