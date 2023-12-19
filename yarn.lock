@@ -5460,7 +5460,7 @@ __metadata:
     gatsby-link: ^5.13.0
     gatsby-plugin-catch-links: ^5.12.0
     gatsby-plugin-emotion: ^8.12.0
-    gatsby-plugin-feed: ^5.12.3
+    gatsby-plugin-feed: ^5.13.0
     gatsby-plugin-google-gtag: ^5.12.3
     gatsby-plugin-image: ^3.12.3
     gatsby-plugin-manifest: ^5.13.0
@@ -9274,21 +9274,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "gatsby-plugin-feed@npm:5.12.3"
+"gatsby-plugin-feed@npm:^5.13.0":
+  version: 5.13.0
+  resolution: "gatsby-plugin-feed@npm:5.13.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.12.3
+    gatsby-plugin-utils: ^4.13.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 323f46d829503e5e47d19b034c9a3e2fe5290e50eb47e9cf2c20f48d0719a7f31483c91ad8977728a19ffbd7beff297810c44d36d73eb550ee7b91b3700b8662
+  checksum: 337aea8c8c9b2c3aaa05d77691d02413d7a7a9fa240fcb89f72af8036ab6678f00ff658f69f3aba3602c369bf07cb2d27dbac9d62d0c5e40e0b1fbd53cc15599
   languageName: node
   linkType: hard
 
