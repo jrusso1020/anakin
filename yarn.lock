@@ -5479,7 +5479,7 @@ __metadata:
     gatsby-remark-responsive-iframe: ^6.13.0
     gatsby-remark-smartypants: ^6.13.0
     gatsby-source-filesystem: ^5.12.1
-    gatsby-transformer-remark: ^6.12.3
+    gatsby-transformer-remark: ^6.13.0
     gatsby-transformer-sharp: ^5.12.3
     husky: ^8.0.3
     lint-staged: ^15.2.0
@@ -9711,12 +9711,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:^6.12.3":
-  version: 6.12.3
-  resolution: "gatsby-transformer-remark@npm:6.12.3"
+"gatsby-transformer-remark@npm:^6.13.0":
+  version: 6.13.0
+  resolution: "gatsby-transformer-remark@npm:6.13.0"
   dependencies:
     "@babel/runtime": ^7.20.13
-    gatsby-core-utils: ^4.12.1
+    gatsby-core-utils: ^4.13.0
     gray-matter: ^4.0.3
     hast-util-raw: ^6.1.0
     hast-util-to-html: ^7.1.3
@@ -9739,7 +9739,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 72c844426a2170e64bf736681b743f5853105e80cfbef8db23ab2e55c71daa2765a98246c7e358a2eac190e84fe4aa77822ceb9ffd2c5488b720b86eb5d9c106
+  checksum: 8c49fe60625d77792a3553cd54e309a87e30107bf41781d77ac0635ec4ecb4d092498edaef0cd7e80546821b2f4d9403f696a13ea328f623a92fb1d74cd6369f
   languageName: node
   linkType: hard
 
