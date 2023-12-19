@@ -20,7 +20,7 @@
     "gatsby-cli": "^5.12.4",
     "gatsby-link": "^5.13.0",
     "gatsby-plugin-catch-links": "^5.13.0",
-    "gatsby-plugin-emotion": "^8.12.0",
+    "gatsby-plugin-emotion": "^8.13.0",
     "gatsby-plugin-feed": "^5.13.0",
     "gatsby-plugin-google-gtag": "^5.12.3",
     "gatsby-plugin-image": "^3.12.3",
