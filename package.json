@@ -32,7 +32,7 @@
     "gatsby-plugin-slug": "^2.0.0",
     "gatsby-plugin-typescript": "^5.12.1",
     "gatsby-plugin-typography": "^5.13.0",
-    "gatsby-react-router-scroll": "^6.12.0",
+    "gatsby-react-router-scroll": "^6.13.0",
     "gatsby-remark-copy-linked-files": "^6.13.0",
     "gatsby-remark-images": "^7.12.3",
     "gatsby-remark-prismjs": "^7.12.0",
