@@ -5454,7 +5454,7 @@ __metadata:
     gatsby-remark-smartypants: ^6.13.0
     gatsby-source-filesystem: ^5.13.0
     gatsby-transformer-remark: ^6.13.0
-    gatsby-transformer-sharp: ^5.12.3
+    gatsby-transformer-sharp: ^5.13.0
     husky: ^8.0.3
     lint-staged: ^15.2.0
     mitt: ^3.0.1
@@ -9063,30 +9063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^4.12.1":
-  version: 4.12.1
-  resolution: "gatsby-core-utils@npm:4.12.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    got: ^11.8.6
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 97caf27b9ab0f5fe249b45c7c039474b220a2cc2a004cf21883b311be35d1600f4c633e443af99ac2becd2efe75c91b7e38c2595f7147cf696971e9bcb20ce14
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^4.13.0":
   version: 4.13.0
   resolution: "gatsby-core-utils@npm:4.13.0"
@@ -9440,26 +9416,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.12.3":
-  version: 4.12.3
-  resolution: "gatsby-plugin-utils@npm:4.12.3"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.12.1
-    gatsby-sharp: ^1.12.1
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 42ae96464312c770d39be11063b0ee77444af5587907e2318280c75d3100da2b5a82c193bd6851465aaf4768219631fc40538a923c9a4c3d24c2dab8fd9c4224
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.13.0":
   version: 4.13.0
   resolution: "gatsby-plugin-utils@npm:4.13.0"
@@ -9587,15 +9543,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-sharp@npm:^1.12.1":
-  version: 1.12.1
-  resolution: "gatsby-sharp@npm:1.12.1"
-  dependencies:
-    sharp: ^0.32.6
-  checksum: 8e535b030c431e1e831cbac678faf33b749624bd4559410b6a67c1d42c1eacbc7b95ab2dfe9b9fe6619e22fc78adc6c4337d7df122b26f7b56e5845671c3c96d
-  languageName: node
-  linkType: hard
-
 "gatsby-sharp@npm:^1.13.0":
   version: 1.13.0
   resolution: "gatsby-sharp@npm:1.13.0"
@@ -9676,22 +9623,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "gatsby-transformer-sharp@npm:5.12.3"
+"gatsby-transformer-sharp@npm:^5.13.0":
+  version: 5.13.0
+  resolution: "gatsby-transformer-sharp@npm:5.13.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.12.3
+    gatsby-plugin-utils: ^4.13.0
     probe-image-size: ^7.2.3
     semver: ^7.5.3
     sharp: ^0.32.6
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: 588d7c3ce5936c6193c918fef975e7e32e45187b53d3c37929add26a83fbffef67289f4aae66cdceb1ad873f9cb5129b924a83752f00e3f429ad10c341cf3d8d
+  checksum: ff79f28bada78bb08ea1331b1cc3603b5aa5149185bbe5753f1e9bade908d0e53ac775e615172e7a8a4ab44219172efadcac0c8da0a5f69f9a23ea9ea2c4626b
   languageName: node
   linkType: hard
 
