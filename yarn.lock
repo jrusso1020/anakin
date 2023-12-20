@@ -5458,7 +5458,7 @@ __metadata:
     gatsby-plugin-s3: ^0.4.1
     gatsby-plugin-sharp: ^5.13.0
     gatsby-plugin-slug: ^2.0.0
-    gatsby-plugin-typescript: ^5.12.1
+    gatsby-plugin-typescript: ^5.13.0
     gatsby-plugin-typography: ^5.13.0
     gatsby-react-router-scroll: ^6.13.0
     gatsby-remark-copy-linked-files: ^6.13.0
@@ -9419,23 +9419,6 @@ __metadata:
   peerDependencies:
     gatsby: ">3.0.0"
   checksum: ce7fc9a803ae78ebc37b58379a3dd1e162773963a199740d09522c6db583f608350f23a352c729d62d3de6dfd5760f7be374b5014747991d44b6f45e2771093b
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-plugin-typescript@npm:5.12.1"
-  dependencies:
-    "@babel/core": ^7.20.12
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.18.6
-    "@babel/plugin-proposal-numeric-separator": ^7.18.6
-    "@babel/plugin-proposal-optional-chaining": ^7.20.7
-    "@babel/preset-typescript": ^7.18.6
-    "@babel/runtime": ^7.20.13
-    babel-plugin-remove-graphql-queries: ^5.12.1
-  peerDependencies:
-    gatsby: ^5.0.0-next
-  checksum: d6e7d80375622b138e592a571ca040807eb4c730fecbd5dfb03d52e2d64a7fb2a4bfb0f3e63121f1c043a6dcab34dabe6149d044697bbfefbcf9dec50c1cbac0
   languageName: node
   linkType: hard
 
