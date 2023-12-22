@@ -5429,7 +5429,7 @@ __metadata:
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^5.1.0
     event-source-polyfill: ^1.0.26
-    gatsby: ^5.13.0
+    gatsby: ^5.13.1
     gatsby-cli: ^5.13.0
     gatsby-link: ^5.13.0
     gatsby-plugin-catch-links: ^5.13.0
@@ -6095,6 +6095,17 @@ __metadata:
     execa: ^1.0.0
     is-wsl: ^2.1.1
   checksum: 2733790bc8bbb76a5be7706fa4632f655010774e579a9d3ebe31dc10cf44a2b82cf07b0b6f74162e63048ce32d912193c08c5b5311dce5c19fc641a3bda1292b
+  languageName: node
+  linkType: hard
+
+"clipboardy@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "clipboardy@npm:4.0.0"
+  dependencies:
+    execa: ^8.0.1
+    is-wsl: ^3.1.0
+    is64bit: ^2.0.0
+  checksum: ac7fa4438451d4a509fd7163505c08be92087c1a0ab8f54f8063eb04a69191ded1b59333344e2fd60bad9688e2a3dd69e50a813bf05ebf8369fa8bf65a0f47a2
   languageName: node
   linkType: hard
 
@@ -8248,7 +8259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:8.0.1":
+"execa@npm:8.0.1, execa@npm:^8.0.1":
   version: 8.0.1
   resolution: "execa@npm:8.0.1"
   dependencies:
@@ -9064,6 +9075,57 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-cli@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "gatsby-cli@npm:5.13.1"
+  dependencies:
+    "@babel/code-frame": ^7.18.6
+    "@babel/core": ^7.20.12
+    "@babel/generator": ^7.20.14
+    "@babel/helper-plugin-utils": ^7.20.2
+    "@babel/preset-typescript": ^7.18.6
+    "@babel/runtime": ^7.20.13
+    "@babel/template": ^7.20.7
+    "@babel/types": ^7.20.7
+    "@jridgewell/trace-mapping": ^0.3.18
+    "@types/common-tags": ^1.8.1
+    better-opn: ^2.1.1
+    boxen: ^5.1.2
+    chalk: ^4.1.2
+    clipboardy: ^4.0.0
+    common-tags: ^1.8.2
+    convert-hrtime: ^3.0.0
+    create-gatsby: ^3.13.0
+    envinfo: ^7.10.0
+    execa: ^5.1.1
+    fs-exists-cached: ^1.0.0
+    fs-extra: ^11.1.1
+    gatsby-core-utils: ^4.13.0
+    gatsby-telemetry: ^4.13.0
+    hosted-git-info: ^3.0.8
+    is-valid-path: ^0.1.1
+    joi: ^17.9.2
+    lodash: ^4.17.21
+    node-fetch: ^2.6.11
+    opentracing: ^0.14.7
+    pretty-error: ^2.1.2
+    progress: ^2.0.3
+    prompts: ^2.4.2
+    redux: 4.2.1
+    resolve-cwd: ^3.0.0
+    semver: ^7.5.3
+    signal-exit: ^3.0.7
+    stack-trace: ^0.0.10
+    strip-ansi: ^6.0.1
+    yargs: ^15.4.1
+    yoga-layout-prebuilt: ^1.10.0
+    yurnalist: ^2.1.0
+  bin:
+    gatsby: cli.js
+  checksum: ea939f93369b1ff88bc3068950e30e8d4cac6af54528efc8555d0e79ae3c871c63476a94c529b1d86513ed286b9f5de3333afc5fb14e2e3ab61560142844c907
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^4.13.0":
   version: 4.13.0
   resolution: "gatsby-core-utils@npm:4.13.0"
@@ -9136,7 +9198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^1.13.0":
+"gatsby-parcel-config@npm:1.13.0":
   version: 1.13.0
   resolution: "gatsby-parcel-config@npm:1.13.0"
   dependencies:
@@ -9655,9 +9717,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "gatsby@npm:5.13.0"
+"gatsby@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "gatsby@npm:5.13.1"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -9740,13 +9802,13 @@ __metadata:
     find-cache-dir: ^3.3.2
     fs-exists-cached: 1.0.0
     fs-extra: ^11.1.1
-    gatsby-cli: ^5.13.0
+    gatsby-cli: ^5.13.1
     gatsby-core-utils: ^4.13.0
     gatsby-graphiql-explorer: ^3.13.0
     gatsby-legacy-polyfills: ^3.13.0
     gatsby-link: ^5.13.0
     gatsby-page-utils: ^3.13.0
-    gatsby-parcel-config: ^1.13.0
+    gatsby-parcel-config: 1.13.0
     gatsby-plugin-page-creator: ^5.13.0
     gatsby-plugin-typescript: ^5.13.0
     gatsby-plugin-utils: ^4.13.0
@@ -9835,7 +9897,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: eb244148aaf7565091be97a03cf5d3a6bf77607e53abff1f36115462ff696323ce6d7b297ded04ae96a6520ab2d0a103a32f31058b618c096ed62bfe0938b116
+  checksum: 19395775a13d07216dfe875d41d0534f3299a1f111923a8f4a5a846163d4a984fdf6874a2c063b0f40ac193e66a6b32ab3f3807bdfeee7104afb7a1a87b924ea
   languageName: node
   linkType: hard
 
@@ -11485,6 +11547,24 @@ __metadata:
   dependencies:
     is-docker: ^2.0.0
   checksum: 20849846ae414997d290b75e16868e5261e86ff5047f104027026fd61d8b5a9b0b3ade16239f35e1a067b3c7cc02f70183cb661010ed16f4b6c7c93dad1b19d8
+  languageName: node
+  linkType: hard
+
+"is-wsl@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "is-wsl@npm:3.1.0"
+  dependencies:
+    is-inside-container: ^1.0.0
+  checksum: f9734c81f2f9cf9877c5db8356bfe1ff61680f1f4c1011e91278a9c0564b395ae796addb4bf33956871041476ec82c3e5260ed57b22ac91794d4ae70a1d2f0a9
+  languageName: node
+  linkType: hard
+
+"is64bit@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "is64bit@npm:2.0.0"
+  dependencies:
+    system-architecture: ^0.1.0
+  checksum: 253079e64b6f9bb90295a63b73a046bea67364cdc104bc5abeffcf4cbc52b3e66b0e921cb14f686deb71b5cab628f9f490845c1194c6e94f84068d177c7f15cd
   languageName: node
   linkType: hard
 
@@ -17053,6 +17133,13 @@ __metadata:
     "@pkgr/utils": ^2.3.1
     tslib: ^2.5.0
   checksum: 8a9560e5d8f3d94dc3cf5f7b9c83490ffa30d320093560a37b88f59483040771fd1750e76b9939abfbb1b5a23fd6dfbae77f6b338abffe7cae7329cd9b9bb86b
+  languageName: node
+  linkType: hard
+
+"system-architecture@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "system-architecture@npm:0.1.0"
+  checksum: ca0dd793c45c354ab57dd7fc8ce7dc9923a6e07382bd3b22eb5b08f55ddb0217c390d00767549c5155fd4ce7ef23ffdd8cfb33dd4344cbbd37837d085a50f6f0
   languageName: node
   linkType: hard
 
