@@ -5412,7 +5412,7 @@ __metadata:
     gatsby-plugin-typescript: "npm:^5.13.0"
     gatsby-plugin-typography: "npm:^5.13.1"
     gatsby-react-router-scroll: "npm:^6.13.0"
-    gatsby-remark-copy-linked-files: "npm:^6.13.0"
+    gatsby-remark-copy-linked-files: "npm:^6.13.1"
     gatsby-remark-images: "npm:^7.13.0"
     gatsby-remark-prismjs: "npm:^7.13.0"
     gatsby-remark-responsive-iframe: "npm:^6.13.1"
@@ -9507,9 +9507,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-copy-linked-files@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "gatsby-remark-copy-linked-files@npm:6.13.0"
+"gatsby-remark-copy-linked-files@npm:^6.13.1":
+  version: 6.13.1
+  resolution: "gatsby-remark-copy-linked-files@npm:6.13.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     cheerio: "npm:^1.0.0-rc.10"
@@ -9521,7 +9521,7 @@ __metadata:
     unist-util-visit: "npm:^2.0.3"
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 676090c9d522bcd0ddce685e86217a5fc6bc65c490167e1c9b5068f55a6b1ce99b362a9a528476f4a0a73297bcebb97995330ad2374ffc43fb8cbe33525185e6
+  checksum: 6096a88e2dc68a5057af03f5dfc7695bc88a62b104fbfa1ca60b6ffff44c92300f3bf262e7b20596f45cc77284d1016758655d132c161372a1ce4f6a6722703c
   languageName: node
   linkType: hard
 
