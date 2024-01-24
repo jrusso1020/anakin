@@ -5358,7 +5358,7 @@ __metadata:
     gatsby-cli: "npm:^5.13.2"
     gatsby-link: "npm:^5.13.0"
     gatsby-plugin-catch-links: "npm:^5.13.1"
-    gatsby-plugin-emotion: "npm:^8.13.0"
+    gatsby-plugin-emotion: "npm:^8.13.1"
     gatsby-plugin-feed: "npm:^5.13.1"
     gatsby-plugin-google-gtag: "npm:^5.13.1"
     gatsby-plugin-image: "npm:^3.13.0"
@@ -9166,9 +9166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-emotion@npm:^8.13.0":
-  version: 8.13.0
-  resolution: "gatsby-plugin-emotion@npm:8.13.0"
+"gatsby-plugin-emotion@npm:^8.13.1":
+  version: 8.13.1
+  resolution: "gatsby-plugin-emotion@npm:8.13.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     "@emotion/babel-preset-css-prop": "npm:^11.11.0"
@@ -9176,7 +9176,7 @@ __metadata:
     "@babel/core": ^7.11.6
     "@emotion/react": ^11.0.0
     gatsby: ^5.0.0-next
-  checksum: 3e4e4189b209058e53b9bbd75757d849ee89f978930c91c63b212b91376ddb647c95e727dcf347581d83f6eb8e0bec3028a160e624ae8a131dc55ae17ff981dd
+  checksum: 361ef17bea192f39ef15264dd6bb670dec7f244ea2e5fea911aeaf31253b64450ed4adc1d6596cc85a60ea934b0a9e180712cbda8cf53d9ffba4d950e78b7bb5
   languageName: node
   linkType: hard
 
