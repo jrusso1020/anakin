@@ -5416,7 +5416,7 @@ __metadata:
     gatsby-remark-images: "npm:^7.13.0"
     gatsby-remark-prismjs: "npm:^7.13.0"
     gatsby-remark-responsive-iframe: "npm:^6.13.1"
-    gatsby-remark-smartypants: "npm:^6.13.0"
+    gatsby-remark-smartypants: "npm:^6.13.1"
     gatsby-source-filesystem: "npm:^5.13.1"
     gatsby-transformer-remark: "npm:^6.13.1"
     gatsby-transformer-sharp: "npm:^5.13.1"
@@ -9575,9 +9575,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-smartypants@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "gatsby-remark-smartypants@npm:6.13.0"
+"gatsby-remark-smartypants@npm:^6.13.1":
+  version: 6.13.1
+  resolution: "gatsby-remark-smartypants@npm:6.13.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     retext: "npm:^7.0.1"
@@ -9585,7 +9585,7 @@ __metadata:
     unist-util-visit: "npm:^2.0.3"
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 7fa21c8cc2033cbf4505b54132e18310bad08d3db912bf20a899dd95c11b8a47ec0ac4f4916f3872f2916bea8f0d44676c3feb5f8d27fc331dd5aa5467b45116
+  checksum: 0a3acde69e4aeb80cbf9cbe731cd02d2e7796305c7c3d96ed781ae6acea484b9d7856073994c4b97918c8351b747fac159b46eb5585728725e2a9f7ba48f6efa
   languageName: node
   linkType: hard
 
