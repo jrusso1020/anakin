@@ -5420,7 +5420,7 @@ __metadata:
     gatsby-source-filesystem: "npm:^5.13.1"
     gatsby-transformer-remark: "npm:^6.13.1"
     gatsby-transformer-sharp: "npm:^5.13.1"
-    husky: "npm:^8.0.3"
+    husky: "npm:^9.0.2"
     lint-staged: "npm:^15.2.0"
     mitt: "npm:^3.0.1"
     platform: "npm:^1.3.6"
@@ -10714,12 +10714,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
+"husky@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "husky@npm:9.0.2"
   bin:
-    husky: lib/bin.js
-  checksum: b754cf70fdc97c3b60fec5b80056b9c11436464953b1691bf2b5dcf0081fb6685d2c5f47abb8b2b1c49f504aabea5321fdd6496f8b755d9f6e7525a493406abb
+    husky: bin.js
+  checksum: 6a9c0a81f25a743e2d0911cbe3f7e8809238f61129eb4dbf6a5e89b21406fb2af4d228d051f80b3f90c9408696b90b418e731aacbac00baa57f84db40a8fa157
   languageName: node
   linkType: hard
 
