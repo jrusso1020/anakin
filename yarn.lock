@@ -3663,12 +3663,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.11.7":
-  version: 20.11.7
-  resolution: "@types/node@npm:20.11.7"
+"@types/node@npm:^20.11.10":
+  version: 20.11.10
+  resolution: "@types/node@npm:20.11.10"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: ff0428c093987f1f6e3400b91450077cf006d7f0e4ff316e20636218562c53761565ceb06bd7a161badf46e6884d78b554c7b1c3a7717cf5cb8c97f461ecd754
+  checksum: 41ca9c7e7c95bf070ad747ab266f267f41950e01f5ddda739d0665c2ed39acc45cce46f78e33ffa2bf2dacd74a8493044b967c86358017dacce12958e49db664
   languageName: node
   linkType: hard
 
@@ -5339,7 +5339,7 @@ __metadata:
     "@emotion/react": "npm:^11.11.1"
     "@emotion/serialize": "npm:^1.1.2"
     "@emotion/styled": "npm:^11.11.0"
-    "@types/node": "npm:^20.11.7"
+    "@types/node": "npm:^20.11.10"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@types/react-transition-group": "npm:^4.4.10"
