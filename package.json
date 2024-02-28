@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "James Russo",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.4",
     "@emotion/serialize": "^1.1.2",
     "@emotion/styled": "^11.11.0",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
