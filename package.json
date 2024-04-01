@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/serialize": "^1.1.4",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/styled": "^11.11.5",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
     "babel-preset-gatsby": "^3.13.1",
