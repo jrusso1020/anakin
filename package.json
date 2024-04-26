@@ -50,7 +50,7 @@
     "query-string": "^8.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
+    "react-is": "^18.3.0",
     "react-transition-group": "^4.4.1",
     "react-typography": "^0.16.20",
     "regenerator-runtime": "^0.14.1",
