@@ -5429,7 +5429,7 @@ __metadata:
     query-string: "npm:^8.2.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    react-is: "npm:^18.3.0"
+    react-is: "npm:^18.3.1"
     react-transition-group: "npm:^4.4.1"
     react-typography: "npm:^0.16.20"
     regenerator-runtime: "npm:^0.14.1"
@@ -15132,10 +15132,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^18.3.0":
-  version: 18.3.0
-  resolution: "react-is@npm:18.3.0"
-  checksum: 1593796b4bde2ce1196f151d926de01054f4345a14a38a8eeb154aed075c2f78658570352cffc71a0a8602cd135b369e604dfa1300ccc85a622ce2073578d160
+"react-is@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react-is@npm:18.3.1"
+  checksum: d5f60c87d285af24b1e1e7eaeb123ec256c3c8bdea7061ab3932e3e14685708221bf234ec50b21e10dd07f008f1b966a2730a0ce4ff67905b3872ff2042aec22
   languageName: node
   linkType: hard
 
