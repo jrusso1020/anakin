@@ -3751,13 +3751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.79":
-  version: 18.2.79
-  resolution: "@types/react@npm:18.2.79"
+"@types/react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "@types/react@npm:18.3.1"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 2ef833e7d0a5c226beddbbe090811582371f6ae5e2f092a3d9f47cc6087c8bce0b96ee33e351de6d1d470f0a0ec5892d971933f841ef31538c1821681fc6569e
+  checksum: baa6b8a75c471c89ebf3477b4feab57102ced25f0c1e553dd04ef6a1f0def28d5e0172fa626a631f22e223f840b5aaa2403b2d4bb671c83c5a9d6c7ae39c7a05
   languageName: node
   linkType: hard
 
@@ -5379,7 +5379,7 @@ __metadata:
     "@emotion/serialize": "npm:^1.1.4"
     "@emotion/styled": "npm:^11.11.5"
     "@types/node": "npm:^20.12.11"
-    "@types/react": "npm:^18.2.79"
+    "@types/react": "npm:^18.3.1"
     "@types/react-dom": "npm:^18.2.25"
     "@types/react-transition-group": "npm:^4.4.10"
     "@types/typography": "npm:^0.16.7"
@@ -5427,7 +5427,7 @@ __metadata:
     prismjs: "npm:^1.27.0"
     prop-types: "npm:^15.8.1"
     query-string: "npm:^8.2.0"
-    react: "npm:^18.2.0"
+    react: "npm:^18.3.1"
     react-dom: "npm:^18.2.0"
     react-is: "npm:^18.3.1"
     react-transition-group: "npm:^4.4.1"
@@ -15184,12 +15184,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react@npm:18.2.0"
+"react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: b9214a9bd79e99d08de55f8bef2b7fc8c39630be97c4e29d7be173d14a9a10670b5325e94485f74cd8bff4966ef3c78ee53c79a7b0b9b70cba20aa8973acc694
+  checksum: 261137d3f3993eaa2368a83110466fc0e558bc2c7f7ae7ca52d94f03aac945f45146bd85e5f481044db1758a1dbb57879e2fcdd33924e2dde1bdc550ce73f7bf
   languageName: node
   linkType: hard
 
