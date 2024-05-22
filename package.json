@@ -48,7 +48,7 @@
     "prismjs": "^1.27.0",
     "prop-types": "^15.8.1",
     "query-string": "^8.2.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-is": "^18.3.1",
     "react-transition-group": "^4.4.1",
@@ -66,7 +66,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "@types/react": "^18.2.79",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.2.25",
     "@types/react-transition-group": "^4.4.10",
     "@types/typography": "^0.16.7",
