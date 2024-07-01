@@ -1,36 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "@emotion/styled"
 
 import Layout from "src/components/layout"
 import SEO from "src/components/seo"
-import { colors } from "src/utils/colors"
-
-const Tags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-`
-
-const TagContainer = styled.div`
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: ${colors.mirage};
-  margin-right: 5px;
-  background-color: ${colors.mirage};
-  margin-top: 10px;
-`
-
-const Tag = styled(Link)`
-  padding: 2px 20px;
-  box-shadow: none;
-  color: ${colors.keppel};
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
-`
 
 interface QueryResult {
   site: {
@@ -68,19 +40,23 @@ const TagsPage = ({
 }: Props) => (
   <Layout location={location} title={title}>
     <div>
-      <h1>Tags</h1>
-      <Tags>
+      <h1 className="text-xl font-bold">Tags</h1>
+      <div className="flex flex-wrap mb-6">
         {group.map((tag, index) => (
-          <TagContainer key={`container-${index}`}>
-            <Tag
+          <div
+            className="rounded-full border-2 border-mirage mr-1 bg-mirage mt-2"
+            key={`container-${index}`}
+          >
+            <Link
+              className="px-5 py-0.5 shadow-none text-keppel cursor-pointer hover:underline"
               key={`tag-${index}`}
               to={`/tags/${kebabCase(tag.fieldValue)}/`}
             >
               {tag.fieldValue} ({tag.totalCount})
-            </Tag>
-          </TagContainer>
+            </Link>
+          </div>
         ))}
-      </Tags>
+      </div>
     </div>
   </Layout>
 )

@@ -48,7 +48,7 @@ const Layout = ({ location, title, children }: Props) => {
       <Navbar location={location} />
       <div className="md:ml-80 md:mr-auto max-w-7xl p-6 mx-0">
         <header>{header}</header>
-        <main>{children}</main>
+        <main className="mb-8">{children}</main>
         <footer className="text-mirage">
           © {new Date().getFullYear()} James Russo. All Rights Reserved, Built
           with{" "}

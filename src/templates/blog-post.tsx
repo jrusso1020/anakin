@@ -56,13 +56,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <H1>{post.frontmatter.title}</H1>
-      <div
-        style={{
-          ...scale(-1 / 5),
-          marginBottom: rhythm(0.5),
-          marginTop: rhythm(-1),
-        }}
-      >
+      <div className="mb-2 -mt-4">
         <BlogDateAndTime
           date={post.frontmatter.date}
           timeToRead={post.timeToRead}
@@ -76,25 +70,25 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         }}
       />
 
-      <ul
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          listStyle: "none",
-          padding: 0,
-        }}
-      >
+      <ul className="flex flex-wrap justify-between list-none p-0">
         <li>
           {previous && (
-            <Link to={previous.fields.slug} rel="prev">
+            <Link
+              className="no-underline text-keppel shadow-none hover:shadow-keppel"
+              to={previous.fields.slug}
+              rel="prev"
+            >
               {previous.frontmatter.title}
             </Link>
           )}
         </li>
         <li>
           {next && (
-            <Link to={next.fields.slug} rel="next">
+            <Link
+              className="no-underline text-keppel shadow-none hover:shadow-keppel"
+              to={next.fields.slug}
+              rel="next"
+            >
               {next.frontmatter.title}
             </Link>
           )}
