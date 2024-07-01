@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply text-blue-600 no-underline;
+    @apply no-underline text-keppel shadow-none hover:shadow-keppel;
   }
 
   a:hover {

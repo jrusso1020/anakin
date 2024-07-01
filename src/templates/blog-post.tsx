@@ -62,7 +62,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         />
       </div>
       <Tags tags={post.frontmatter.tags} />
-      <div
+      <article
         className="prose lg:prose-xl mt-8"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
