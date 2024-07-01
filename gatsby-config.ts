@@ -250,16 +250,9 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    "gatsby-plugin-emotion",
     "gatsby-plugin-offline",
     "gatsby-plugin-slug",
     "gatsby-plugin-typescript",
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography",
-      },
-    },
   ],
 }
 

@@ -26,5 +26,5 @@ module.exports = {
       boxShadow: ["hover"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }

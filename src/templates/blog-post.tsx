@@ -7,7 +7,6 @@ import SEO from "src/components/seo"
 import H1 from "src/components/H1"
 import Tags from "src/components/tags"
 import BlogDateAndTime from "src/components/blogDateAndTime"
-import { rhythm, scale } from "src/utils/typography"
 
 interface MarkdownRemarkI {
   id: string
@@ -63,12 +62,11 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         />
       </div>
       <Tags tags={post.frontmatter.tags} />
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
+      <div
+        className="prose lg:prose-xl mt-8"
+        dangerouslySetInnerHTML={{ __html: post.html }}
       />
+      <hr className="mb-4" />
 
       <ul className="flex flex-wrap justify-between list-none p-0">
         <li>
