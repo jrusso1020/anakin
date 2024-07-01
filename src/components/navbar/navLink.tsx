@@ -1,14 +1,21 @@
-import styled from "@emotion/styled"
+import React from "react"
+
 import { Link } from "gatsby"
-import { colors } from "src/utils/colors"
 
-const NavLink = styled(Link)`
-  text-decoration: none;
-  box-shadow: none;
-  color: ${(props) => (props.color ? props.color : colors.keppel)};
-  font-weight: ${(props) => (props.partiallyActive ? "bold" : 200)};
-  border-bottom: 2px solid
-    ${(props) => (props.partiallyActive ? colors.swansDown : "transparent")};
-`
+interface NavLinkProps {
+  children: React.ReactNode
+  partiallyActive?: boolean
+  to: string
+}
 
+const NavLink = ({ children, partiallyActive, to }: NavLinkProps) => (
+  <Link
+    className={`no-underline text-keppel border-b-2 border-transparent hover:shadow-keppel ${
+      partiallyActive ? "font-bold shadow-swans-down" : "font-light shadow-none"
+    }`}
+    to={to}
+  >
+    {children}
+  </Link>
+)
 export default NavLink
