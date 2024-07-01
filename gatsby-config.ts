@@ -45,6 +45,7 @@ const config: GatsbyConfig = {
     image: "/images/boredhacking.jpg",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {

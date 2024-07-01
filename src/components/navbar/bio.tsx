@@ -1,97 +1,10 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import styled from "@emotion/styled"
-import { css } from "@emotion/react"
 
 import Location from "content/assets/location.svg"
 import Github from "content/assets/github.svg"
 import LinkedIn from "content/assets/linkedIn.svg"
-import { rhythm } from "src/utils/typography"
-import { mobile } from "src/utils/media"
-import { colors } from "src/utils/colors"
-
-const Container = styled.div`
-  margin-bottom: ${rhythm(2.5)};
-  ${mobile(css`
-    padding: ${rhythm(3)} ${rhythm(3 / 4)};
-    padding-bottom: 0;
-    margin-bottom: 0;
-    display: flex;
-  `)}
-`
-
-const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: ${rhythm(1)};
-  text-align: left;
-`
-
-const StyledImage = styled(GatsbyImage)`
-  min-width: 100;
-  border-radius: 100%;
-  margin: auto 0;
-  ${mobile(css`
-    min-width: 50;
-  `)}
-`
-
-const H3 = styled.h3`
-  color: ${colors.keppel};
-  ${mobile(css`
-    margin-left: ${rhythm(1)};
-    margin-top: 0;
-  `)}
-`
-
-const H5 = styled.h5`
-  color: ${colors.keppel};
-  margin-top: 0;
-  ${mobile(css`
-    margin-left: ${rhythm(1)};
-    margin-bottom: ${rhythm(0.5)};
-  `)}
-`
-
-const P = styled.p`
-  font-size: 0.8em;
-  ${mobile(css`
-    display: none;
-  `)}
-`
-
-const List = styled.ul`
-  list-style: none;
-  padding-left: none;
-  font-size: 1em;
-  ${mobile(css`
-    margin-left: 1.75rem;
-  `)}
-`
-
-const LocationSvg = styled(Location)`
-  height: 1em;
-  top: 0.05em;
-  position: relative;
-`
-
-const GithubSvg = styled(Github)`
-  height: 1em;
-  top: 0.1em;
-  position: relative;
-`
-
-const LinkedInSvg = styled(LinkedIn)`
-  height: 1em;
-  top: 0.1em;
-  position: relative;
-`
-
-const StyledLink = styled.a`
-  color: currentColor;
-  box-shadow: 0 1px 0 0 ${colors.swansDown};
-`
 
 const Bio = () => {
   return (
@@ -100,61 +13,64 @@ const Bio = () => {
       render={(data) => {
         const { author } = data.site.siteMetadata
         return (
-          <Container>
-            <ImageContainer>
-              <StyledImage
+          <div className="flex flex-row mb-10 md:flex-col pt-20 px-4 md:px-0 md:pt-0">
+            <div className="mb-0 mr-4 md:mr-0 md:mb-7 flex justify-center">
+              <GatsbyImage
+                className="rounded-full"
                 image={data.avatar.childImageSharp.gatsbyImageData}
                 alt={author}
-                imgStyle={{
-                  borderRadius: "50%",
-                }}
               />
-            </ImageContainer>
+            </div>
             <div>
-              <H3>{author}</H3>
-              <H5>
+              <h3 className="text-keppel text-2xl font-bold ml-0 mt-0 mb-4">
+                {author}
+              </h3>
+              <h5 className="text-keppel mb-4">
                 Engineering at{" "}
-                <StyledLink
+                <a
+                  className="text-current shadow-swans-down hover:shadow-keppel"
                   rel="noopener noreferrer"
                   href="https://brex.com"
                   target="_blank"
                 >
                   Brex
-                </StyledLink>
-              </H5>
-              <P>
+                </a>
+              </h5>
+              <p className="text-keppel text-xs mb-4 md:mb-8 leading-loose">
                 Fullstack engineer who knows nothing about design.
                 <br />
                 Example: this website.
-              </P>
-              <List>
-                <li>
-                  <LocationSvg />
+              </p>
+              <ul className="list-none pl-0 text-base">
+                <li className="flex items-center">
+                  <Location className="h-5 relative top-0 mr-2" />
                   New York, NY
                 </li>
-                <li>
-                  <GithubSvg />
-                  <StyledLink
+                <li className="flex items-center">
+                  <Github className="h-5 relative top-0 mr-2" />
+                  <a
+                    className="text-current shadow-swans-down hover:shadow-keppel"
                     rel="noopener noreferrer"
                     href="https://github.com/jrusso1020"
                     target="_blank"
                   >
                     Github
-                  </StyledLink>
+                  </a>
                 </li>
-                <li>
-                  <LinkedInSvg />
-                  <StyledLink
+                <li className="flex items-center">
+                  <LinkedIn className="h-5 relative top-0 mr-2" />
+                  <a
+                    className="text-current shadow-swans-down hover:shadow-keppel"
                     href="https://www.linkedin.com/in/james-russo-56026897/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     LinkedIn
-                  </StyledLink>
+                  </a>
                 </li>
-              </List>
+              </ul>
             </div>
-          </Container>
+          </div>
         )
       }}
     />

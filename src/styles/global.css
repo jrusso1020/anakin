@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-blue-600 no-underline;
+  }
+
+  a:hover {
+    @apply shadow-sm;
+  }
+
+  blockquote {
+    @apply text-white;
+  }
+
+  .gatsby-resp-image-link:hover {
+    @apply shadow-none;
+  }
+}
