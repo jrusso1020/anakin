@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Format
           command: |
-            yarn prettier --list-different src/**/*.{ts,tsx} content/blog/**/index.md
+            yarn prettier --list-different "src/**/*.{ts,tsx}" "content/blog/**/index.md"
   type-check:
     docker:
       - image: cimg/node:20.10.0
