@@ -7,7 +7,6 @@ import SEO from "src/components/seo"
 import H1 from "src/components/H1"
 import Tags from "src/components/tags"
 import BlogDateAndTime from "src/components/blogDateAndTime"
-import { rhythm, scale } from "src/utils/typography"
 
 interface MarkdownRemarkI {
   id: string
@@ -56,45 +55,38 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <H1>{post.frontmatter.title}</H1>
-      <div
-        style={{
-          ...scale(-1 / 5),
-          marginBottom: rhythm(0.5),
-          marginTop: rhythm(-1),
-        }}
-      >
+      <div className="mb-2 -mt-4">
         <BlogDateAndTime
           date={post.frontmatter.date}
           timeToRead={post.timeToRead}
         />
       </div>
       <Tags tags={post.frontmatter.tags} />
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
+      <article
+        className="prose lg:prose-xl mt-8"
+        dangerouslySetInnerHTML={{ __html: post.html }}
       />
+      <hr className="mb-4" />
 
-      <ul
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          listStyle: "none",
-          padding: 0,
-        }}
-      >
+      <ul className="flex flex-wrap justify-between list-none p-0">
         <li>
           {previous && (
-            <Link to={previous.fields.slug} rel="prev">
+            <Link
+              className="no-underline text-keppel shadow-none hover:shadow-keppel"
+              to={previous.fields.slug}
+              rel="prev"
+            >
               {previous.frontmatter.title}
             </Link>
           )}
         </li>
         <li>
           {next && (
-            <Link to={next.fields.slug} rel="next">
+            <Link
+              className="no-underline text-keppel shadow-none hover:shadow-keppel"
+              to={next.fields.slug}
+              rel="next"
+            >
               {next.frontmatter.title}
             </Link>
           )}

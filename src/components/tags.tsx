@@ -1,36 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "@emotion/styled"
-
-import { colors } from "src/utils/colors"
-
-const Tags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5px;
-`
-
-const TagContainer = styled.div`
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: ${colors.mirage};
-  margin-right: 5px;
-  background-color: ${colors.mirage};
-  font-size: 0.8em;
-  margin-top: 5px;
-`
-
-const Tag = styled(Link)`
-  padding: 2px 20px;
-  box-shadow: none;
-  color: ${colors.keppel};
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-    box-shadow: none;
-  }
-`
 
 interface Props {
   tags: string[]
@@ -43,15 +12,22 @@ const kebabCase = (str: string) =>
     .toLowerCase()
 
 const TagsComponent = ({ tags }: Props) => (
-  <Tags>
+  <div className="flex flex-wrap mb-1">
     {tags.map((tag, index) => (
-      <TagContainer key={`container-${index}`}>
-        <Tag key={`tag-${index}`} to={`/tags/${kebabCase(tag)}/`}>
+      <div
+        className="rounded-full border-2 border-mirage mr-1 bg-mirage text-xs mt-1"
+        key={`container-${index}`}
+      >
+        <Link
+          className="px-5 py-0.5 shadow-none text-keppel cursor-pointer hover:underline"
+          key={`tag-${index}`}
+          to={`/tags/${kebabCase(tag)}/`}
+        >
           {tag}
-        </Tag>
-      </TagContainer>
+        </Link>
+      </div>
     ))}
-  </Tags>
+  </div>
 )
 
 export default TagsComponent

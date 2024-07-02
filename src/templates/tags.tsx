@@ -1,12 +1,9 @@
 import React from "react"
-import styled from "@emotion/styled"
 import { Link, graphql } from "gatsby"
 
 import Layout from "src/components/layout"
 import SEO from "src/components/seo"
 import PostPreview from "src/components/postPreview"
-import { rhythm } from "src/utils/typography"
-import { colors } from "src/utils/colors"
 
 interface QueryResult {
   site: {
@@ -34,15 +31,6 @@ interface QueryResult {
     }[]
   }
 }
-
-const StyledLink = styled(Link)`
-  box-shadow: none;
-  color: ${colors.keppel};
-`
-
-const H3 = styled.h3`
-  margin-bottom: ${rhythm(1 / 4)};
-`
 
 interface Props {
   location: Location

@@ -1,15 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "@emotion/styled"
 
 import Layout from "src/components/layout"
 import H1 from "src/components/H1"
 import SEO from "src/components/seo"
-import { colors } from "src/utils/colors"
-
-const P = styled.p`
-  color: ${colors.mirage};
-`
 
 interface Props {
   location: Location
@@ -28,7 +22,7 @@ const About = ({ data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <H1>About Me</H1>
-      <P>
+      <p className="text-mirage">
         Hi I'm James Russo and this is where I'll be writing down my thoughts
         and experiences mostly involving software and web development. However,
         fairwarning any number of other topics can pop up into this blog. This
@@ -37,17 +31,28 @@ const About = ({ data, location }: Props) => {
         on this more and more.
         <br />
         <br />I am currently working at{" "}
-        <a href="https://brex.com" target="_blank" rel="noopener noreferrer">
+        <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
+          href="https://brex.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {" "}
           Brex{" "}
         </a>
         building internal developer tools like a CLI using
-        <a href="https://golang.org/" target="_blank" rel="noopener noreferrer">
+        <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
+          href="https://golang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {" "}
           Golang{" "}
         </a>
         +
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://github.com/spf13/cobra"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,6 +62,7 @@ const About = ({ data, location }: Props) => {
         </a>
         and a developer portal using
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://backstage.io/"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,6 +72,7 @@ const About = ({ data, location }: Props) => {
         </a>
         . Previously I worked on the{" "}
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://www.brex.com/product/business-account"
           target="_blank"
           rel="noopener noreferrer"
@@ -76,6 +83,7 @@ const About = ({ data, location }: Props) => {
         team at Brex building modern technology to replace antiquated banking
         systems. Before Brex, I worked as a fullstack engineer in NYC for
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://secure.rocketsofawesome.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,6 +94,7 @@ const About = ({ data, location }: Props) => {
         , a childrens clothing subscription service and ecommerce brand. I also
         was the first engineer at an IoT and Analytics startup called
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://iteratelabs.co"
           target="_blank"
           rel="noopener noreferrer"
@@ -95,7 +104,12 @@ const About = ({ data, location }: Props) => {
         </a>
         which wants to use data-driven insights to develop safer and more
         comfortable workplaces. In 2017, I graduated from{" "}
-        <a href="https://cornell.edu" target="_blank" rel="noopener noreferrer">
+        <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
+          href="https://cornell.edu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {" "}
           Cornell University{" "}
         </a>
@@ -103,6 +117,7 @@ const About = ({ data, location }: Props) => {
         Learning and also researched Systems, Security, and Blockchain
         technologies under
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="http://hackingdistributed.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -112,6 +127,7 @@ const About = ({ data, location }: Props) => {
         </a>{" "}
         and
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="http://www.soumyabasu.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -135,6 +151,7 @@ const About = ({ data, location }: Props) => {
         Some of my favorite websites to read and stay up to date with tech and
         web development are
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://news.ycombinator.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -144,6 +161,7 @@ const About = ({ data, location }: Props) => {
         </a>
         and{" "}
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://techcruch.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -154,6 +172,7 @@ const About = ({ data, location }: Props) => {
         . I also read the following newsletters on a weekly or daily basis for
         tech and software related news and information{" "}
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://labnotes.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -163,6 +182,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="http://softwareleadweekly.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -172,6 +192,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="http://www.founderweekly.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -181,6 +202,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://javascriptweekly.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -190,6 +212,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://rubyweekly.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -199,6 +222,7 @@ const About = ({ data, location }: Props) => {
         </a>
         , and
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://elixirweekly.net/"
           target="_blank"
           rel="noopener noreferrer"
@@ -208,6 +232,7 @@ const About = ({ data, location }: Props) => {
         </a>
         . A few other weekly or daily newsletters I follow are{" "}
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://signup.axios.com/2019/mikeallen.html"
           target="_blank"
           rel="noopener noreferrer"
@@ -217,6 +242,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://www.theskimm.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -226,6 +252,7 @@ const About = ({ data, location }: Props) => {
         </a>
         ,
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://www.tldrnewsletter.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -235,6 +262,7 @@ const About = ({ data, location }: Props) => {
         </a>
         , and{" "}
         <a
+          className="no-underline text-keppel shadow-none hover:shadow-keppel"
           href="https://thisweekinfintech.substack.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -243,7 +271,7 @@ const About = ({ data, location }: Props) => {
           This Week in Fintech{" "}
         </a>
         .
-      </P>
+      </p>
     </Layout>
   )
 }

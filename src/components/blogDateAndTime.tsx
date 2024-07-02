@@ -1,23 +1,7 @@
-import React, { Fragment } from "react"
-import styled from "@emotion/styled"
+import React from "react"
 
 import Calendar from "content/assets/calendar.svg"
 import Timer from "content/assets/timer.svg"
-import { rhythm } from "src/utils/typography"
-
-const CalendarSvg = styled(Calendar)`
-  height: 1em;
-  padding-right: ${rhythm(1 / 4)};
-  top: 0.1em;
-  position: relative;
-`
-
-const TimerSvg = styled(Timer)`
-  height: 1em;
-  padding-right: ${rhythm(1 / 4)};
-  top: 0.125em;
-  position: relative;
-`
 
 interface Props {
   date: string
@@ -26,11 +10,17 @@ interface Props {
 
 const BlogDateAndTime = ({ date, timeToRead }: Props) => {
   return (
-    <Fragment>
-      <CalendarSvg />
-      {date} | <TimerSvg />
+    <div className="flex items-center space-x-2">
+      <div className="relative h-4 pr-1">
+        <Calendar className="h-full" />
+      </div>
+      <span>{date}</span>
+      <span>|</span>
+      <div className="relative h-4 pr-1">
+        <Timer className="h-full" />
+      </div>
       <b>{timeToRead} min read</b>
-    </Fragment>
+    </div>
   )
 }
 

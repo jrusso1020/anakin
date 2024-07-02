@@ -1,15 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "@emotion/styled"
 
 import Layout from "src/components/layout"
 import H1 from "src/components/H1"
 import SEO from "src/components/seo"
-import { colors } from "src/utils/colors"
-
-const P = styled.p`
-  color: ${colors.mirage};
-`
 
 interface Props {
   location: Location
@@ -28,7 +22,9 @@ const NotFoundPage = ({ data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <H1>Not Found</H1>
-      <P>You just hit a route that doesn&#39;t exist... the sadness.</P>
+      <p className="text-mirage">
+        You just hit a route that doesn&#39;t exist... the sadness.
+      </p>
     </Layout>
   )
 }
