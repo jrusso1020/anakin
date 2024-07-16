@@ -18,6 +18,20 @@ module.exports = {
         "swans-down": "0 1px 0 0 #DCEDEA",
         keppel: "0 1px 0 0 #3AAFA9",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: "none",
+              color: theme("colors.keppel"),
+              boxShadow: "none",
+              "&:hover": {
+                boxShadow: theme("boxShadow.keppel"),
+              },
+            },
+          },
+        },
+      }),
     },
   },
   variants: {
