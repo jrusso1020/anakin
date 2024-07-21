@@ -2,7 +2,7 @@
 title: "From Unicorn to Decacorn: 16 Lessons Learned at Brex"
 date: "2024-07-18"
 description: Join me as I share my journey through four and a half transformative years at Brex, the fintech powerhouse that evolved from a unicorn to a decacorn. In this article, I delve into 16 key learnings from my time as a software engineer and engineering manager. From navigating massive organizational growth and re-organizations to driving product innovations and enhancing developer productivity, these insights encapsulate the challenges and triumphs I've experienced while working in a rapidly scaling tech company.
-tags: ["career", "learnings", "startup", "career growth"]
+tags: ["career", "learnings", "startup", "career growth", "brex"]
 ---
 
 I’ve spent my last four and a half years working at the then [unicorn](https://techcrunch.com/2019/06/11/brex-series-c2/) now [decacorn](https://techcrunch.com/2022/01/11/brex-confirms-12-3b-valuation-hires-meta-exec-to-serve-as-its-chief-product-officer/) [Brex](https://www.brex.com/). Joining back in January of 2020 a lot has changed between myself, the company, and the world. Over my time at Brex, I’ve seen or experienced:

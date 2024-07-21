@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { badgeVariants } from "@/components/ui/badge"
 
 import Layout from "src/components/layout"
 import SEO from "src/components/seo"
@@ -43,18 +44,13 @@ const TagsPage = ({
       <h1 className="text-xl font-bold">Tags</h1>
       <div className="flex flex-wrap mb-6">
         {group.map((tag, index) => (
-          <div
-            className="rounded-full border-2 border-mirage mr-1 bg-mirage mt-2"
-            key={`container-${index}`}
+          <Link
+            key={`tag-${index}`}
+            to={`/tags/${kebabCase(tag.fieldValue)}/`}
+            className={`mr-1 mt-2 ${badgeVariants({ variant: "default" })}`}
           >
-            <Link
-              className="px-5 py-0.5 shadow-none text-keppel cursor-pointer hover:underline"
-              key={`tag-${index}`}
-              to={`/tags/${kebabCase(tag.fieldValue)}/`}
-            >
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </div>
+            {tag.fieldValue} ({tag.totalCount})
+          </Link>
         ))}
       </div>
     </div>
