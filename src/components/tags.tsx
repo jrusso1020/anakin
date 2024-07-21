@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { badgeVariants } from "@/components/ui/badge"
 
 interface Props {
   tags: string[]
@@ -14,18 +15,13 @@ const kebabCase = (str: string) =>
 const TagsComponent = ({ tags }: Props) => (
   <div className="flex flex-wrap mb-1">
     {tags.map((tag, index) => (
-      <div
-        className="rounded-full border-2 border-mirage mr-1 bg-mirage text-xs mt-1"
-        key={`container-${index}`}
+      <Link
+        key={`tag-${index}`}
+        to={`/tags/${kebabCase(tag)}/`}
+        className={`mr-1 mt-1 ${badgeVariants({ variant: "default" })}`}
       >
-        <Link
-          className="px-5 py-0.5 shadow-none text-keppel cursor-pointer hover:underline"
-          key={`tag-${index}`}
-          to={`/tags/${kebabCase(tag)}/`}
-        >
-          {tag}
-        </Link>
-      </div>
+        {tag}
+      </Link>
     ))}
   </div>
 )
