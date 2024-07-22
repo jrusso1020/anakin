@@ -41,7 +41,7 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "husky": "^9.1.1",
     "lint-staged": "^15.2.7",
-    "lucide-react": "^0.410.0",
+    "lucide-react": "^0.414.0",
     "mitt": "^3.0.1",
     "platform": "^1.3.6",
     "postcss-reporter": "^7.1.0",
