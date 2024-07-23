@@ -5338,7 +5338,7 @@ __metadata:
     prettier: "npm:^3.3.3"
     prismjs: "npm:^1.27.0"
     prop-types: "npm:^15.8.1"
-    query-string: "npm:^9.0.0"
+    query-string: "npm:^9.1.0"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     react-is: "npm:^18.3.1"
@@ -15018,14 +15018,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"query-string@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "query-string@npm:9.0.0"
+"query-string@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "query-string@npm:9.1.0"
   dependencies:
     decode-uri-component: "npm:^0.4.1"
     filter-obj: "npm:^5.1.0"
     split-on-first: "npm:^3.0.0"
-  checksum: ea71a81a192743b633ab6acc27a917d9d868c16ef50d3985bddebf5e9b525012e450220b2bad6c208f29c013d34bd2c1e925362979d19f716c74a5fe3ebf4b21
+  checksum: 87a0ea851f62d6abe5c6c60bc0114e5df1af73f6dbdfd3086ab82624330cafe92310029d834ee6117d92e3de877f2959cb634c31a55a1aef4acddaa11ad8be20
   languageName: node
   linkType: hard
 
