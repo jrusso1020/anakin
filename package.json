@@ -62,7 +62,7 @@
     "tailwindcss-animate": "^1.0.7",
     "typeface-merriweather": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
