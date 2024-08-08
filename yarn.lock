@@ -3248,9 +3248,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.13":
-  version: 0.5.13
-  resolution: "@tailwindcss/typography@npm:0.5.13"
+"@tailwindcss/typography@npm:^0.5.14":
+  version: 0.5.14
+  resolution: "@tailwindcss/typography@npm:0.5.14"
   dependencies:
     lodash.castarray: "npm:^4.4.0"
     lodash.isplainobject: "npm:^4.0.6"
@@ -3258,7 +3258,7 @@ __metadata:
     postcss-selector-parser: "npm:6.0.10"
   peerDependencies:
     tailwindcss: "*"
-  checksum: ffa5fee725d390591f1654fee8275b025248ef0e25a54b1749db23ec82d6117729b933e2326b6d52348ff2844839755f89d5d82fe5900d91b399c9380041b4e9
+  checksum: 89b88d48a65a91d64bc0c12380bcf10824897442f81a51a120483e62a1bd654c745577d29567f48ec724c77044f65135f0f7ff2f75fa38b26691d3f3db5e8164
   languageName: node
   linkType: hard
 
@@ -5284,7 +5284,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "boredhacking@workspace:."
   dependencies:
-    "@tailwindcss/typography": "npm:^0.5.13"
+    "@tailwindcss/typography": "npm:^0.5.14"
     "@types/node": "npm:^20.14.12"
     "@types/postcss-reporter": "npm:^7"
     "@types/react": "npm:^18.3.3"
