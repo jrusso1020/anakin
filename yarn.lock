@@ -5349,7 +5349,7 @@ __metadata:
     sharp: "npm:^0.33.4"
     stack-trace: "npm:^0.0.10"
     svg-react-loader: "npm:^0.4.6"
-    tailwind-merge: "npm:^2.4.0"
+    tailwind-merge: "npm:^2.5.0"
     tailwindcss: "npm:^3.4.9"
     tailwindcss-animate: "npm:^1.0.7"
     typeface-merriweather: "npm:^1.1.13"
@@ -17264,10 +17264,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-merge@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "tailwind-merge@npm:2.4.0"
-  checksum: dda331a95146c9943dd18f152156fe7a5daf450a686d0562fb521ebc027273bd0c8f9503742668b3e90d27e887aa794ea5e79c38faa51216e19e9d0f1ec55925
+"tailwind-merge@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "tailwind-merge@npm:2.5.0"
+  checksum: c4c598c171b4514f42fbfc3c930abd369000b69e2d5daf952460798d3dc2d0a40e93590f2008ac2d122c75d335e6a02765186a86afddd5c40acaea173c4dfb9a
   languageName: node
   linkType: hard
 
