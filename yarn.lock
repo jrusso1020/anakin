@@ -3520,12 +3520,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.14.12":
-  version: 20.14.12
-  resolution: "@types/node@npm:20.14.12"
+"@types/node@npm:^22.4.2":
+  version: 22.4.2
+  resolution: "@types/node@npm:22.4.2"
   dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 9205bf46ef6a99d99cdde9efeb8218cd15803cc407249c2336557cd630b006380dad68c03ee574934414639f8e450044f45530c92788a8e82078bae45ee40f93
+    undici-types: "npm:~6.19.2"
+  checksum: b166dbf77da448c61e800d5adb3e6b1f6df0677edc5d0f686f7a17cf6a2500eb4966a23112cb37378be3344ce3156aec8cf4918fc49dc8cd401724aaeec74cc0
   languageName: node
   linkType: hard
 
@@ -5285,7 +5285,7 @@ __metadata:
   resolution: "boredhacking@workspace:."
   dependencies:
     "@tailwindcss/typography": "npm:^0.5.14"
-    "@types/node": "npm:^20.14.12"
+    "@types/node": "npm:^22.4.2"
     "@types/postcss-reporter": "npm:^7"
     "@types/react": "npm:^18.3.4"
     "@types/react-dom": "npm:^18.3.0"
@@ -17924,6 +17924,13 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 0097779d94bc0fd26f0418b3a05472410408877279141ded2bd449167be1aed7ea5b76f756562cb3586a07f251b90799bab22d9019ceba49c037c76445f7cddd
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.19.2":
+  version: 6.19.8
+  resolution: "undici-types@npm:6.19.8"
+  checksum: cf0b48ed4fc99baf56584afa91aaffa5010c268b8842f62e02f752df209e3dea138b372a60a963b3b2576ed932f32329ce7ddb9cb5f27a6c83040d8cd74b7a70
   languageName: node
   linkType: hard
 
