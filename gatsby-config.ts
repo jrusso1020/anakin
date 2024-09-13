@@ -186,6 +186,7 @@ const config: GatsbyConfig = {
         theme_color: "#663399",
         display: "minimal-ui",
         icon: "static/images/profile-pic.jpg",
+        cache_busting_mode: "none",
       },
     },
     {
@@ -250,7 +251,14 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-offline",
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/profile-pic*"],
+        },
+      },
+    },
     "gatsby-plugin-slug",
     "gatsby-plugin-typescript",
   ],
