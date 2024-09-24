@@ -12,7 +12,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "disqus-react": "^1.1.2",
-    "eslint": "^9.11.0",
+    "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "event-source-polyfill": "^1.0.26",
