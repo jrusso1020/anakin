@@ -41,6 +41,6 @@ Initially, we used Helm to template and create new releases for each microservic
 
 Once again, learning from knowledgeable teammates and collaborating on these systems has been immensely valuable. I've gained significant insights from our build platform, release platform, and cloud infrastructure teams, who continuously enhance the maturity of our clusters. The rapid growth of the company and its underlying infrastructure has contributed to my own professional growth and expanded expertise.
 
-## Retropsective
+## Retrospective
 
 Reflecting on these learnings, if I were starting a new company, I would likely reconsider using Kubernetes initially, despite my current comfort with it. There are simpler services like [Amazon Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) for deploying containerized workflows on AWS. The cognitive overhead for developers to run their software on Kubernetes has been an important realization. Most developers may not possess the knowledge or time to fully understand the intricacies of Kubernetes. For smaller companies without the necessary resources to abstract and maintain these systems, it could potentially slow down developers or introduce unnecessary issues. However, as a company scales and has multiple software projects to deploy, Kubernetes becomes a suitable choice because of its ability to leverage platform characteristics across all applications.
