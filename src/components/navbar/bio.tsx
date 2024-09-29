@@ -25,19 +25,9 @@ const Bio = () => {
               <h3 className="text-keppel text-2xl font-bold ml-0 mt-0 mb-4">
                 {author}
               </h3>
-              <h5 className="text-keppel mb-4">
-                Engineering at{" "}
-                <a
-                  className="text-current shadow-swans-down hover:shadow-keppel"
-                  rel="noopener noreferrer"
-                  href="https://brex.com"
-                  target="_blank"
-                >
-                  Brex
-                </a>
-              </h5>
+              <h5 className="text-keppel mb-4">Software Engineer</h5>
               <p className="text-keppel text-xs mb-4 md:mb-8 leading-loose">
-                Fullstack engineer who knows nothing about design.
+                Fullstack engineer who tries their best at design.
                 <br />
                 Example: this website.
               </p>
