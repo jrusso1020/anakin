@@ -38,7 +38,7 @@
     "gatsby-remark-smartypants": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.14.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "lucide-react": "^0.454.0",
