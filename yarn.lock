@@ -5351,7 +5351,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.2.1"
     event-source-polyfill: "npm:^1.0.26"
     gatsby: "npm:^5.13.7"
-    gatsby-cli: "npm:^5.13.3"
+    gatsby-cli: "npm:^5.14.0"
     gatsby-link: "npm:^5.13.1"
     gatsby-plugin-catch-links: "npm:^5.14.0"
     gatsby-plugin-feed: "npm:^5.14.0"
@@ -6535,6 +6535,17 @@ __metadata:
   bin:
     create-gatsby: cli.js
   checksum: 10/639233aac5d2345cf08a39eb23fd276f070eb93223f14aa3a898102c7c02c54131a6cf7aaedd89b0fa5d3d721ba8052eeaa683343c5e5e6fc0e2449dd44c2ea4
+  languageName: node
+  linkType: hard
+
+"create-gatsby@npm:^3.14.0":
+  version: 3.14.0
+  resolution: "create-gatsby@npm:3.14.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+  bin:
+    create-gatsby: cli.js
+  checksum: 10/240f90fbeb6f522bd043bd57b07344e01c13cafe571ce781ed2f50cb183ea19164f35818fc60befb42c279cc1bb7200af84afff094d7393234f585fed753db1f
   languageName: node
   linkType: hard
 
@@ -9125,6 +9136,56 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: 10/e9a79ab661e006d8683f2943de21d6f6a36333e22844c87e24a809e91fd2d0f7dedcb813bd27f45222467c0266922ef9ad43e2599a3654170b32a52aee6a3d33
+  languageName: node
+  linkType: hard
+
+"gatsby-cli@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "gatsby-cli@npm:5.14.0"
+  dependencies:
+    "@babel/code-frame": "npm:^7.18.6"
+    "@babel/core": "npm:^7.20.12"
+    "@babel/generator": "npm:^7.20.14"
+    "@babel/helper-plugin-utils": "npm:^7.20.2"
+    "@babel/preset-typescript": "npm:^7.18.6"
+    "@babel/runtime": "npm:^7.20.13"
+    "@babel/template": "npm:^7.20.7"
+    "@babel/types": "npm:^7.20.7"
+    "@jridgewell/trace-mapping": "npm:^0.3.18"
+    "@types/common-tags": "npm:^1.8.1"
+    better-opn: "npm:^2.1.1"
+    boxen: "npm:^5.1.2"
+    chalk: "npm:^4.1.2"
+    clipboardy: "npm:^4.0.0"
+    common-tags: "npm:^1.8.2"
+    convert-hrtime: "npm:^3.0.0"
+    create-gatsby: "npm:^3.14.0"
+    envinfo: "npm:^7.10.0"
+    execa: "npm:^5.1.1"
+    fs-exists-cached: "npm:^1.0.0"
+    fs-extra: "npm:^11.2.0"
+    gatsby-core-utils: "npm:^4.14.0"
+    hosted-git-info: "npm:^3.0.8"
+    is-valid-path: "npm:^0.1.1"
+    joi: "npm:^17.9.2"
+    lodash: "npm:^4.17.21"
+    node-fetch: "npm:^2.6.11"
+    opentracing: "npm:^0.14.7"
+    pretty-error: "npm:^2.1.2"
+    progress: "npm:^2.0.3"
+    prompts: "npm:^2.4.2"
+    redux: "npm:4.2.1"
+    resolve-cwd: "npm:^3.0.0"
+    semver: "npm:^7.5.3"
+    signal-exit: "npm:^3.0.7"
+    stack-trace: "npm:^0.0.10"
+    strip-ansi: "npm:^6.0.1"
+    yargs: "npm:^15.4.1"
+    yoga-layout-prebuilt: "npm:^1.10.0"
+    yurnalist: "npm:^2.1.0"
+  bin:
+    gatsby: cli.js
+  checksum: 10/7736da61b79f44c0c3a34806b2d1a76a45ae237c74c35c4d2451c072643309ca858790b0bf2a4f21a5e3ae9108bc32ae57d55f001837a6289425c688e50d657e
   languageName: node
   linkType: hard
 
