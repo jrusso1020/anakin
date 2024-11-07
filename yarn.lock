@@ -5033,6 +5033,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    "@babel/types": "npm:^7.20.7"
+    gatsby-core-utils: "npm:^4.14.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: 10/510f470edb895c795f06685c0c6bd7130f8b39cefec71719dac5dc9d4ed56ac138274c49b29cb0c66d8bd35e6ec1cad046eeb1f8529e61fa1a39b82cc2c4cc6f
+  languageName: node
+  linkType: hard
+
 "babel-plugin-syntax-object-rest-spread@npm:^6.8.0":
   version: 6.13.0
   resolution: "babel-plugin-syntax-object-rest-spread@npm:6.13.0"
@@ -5325,7 +5339,7 @@ __metadata:
     gatsby-plugin-s3: "npm:^0.4.1"
     gatsby-plugin-sharp: "npm:^5.13.1"
     gatsby-plugin-slug: "npm:^2.0.0"
-    gatsby-plugin-typescript: "npm:^5.13.1"
+    gatsby-plugin-typescript: "npm:^5.14.0"
     gatsby-react-router-scroll: "npm:^6.14.0"
     gatsby-remark-copy-linked-files: "npm:^6.14.0"
     gatsby-remark-images: "npm:^7.13.2"
@@ -9446,6 +9460,23 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: 10/ded09fc4e7e0d528c582a983d8f7d7f88e825c3f91d4af946361d44c15fd6b30a96367327d766586552b03347c234e83b7bef4e15fdf821fcd687cd6fbf1d4d6
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-typescript@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "gatsby-plugin-typescript@npm:5.14.0"
+  dependencies:
+    "@babel/core": "npm:^7.20.12"
+    "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
+    "@babel/plugin-proposal-numeric-separator": "npm:^7.18.6"
+    "@babel/plugin-proposal-optional-chaining": "npm:^7.20.7"
+    "@babel/preset-typescript": "npm:^7.18.6"
+    "@babel/runtime": "npm:^7.20.13"
+    babel-plugin-remove-graphql-queries: "npm:^5.14.0"
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: 10/610bb82cf84d4ee7137be6dddcfa55dbf3ac7bddbe7529b71848c674254c8cdf4cb3e954cae877aafd3e99278331da1ff40915d93d24e00245074b4b2a227e26
   languageName: node
   linkType: hard
 
