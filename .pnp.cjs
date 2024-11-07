@@ -63,7 +63,7 @@ const RAW_RUNTIME_STATE =
           ["gatsby-plugin-slug", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:2.0.0"],\
           ["gatsby-plugin-typescript", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.13.1"],\
           ["gatsby-react-router-scroll", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.1"],\
-          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2"],\
+          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0"],\
           ["gatsby-remark-images", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.13.2"],\
           ["gatsby-remark-prismjs", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.13.2"],\
           ["gatsby-remark-responsive-iframe", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2"],\
@@ -9252,7 +9252,7 @@ const RAW_RUNTIME_STATE =
           ["gatsby-plugin-slug", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:2.0.0"],\
           ["gatsby-plugin-typescript", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.13.1"],\
           ["gatsby-react-router-scroll", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.1"],\
-          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2"],\
+          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0"],\
           ["gatsby-remark-images", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.13.2"],\
           ["gatsby-remark-prismjs", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.13.2"],\
           ["gatsby-remark-responsive-iframe", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2"],\
@@ -14599,17 +14599,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["gatsby-remark-copy-linked-files", [\
-      ["npm:6.13.2", {\
-        "packageLocation": "./.yarn/cache/gatsby-remark-copy-linked-files-npm-6.13.2-3b1bc3bc13-86e97eb5ef.zip/node_modules/gatsby-remark-copy-linked-files/",\
+      ["npm:6.14.0", {\
+        "packageLocation": "./.yarn/cache/gatsby-remark-copy-linked-files-npm-6.14.0-4ec247f3f1-a9c2ce9468.zip/node_modules/gatsby-remark-copy-linked-files/",\
         "packageDependencies": [\
-          ["gatsby-remark-copy-linked-files", "npm:6.13.2"]\
+          ["gatsby-remark-copy-linked-files", "npm:6.14.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2", {\
-        "packageLocation": "./.yarn/__virtual__/gatsby-remark-copy-linked-files-virtual-f209059d18/0/cache/gatsby-remark-copy-linked-files-npm-6.13.2-3b1bc3bc13-86e97eb5ef.zip/node_modules/gatsby-remark-copy-linked-files/",\
+      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0", {\
+        "packageLocation": "./.yarn/__virtual__/gatsby-remark-copy-linked-files-virtual-e18777575c/0/cache/gatsby-remark-copy-linked-files-npm-6.14.0-4ec247f3f1-a9c2ce9468.zip/node_modules/gatsby-remark-copy-linked-files/",\
         "packageDependencies": [\
-          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.13.2"],\
+          ["gatsby-remark-copy-linked-files", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0"],\
           ["@babel/runtime", "npm:7.23.6"],\
           ["@types/gatsby", null],\
           ["cheerio", "npm:1.0.0-rc.12"],\
