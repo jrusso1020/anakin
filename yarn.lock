@@ -5358,7 +5358,7 @@ __metadata:
     gatsby-plugin-google-gtag: "npm:^5.14.0"
     gatsby-plugin-image: "npm:^3.13.1"
     gatsby-plugin-manifest: "npm:^5.14.0"
-    gatsby-plugin-offline: "npm:^6.13.3"
+    gatsby-plugin-offline: "npm:^6.14.0"
     gatsby-plugin-postcss: "npm:^6.13.1"
     gatsby-plugin-react-svg: "npm:^3.3.0"
     gatsby-plugin-root-import: "npm:^2.0.8"
@@ -9441,13 +9441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.13.3":
-  version: 6.13.3
-  resolution: "gatsby-plugin-offline@npm:6.13.3"
+"gatsby-plugin-offline@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "gatsby-plugin-offline@npm:6.14.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     cheerio: "npm:1.0.0-rc.12"
-    gatsby-core-utils: "npm:^4.13.1"
+    gatsby-core-utils: "npm:^4.14.0"
     glob: "npm:^7.2.3"
     idb-keyval: "npm:^3.2.0"
     lodash: "npm:^4.17.21"
@@ -9456,7 +9456,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 10/a590c391cca49dcf503d2160db36e07965667abeab3c19681f57fd1a2d3e5e04a0d4d60c3046472dc77c9751c0f7fc2a88c1451a7c54aeda8691a516f4a40a14
+  checksum: 10/4804d282fea8f31ec4b889d6c100cda496218b69a63c5c71c88a2eef69bd5b79caefbb78e71db78670c7f5d03dd58e3c5bff86d3b91cc2d7dc514c82273792a0
   languageName: node
   linkType: hard
 
