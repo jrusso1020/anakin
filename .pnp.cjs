@@ -92,7 +92,7 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.5"],\
           ["stack-trace", "npm:0.0.10"],\
           ["svg-react-loader", "npm:0.4.6"],\
-          ["tailwind-merge", "npm:2.5.4"],\
+          ["tailwind-merge", "npm:2.5.5"],\
           ["tailwindcss", "npm:3.4.15"],\
           ["tailwindcss-animate", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:1.0.7"],\
           ["typeface-merriweather", "npm:1.1.13"],\
@@ -9284,7 +9284,7 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.5"],\
           ["stack-trace", "npm:0.0.10"],\
           ["svg-react-loader", "npm:0.4.6"],\
-          ["tailwind-merge", "npm:2.5.4"],\
+          ["tailwind-merge", "npm:2.5.5"],\
           ["tailwindcss", "npm:3.4.15"],\
           ["tailwindcss-animate", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:1.0.7"],\
           ["typeface-merriweather", "npm:1.1.13"],\
@@ -23996,10 +23996,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tailwind-merge", [\
-      ["npm:2.5.4", {\
-        "packageLocation": "./.yarn/cache/tailwind-merge-npm-2.5.4-cdd9f9e9ac-2bf6585a30.zip/node_modules/tailwind-merge/",\
+      ["npm:2.5.5", {\
+        "packageLocation": "./.yarn/cache/tailwind-merge-npm-2.5.5-b81987675f-a5bfa32559.zip/node_modules/tailwind-merge/",\
         "packageDependencies": [\
-          ["tailwind-merge", "npm:2.5.4"]\
+          ["tailwind-merge", "npm:2.5.5"]\
         ],\
         "linkType": "HARD"\
       }]\
