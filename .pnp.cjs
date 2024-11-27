@@ -78,7 +78,7 @@ const RAW_RUNTIME_STATE =
           ["platform", "npm:1.3.6"],\
           ["postcss", "npm:8.4.49"],\
           ["postcss-reporter", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.1.0"],\
-          ["prettier", "npm:3.4.0"],\
+          ["prettier", "npm:3.4.1"],\
           ["prismjs", "npm:1.29.0"],\
           ["prop-types", "npm:15.8.1"],\
           ["query-string", "npm:9.1.1"],\
@@ -9323,7 +9323,7 @@ const RAW_RUNTIME_STATE =
           ["platform", "npm:1.3.6"],\
           ["postcss", "npm:8.4.49"],\
           ["postcss-reporter", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.1.0"],\
-          ["prettier", "npm:3.4.0"],\
+          ["prettier", "npm:3.4.1"],\
           ["prismjs", "npm:1.29.0"],\
           ["prop-types", "npm:15.8.1"],\
           ["query-string", "npm:9.1.1"],\
@@ -12642,7 +12642,7 @@ const RAW_RUNTIME_STATE =
           ["@types/prettier", null],\
           ["eslint", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:9.15.0"],\
           ["eslint-config-prettier", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:9.1.0"],\
-          ["prettier", "npm:3.4.0"],\
+          ["prettier", "npm:3.4.1"],\
           ["prettier-linter-helpers", "npm:1.0.0"],\
           ["synckit", "npm:0.9.1"]\
         ],\
@@ -21211,10 +21211,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier", [\
-      ["npm:3.4.0", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.4.0-981798b0da/node_modules/prettier/",\
+      ["npm:3.4.1", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.4.1-ebb52d2db5/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.4.0"]\
+          ["prettier", "npm:3.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
