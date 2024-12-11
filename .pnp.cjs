@@ -72,7 +72,7 @@ const RAW_RUNTIME_STATE =
           ["gatsby-transformer-remark", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0"],\
           ["gatsby-transformer-sharp", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.2.10"],\
+          ["lint-staged", "npm:15.2.11"],\
           ["lucide-react", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.468.0"],\
           ["mitt", "npm:3.0.1"],\
           ["platform", "npm:1.3.6"],\
@@ -9264,7 +9264,7 @@ const RAW_RUNTIME_STATE =
           ["gatsby-transformer-remark", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:6.14.0"],\
           ["gatsby-transformer-sharp", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.2.10"],\
+          ["lint-staged", "npm:15.2.11"],\
           ["lucide-react", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.468.0"],\
           ["mitt", "npm:3.0.1"],\
           ["platform", "npm:1.3.6"],\
@@ -10993,10 +10993,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["npm:4.3.6", {\
-        "packageLocation": "./.yarn/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
+      ["npm:4.4.0", {\
+        "packageLocation": "./.yarn/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "npm:4.3.6"]\
+          ["debug", "npm:4.4.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
@@ -11014,12 +11014,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-6fccd4f6e9/0/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
+      ["virtual:4b8d98fa470127d19f7a984cc0e8d92edc2fd5b9e2a544d328d828078240d13ac3e308ae5bfda3ecb40108601e319ae8a752292950499ae1e537c38ee43ec9a3#npm:2.6.9", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-b78d6b18ce/0/cache/debug-npm-2.6.9-7d4cb597dc-e07005f2b4.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
+          ["debug", "virtual:4b8d98fa470127d19f7a984cc0e8d92edc2fd5b9e2a544d328d828078240d13ac3e308ae5bfda3ecb40108601e319ae8a752292950499ae1e537c38ee43ec9a3#npm:2.6.9"],\
           ["@types/supports-color", null],\
-          ["ms", "npm:2.1.2"],\
+          ["ms", "npm:2.0.0"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -11028,12 +11028,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:4b8d98fa470127d19f7a984cc0e8d92edc2fd5b9e2a544d328d828078240d13ac3e308ae5bfda3ecb40108601e319ae8a752292950499ae1e537c38ee43ec9a3#npm:2.6.9", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-b78d6b18ce/0/cache/debug-npm-2.6.9-7d4cb597dc-e07005f2b4.zip/node_modules/debug/",\
+      ["virtual:cb0331161405de155d5d31114c2260724ae76e36d05e7a62f8da20e21cd0aec3bb4e735c392cab50cfd8642d71bfc82908917b491c5b34fd1821ef6a67c4a77a#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-da572f73c7/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:4b8d98fa470127d19f7a984cc0e8d92edc2fd5b9e2a544d328d828078240d13ac3e308ae5bfda3ecb40108601e319ae8a752292950499ae1e537c38ee43ec9a3#npm:2.6.9"],\
+          ["debug", "virtual:cb0331161405de155d5d31114c2260724ae76e36d05e7a62f8da20e21cd0aec3bb4e735c392cab50cfd8642d71bfc82908917b491c5b34fd1821ef6a67c4a77a#npm:4.4.0"],\
           ["@types/supports-color", null],\
-          ["ms", "npm:2.0.0"],\
+          ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -17566,29 +17566,29 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.2.10", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.10-3374e8211c-ab6930cd63.zip/node_modules/lint-staged/",\
+      ["npm:15.2.11", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.11-cb03311614-b3fa66401f.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.2.10"],\
+          ["lint-staged", "npm:15.2.11"],\
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
+          ["debug", "virtual:cb0331161405de155d5d31114c2260724ae76e36d05e7a62f8da20e21cd0aec3bb4e735c392cab50cfd8642d71bfc82908917b491c5b34fd1821ef6a67c4a77a#npm:4.4.0"],\
           ["execa", "npm:8.0.1"],\
-          ["lilconfig", "npm:3.1.2"],\
-          ["listr2", "npm:8.2.4"],\
+          ["lilconfig", "npm:3.1.3"],\
+          ["listr2", "npm:8.2.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
-          ["yaml", "npm:2.5.0"]\
+          ["yaml", "npm:2.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["listr2", [\
-      ["npm:8.2.4", {\
-        "packageLocation": "./.yarn/cache/listr2-npm-8.2.4-d0c10a89e0-344d2397e1.zip/node_modules/listr2/",\
+      ["npm:8.2.5", {\
+        "packageLocation": "./.yarn/cache/listr2-npm-8.2.5-aeb7aca863-c76542f183.zip/node_modules/listr2/",\
         "packageDependencies": [\
-          ["listr2", "npm:8.2.4"],\
+          ["listr2", "npm:8.2.5"],\
           ["cli-truncate", "npm:4.0.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
@@ -26156,10 +26156,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.5.0", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.5.0-402c6c0928-72e903fdbe.zip/node_modules/yaml/",\
+      ["npm:2.6.1", {\
+        "packageLocation": "./.yarn/cache/yaml-npm-2.6.1-eb747069e9-cf412f03a3.zip/node_modules/yaml/",\
         "packageDependencies": [\
-          ["yaml", "npm:2.5.0"]\
+          ["yaml", "npm:2.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
