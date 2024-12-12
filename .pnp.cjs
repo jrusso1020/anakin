@@ -32,7 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
           ["@types/react-dom", "npm:18.3.1"],\
-          ["@types/react-transition-group", "npm:4.4.11"],\
+          ["@types/react-transition-group", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.12"],\
           ["@typescript-eslint/eslint-plugin", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:8.18.0"],\
           ["@typescript-eslint/parser", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:8.18.0"],\
           ["@yarnpkg/sdks", "npm:3.2.0"],\
@@ -6945,11 +6945,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/react-transition-group", [\
-      ["npm:4.4.11", {\
-        "packageLocation": "./.yarn/cache/@types-react-transition-group-npm-4.4.11-dda183055d-a7f4de6e5f.zip/node_modules/@types/react-transition-group/",\
+      ["npm:4.4.12", {\
+        "packageLocation": "./.yarn/cache/@types-react-transition-group-npm-4.4.12-d5d75252ec-ea14bc84f5.zip/node_modules/@types/react-transition-group/",\
         "packageDependencies": [\
-          ["@types/react-transition-group", "npm:4.4.11"],\
-          ["@types/react", "npm:18.2.45"]\
+          ["@types/react-transition-group", "npm:4.4.12"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.12", {\
+        "packageLocation": "./.yarn/__virtual__/@types-react-transition-group-virtual-d62691d697/0/cache/@types-react-transition-group-npm-4.4.12-d5d75252ec-ea14bc84f5.zip/node_modules/@types/react-transition-group/",\
+        "packageDependencies": [\
+          ["@types/react-transition-group", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.12"],\
+          ["@types/react", "npm:18.3.13"]\
+        ],\
+        "packagePeers": [\
+          "@types/react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9224,7 +9234,7 @@ const RAW_RUNTIME_STATE =
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
           ["@types/react-dom", "npm:18.3.1"],\
-          ["@types/react-transition-group", "npm:4.4.11"],\
+          ["@types/react-transition-group", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.12"],\
           ["@typescript-eslint/eslint-plugin", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:8.18.0"],\
           ["@typescript-eslint/parser", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:8.18.0"],\
           ["@yarnpkg/sdks", "npm:3.2.0"],\
