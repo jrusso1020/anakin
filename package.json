@@ -48,7 +48,7 @@
     "prismjs": "^1.27.0",
     "prop-types": "^15.8.1",
     "query-string": "^9.1.1",
-    "react": "^18.3.1",
+    "react": "^19.0.0",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
     "react-transition-group": "^4.4.1",
@@ -67,7 +67,7 @@
   "devDependencies": {
     "@types/node": "^22.10.2",
     "@types/postcss-reporter": "^7",
-    "@types/react": "^18.3.13",
+    "@types/react": "^19.0.1",
     "@types/react-dom": "^18.3.1",
     "@types/react-transition-group": "^4.4.12",
     "@yarnpkg/sdks": "^3.2.0",
