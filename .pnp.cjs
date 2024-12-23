@@ -48,7 +48,7 @@ const RAW_RUNTIME_STATE =
           ["event-source-polyfill", "npm:1.0.31"],\
           ["gatsby", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-cli", "npm:5.14.0"],\
-          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
+          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.1"],\
           ["gatsby-plugin-catch-links", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-plugin-feed", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-plugin-google-gtag", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
@@ -9250,7 +9250,7 @@ const RAW_RUNTIME_STATE =
           ["event-source-polyfill", "npm:1.0.31"],\
           ["gatsby", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-cli", "npm:5.14.0"],\
-          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
+          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.1"],\
           ["gatsby-plugin-catch-links", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-plugin-feed", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
           ["gatsby-plugin-google-gtag", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
@@ -14077,10 +14077,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0", {\
-        "packageLocation": "./.yarn/__virtual__/gatsby-link-virtual-5aa0673ed6/0/cache/gatsby-link-npm-5.14.0-1a1891586d-e7212f82c8.zip/node_modules/gatsby-link/",\
+      ["npm:5.14.1", {\
+        "packageLocation": "./.yarn/cache/gatsby-link-npm-5.14.1-bb4681406d-fc471b51a3.zip/node_modules/gatsby-link/",\
         "packageDependencies": [\
-          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.0"],\
+          ["gatsby-link", "npm:5.14.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.1", {\
+        "packageLocation": "./.yarn/__virtual__/gatsby-link-virtual-627ad93582/0/cache/gatsby-link-npm-5.14.1-bb4681406d-fc471b51a3.zip/node_modules/gatsby-link/",\
+        "packageDependencies": [\
+          ["gatsby-link", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.1"],\
           ["@gatsbyjs/reach-router", null],\
           ["@types/gatsbyjs__reach-router", null],\
           ["@types/reach__router", "npm:1.3.14"],\
