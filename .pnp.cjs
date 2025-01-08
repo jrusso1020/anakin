@@ -27,7 +27,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.15"],\
+          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16"],\
           ["@types/node", "npm:22.10.5"],\
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
@@ -6570,17 +6570,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@tailwindcss/typography", [\
-      ["npm:0.5.15", {\
-        "packageLocation": "./.yarn/cache/@tailwindcss-typography-npm-0.5.15-9a4acf8b32-8c677e4de2.zip/node_modules/@tailwindcss/typography/",\
+      ["npm:0.5.16", {\
+        "packageLocation": "./.yarn/cache/@tailwindcss-typography-npm-0.5.16-675125d30f-ca6cca2c82.zip/node_modules/@tailwindcss/typography/",\
         "packageDependencies": [\
-          ["@tailwindcss/typography", "npm:0.5.15"]\
+          ["@tailwindcss/typography", "npm:0.5.16"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.15", {\
-        "packageLocation": "./.yarn/__virtual__/@tailwindcss-typography-virtual-2983c22291/0/cache/@tailwindcss-typography-npm-0.5.15-9a4acf8b32-8c677e4de2.zip/node_modules/@tailwindcss/typography/",\
+      ["virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16", {\
+        "packageLocation": "./.yarn/__virtual__/@tailwindcss-typography-virtual-d3785d3570/0/cache/@tailwindcss-typography-npm-0.5.16-675125d30f-ca6cca2c82.zip/node_modules/@tailwindcss/typography/",\
         "packageDependencies": [\
-          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.15"],\
+          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16"],\
           ["@types/tailwindcss", null],\
           ["lodash.castarray", "npm:4.4.0"],\
           ["lodash.isplainobject", "npm:4.0.6"],\
@@ -9229,7 +9229,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["boredhacking", "workspace:."],\
-          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.15"],\
+          ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16"],\
           ["@types/node", "npm:22.10.5"],\
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
