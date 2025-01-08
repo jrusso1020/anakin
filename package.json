@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "James Russo",
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
     "@typescript-eslint/parser": "^8.19.1",
     "babel-preset-gatsby": "^3.14.0",
