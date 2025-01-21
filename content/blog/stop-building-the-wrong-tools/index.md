@@ -3,6 +3,7 @@ title: "Stop Building the Wrong Tools: How Developer Surveys Transformed Our Foc
 date: "2024-09-11"
 description: In this post, I share how my team spent two years building an internal developer portal, only to discover it wasn’t solving our developers’ real pain points. By implementing a developer survey, we uncovered the true challenges our developers were facing and pivoted our focus to deliver tools that made a meaningful impact. Learn how understanding developer priorities can help your team avoid building the wrong tools and drive real productivity improvements.
 tags: ["developer portal", "developer experience", "developer survey", "dx"]
+keywords: []
 ---
 
 We spent two years building an internal developer portal—only to discover it wasn’t solving our developers’ biggest pain points. Here’s how a simple developer survey changed everything. As a technical lead who focused on developer productivity at a high-growth startup, I often receive inbounds from founders working on developer tooling. During these chats, I find myself reiterating this same story over and over, so I thought it might be best to write it down for others as well.

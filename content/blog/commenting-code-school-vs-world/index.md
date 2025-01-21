@@ -9,6 +9,15 @@ tags:
     "commenting code",
     "documenting code",
   ]
+keywords: [
+ "how to comment code",
+ "commenting code examples",
+ "commenting code in school",
+ "commenting code in industry",
+ "commenting code in practice",
+ "commenting code in code reviews",
+ "commenting code in code reviews",
+]
 ---
 
 ## Commenting Code in School

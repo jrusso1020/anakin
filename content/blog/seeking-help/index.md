@@ -3,6 +3,7 @@ title: "Mastering the Art of Seeking Help: How Software Engineers Can Get the Pe
 date: "2023-07-19"
 description: In this blog post, we explore the art of seeking help as a software engineer, emphasizing the significance of providing context and prerequisites to ensure clear and actionable responses. By structuring inquiries with relevant details like issue descriptions, code snippets, and error logs, engineers can obtain quicker and more accurate solutions. Whether seeking assistance internally within a company or externally in developer communities and open-source projects, these skills foster a positive, supportive, and successful community. Mastering this art empowers engineers to make meaningful progress in their projects while contributing to a thriving knowledge-sharing community.
 tags: ["questions", "help", "mentorship"]
+keywords: ["how to ask for help at work", "how to ask for help with a task", "how to ask for help with a bug", "how to ask for help with a problem", "how to resolve an error message"]
 ---
 
 ## Background

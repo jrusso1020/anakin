@@ -3,6 +3,7 @@ title: "Kubernetes Oops to Kubernetes Ops: Mistakes, Learnings, and Improved Pra
 date: "2023-07-01"
 description: As a software engineer with experience working on Kubernetes clusters at three different companies, I've had my fair share of mistakes and learnings. In all honesty, I initially had little knowledge of what I was doing and made several mistakes. However, these mistakes have been valuable opportunities for learning and growth. Now, as part of the foundations organization at my current company, I've had the privilege of learning even more from my skilled coworkers who are responsible for operating our clusters. In this blog post, I will share my past experiences, including the mistakes I made and the valuable lessons I've learned along the way.
 tags: ["kubernetes", "k8s"]
+keywords: ["kubernetes", "kubernetes mistakes", "kubernetes learnings", "kubernetes ops", "kubernetes oops", "kubernetes k8s"]
 ---
 
 In my first professional experience with [Kubernetes (K8s)](https://kubernetes.io/), I was tasked with improving our ecommerce store site performance and SEO. We decided to migrate our React single-page app from client-side rendering to server-side rendering, gradually migrating pages and routing traffic dynamically using a reverse proxy. To deploy the new applications, we explored containerization and chose [AWS's Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) for hosting via Kubernetes.

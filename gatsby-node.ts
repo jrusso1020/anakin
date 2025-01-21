@@ -12,6 +12,7 @@ type AllMarkdownRemark = {
         frontmatter: {
           title: string
           tags: string[]
+          keywords: string[]
         }
       }
     }[]
@@ -57,6 +58,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
             frontmatter {
               title
               tags
+              keywords
             }
           }
         }

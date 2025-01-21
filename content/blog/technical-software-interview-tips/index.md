@@ -9,6 +9,7 @@ tags:
     "technical interviews",
     "software engineering interviews",
   ]
+keywords: ["technical software engineer interview tips"]
 ---
 
 ### Background

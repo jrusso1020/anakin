@@ -3,6 +3,7 @@ title: The Comeback
 date: "2022-12-23"
 description: Getting back into blogging and revisiting this website!
 tags: ["blogging"]
+keywords: []
 ---
 
 Over the last couple of years I haven't made a concerted effort to blog, and in general this website has been fairly unmaintained. My last post was in July 2021 which was over a year and a half ago, and most of my contributions to this website have been merging dependency updates. I did however author one blog post in the past year on [Brex's Engineering Blog](https://medium.com/brexeng) which you can check it out if you like: [Backstage Adoption at Brex](https://medium.com/brexeng/backstage-adoption-at-brex-b415e0e7d3a6)

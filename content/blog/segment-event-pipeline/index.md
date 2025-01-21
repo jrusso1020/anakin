@@ -10,6 +10,7 @@ tags:
     "Kinesis Streams",
     "data processing",
   ]
+keywords: ["segment.io", "aws lambda", "aws kinesis", "aws kinesis streams", "aws lambda functions"]
 ---
 
 As a data-driven eCommerce company, Rockets of Awesome deals with tens of thousands of segment events everyday. And although segment handles sending these to most outside services, there are certain instances when we want to update our model attributes based on frontend events. So in order to handle this process we built a Segment Drain. Our Segment Drain filters our segment events for the ones we want and then forward these events along to our eCommerce store. We wanted to stream this frontend information to our backend reliably and as quickly as possible so we utilized some AWS services such as API Gateways, Lambdas, and Kinesis Data Streams.

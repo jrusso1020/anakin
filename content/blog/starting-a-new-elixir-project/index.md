@@ -3,6 +3,7 @@ title: Starting a new Elixir Project
 date: "2020-06-21"
 description: I recently started coding in Elixir professionally. It's relatively easy to develop and add new features at work where most things are set up and running. However, I wanted to get a better understanding of setting up an Elixir project and tooling from scratch. So I decided to start simple and try to write an Elixir wrapper for a 3rd party API. Here are my thoughts and learnings from starting a new Elixir API Wrapper from scratch.
 tags: ["Elixir", "mix", "new project"]
+keywords: ["elixir", "elixir mix", "elixir new project"]
 ---
 
 I recently started coding in [Elixir](https://elixir-lang.org/) professionally. It's relatively easy to develop and add new features at work where most things are set up and running. However, I wanted to get a better understanding of setting up an Elixir project and tooling from scratch. So I decided to start simple and try to write an Elixir wrapper for a 3rd party API. Here are my thoughts and learnings from starting a new Elixir API Wrapper from scratch.

@@ -30,7 +30,7 @@ const SEO = ({ description, tags = [], keywords = [], title, image, children }: 
   const siteImage = `${site.siteMetadata.siteUrl}${
     image || site.siteMetadata.defaultImage
   }`
-  const allKeywords = [...tags, ...keywords]
+  const allKeywords = [...new Set([...tags, ...keywords])]
 
 
   return (

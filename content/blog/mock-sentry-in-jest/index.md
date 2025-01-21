@@ -3,6 +3,7 @@ title: Mocking Sentry in Jest and Gatsby
 date: "2019-09-23"
 description: This is a very short and simple tutorial describing how to mock Sentry in the Jest testing framework and more specifically in a Gatsby.js application. This approach can be used in other javascript frameworks that use Jest, but I will use Gatsby.js and their unit testing tutorial as a basis.
 tags: ["Sentry", "Jest", "Gatsby"]
+keywords: ["mock sentry", "mock sentry in jest", "mock sentry in gatsby"]
 ---
 
 When testing a React based application that uses [Sentry.io](https://sentry.io/) it is necessary to mock Sentry. You shouldn't be making API calls to report errors during your test, and more importantly you shouldn't need to load Sentry in your test environment anyways. However, if Sentry is missing or not setup in the testing environment this may cause your tests to fail, raising a `ReferenceError: Sentry is not defined`. Before discussing how to mock Sentry in your test, if you are adding Sentry to your Gatsby.js project, please follow [this great tutorial](https://www.gatsbyjs.org/packages/gatsby-plugin-sentry/) and which uses the plugin `gatsby-plugin-sentry`. This easy to use plugin adds Sentry to your project and only loads it in certain environments, in my case "staging" and "production".
