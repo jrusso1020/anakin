@@ -1,11 +1,23 @@
 ---
-title: "One Year of Elixir: How it compares to Ruby"
+title: "Elixir vs Ruby: A Detailed Comparison After One Year"
 date: "2021-02-21"
-description: Last year I started a new job at Brex where Elixir is the primary programming language for business logic. This was my first real adventure into Elixir after working in Ruby (mostly) for my professional career. Since José Valim came from the Ruby world, Elixir was a common buzzword I heard for years. I had done a tutorial or two here and there but never gotten to really use it. Now, looking back at the past year I've become fairly comfortable with Elixir, and wanted to outline some of the things I really enjoy about Elixir and some of the things I miss from Ruby.
-tags: ["elixir", "ruby", "comparison"]
+description: "A comprehensive comparison of Elixir vs Ruby based on real-world experience. Learn the key differences between Ruby and Elixir, including concurrency, documentation, pattern matching, community resources, and more. Find out which language might be better for your next project."
+tags: ["elixir", "ruby", "comparison", "elixir vs ruby", "ruby vs elixir", "programming languages"]
+keywords: ["elixir programming", "ruby programming", "elixir vs ruby comparison", "ruby vs elixir differences", "which is better ruby or elixir", "elixir ruby performance comparison", "programming language comparison"]
 ---
 
 Last year I started a new job at [Brex](https://brex.com) where Elixir is the primary programming language for business logic. This was my first real adventure into Elixir after working in Ruby (mostly) for my professional career. Since José Valim came from the Ruby world, Elixir was a common buzzword I heard for years. I had done a tutorial or two here and there but never gotten to really use it. Now, looking back at the past year I've become fairly comfortable with Elixir, and wanted to outline some of the things I really enjoy about Elixir and some of the things I miss from Ruby.
+
+## Quick Comparison: Elixir vs Ruby
+
+| Feature | Elixir | Ruby |
+|---------|---------|-------|
+| Concurrency | Built-in processes, excellent concurrency support | Limited by Global Interpreter Lock (GIL) |
+| Documentation | Built-in documentation system with ExDoc | Various third-party tools (YARD, RDoc) |
+| Pattern Matching | First-class feature | Limited pattern matching with case statements |
+| Community Size | Growing but smaller | Large, mature ecosystem |
+| Package Management | Mix (built-in) | Multiple tools (Bundler, RubyGems) |
+| Learning Curve | Steeper for OOP developers | Gentle learning curve |
 
 ## The Good Parts of Elixir
 
@@ -112,11 +124,11 @@ title
 
 ## The Things I Miss From Ruby
 
-That being said, there are still a lot of good things about Ruby and some things I miss. These are probably the biggest two things I’ve really missed over the past year.
+That being said, there are still a lot of good things about Ruby and some things I miss. These are probably the biggest two things I've really missed over the past year.
 
 ### The Community and Resources
 
-Personally, the greatest thing about Ruby is the massive community and resources around it. Ruby started in 1995 whereas Elixir is a lot newer, being initially released in 2011. Ruby and Ruby on Rails have gained massive user bases and because of this have a huge number of resources. One of the best things about Ruby is the fact that there will almost always be a library(gem) for what you want to do and they generally are well maintained. On top of that there's a plethora of tutorials and resources to learn Ruby. A big pain point with Elixir is the smaller community and lack of open source libraries. Although there are a lot of learning resources for new Elixir developers. There's also a lot of great libraries built by the core Elixir team for most needs, but there's still not a lot of libraries in comparison to other languages. At Brex, we have needed to write a number of internal Elixir libraries for our specific needs or for third party services which don’t have an SDK in Elixir. A couple of other issues are that a lot of Elixir libraries aren't well maintained and go dormant often or are maintained by a single maintainer which makes it hard to get updates in a timely manner. That being said Elixir is still a fairly young language and with its continued growth hopefully it will improve.
+Personally, the greatest thing about Ruby is the massive community and resources around it. Ruby started in 1995 whereas Elixir is a lot newer, being initially released in 2011. Ruby and Ruby on Rails have gained massive user bases and because of this have a huge number of resources. One of the best things about Ruby is the fact that there will almost always be a library(gem) for what you want to do and they generally are well maintained. On top of that there's a plethora of tutorials and resources to learn Ruby. A big pain point with Elixir is the smaller community and lack of open source libraries. Although there are a lot of learning resources for new Elixir developers. There's also a lot of great libraries built by the core Elixir team for most needs, but there's still not a lot of libraries in comparison to other languages. At Brex, we have needed to write a number of internal Elixir libraries for our specific needs or for third party services which don't have an SDK in Elixir. A couple of other issues are that a lot of Elixir libraries aren't well maintained and go dormant often or are maintained by a single maintainer which makes it hard to get updates in a timely manner. That being said Elixir is still a fairly young language and with its continued growth hopefully it will improve.
 
 ### Monkey Patching
 

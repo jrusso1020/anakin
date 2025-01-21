@@ -18,6 +18,7 @@ interface MarkdownRemarkI {
     date: string
     description?: string
     tags: string[]
+    keywords: string[]
   }
 }
 interface BlogPostBySlugQuery {
@@ -105,7 +106,8 @@ export const Head = ({
   <SEO
     title={post.frontmatter.title}
     description={post.frontmatter.description || post.excerpt}
-    keywords={post.frontmatter.tags}
+    tags={post.frontmatter.tags}
+    keywords={post.frontmatter.keywords}
   />
 )
 
@@ -129,6 +131,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        keywords
       }
     }
   }

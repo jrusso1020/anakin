@@ -2,7 +2,23 @@
 title: "Staff Engineer: To be or not to be?"
 date: "2023-04-23"
 description: This blog post will discuss the question that plagues many engineers - whether or not to work towards becoming a staff engineer. I will be sharing my personal journey towards becoming a staff engineer at Brex. I will discuss the motivations behind my decision to pursue this career path, the challenges I faced, and the skills and experience I needed to develop to succeed. Through my own experience, I will provide insights into the roles and responsibilities of a staff engineer, the traits and competencies required to excel in this position, and the benefits and drawbacks of pursuing this career path. By the end of this post, you will hopefully have a clearer understanding of what it takes to become a staff engineer, and whether or not it's a goal worth pursuing for your own career.
-tags: ["staff engineer", "software engineering", "career progression"]
+tags: [
+  "staff engineer",
+  "software engineering",
+  "career progression",
+  "engineering leadership",
+  "technical leadership"
+]
+keywords: [
+  "how to become a staff engineer",
+  "staff engineer role",
+  "staff engineer salary",
+  "staff engineer responsibilities",
+  "staff engineer vs senior engineer",
+  "what does a staff engineer do",
+  "staff engineer career path",
+  "staff engineer job description"
+]
 ---
 
 In February 2022, I achieved a significant milestone in my career by being promoted to Staff Engineer at Brex. As I settled into this new role, I began to receive a lot of questions from engineers who were contemplating whether or not to pursue the same career path. Their inquiries were along the lines of "Is it worth it to become a staff engineer?" or "Should I work towards becoming a staff engineer?". While I initially struggled to answer these nuanced questions in person, I have spent the past year reflecting on my own motivations for pursuing this role, the work and effort I invested to get here, and my thoughts on the role after a year of experience. In this post, I will share my personal journey, hoping that my own experience can help answer these common questions in a more meaningful and personalized way.

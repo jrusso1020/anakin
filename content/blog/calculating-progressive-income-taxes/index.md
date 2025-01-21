@@ -1,15 +1,26 @@
 ---
 title: Calculating Progressive Income Taxes
 date: "2023-01-18"
-description: In the United States (as well as other locations), we have a progressive income tax system. What this means is that the percentage or amount you pay in taxes increases as your income increases, basically higher income individuals pay a larger percentage of their income in taxes. While working on a side project I was unable to find an algorithm explanation of how to calculate progressive income taxes based on brackets, so this post goes into detail on a simple algorithm to do so.
-tags:
-  [
-    "us federal income taxes",
-    "progressive income taxes",
-    "income taxes",
-    "javascript",
-    "typescript",
-  ]
+description: "Learn how to calculate progressive tax with clear examples and JavaScript code. This comprehensive guide explains progressive tax calculation, includes working code examples, and shows how to implement a reusable tax calculator for any tax bracket system."
+tags: [
+  "us federal income taxes",
+  "progressive income taxes",
+  "income taxes",
+  "javascript",
+  "typescript",
+  "tax calculation",
+  "progressive tax example"
+]
+keywords: [
+  "how to calculate progressive tax",
+  "progressive tax calculation example",
+  "progressive tax calculator",
+  "tax bracket calculation",
+  "calculate tax brackets",
+  "progressive tax system example",
+  "income tax calculation formula",
+  "tax computation guide"
+]
 ---
 
 ## Progressive Income Taxes
@@ -21,6 +32,19 @@ Although there are multiple nuances to calculating US federal income taxes we wi
 ![single filer 2023 tax brackets from nerdwallet](./nerd-wallet-single-filer-taxes.png)
 
 There are a few important facts to be aware of regarding how progressive tax brackets work. The tax bracket rate you are in based on your income is not applied to all of your income. Your income is divided into taxable chunks. For example if you make $20,000 dollars based on the above tax brackets, the first $11,000 of your income is taxed at 10% and then the next $9,000 of that $20,000 is taxed at 12%. This logic can be applied to any level of income. The percentage of your taxable income that you end up paying in taxes is your effective tax rate (this will be less than the tax rate for your income bracket). This can be determined by dividing your total tax owed by your total taxable income. For example in the above scenario the total taxable income is `($11,000 * 0.10) + ($9,000 * 0.12) = $2,180` and then `$2,180 / $20,000 = 0.109` which is less than 12%. Now that we know the basics of calculating progressive income taxes let's hop into some code.
+
+## Progressive Tax Example
+
+Let's walk through a simple example of calculating progressive tax for someone earning $50,000 in 2023:
+
+1. First $11,000 → taxed at 10% = $1,100
+2. Next $33,725 ($44,725 - $11,000) → taxed at 12% = $4,047
+3. Final $5,275 ($50,000 - $44,725) → taxed at 22% = $1,160.50
+
+Total Tax = $1,100 + $4,047 + $1,160.50 = $6,307.50
+Effective Tax Rate = $6,307.50 / $50,000 = 12.62%
+
+This example demonstrates how income is taxed in "chunks" at different rates, resulting in an effective tax rate lower than the highest bracket rate.
 
 ## Programmatically Calculating Progressive Income Taxes
 

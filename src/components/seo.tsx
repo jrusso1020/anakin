@@ -3,13 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
   description?: string
+  tags?: string[]
   keywords?: string[]
   title: string
   image?: string
   children: React.ReactNode
 }
 
-const SEO = ({ description, keywords, title, image, children }: Props) => {
+const SEO = ({ description, tags = [], keywords = [], title, image, children }: Props) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -29,6 +30,8 @@ const SEO = ({ description, keywords, title, image, children }: Props) => {
   const siteImage = `${site.siteMetadata.siteUrl}${
     image || site.siteMetadata.defaultImage
   }`
+  const allKeywords = [...tags, ...keywords]
+
 
   return (
     <>
@@ -44,8 +47,8 @@ const SEO = ({ description, keywords, title, image, children }: Props) => {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ""} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      {(keywords || []).length > 0 && (
-        <meta name="keywords" content={keywords?.join(", ")} />
+      {allKeywords.length > 0 && (
+        <meta name="keywords" content={allKeywords.join(", ")} />
       )}
       {children}
     </>
