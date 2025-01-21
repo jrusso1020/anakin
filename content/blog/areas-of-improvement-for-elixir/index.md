@@ -3,7 +3,18 @@ title: Areas of Improvement for Elixir
 date: "2023-02-13"
 description: Brex adopted the Elixir programming language as its initial primary development language. However over the years we have decided to divest from Elixir and instead migrate towards Kotlin. This post goes into my *personal* ideas on why Elixir didn’t succeed at Brex so that the community and other companies can avoid some of our mistakes.
 tags: ["elixir", "brex", "programming languages"]
-keywords: ["elixir programming", "elixir brex", "elixir at brex", "elixir vs kotlin", "elixir vs java", "elixir vs kotlin", "elixir vs java", "elixir programming language", "elixir programming language adoption"]
+keywords:
+  [
+    "elixir programming",
+    "elixir brex",
+    "elixir at brex",
+    "elixir vs kotlin",
+    "elixir vs java",
+    "elixir vs kotlin",
+    "elixir vs java",
+    "elixir programming language",
+    "elixir programming language adoption",
+  ]
 ---
 
 ## Disclaimer

@@ -2,22 +2,39 @@
 title: "Elixir vs Ruby: A Detailed Comparison After One Year"
 date: "2021-02-21"
 description: "A comprehensive comparison of Elixir vs Ruby based on real-world experience. Learn the key differences between Ruby and Elixir, including concurrency, documentation, pattern matching, community resources, and more. Find out which language might be better for your next project."
-tags: ["elixir", "ruby", "comparison", "elixir vs ruby", "ruby vs elixir", "programming languages"]
-keywords: ["elixir programming", "ruby programming", "elixir vs ruby comparison", "ruby vs elixir differences", "which is better ruby or elixir", "elixir ruby performance comparison", "programming language comparison"]
+tags:
+  [
+    "elixir",
+    "ruby",
+    "comparison",
+    "elixir vs ruby",
+    "ruby vs elixir",
+    "programming languages",
+  ]
+keywords:
+  [
+    "elixir programming",
+    "ruby programming",
+    "elixir vs ruby comparison",
+    "ruby vs elixir differences",
+    "which is better ruby or elixir",
+    "elixir ruby performance comparison",
+    "programming language comparison",
+  ]
 ---
 
 Last year I started a new job at [Brex](https://brex.com) where Elixir is the primary programming language for business logic. This was my first real adventure into Elixir after working in Ruby (mostly) for my professional career. Since José Valim came from the Ruby world, Elixir was a common buzzword I heard for years. I had done a tutorial or two here and there but never gotten to really use it. Now, looking back at the past year I've become fairly comfortable with Elixir, and wanted to outline some of the things I really enjoy about Elixir and some of the things I miss from Ruby.
 
 ## Quick Comparison: Elixir vs Ruby
 
-| Feature | Elixir | Ruby |
-|---------|---------|-------|
-| Concurrency | Built-in processes, excellent concurrency support | Limited by Global Interpreter Lock (GIL) |
-| Documentation | Built-in documentation system with ExDoc | Various third-party tools (YARD, RDoc) |
-| Pattern Matching | First-class feature | Limited pattern matching with case statements |
-| Community Size | Growing but smaller | Large, mature ecosystem |
-| Package Management | Mix (built-in) | Multiple tools (Bundler, RubyGems) |
-| Learning Curve | Steeper for OOP developers | Gentle learning curve |
+| Feature            | Elixir                                            | Ruby                                          |
+| ------------------ | ------------------------------------------------- | --------------------------------------------- |
+| Concurrency        | Built-in processes, excellent concurrency support | Limited by Global Interpreter Lock (GIL)      |
+| Documentation      | Built-in documentation system with ExDoc          | Various third-party tools (YARD, RDoc)        |
+| Pattern Matching   | First-class feature                               | Limited pattern matching with case statements |
+| Community Size     | Growing but smaller                               | Large, mature ecosystem                       |
+| Package Management | Mix (built-in)                                    | Multiple tools (Bundler, RubyGems)            |
+| Learning Curve     | Steeper for OOP developers                        | Gentle learning curve                         |
 
 ## The Good Parts of Elixir
 

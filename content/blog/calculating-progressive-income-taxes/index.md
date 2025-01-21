@@ -2,25 +2,27 @@
 title: Calculating Progressive Income Taxes
 date: "2023-01-18"
 description: "Learn how to calculate progressive tax with clear examples and JavaScript code. This comprehensive guide explains progressive tax calculation, includes working code examples, and shows how to implement a reusable tax calculator for any tax bracket system."
-tags: [
-  "us federal income taxes",
-  "progressive income taxes",
-  "income taxes",
-  "javascript",
-  "typescript",
-  "tax calculation",
-  "progressive tax example"
-]
-keywords: [
-  "how to calculate progressive tax",
-  "progressive tax calculation example",
-  "progressive tax calculator",
-  "tax bracket calculation",
-  "calculate tax brackets",
-  "progressive tax system example",
-  "income tax calculation formula",
-  "tax computation guide"
-]
+tags:
+  [
+    "us federal income taxes",
+    "progressive income taxes",
+    "income taxes",
+    "javascript",
+    "typescript",
+    "tax calculation",
+    "progressive tax example",
+  ]
+keywords:
+  [
+    "how to calculate progressive tax",
+    "progressive tax calculation example",
+    "progressive tax calculator",
+    "tax bracket calculation",
+    "calculate tax brackets",
+    "progressive tax system example",
+    "income tax calculation formula",
+    "tax computation guide",
+  ]
 ---
 
 ## Progressive Income Taxes

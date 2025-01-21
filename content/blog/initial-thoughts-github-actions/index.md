@@ -3,7 +3,12 @@ title: Initial Thoughts on Github Actions
 date: "2023-02-14"
 description: Over the last few months I've started to use Github Actions in some of my personal projects. This post goes into some quick initial thoughts on the product and experience.
 tags: ["github actions", "cicd", "workflow automation"]
-keywords: ["github actions", "github actions cicd", "github actions workflow automation"]
+keywords:
+  [
+    "github actions",
+    "github actions cicd",
+    "github actions workflow automation",
+  ]
 ---
 
 # Background

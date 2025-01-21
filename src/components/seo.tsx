@@ -10,7 +10,14 @@ interface Props {
   children: React.ReactNode
 }
 
-const SEO = ({ description, tags = [], keywords = [], title, image, children }: Props) => {
+const SEO = ({
+  description,
+  tags = [],
+  keywords = [],
+  title,
+  image,
+  children,
+}: Props) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -31,7 +38,6 @@ const SEO = ({ description, tags = [], keywords = [], title, image, children }: 
     image || site.siteMetadata.defaultImage
   }`
   const allKeywords = [...new Set([...tags, ...keywords])]
-
 
   return (
     <>
