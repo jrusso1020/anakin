@@ -3541,12 +3541,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.10.9":
-  version: 22.10.9
-  resolution: "@types/node@npm:22.10.9"
+"@types/node@npm:^22.10.10":
+  version: 22.10.10
+  resolution: "@types/node@npm:22.10.10"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10/8a13d4e27e85b2e1878e2158400981feb5d5b9508cc920d475d5c327d93c7442d4baa5d2248d1503ffdd5964d955f54d4cf1009f3a3b812464e58cd6425a81cc
+  checksum: 10/61559b62bc7e62b947876e097c99472dd01317dd3b5916b538e2c40db8d68a1fc23c8de48149ef04cd2790a97bf2c005ea60cbb067e55ddbefd013d73da7a147
   languageName: node
   linkType: hard
 
@@ -5327,7 +5327,7 @@ __metadata:
   resolution: "boredhacking@workspace:."
   dependencies:
     "@tailwindcss/typography": "npm:^0.5.16"
-    "@types/node": "npm:^22.10.9"
+    "@types/node": "npm:^22.10.10"
     "@types/postcss-reporter": "npm:^7"
     "@types/react": "npm:^18.3.13"
     "@types/react-dom": "npm:^18.3.1"
