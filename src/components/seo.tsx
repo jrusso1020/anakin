@@ -6,10 +6,10 @@ interface Props {
   keywords?: string[]
   title: string
   image?: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
-const SEO = ({ description, keywords, title, image, children }: Props) => {
+const SEO = ({ description, keywords = [], title, image, children }: Props) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -51,9 +51,5 @@ const SEO = ({ description, keywords, title, image, children }: Props) => {
     </>
   )
 }
-
-SEO.defaultProps = {
-  keywords: [],
-} as Partial<Props>
 
 export default SEO
