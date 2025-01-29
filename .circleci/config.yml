@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   dependencies:
     docker:
-      - image: cimg/node:20.10.0
+      - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
       - checkout
@@ -31,7 +31,7 @@ jobs:
             - ~/anakin
   format:
     docker:
-      - image: cimg/node:20.10.0
+      - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
       - restore_cache:
@@ -44,7 +44,7 @@ jobs:
             yarn prettier --list-different "src/**/*.{ts,tsx}" "content/blog/**/index.md"
   type-check:
     docker:
-      - image: cimg/node:20.10.0
+      - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
       - restore_cache:
@@ -57,7 +57,7 @@ jobs:
             yarn type-check
   build:
     docker:
-      - image: cimg/node:20.10.0
+      - image: cimg/node:22.13.1
     working_directory: ~/anakin
     resource_class: large
     steps:
@@ -75,7 +75,7 @@ jobs:
             - .
   deploy:
     docker:
-      - image: cimg/node:20.10.0
+      - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
       - attach_workspace:

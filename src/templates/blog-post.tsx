@@ -66,7 +66,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         className="prose lg:prose-xl mt-8"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
-      <hr className="mb-4" />
+      <hr className="my-4" />
 
       <ul className="flex flex-wrap justify-between list-none p-0">
         <li>
