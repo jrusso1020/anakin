@@ -1,5 +1,5 @@
 ---
-title: "Boost Your Software Career: How Side Projects Accelerate Growth"
+title: "Level Up Your Engineering Career with Strategic Side Projects"
 date: "2025-01-29"
 description: Don't be afraid to utilize side projects to accelerate your career growth. This post explores how building personal projects can enhance your skills, accelerate onboarding, and keep you competitive in a fast-evolving industry. Side projects are a low-pressure environment to explore and learn about emerging technologies, to accelerate your future work and career growth.
 tags:
