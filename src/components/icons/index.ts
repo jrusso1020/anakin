@@ -1,0 +1,7 @@
+export { LocationIcon } from "./LocationIcon"
+export { GithubIcon } from "./GithubIcon"
+export { LinkedInIcon } from "./LinkedInIcon"
+export { CalendarIcon } from "./CalendarIcon"
+export { HamburgerIcon } from "./HamburgerIcon"
+export { TimerIcon } from "./TimerIcon"
+export type { IconProps } from "./types"

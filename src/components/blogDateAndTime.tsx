@@ -1,7 +1,7 @@
 import React from "react"
 
-import Calendar from "content/assets/calendar.svg"
-import Timer from "content/assets/timer.svg"
+import { CalendarIcon } from "./icons"
+import { TimerIcon } from "./icons"
 
 interface Props {
   date: string
@@ -12,12 +12,12 @@ const BlogDateAndTime = ({ date, timeToRead }: Props) => {
   return (
     <div className="flex items-center space-x-2">
       <div className="relative h-4 pr-1">
-        <Calendar className="h-full" />
+        <CalendarIcon className="h-full" />
       </div>
       <span>{date}</span>
       <span>|</span>
       <div className="relative h-4 pr-1">
-        <Timer className="h-full" />
+        <TimerIcon className="h-full" />
       </div>
       <b>{timeToRead} min read</b>
     </div>

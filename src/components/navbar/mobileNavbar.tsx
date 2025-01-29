@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-
-import Hamburger from "content/assets/hamburger.svg"
+import { HamburgerIcon } from "../icons"
 import NavLink from "./navLink"
 import Bio from "./bio"
 
@@ -13,7 +12,7 @@ const MobileNavbar = ({ location }: Props) => {
   return (
     <div className="block md:hidden text-keppel">
       <nav className="pt-4 pb-4 bg-mirage h-14 fixed w-full z-10">
-        <Hamburger
+        <HamburgerIcon
           className="absolute top-3 right-0 mr-5"
           onClick={() => setShowNav(!showNav)}
         />
