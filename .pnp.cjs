@@ -76,7 +76,7 @@ const RAW_RUNTIME_STATE =
           ["lucide-react", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.475.0"],\
           ["mitt", "npm:3.0.1"],\
           ["platform", "npm:1.3.6"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["postcss-reporter", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.1.0"],\
           ["prettier", "npm:3.5.1"],\
           ["prismjs", "npm:1.29.0"],\
@@ -8563,7 +8563,7 @@ const RAW_RUNTIME_STATE =
           ["fraction.js", "npm:4.3.7"],\
           ["normalize-range", "npm:0.1.2"],\
           ["picocolors", "npm:1.0.1"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["postcss-value-parser", "npm:4.2.0"]\
         ],\
         "packagePeers": [\
@@ -9288,7 +9288,7 @@ const RAW_RUNTIME_STATE =
           ["lucide-react", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.475.0"],\
           ["mitt", "npm:3.0.1"],\
           ["platform", "npm:1.3.6"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["postcss-reporter", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.1.0"],\
           ["prettier", "npm:3.5.1"],\
           ["prismjs", "npm:1.29.0"],\
@@ -14448,7 +14448,7 @@ const RAW_RUNTIME_STATE =
           ["@types/gatsby", null],\
           ["@types/postcss", null],\
           ["gatsby", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:5.14.1"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["postcss-loader", "virtual:d63b3a124630c4e028df9824fadbc44a9c7a55ea8eb54121ed5a9fb6a8ab370c5f88526d1bcd38886cd27fb798eb0fdea12c5e338724a0d33c92f0e126848b53#npm:7.3.4"]\
         ],\
         "packagePeers": [\
@@ -20171,10 +20171,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.5.2", {\
-        "packageLocation": "./.yarn/cache/postcss-npm-8.5.2-53c3155d31-e08c2be3cf.zip/node_modules/postcss/",\
+      ["npm:8.5.3", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.3-37174aa03d-6d7e21a772.zip/node_modules/postcss/",\
         "packageDependencies": [\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["nanoid", "npm:3.3.8"],\
           ["picocolors", "npm:1.1.1"],\
           ["source-map-js", "npm:1.2.1"]\
@@ -20485,7 +20485,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack", null],\
           ["cosmiconfig", "virtual:1bec6d4663983069a4229b34615179dc691a6eca94eb4e9de6a70c6a14bf3781a40d1f2bf820d1838d6bb8bf620aed75dc3edd937fff996e37cd15b42378a915#npm:8.3.6"],\
           ["jiti", "npm:1.21.6"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["semver", "npm:7.5.4"],\
           ["webpack", null]\
         ],\
@@ -21053,7 +21053,7 @@ const RAW_RUNTIME_STATE =
           ["postcss-reporter", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:7.1.0"],\
           ["@types/postcss", null],\
           ["picocolors", "npm:1.0.0"],\
-          ["postcss", "npm:8.5.2"],\
+          ["postcss", "npm:8.5.3"],\
           ["thenby", "npm:1.3.4"]\
         ],\
         "packagePeers": [\
