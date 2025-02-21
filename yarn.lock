@@ -5348,7 +5348,7 @@ __metadata:
     babel-preset-gatsby: "npm:^3.14.0"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
-    disqus-react: "npm:^1.1.2"
+    disqus-react: "npm:^1.1.6"
     eslint: "npm:^9.20.1"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-node: "npm:^11.1.0"
@@ -7173,13 +7173,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"disqus-react@npm:^1.1.2":
-  version: 1.1.5
-  resolution: "disqus-react@npm:1.1.5"
+"disqus-react@npm:^1.1.6":
+  version: 1.1.6
+  resolution: "disqus-react@npm:1.1.6"
   peerDependencies:
-    react: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 10/6839ddd77f61e108b8db6e6be185a6384fa0b8098126f04bc9f9f359b89a16a40694ecfd7b4ee0edb58a7eeecb4b81246bcd319ddc2c516ddd1a0e9da0a66054
+    react: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10/2375f4a1628e19d2af0c1525e50aaab15395d77f9122d954f0760db58bbabee2ff7eaa8e5a3b27f07ed23d23973ea01858a53b4bc1a98b55f7cb55695086c9c7
   languageName: node
   linkType: hard
 
