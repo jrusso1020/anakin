@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16"],\
-          ["@types/node", "npm:22.13.4"],\
+          ["@types/node", "npm:22.13.5"],\
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
           ["@types/react-dom", "npm:18.3.1"],\
@@ -6860,10 +6860,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:22.13.4", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.4-80985669cb-716e05b1b8.zip/node_modules/@types/node/",\
+      ["npm:22.13.5", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.5-4c5912eee2-a69ec8dba3.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.13.4"],\
+          ["@types/node", "npm:22.13.5"],\
           ["undici-types", "npm:6.20.0"]\
         ],\
         "linkType": "HARD"\
@@ -9240,7 +9240,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["boredhacking", "workspace:."],\
           ["@tailwindcss/typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.5.16"],\
-          ["@types/node", "npm:22.13.4"],\
+          ["@types/node", "npm:22.13.5"],\
           ["@types/postcss-reporter", "npm:7.0.5"],\
           ["@types/react", "npm:18.3.13"],\
           ["@types/react-dom", "npm:18.3.1"],\
