@@ -8621,11 +8621,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["axios", [\
-      ["npm:1.7.7", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-7f875ea13b.zip/node_modules/axios/",\
+      ["npm:1.8.2", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.8.2-55671cda10-d432875812.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.7.7"],\
-          ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9"],\
+          ["axios", "npm:1.8.2"],\
+          ["follow-redirects", "virtual:55671cda109d40748b7e5f5c4800486b4658ca82dacc9dd48dc401a3e431c6709551633a86acb3d432e80057bc06d36cdbc4aaa7b783386d2c6f6604618b5c22#npm:1.15.9"],\
           ["form-data", "npm:4.0.0"],\
           ["proxy-from-env", "npm:1.1.0"]\
         ],\
@@ -13449,10 +13449,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9", {\
-        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-334ade9a15/0/cache/follow-redirects-npm-1.15.9-539785d34c-e3ab42d109.zip/node_modules/follow-redirects/",\
+      ["virtual:55671cda109d40748b7e5f5c4800486b4658ca82dacc9dd48dc401a3e431c6709551633a86acb3d432e80057bc06d36cdbc4aaa7b783386d2c6f6604618b5c22#npm:1.15.9", {\
+        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-164d26556d/0/cache/follow-redirects-npm-1.15.9-539785d34c-e3ab42d109.zip/node_modules/follow-redirects/",\
         "packageDependencies": [\
-          ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9"],\
+          ["follow-redirects", "virtual:55671cda109d40748b7e5f5c4800486b4658ca82dacc9dd48dc401a3e431c6709551633a86acb3d432e80057bc06d36cdbc4aaa7b783386d2c6f6604618b5c22#npm:1.15.9"],\
           ["@types/debug", null],\
           ["debug", null]\
         ],\
@@ -13823,7 +13823,7 @@ const RAW_RUNTIME_STATE =
           ["address", "npm:1.2.2"],\
           ["anser", "npm:2.1.1"],\
           ["autoprefixer", "virtual:2ba4d631d528633379d80b21a1e105c8a722f6397a68896bd07c82261f370b9785fe5e950843f8516c1269256b7517a0d345e0c64875323fade11fa1013cbc2d#npm:10.4.16"],\
-          ["axios", "npm:1.7.7"],\
+          ["axios", "npm:1.8.2"],\
           ["babel-jsx-utils", "npm:1.1.0"],\
           ["babel-loader", "virtual:2ba4d631d528633379d80b21a1e105c8a722f6397a68896bd07c82261f370b9785fe5e950843f8516c1269256b7517a0d345e0c64875323fade11fa1013cbc2d#npm:8.3.0"],\
           ["babel-plugin-add-module-exports", "npm:1.0.4"],\
