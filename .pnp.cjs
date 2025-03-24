@@ -7680,7 +7680,7 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:3.0.0"],\
           ["ci-info", "npm:4.0.0"],\
           ["clipanion", "virtual:978e3f6981951e26c20cd9400849acc15892a5cbeea180e08469a2605c9e6b11a19a4c61b428061a0b53e9927678a2b5caccb552526642247beb26c5c670054e#npm:4.0.0-rc.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["diff", "npm:5.1.0"],\
           ["dotenv", "npm:16.3.1"],\
           ["fast-glob", "npm:3.3.2"],\
@@ -7770,7 +7770,7 @@ const RAW_RUNTIME_STATE =
           ["@yarnpkg/parsers", "npm:3.0.3"],\
           ["chalk", "npm:3.0.0"],\
           ["clipanion", "virtual:978e3f6981951e26c20cd9400849acc15892a5cbeea180e08469a2605c9e6b11a19a4c61b428061a0b53e9927678a2b5caccb552526642247beb26c5c670054e#npm:4.0.0-rc.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["fast-glob", "npm:3.3.2"],\
           ["micromatch", "npm:4.0.8"],\
           ["tslib", "npm:2.6.2"]\
@@ -10625,16 +10625,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cross-spawn", [\
-      ["npm:7.0.3", {\
-        "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-e1a13869d2.zip/node_modules/cross-spawn/",\
-        "packageDependencies": [\
-          ["cross-spawn", "npm:7.0.3"],\
-          ["path-key", "npm:3.1.1"],\
-          ["shebang-command", "npm:2.0.0"],\
-          ["which", "npm:2.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.0.6", {\
         "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.6-264bddf921-0d52657d7a.zip/node_modules/cross-spawn/",\
         "packageDependencies": [\
@@ -12246,7 +12236,7 @@ const RAW_RUNTIME_STATE =
           ["@humanwhocodes/config-array", "npm:0.5.0"],\
           ["ajv", "npm:6.12.6"],\
           ["chalk", "npm:4.1.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["debug", "virtual:2f4f5d4be0c4271f81a756602d102e02c292a5b30d8b7f5dd19d5368d75df8bb2f1bf516e3f835c2b5501d1663eb437d4f00d6d057bcaee770b46e87267a0fa3#npm:4.3.4"],\
           ["doctrine", "npm:3.0.0"],\
           ["enquirer", "npm:2.4.1"],\
@@ -12983,7 +12973,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/execa-npm-5.1.1-191347acf5-8ada91f2d7.zip/node_modules/execa/",\
         "packageDependencies": [\
           ["execa", "npm:5.1.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["get-stream", "npm:6.0.1"],\
           ["human-signals", "npm:2.1.0"],\
           ["is-stream", "npm:2.0.1"],\
@@ -12999,7 +12989,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/execa-npm-8.0.1-0211bd404c-d2ab5fe1e2.zip/node_modules/execa/",\
         "packageDependencies": [\
           ["execa", "npm:8.0.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["get-stream", "npm:8.0.1"],\
           ["human-signals", "npm:5.0.0"],\
           ["is-stream", "npm:3.0.0"],\
@@ -13538,7 +13528,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/foreground-child-npm-3.1.1-77e78ed774-087edd4485.zip/node_modules/foreground-child/",\
         "packageDependencies": [\
           ["foreground-child", "npm:3.1.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["signal-exit", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -19937,7 +19927,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["password-prompt", "npm:1.1.3"],\
           ["ansi-escapes", "npm:4.3.2"],\
-          ["cross-spawn", "npm:7.0.3"]\
+          ["cross-spawn", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -21682,7 +21672,7 @@ const RAW_RUNTIME_STATE =
           ["address", "npm:1.2.2"],\
           ["browserslist", "npm:4.22.2"],\
           ["chalk", "npm:4.1.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["detect-port-alt", "npm:1.1.6"],\
           ["escape-string-regexp", "npm:4.0.0"],\
           ["filesize", "npm:8.0.7"],\
