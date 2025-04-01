@@ -5471,7 +5471,7 @@ __metadata:
     gatsby-transformer-sharp: "npm:^5.14.0"
     husky: "npm:^9.1.7"
     lint-staged: "npm:^15.5.0"
-    lucide-react: "npm:^0.485.0"
+    lucide-react: "npm:^0.486.0"
     mitt: "npm:^3.0.1"
     platform: "npm:^1.3.6"
     postcss: "npm:^8.5.3"
@@ -12737,12 +12737,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.485.0":
-  version: 0.485.0
-  resolution: "lucide-react@npm:0.485.0"
+"lucide-react@npm:^0.486.0":
+  version: 0.486.0
+  resolution: "lucide-react@npm:0.486.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/94aeab2617f263bd60e0d3635d5444f7dc3d96f9e2d7bd0e349357356e42fc03baa930c45a7a9ebbc0bafd26e61b08db70269370002a9042fc2d8f1204c1645c
+  checksum: 10/d41ce11265dc84ed4fbd904a7fffe9db10a764abc8642e96d187d8667a5db5b5a016eb4b599e89a29db6a74c96ae105c5e57d3dd02762f842894c17f88ecafd1
   languageName: node
   linkType: hard
 
