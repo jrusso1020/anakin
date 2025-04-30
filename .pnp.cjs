@@ -5827,7 +5827,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/utils", "npm:2.8.3"],\
           ["@parcel/workers", "virtual:1751106c31c022beab60638c8a9494de4916f0aa7d7ea5bf610db1916ce86c51e464d56c223dd24e1a6fe3f7439c0465735b9968451150db84bbb38b4819b62c#npm:2.8.3"],\
           ["abortcontroller-polyfill", "npm:1.7.5"],\
-          ["base-x", "npm:3.0.9"],\
+          ["base-x", "npm:3.0.11"],\
           ["browserslist", "npm:4.22.2"],\
           ["clone", "npm:2.1.2"],\
           ["dotenv", "npm:7.0.0"],\
@@ -9161,10 +9161,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["base-x", [\
-      ["npm:3.0.9", {\
-        "packageLocation": "./.yarn/cache/base-x-npm-3.0.9-7b2588e106-957101d6fd.zip/node_modules/base-x/",\
+      ["npm:3.0.11", {\
+        "packageLocation": "./.yarn/cache/base-x-npm-3.0.11-3798da0834-c2e3c443fd.zip/node_modules/base-x/",\
         "packageDependencies": [\
-          ["base-x", "npm:3.0.9"],\
+          ["base-x", "npm:3.0.11"],\
           ["safe-buffer", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
