@@ -81,7 +81,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.5.3"],\
           ["prismjs", "npm:1.30.0"],\
           ["prop-types", "npm:15.8.1"],\
-          ["query-string", "npm:9.1.2"],\
+          ["query-string", "npm:9.2.0"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:18.3.1"],\
           ["react-is", "npm:18.3.1"],\
@@ -9364,7 +9364,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.5.3"],\
           ["prismjs", "npm:1.30.0"],\
           ["prop-types", "npm:15.8.1"],\
-          ["query-string", "npm:9.1.2"],\
+          ["query-string", "npm:9.2.0"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:18.3.1"],\
           ["react-is", "npm:18.3.1"],\
@@ -21547,10 +21547,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:9.1.2", {\
-        "packageLocation": "./.yarn/cache/query-string-npm-9.1.2-e533d8a9a0-133dbacbc7.zip/node_modules/query-string/",\
+      ["npm:9.2.0", {\
+        "packageLocation": "./.yarn/cache/query-string-npm-9.2.0-7545c3fb6a-a88c8cc778.zip/node_modules/query-string/",\
         "packageDependencies": [\
-          ["query-string", "npm:9.1.2"],\
+          ["query-string", "npm:9.2.0"],\
           ["decode-uri-component", "npm:0.4.1"],\
           ["filter-obj", "npm:5.1.0"],\
           ["split-on-first", "npm:3.0.0"]\
