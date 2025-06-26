@@ -14,7 +14,7 @@
     "disqus-react": "^1.1.6",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.5.0",
+    "eslint-plugin-prettier": "^5.5.1",
     "event-source-polyfill": "^1.0.26",
     "gatsby": "^5.14.5",
     "gatsby-cli": "^5.14.0",
