@@ -29,260 +29,362 @@ const About = ({ data, location }: Props) => {
         prose-a:text-primary prose-a:font-semibold prose-a:underline
         prose-a:decoration-primary/60 prose-a:underline-offset-3
         hover:prose-a:decoration-primary hover:prose-a:text-gradient-to
-        prose-strong:text-foreground prose-strong:font-semibold"
+        prose-strong:text-foreground prose-strong:font-semibold
+        prose-ul:text-muted-foreground prose-li:text-muted-foreground"
       >
         <p>
           Hi I&apos;m James Russo and this is where I&apos;ll be writing down my
           thoughts and experiences mostly involving software and web
-          development. However, fairwarning any number of other topics can pop
+          development. However, fair warning any number of other topics can pop
           up into this blog. This is my first attempt at a blog, and as an
           engineer I apologize in advance for my writing and design skills.
           Hopefully they will improve as I work on this more and more.
-          <br />
-          <br />I am currently working at{" "}
+        </p>
+
+        <h2>What I&apos;m up to now</h2>
+        <p>
+          Currently building cool stuff at{" "}
           <a
-            href="https://www.empirical.health/"
+            href="https://www.heygen.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Empirical Health{" "}
+            HeyGen
           </a>
-          a proactive primary care provider utilizing wearable devices and AI to
-          help patients manage their health.
-          <br />
-          <br />
-          Previously I worked at{" "}
-          <a href="https://brex.com" target="_blank" rel="noopener noreferrer">
-            Brex
-          </a>
-          , where I initially worked on the{" "}
-          <a
-            href="https://www.brex.com/product/business-account"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Brex Business Account
-          </a>{" "}
-          product, building modern technology to replace antiquated banking
-          systems. Later, I transitioned to internal developer tooling, helping
-          to scale from tens to hundreds of engineers building tools like a CLI
-          using{" "}
-          <a
-            href="https://golang.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Golang
-          </a>{" "}
-          +{" "}
-          <a
-            href="https://github.com/spf13/cobra"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Cobra
-          </a>
-          , a developer portal using{" "}
-          <a
-            href="https://backstage.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Backstage
-          </a>
-          , and a modern microservices testing platform using{" "}
-          <a
-            href="https://www.signadot.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Signadot
-          </a>
-          . Lastly, I worked on the{" "}
-          <a
-            href="https://www.brex.com/product/bill-pay"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Brex Bill Pay
-          </a>{" "}
-          product, helping businesses manage their accounts payable.
-          <br />
-          <br />
-          Before Brex, I worked as a fullstack engineer in NYC for
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://secure.rocketsofawesome.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Rockets of Awesome
-          </a>
-          , a childrens clothing subscription service and ecommerce brand. I
-          also was the first engineer at an IoT and Analytics startup called
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://iteratelabs.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Iterate Labs{" "}
-          </a>
-          which wants to use data-driven insights to develop safer and more
-          comfortable workplaces.
-          <br />
-          <br />
+          , an AI Video Generator for Fast, Studio-Quality Video Creation.
+        </p>
+
+        <h2>My journey so far</h2>
+        <p>Here&apos;s where I&apos;ve been building things:</p>
+
+        <ul>
+          <li>
+            <strong>
+              <a
+                href="https://secure.rocketsofawesome.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rockets of Awesome
+              </a>
+            </strong>{" "}
+            - Fullstack engineer in NYC for this children&apos;s clothing
+            subscription service and ecommerce brand
+          </li>
+
+          <li>
+            <strong>
+              <a
+                href="https://iteratelabs.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Iterate Labs
+              </a>
+            </strong>{" "}
+            - First engineer at this IoT and Analytics startup using data-driven
+            insights to develop safer and more comfortable workplaces
+          </li>
+
+          <li>
+            <strong>
+              <a
+                href="https://brex.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Brex
+              </a>
+            </strong>{" "}
+            - a modern finance platform, where I:
+            <ul>
+              <li>
+                Started on the{" "}
+                <a
+                  href="https://www.brex.com/product/business-account"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Brex Business Account
+                </a>{" "}
+                product, building modern technology to replace antiquated
+                banking systems
+              </li>
+              <li>
+                Transitioned to internal developer tooling, helping scale from
+                tens to hundreds of engineers building:
+                <ul>
+                  <li>
+                    CLI using{" "}
+                    <a
+                      href="https://golang.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Golang
+                    </a>{" "}
+                    +{" "}
+                    <a
+                      href="https://github.com/spf13/cobra"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Cobra
+                    </a>
+                  </li>
+                  <li>
+                    Developer portal using{" "}
+                    <a
+                      href="https://backstage.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Backstage
+                    </a>
+                  </li>
+                  <li>
+                    Modern microservices testing platform using{" "}
+                    <a
+                      href="https://www.signadot.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Signadot
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Worked on the{" "}
+                <a
+                  href="https://www.brex.com/product/bill-pay"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Brex Bill Pay
+                </a>{" "}
+                product, helping businesses manage their accounts payable
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              <a
+                href="https://www.empirical.health/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Empirical Health
+              </a>
+            </strong>{" "}
+            - A proactive primary care provider utilizing wearable devices and
+            AI to help patients manage their health
+          </li>
+        </ul>
+
+        <h2>Where I learned the fundamentals</h2>
+        <p>
           In 2017, I graduated from{" "}
           <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
             href="https://cornell.edu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-            Cornell University{" "}
-          </a>
-          with a B.S. in Computer Science, where I concentrated in Machine
-          Learning and also researched Systems, Security, and Blockchain
-          technologies under
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="http://hackingdistributed.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Emin Gun Sirer{" "}
+            Cornell University
           </a>{" "}
-          and
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="http://www.soumyabasu.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Soumya Basu{" "}
-          </a>
-          .
-          <br />
-          <br />
-          Some of my favorite websites to read and stay up to date with tech and
-          web development are
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://news.ycombinator.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Hacker News{" "}
-          </a>
-          and{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://techcruch.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            TechCrunch
-          </a>
-          . I also read the following newsletters on a weekly or daily basis for
-          tech and software related news and information:{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://labnotes.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lab Notes
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="http://softwareleadweekly.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Software Lead Weekly
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="http://www.founderweekly.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Founder Weekly
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://javascriptweekly.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Javascript Weekly
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://rubyweekly.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ruby Weekly
-          </a>
-          , and{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://elixirweekly.net/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Elixir Weekly
-          </a>
-          . A few other weekly or daily newsletters I follow are:{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://signup.axios.com/2019/mikeallen.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Axios AM
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://www.theskimm.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            The Daily Skimm
-          </a>
-          ,{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://www.tldrnewsletter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TLDR
-          </a>
-          , and{" "}
-          <a
-            className="no-underline text-keppel shadow-none hover:shadow-keppel"
-            href="https://thisweekinfintech.substack.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            This Week in Fintech
-          </a>
-          .
+          with a B.S. in Computer Science, where I:
         </p>
+        <ul>
+          <li>Concentrated in Machine Learning</li>
+          <li>
+            Researched Systems, Security, and Blockchain technologies under{" "}
+            <a
+              href="http://hackingdistributed.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Emin Gun Sirer
+            </a>{" "}
+            and{" "}
+            <a
+              href="http://www.soumyabasu.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Soumya Basu
+            </a>
+          </li>
+        </ul>
+
+        <h2>What keeps me informed</h2>
+        <p>
+          I&apos;m always reading to stay current. Here are my go-to sources:
+        </p>
+
+        <h3>Daily browsing</h3>
+        <ul>
+          <li>
+            <a
+              href="https://news.ycombinator.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hacker News
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://techcruch.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TechCrunch
+            </a>
+          </li>
+        </ul>
+
+        <h3>AI & Tech newsletters</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.therundown.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Rundown AI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://tldr.tech/ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TLDR AI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bensbites.beehiiv.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ben&apos;s Bites
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://labnotes.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lab Notes
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://softwareleadweekly.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Software Lead Weekly
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tldrnewsletter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TLDR
+            </a>
+          </li>
+        </ul>
+
+        <h3>Programming language newsletters</h3>
+        <ul>
+          <li>
+            <a
+              href="https://javascriptweekly.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Javascript Weekly
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://rubyweekly.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ruby Weekly
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://elixirweekly.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Elixir Weekly
+            </a>
+          </li>
+        </ul>
+
+        <h3>Startup & business</h3>
+        <ul>
+          <li>
+            <a
+              href="http://www.founderweekly.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Founder Weekly
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://tldr.tech/founders"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TLDR Founders
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://thisweekinfintech.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              This Week in Fintech
+            </a>
+          </li>
+        </ul>
+
+        <h3>General news</h3>
+        <ul>
+          <li>
+            <a
+              href="https://signup.axios.com/2019/mikeallen.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Axios AM
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.theskimm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Daily Skimm
+            </a>
+          </li>
+        </ul>
       </div>
     </Layout>
   )
