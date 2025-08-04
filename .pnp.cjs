@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
           ["query-string", "npm:9.2.2"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:18.3.1"],\
-          ["react-is", "npm:18.3.1"],\
+          ["react-is", "npm:19.1.1"],\
           ["react-transition-group", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.5"],\
           ["react-typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.16.23"],\
           ["regenerator-runtime", "npm:0.14.1"],\
@@ -9743,7 +9743,7 @@ const RAW_RUNTIME_STATE =
           ["query-string", "npm:9.2.2"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:18.3.1"],\
-          ["react-is", "npm:18.3.1"],\
+          ["react-is", "npm:19.1.1"],\
           ["react-transition-group", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:4.4.5"],\
           ["react-typography", "virtual:745a61f81dd87c5c78d432a00e2a8ef7b1e2d6ab5c3463fb2ef57f98982fdf0c6b4fc5fc1c48c132cadad485434419ec235f075459ac25526e640ec3256b390d#npm:0.16.23"],\
           ["regenerator-runtime", "npm:0.14.1"],\
@@ -22759,10 +22759,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:18.3.1", {\
-        "packageLocation": "./.yarn/cache/react-is-npm-18.3.1-370a81e1e9-d5f60c87d2.zip/node_modules/react-is/",\
+      ["npm:19.1.1", {\
+        "packageLocation": "./.yarn/cache/react-is-npm-19.1.1-b37b118274-44e0937da1.zip/node_modules/react-is/",\
         "packageDependencies": [\
-          ["react-is", "npm:18.3.1"]\
+          ["react-is", "npm:19.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
