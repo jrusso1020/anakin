@@ -104,7 +104,7 @@
     "deploy": "gatsby-plugin-s3 deploy --yes",
     "type-check": "tsc --noEmit",
     "lint": "eslint ./src/ --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
