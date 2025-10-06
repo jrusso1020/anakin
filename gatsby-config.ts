@@ -46,6 +46,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    "gatsby-plugin-dynamic-open-graph-images",
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {

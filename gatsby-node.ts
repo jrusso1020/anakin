@@ -1,16 +1,23 @@
 import type { GatsbyNode } from "gatsby"
 
 import path from "path"
+// @ts-ignore
+const {
+  createOpenGraphImage,
+} = require("gatsby-plugin-dynamic-open-graph-images")
 
 type AllMarkdownRemark = {
   postsRemark: {
     edges: {
       node: {
+        excerpt: string
+        timeToRead: number
         fields: {
           slug: string
         }
         frontmatter: {
           title: string
+          description?: string
           tags: string[]
         }
       }
@@ -41,6 +48,22 @@ export const createPages: GatsbyNode["createPages"] = async ({
   actions,
 }) => {
   const { createPage } = actions
+
+  // Create default OG image for the homepage
+  const defaultOgImage = createOpenGraphImage(createPage, {
+    component: path.resolve("src/templates/og-image-default.tsx"),
+    size: {
+      width: 1200,
+      height: 630,
+    },
+    context: {
+      id: "home",
+      title: "Bored Hacking",
+      description:
+        "Blog discussing software engineering, web development, technology, and life",
+    },
+  })
+
   const blogPost = path.resolve("./src/templates/blog-post.tsx")
   const tagTemplate = path.resolve("src/templates/tags.tsx")
   const result = await graphql(`
@@ -51,11 +74,14 @@ export const createPages: GatsbyNode["createPages"] = async ({
       ) {
         edges {
           node {
+            excerpt(pruneLength: 160)
+            timeToRead
             fields {
               slug
             }
             frontmatter {
               title
+              description
               tags
             }
           }
@@ -78,6 +104,23 @@ export const createPages: GatsbyNode["createPages"] = async ({
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
+
+    // Create Open Graph image for this post
+    const ogImage = createOpenGraphImage(createPage, {
+      component: path.resolve("src/templates/og-image-template.tsx"),
+      size: {
+        width: 1200,
+        height: 630,
+      },
+      context: {
+        id: post.node.fields.slug,
+        title: post.node.frontmatter.title,
+        description: post.node.frontmatter.description || post.node.excerpt,
+        timeToRead: post.node.timeToRead,
+        tags: post.node.frontmatter.tags,
+      },
+    })
+
     createPage({
       path: post.node.fields.slug,
       component: blogPost,
@@ -85,6 +128,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
         slug: post.node.fields.slug,
         previous,
         next,
+        ogImage,
       },
     })
   })
