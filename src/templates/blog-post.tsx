@@ -14,6 +14,9 @@ interface MarkdownRemarkI {
   excerpt: string
   timeToRead: string
   html: string
+  fields: {
+    slug: string
+  }
   frontmatter: {
     title: string
     date: string
@@ -34,7 +37,13 @@ interface BlogPostBySlugQuery {
 interface Props {
   location: Location
   data: BlogPostBySlugQuery
-  pageContext: any
+  pageContext: {
+    previous: any
+    next: any
+    ogImage?: {
+      imagePath: string
+    }
+  }
 }
 
 const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
@@ -179,15 +188,29 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
 
 export const Head = ({
   data: { markdownRemark: post },
+  pageContext,
 }: {
-  data: { markdownRemark: MarkdownRemarkI }
-}) => (
-  <SEO
-    title={post.frontmatter.title}
-    description={post.frontmatter.description || post.excerpt}
-    keywords={post.frontmatter.tags}
-  />
-)
+  data: {
+    markdownRemark: MarkdownRemarkI
+  }
+  pageContext: {
+    ogImage?: {
+      imagePath: string
+    }
+  }
+}) => {
+  // Use the dynamically generated OG image path from pageContext
+  const ogImagePath = pageContext.ogImage?.imagePath
+
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      keywords={post.frontmatter.tags}
+      image={ogImagePath}
+    />
+  )
+}
 
 export default BlogPostTemplate
 
@@ -197,6 +220,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -204,6 +228,9 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       timeToRead
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

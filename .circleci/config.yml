@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   dependencies:
     docker:
-      - image: cimg/node:22.13.1
+      - image: cimg/node:22.13.1-browsers
     working_directory: ~/anakin
     steps:
       - checkout
@@ -16,6 +16,11 @@ jobs:
             - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - yarn-packages-v1-{{ .Branch }}
             - yarn-packages-v1
+      - run:
+          name: Install Puppeteer Dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y libgbm1
       - run:
           name: Install Dependencies
           command: |
@@ -57,14 +62,29 @@ jobs:
             yarn type-check
   build:
     docker:
-      - image: cimg/node:22.13.1
+      - image: cimg/node:22.13.1-browsers
     working_directory: ~/anakin
     resource_class: large
     steps:
+      - checkout
+      - run:
+          name: Install Yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
       - restore_cache:
-          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          keys:
+            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-v1-{{ .Branch }}
+            - yarn-packages-v1
+      - run:
+          name: Install Puppeteer Dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y libgbm1
+      - run:
+          name: Install Dependencies
+          command: |
+            yarn install --immutable
       - run:
           name: Build
           command: |
@@ -89,15 +109,13 @@ workflows:
   build_and_deploy:
     jobs:
       - dependencies
-      - build:
-          requires:
-            - dependencies
       - format:
           requires:
             - dependencies
       - type-check:
           requires:
             - dependencies
+      - build
       - deploy:
           requires:
             - build
