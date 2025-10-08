@@ -32,7 +32,7 @@ const Layout = ({ location, title, children }: Props) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 mt-16 lg:mt-0">
         <H1 className="text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent animate-float">
           <StyledLink to={"/"}>{title}</StyledLink>
         </H1>

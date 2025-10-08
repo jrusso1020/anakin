@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { HamburgerIcon, GithubIcon, LinkedInIcon } from "../icons"
@@ -13,6 +13,7 @@ interface Props {
 
 const MobileNavbar = ({ location }: Props) => {
   const [showNav, setShowNav] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   const data = useStaticQuery(graphql`
     query MobileBioQuery {
@@ -29,8 +30,25 @@ const MobileNavbar = ({ location }: Props) => {
     }
   `)
 
+  // Handle scroll detection for theme toggle visibility on mobile
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      // Show only when at top (within 50px), hide when scrolled down
+      if (currentScrollY < 50) {
+        setIsScrolled(false)
+      } else {
+        setIsScrolled(true)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   // Lock body scroll when navigation is open
-  React.useEffect(() => {
+  useEffect(() => {
     if (showNav) {
       document.body.style.overflow = "hidden"
     } else {
@@ -47,7 +65,11 @@ const MobileNavbar = ({ location }: Props) => {
     <div className="block lg:hidden">
       {/* Mobile Header */}
       <div className="fixed top-4 right-4 z-50 flex items-center space-x-2">
-        <Card className="glass border-border/30 backdrop-blur-xl">
+        <Card
+          className={`glass border-border/30 backdrop-blur-xl transition-all duration-300 ${
+            isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        >
           <CardContent className="p-3">
             <ThemeToggle />
           </CardContent>
