@@ -17,7 +17,7 @@ const MobileNavbar = ({ location }: Props) => {
 
   const data = useStaticQuery(graphql`
     query MobileBioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 64, height: 64)
         }

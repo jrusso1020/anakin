@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 120, height: 120)
         }

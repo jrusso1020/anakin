@@ -187,7 +187,7 @@ const config: GatsbyConfig = {
         background_color: "#ffffff",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "static/images/profile-pic.jpg",
+        icon: "static/images/favicon.png",
         cache_busting_mode: "none",
       },
     },
