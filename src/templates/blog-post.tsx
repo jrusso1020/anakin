@@ -62,24 +62,21 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         {/* Single unified card for header and content */}
         <Card className="mb-12 overflow-hidden">
           {/* Post Header */}
-          <div className="relative">
-            <div className="absolute inset-0 gradient-mesh opacity-30" />
-            <CardHeader className="relative bg-gradient-to-br from-background/90 to-background/70 backdrop-blur-sm border-b border-border/50">
-              <div className="space-y-4">
-                <H1 className="text-4xl md:text-5xl font-black leading-normal bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent pb-2">
-                  {post.frontmatter.title}
-                </H1>
+          <CardHeader className="border-b border-border">
+            <div className="space-y-4">
+              <H1 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+                {post.frontmatter.title}
+              </H1>
 
-                <div className="space-y-4">
-                  <BlogDateAndTime
-                    date={post.frontmatter.date}
-                    timeToRead={post.timeToRead}
-                  />
-                  <Tags tags={post.frontmatter.tags} />
-                </div>
+              <div className="space-y-4">
+                <BlogDateAndTime
+                  date={post.frontmatter.date}
+                  timeToRead={post.timeToRead}
+                />
+                <Tags tags={post.frontmatter.tags} />
               </div>
-            </CardHeader>
-          </div>
+            </div>
+          </CardHeader>
 
           {/* Post Content */}
           <CardContent className="p-8 lg:p-12">

@@ -66,7 +66,7 @@ const MobileNavbar = ({ location }: Props) => {
       {/* Mobile Header */}
       <div className="fixed top-4 right-4 z-50 flex items-center space-x-2">
         <Card
-          className={`glass border-border/30 backdrop-blur-xl transition-all duration-300 ${
+          className={`border-border bg-card transition-all duration-300 ${
             isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
@@ -75,7 +75,7 @@ const MobileNavbar = ({ location }: Props) => {
           </CardContent>
         </Card>
 
-        <Card className="glass border-border/30 backdrop-blur-xl">
+        <Card className="border-border bg-card">
           <CardContent className="p-3">
             <button
               onClick={() => setShowNav(!showNav)}
@@ -102,12 +102,12 @@ const MobileNavbar = ({ location }: Props) => {
           />
 
           {/* Navigation Panel */}
-          <div className="fixed inset-x-4 top-28 bottom-4 z-50 animate-fade-in-up-fast overflow-y-auto">
+          <div className="fixed inset-x-4 top-28 bottom-4 z-50 animate-fade-in-up overflow-y-auto">
             <div className="space-y-4">
               {/* Navigation Links */}
-              <Card className="glass border-border/30 backdrop-blur-xl">
+              <Card className="border-border bg-card">
                 <CardContent className="p-4">
-                  <nav className="space-y-2">
+                  <nav className="space-y-1">
                     <NavLink
                       partiallyActive={
                         !["/about/"].includes(location.pathname) &&
@@ -134,25 +134,23 @@ const MobileNavbar = ({ location }: Props) => {
               </Card>
 
               {/* Compact Bio */}
-              <Card className="glass border-border/30 backdrop-blur-xl">
+              <Card className="border-border bg-card">
                 <CardContent className="p-4">
                   <div className="flex items-center space-x-4">
-                    <div className="relative shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-r from-gradient-from to-gradient-to rounded-full opacity-20 animate-pulse" />
-                      <Avatar className="h-16 w-16 ring-2 ring-primary/20">
-                        <GatsbyImage
-                          image={data.avatar.childImageSharp.gatsbyImageData}
-                          alt={data.site.siteMetadata.author}
-                          className="rounded-full object-cover"
-                        />
-                      </Avatar>
-                    </div>
+                    <Avatar className="h-16 w-16 ring-2 ring-border shrink-0">
+                      <GatsbyImage
+                        image={data.avatar.childImageSharp.gatsbyImageData}
+                        alt={data.site.siteMetadata.author}
+                        className="rounded-full object-cover object-center"
+                        imgStyle={{ objectPosition: "center center" }}
+                      />
+                    </Avatar>
 
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-lg font-bold bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent truncate">
+                      <h3 className="text-lg font-semibold text-foreground truncate">
                         {data.site.siteMetadata.author}
                       </h3>
-                      <p className="text-sm bg-gradient-to-r from-warm to-cool bg-clip-text text-transparent font-medium">
+                      <p className="text-sm text-muted-foreground font-medium">
                         Software Engineer
                       </p>
                       <div className="flex items-center space-x-3 mt-2">
