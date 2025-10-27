@@ -28,7 +28,7 @@ const About = ({ data, location }: Props) => {
         prose-p:text-muted-foreground prose-p:leading-relaxed
         prose-a:text-primary prose-a:font-semibold prose-a:underline
         prose-a:decoration-primary/60 prose-a:underline-offset-3
-        hover:prose-a:decoration-primary hover:prose-a:text-gradient-to
+        hover:prose-a:decoration-primary hover:prose-a:text-primary/80
         prose-strong:text-foreground prose-strong:font-semibold
         prose-ul:text-muted-foreground prose-li:text-muted-foreground"
       >

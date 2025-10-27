@@ -9,10 +9,10 @@ interface Props {
 
 const DesktopNavbar = ({ location }: Props) => {
   return (
-    <Card className="glass border-border/30 backdrop-blur-xl">
+    <Card className="border-border bg-card">
       <CardContent className="p-4">
         <nav>
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             <li>
               <NavLink
                 partiallyActive={
@@ -42,7 +42,7 @@ const DesktopNavbar = ({ location }: Props) => {
             </li>
           </ul>
 
-          <div className="mt-6 pt-4 border-t border-border/50 flex justify-center">
+          <div className="mt-4 pt-4 border-t border-border flex justify-center">
             <ThemeToggle />
           </div>
         </nav>

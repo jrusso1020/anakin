@@ -1,4 +1,5 @@
 import React from "react"
+import { colors } from "../constants/colors"
 
 interface OgImageTemplateProps {
   pageContext: {
@@ -22,7 +23,7 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        background: colors.light.background,
         padding: "80px",
         fontFamily: "system-ui, -apple-system, sans-serif",
       }}
@@ -33,8 +34,9 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           flexDirection: "column",
           width: "100%",
           height: "100%",
-          backgroundColor: "white",
-          borderRadius: "20px",
+          backgroundColor: colors.light.card,
+          border: `2px solid ${colors.light.border}`,
+          borderRadius: "16px",
           padding: "60px",
           justifyContent: "space-between",
         }}
@@ -44,10 +46,10 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           <h1
             style={{
               fontSize: "64px",
-              fontWeight: "bold",
+              fontWeight: "900",
               margin: 0,
               lineHeight: 1.2,
-              color: "#1a202c",
+              color: colors.light.foreground,
               overflow: "hidden",
               display: "-webkit-box",
               WebkitLineClamp: description ? 2 : 3,
@@ -60,7 +62,7 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
             <p
               style={{
                 fontSize: "28px",
-                color: "#4a5568",
+                color: colors.light.muted,
                 margin: "20px 0 0 0",
                 lineHeight: 1.4,
                 overflow: "hidden",
@@ -91,12 +93,13 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
                   <span
                     key={index}
                     style={{
-                      backgroundColor: "#e2e8f0",
-                      color: "#4a5568",
+                      backgroundColor: "#f5f5f5",
+                      color: colors.light.primary,
+                      border: `1px solid ${colors.light.border}`,
                       padding: "8px 16px",
-                      borderRadius: "8px",
+                      borderRadius: "6px",
                       fontSize: "24px",
-                      fontWeight: 500,
+                      fontWeight: 600,
                     }}
                   >
                     {tag}
@@ -108,7 +111,7 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
               <div
                 style={{
                   fontSize: "20px",
-                  color: "#718096",
+                  color: "#a3a3a3",
                 }}
               >
                 {timeToRead} min read
@@ -118,11 +121,22 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           <div
             style={{
               fontSize: "36px",
-              fontWeight: "bold",
-              color: "#667eea",
+              fontWeight: "900",
+              color: colors.light.foreground,
+              fontFamily: "Inter, system-ui, sans-serif",
             }}
           >
-            Bored Hacking
+            <span style={{ fontFamily: "Inter, system-ui, sans-serif" }}>
+              Bored
+            </span>{" "}
+            <span
+              style={{
+                fontFamily: "JetBrains Mono, monospace",
+                color: colors.light.primary,
+              }}
+            >
+              &lt;Hacking/&gt;
+            </span>
           </div>
         </div>
       </div>

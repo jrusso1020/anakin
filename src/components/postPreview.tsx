@@ -12,7 +12,7 @@ interface Props {
 const PostPreview = ({ node }: Props) => {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <Card className="group hover:scale-[1.02] transition-all duration-300 animate-fade-in-up mb-8 hover:shadow-glow/20 border-border/50 hover:border-primary/20">
+    <Card className="group hover:scale-[1.01] transition-all duration-200 animate-fade-in-up mb-8 border-border hover:border-primary/30 hover:shadow-lg">
       <CardHeader className="pb-4">
         <div className="flex flex-col space-y-3">
           <div className="flex items-center justify-between">
@@ -23,7 +23,7 @@ const PostPreview = ({ node }: Props) => {
           </div>
           <CardTitle className="text-2xl font-bold leading-tight">
             <Link
-              className="text-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 group-hover:bg-gradient-to-r group-hover:from-gradient-from group-hover:to-gradient-to group-hover:bg-clip-text group-hover:text-transparent"
+              className="text-foreground hover:text-primary transition-colors duration-200"
               to={node.fields.slug}
             >
               {title}

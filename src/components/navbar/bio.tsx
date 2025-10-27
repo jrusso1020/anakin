@@ -10,7 +10,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 120, height: 120)
+          gatsbyImageData(layout: FIXED, width: 96, height: 96)
         }
       }
       site {
@@ -24,33 +24,31 @@ const Bio = () => {
   const { author } = data.site.siteMetadata
 
   return (
-    <Card className="glass border-border/30 backdrop-blur-xl">
+    <Card className="border-border bg-card">
       <CardContent className="p-6">
-        <div className="flex flex-col items-center text-center space-y-6">
+        <div className="flex flex-col items-center text-center space-y-5">
           {/* Avatar */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-gradient-from to-gradient-to rounded-full opacity-20 animate-pulse" />
-            <Avatar className="h-28 w-28 ring-4 ring-primary/20 transition-all hover:ring-primary/40 hover:scale-105">
+          <Avatar className="h-24 w-24 ring-2 ring-border transition-all hover:ring-primary/50 overflow-hidden">
+            <div className="w-full h-full flex items-center justify-center">
               <GatsbyImage
                 image={data.avatar.childImageSharp.gatsbyImageData}
                 alt={author}
-                className="rounded-full object-cover"
+                className="w-full h-full"
+                imgStyle={{ objectFit: "cover", objectPosition: "center" }}
               />
-            </Avatar>
-          </div>
+            </div>
+          </Avatar>
 
           {/* Bio Info */}
-          <div className="space-y-3">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent">
-              {author}
-            </h3>
-            <p className="text-lg font-medium bg-gradient-to-r from-warm to-cool bg-clip-text text-transparent">
+          <div className="space-y-2">
+            <h3 className="text-xl font-semibold text-foreground">{author}</h3>
+            <p className="text-base font-medium text-muted-foreground">
               Software Engineer
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Fullstack engineer who tries their best at design.
               <br />
-              <span className="bg-gradient-to-r from-warm to-cool bg-clip-text text-transparent font-medium">
+              <span className="text-primary font-medium">
                 Example: this website.
               </span>
             </p>
