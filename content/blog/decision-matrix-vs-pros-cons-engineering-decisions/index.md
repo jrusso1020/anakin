@@ -68,11 +68,11 @@ The criteria included:
 
 We ranked three approaches from 1–3 for each criterion (3 being best):
 
-| **Approach**   | **Extensibility** | **Production Readiness** | **Time to Implement** | **User Experience** | **Total Score** |
-| -------------- | ----------------- | ------------------------ | --------------------- | ------------------- | --------------- |
-| **Approach A** | 3                 | 1                        | 2                     | 3                   | **9**           |
-| **Approach B** | 1                 | 3                        | 1                     | 1                   | **6**           |
-| **Approach C** | 3                 | 3                        | 3                     | 2                   | **11**          |
+| **Approach**   | **Extensibility**  | **Production Readiness** | **Time to Implement** | **User Experience** | **Total Score** |
+| -------------- | ------------------ | ------------------------ | --------------------- | ------------------- | --------------- |
+| **Approach A** | 3 - _fill out why_ | 1 - _fill out why_       | 2 - _fill out why_    | 3 - _fill out why_  | **9**           |
+| **Approach B** | 1 - _fill out why_ | 3 - _fill out why_       | 1 - _fill out why_    | 1 - _fill out why_  | **6**           |
+| **Approach C** | 3 - _fill out why_ | 3 - _fill out why_       | 3 - _fill out why_    | 2 - _fill out why_  | **11**          |
 
 This made the decision much clearer not because one approach dominated in every category, but because **it balanced the criteria best given our constraints.**
 
