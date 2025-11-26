@@ -37,7 +37,7 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           backgroundColor: colors.light.card,
           border: `2px solid ${colors.light.border}`,
           borderRadius: "16px",
-          padding: "60px",
+          padding: "60px 60px 80px 60px",
           justifyContent: "space-between",
         }}
       >
