@@ -56,14 +56,14 @@ const Bio = () => {
 
           {/* Social Links */}
           <div className="grid grid-cols-1 gap-3 w-full">
-            <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+            <div className="flex items-center justify-center text-sm text-muted-foreground">
               <LocationIcon />
               <span>New York, NY</span>
             </div>
 
             <div className="flex items-center justify-center space-x-4">
               <a
-                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 group"
+                className="flex items-center text-sm text-muted-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 group"
                 rel="noopener noreferrer"
                 href="https://github.com/jrusso1020"
                 target="_blank"
@@ -73,7 +73,7 @@ const Bio = () => {
               </a>
 
               <a
-                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 group"
+                className="flex items-center text-sm text-muted-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 group"
                 href="https://www.linkedin.com/in/james-russo-56026897/"
                 rel="noopener noreferrer"
                 target="_blank"
