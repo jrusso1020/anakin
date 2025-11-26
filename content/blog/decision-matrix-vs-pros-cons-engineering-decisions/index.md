@@ -1,7 +1,7 @@
 ---
 title: "How Decision Matrices Create Better Engineering Decisions"
 date: "2025-11-25"
-description: Pros and cons lists break down quickly in complex engineering decisions. In this post, I share how decision matrices create alignment, make tradeoffs explicit, and lead to clearer system designs—along with a real example matrix engineers can adapt for their own work.
+description: Pros and cons lists break down quickly in complex engineering decisions. Decision matrices create alignment, make tradeoffs explicit, and lead to clearer system designs.
 tags:
   [
     "decision matrix",
