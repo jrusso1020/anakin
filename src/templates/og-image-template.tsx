@@ -37,7 +37,7 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           backgroundColor: colors.light.card,
           border: `2px solid ${colors.light.border}`,
           borderRadius: "16px",
-          padding: "60px 60px 80px 60px",
+          padding: "50px 60px 70px 60px",
           justifyContent: "space-between",
         }}
       >
@@ -45,10 +45,10 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
         <div style={{ flex: 1 }}>
           <h1
             style={{
-              fontSize: "64px",
+              fontSize: "58px",
               fontWeight: "900",
               margin: 0,
-              lineHeight: 1.2,
+              lineHeight: 1.1,
               color: colors.light.foreground,
               overflow: "hidden",
               display: "-webkit-box",
@@ -61,10 +61,10 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
           {description && (
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "26px",
                 color: colors.light.muted,
-                margin: "20px 0 0 0",
-                lineHeight: 1.4,
+                margin: "16px 0 0 0",
+                lineHeight: 1.3,
                 overflow: "hidden",
                 display: "-webkit-box",
                 WebkitLineClamp: 2,
@@ -80,33 +80,37 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
+            flexDirection: "column",
+            gap: "20px",
           }}
         >
+          {tags && tags.length > 0 && (
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              {tags.slice(0, 3).map((tag, index) => (
+                <span
+                  key={index}
+                  style={{
+                    backgroundColor: "#f5f5f5",
+                    color: colors.light.primary,
+                    border: `1px solid ${colors.light.border}`,
+                    padding: "8px 16px",
+                    borderRadius: "6px",
+                    fontSize: "22px",
+                    fontWeight: 600,
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
           <div
-            style={{ display: "flex", flexDirection: "column", gap: "12px" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
           >
-            {tags && tags.length > 0 && (
-              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                {tags.slice(0, 3).map((tag, index) => (
-                  <span
-                    key={index}
-                    style={{
-                      backgroundColor: "#f5f5f5",
-                      color: colors.light.primary,
-                      border: `1px solid ${colors.light.border}`,
-                      padding: "8px 16px",
-                      borderRadius: "6px",
-                      fontSize: "24px",
-                      fontWeight: 600,
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
             {timeToRead && (
               <div
                 style={{
@@ -117,26 +121,27 @@ const OgImageTemplate = ({ pageContext }: OgImageTemplateProps) => {
                 {timeToRead} min read
               </div>
             )}
-          </div>
-          <div
-            style={{
-              fontSize: "36px",
-              fontWeight: "900",
-              color: colors.light.foreground,
-              fontFamily: "Inter, system-ui, sans-serif",
-            }}
-          >
-            <span style={{ fontFamily: "Inter, system-ui, sans-serif" }}>
-              Bored
-            </span>{" "}
-            <span
+            <div
               style={{
-                fontFamily: "JetBrains Mono, monospace",
-                color: colors.light.primary,
+                fontSize: "32px",
+                fontWeight: "900",
+                color: colors.light.foreground,
+                fontFamily: "Inter, system-ui, sans-serif",
+                whiteSpace: "nowrap",
               }}
             >
-              &lt;Hacking/&gt;
-            </span>
+              <span style={{ fontFamily: "Inter, system-ui, sans-serif" }}>
+                Bored
+              </span>{" "}
+              <span
+                style={{
+                  fontFamily: "JetBrains Mono, monospace",
+                  color: colors.light.primary,
+                }}
+              >
+                &lt;Hacking/&gt;
+              </span>
+            </div>
           </div>
         </div>
       </div>

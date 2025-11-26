@@ -113,7 +113,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
         height: 630,
       },
       context: {
-        id: post.node.fields.slug,
+        id: post.node.fields.slug.replace(/^\//, ""),
         title: post.node.frontmatter.title,
         description: post.node.frontmatter.description || post.node.excerpt,
         timeToRead: post.node.timeToRead,
