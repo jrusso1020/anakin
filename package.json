@@ -84,7 +84,7 @@
     "gatsby-plugin-root-import": "^2.0.8",
     "postcss": "^8.5.6",
     "prettier": "^3.6.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.16"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
