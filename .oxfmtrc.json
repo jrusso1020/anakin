@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "semi": false,
+  "singleQuote": false,
+  "sortPackageJson": false,
+  "tabWidth": 2,
+  "trailingComma": "es5"
+}

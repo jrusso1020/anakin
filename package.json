@@ -9,15 +9,10 @@
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/typography": "^0.5.16",
-    "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "@typescript-eslint/parser": "^8.38.0",
     "babel-preset-gatsby": "^3.14.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "disqus-react": "^1.1.6",
-    "eslint": "^9.29.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.1",
     "event-source-polyfill": "^1.0.26",
     "gatsby": "^5.14.5",
     "gatsby-cli": "^5.14.0",
@@ -75,14 +70,11 @@
     "@types/react-dom": "^18.3.1",
     "@types/react-transition-group": "^4.4.12",
     "autoprefixer": "^10.4.21",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^7.0.1",
     "gatsby-plugin-postcss": "^6.14.0",
     "gatsby-plugin-root-import": "^2.0.8",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "postcss": "^8.5.23",
-    "prettier": "^3.6.2",
     "tailwindcss": "^3.4.17"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -97,22 +89,24 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{ts,tsx} content/blog/**/index.md",
+    "format": "oxfmt \"src/**/*.{ts,tsx}\" \"content/blog/**/index.md\"",
+    "format:check": "oxfmt --check \"src/**/*.{ts,tsx}\" \"content/blog/**/index.md\"",
     "start": "pnpm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby-plugin-s3 deploy --yes",
     "type-check": "tsc --noEmit",
-    "lint": "eslint ./src/ --fix",
+    "lint": "oxlint --fix src",
+    "lint:check": "oxlint src",
     "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "eslint --fix",
-      "prettier --write"
+      "oxlint --fix",
+      "oxfmt --no-error-on-unmatched-pattern"
     ],
     "*.{json,md}": [
-      "prettier --write"
+      "oxfmt --no-error-on-unmatched-pattern"
     ]
   },
   "packageManager": "pnpm@11.22.0"

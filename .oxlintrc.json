@@ -1,0 +1,62 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "off"
+  },
+  "plugins": [
+    "eslint",
+    "typescript",
+    "oxc",
+    "unicorn",
+    "react",
+    "jsx-a11y",
+    "node"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "__PATH_PREFIX__": "readonly",
+    "__BASE_PATH__": "readonly",
+    "React": "readonly",
+    "JSX": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "warn",
+    "no-extra-boolean-cast": "warn",
+    "no-func-assign": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-obj-calls": "error",
+    "no-sparse-arrays": "warn",
+    "use-isnan": "error",
+    "valid-typeof": "error",
+    "react/jsx-key": "error",
+    "react/no-unescaped-entities": "warn",
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/anchor-has-content": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn"
+  },
+  "ignorePatterns": [
+    "node_modules/**",
+    "public/**",
+    ".cache/**",
+    "dist/**",
+    "build/**",
+    "*.d.ts",
+    "gatsby-*.js",
+    "gatsby-*.ts"
+  ]
+}
