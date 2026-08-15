@@ -10,7 +10,9 @@ commands:
             curl -fsSL https://get.pnpm.io/install.sh -o /tmp/install-pnpm.sh
             env PNPM_VERSION=11.22.0 PNPM_HOME="$PNPM_HOME" SHELL=/bin/bash sh /tmp/install-pnpm.sh
             echo 'export PNPM_HOME="$HOME/.local/share/pnpm"' >> "$BASH_ENV"
-            echo 'export PATH="$PNPM_HOME:$PATH"' >> "$BASH_ENV"
+            echo 'export PATH="$PNPM_HOME/bin:$PNPM_HOME:$PATH"' >> "$BASH_ENV"
+            export PATH="$PNPM_HOME/bin:$PNPM_HOME:$PATH"
+            pnpm --version
 jobs:
   dependencies:
     docker:
