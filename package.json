@@ -74,7 +74,6 @@
     "@types/react": "^18.3.13",
     "@types/react-dom": "^18.3.1",
     "@types/react-transition-group": "^4.4.12",
-    "@yarnpkg/sdks": "^3.2.2",
     "autoprefixer": "^10.4.21",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-node": "^11.1.0",
@@ -99,7 +98,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{ts,tsx} content/blog/**/index.md",
-    "start": "yarn run develop",
+    "start": "pnpm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby-plugin-s3 deploy --yes",
@@ -109,12 +108,12 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "yarn lint",
-      "yarn format"
+      "eslint --fix",
+      "prettier --write"
     ],
     "*.{json,md}": [
-      "yarn format"
+      "prettier --write"
     ]
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "pnpm@11.22.0"
 }
