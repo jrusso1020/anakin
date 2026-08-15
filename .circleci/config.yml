@@ -1,5 +1,18 @@
 ---
 version: 2.1
+commands:
+  install_pnpm:
+    steps:
+      - run:
+          name: Install pnpm
+          command: |
+            export PNPM_HOME="$HOME/.local/share/pnpm"
+            curl -fsSL https://get.pnpm.io/install.sh -o /tmp/install-pnpm.sh
+            env PNPM_VERSION=11.22.0 PNPM_HOME="$PNPM_HOME" SHELL=/bin/bash sh /tmp/install-pnpm.sh
+            echo 'export PNPM_HOME="$HOME/.local/share/pnpm"' >> "$BASH_ENV"
+            echo 'export PATH="$PNPM_HOME/bin:$PNPM_HOME:$PATH"' >> "$BASH_ENV"
+            export PATH="$PNPM_HOME/bin:$PNPM_HOME:$PATH"
+            pnpm --version
 jobs:
   dependencies:
     docker:
@@ -7,15 +20,12 @@ jobs:
     working_directory: ~/anakin
     steps:
       - checkout
-      - run:
-          name: Install Yarn
-          command: |
-            curl -o- -L https://yarnpkg.com/install.sh | bash
+      - install_pnpm
       - restore_cache:
           keys:
-            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-            - yarn-packages-v1-{{ .Branch }}
-            - yarn-packages-v1
+            - pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
+            - pnpm-packages-v1-{{ .Branch }}
+            - pnpm-packages-v1
       - run:
           name: Install Puppeteer Dependencies
           command: |
@@ -24,12 +34,12 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            yarn install --immutable
+            pnpm install --frozen-lockfile
       - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          name: Save pnpm Package Cache
+          key: pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
           paths:
-            - ./.yarn/cache
+            - ~/.local/share/pnpm/store
       - save_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
@@ -39,27 +49,29 @@ jobs:
       - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
+      - install_pnpm
       - restore_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
       - run:
           name: Format
           command: |
-            yarn prettier --list-different "src/**/*.{ts,tsx}" "content/blog/**/index.md"
+            pnpm exec prettier --list-different "src/**/*.{ts,tsx}" "content/blog/**/index.md"
   type-check:
     docker:
       - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
+      - install_pnpm
       - restore_cache:
           key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
       - run:
           name: Type Check
           command: |
-            yarn type-check
+            pnpm type-check
   build:
     docker:
       - image: cimg/node:22.13.1-browsers
@@ -67,15 +79,12 @@ jobs:
     resource_class: large
     steps:
       - checkout
-      - run:
-          name: Install Yarn
-          command: |
-            curl -o- -L https://yarnpkg.com/install.sh | bash
+      - install_pnpm
       - restore_cache:
           keys:
-            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-            - yarn-packages-v1-{{ .Branch }}
-            - yarn-packages-v1
+            - pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
+            - pnpm-packages-v1-{{ .Branch }}
+            - pnpm-packages-v1
       - run:
           name: Install Puppeteer Dependencies
           command: |
@@ -84,11 +93,11 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            yarn install --immutable
+            pnpm install --frozen-lockfile
       - run:
           name: Build
           command: |
-            yarn run build
+            pnpm build
       - persist_to_workspace:
           root: .
           paths:
@@ -98,12 +107,13 @@ jobs:
       - image: cimg/node:22.13.1
     working_directory: ~/anakin
     steps:
+      - install_pnpm
       - attach_workspace:
           at: .
       - run:
           name: Deploy
           command: |
-            yarn run deploy
+            pnpm deploy
 workflows:
   version: 2.1
   build_and_deploy:
