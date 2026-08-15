@@ -8,9 +8,11 @@ interface Props {
 }
 
 const Sidebar = ({ location }: Props) => (
-  <div className="text-keppel overflow-y-auto h-screen float-left max-w-xs pl-4 pr-4 mr-4 pt-8 bg-mirage fixed hidden md:block">
-    <Bio />
-    <DesktopNavbar location={location} />
+  <div className="hidden lg:block fixed top-8 left-8 w-80 z-50">
+    <div className="space-y-6">
+      <Bio />
+      <DesktopNavbar location={location} />
+    </div>
   </div>
 )
 

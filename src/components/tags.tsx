@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { badgeVariants } from "@/components/ui/badge"
+import { cn } from "@/lib/utils"
 
 interface Props {
   tags: string[]
@@ -13,12 +14,15 @@ const kebabCase = (str: string) =>
     .toLowerCase()
 
 const TagsComponent = ({ tags }: Props) => (
-  <div className="flex flex-wrap mb-1">
+  <div className="flex flex-wrap gap-2">
     {tags.map((tag, index) => (
       <Link
         key={`tag-${index}`}
         to={`/tags/${kebabCase(tag)}/`}
-        className={`mr-1 mt-1 ${badgeVariants({ variant: "default" })}`}
+        className={cn(
+          badgeVariants({ variant: "outline" }),
+          "transition-colors duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary border-border"
+        )}
       >
         {tag}
       </Link>

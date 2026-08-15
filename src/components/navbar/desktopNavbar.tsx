@@ -1,5 +1,6 @@
 import React from "react"
-
+import { Card, CardContent } from "@/components/ui/card"
+import { ThemeToggle } from "../theme-toggle"
 import NavLink from "./navLink"
 
 interface Props {
@@ -8,37 +9,45 @@ interface Props {
 
 const DesktopNavbar = ({ location }: Props) => {
   return (
-    <nav>
-      <ul className="list-none">
-        <li>
-          <NavLink
-            partiallyActive={
-              !["/about/"].includes(location.pathname) &&
-              !location.pathname.includes("tags")
-            }
-            to={"/"}
-          >
-            Blog
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            partiallyActive={location.pathname === "/about/"}
-            to={"/about/"}
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            partiallyActive={location.pathname.includes("tags")}
-            to={"/tags/"}
-          >
-            Tags
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <Card className="border-border bg-card">
+      <CardContent className="p-4">
+        <nav>
+          <ul className="space-y-1">
+            <li>
+              <NavLink
+                partiallyActive={
+                  !["/about/"].includes(location.pathname) &&
+                  !location.pathname.includes("tags")
+                }
+                to={"/"}
+              >
+                Blog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                partiallyActive={location.pathname === "/about/"}
+                to={"/about/"}
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                partiallyActive={location.pathname.includes("tags")}
+                to={"/tags/"}
+              >
+                Tags
+              </NavLink>
+            </li>
+          </ul>
+
+          <div className="mt-4 pt-4 border-t border-border flex justify-center">
+            <ThemeToggle />
+          </div>
+        </nav>
+      </CardContent>
+    </Card>
   )
 }
 

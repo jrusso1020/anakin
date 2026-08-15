@@ -41,13 +41,13 @@ const TagsPage = ({
 }: Props) => (
   <Layout location={location} title={title}>
     <div>
-      <h1 className="text-xl font-bold">Tags</h1>
-      <div className="flex flex-wrap mb-6">
+      <h1 className="text-4xl font-black mb-6 text-foreground">Tags</h1>
+      <div className="flex flex-wrap gap-3 mb-6">
         {group.map((tag, index) => (
           <Link
             key={`tag-${index}`}
             to={`/tags/${kebabCase(tag.fieldValue)}/`}
-            className={`mr-1 mt-2 ${badgeVariants({ variant: "default" })}`}
+            className={`${badgeVariants({ variant: "outline" })} transition-colors duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary border-border`}
           >
             {tag.fieldValue} ({tag.totalCount})
           </Link>
