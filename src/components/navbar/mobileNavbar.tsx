@@ -93,7 +93,7 @@ const MobileNavbar = ({ location }: Props) => {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-40 animate-fade-in-up-fast"
+            className="fixed inset-0 bg-background/80 backdrop-blur-xs z-40 animate-fade-in-up-fast"
             onClick={() => setShowNav(false)}
             onKeyDown={(e) => e.key === "Escape" && setShowNav(false)}
             role="button"

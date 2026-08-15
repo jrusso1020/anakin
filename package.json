@@ -60,17 +60,17 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^24.10.1",
     "@types/postcss-reporter": "^7",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "autoprefixer": "^10.4.21",
     "gatsby-plugin-postcss": "^6.16.0",
     "gatsby-plugin-root-import": "^2.0.8",
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "postcss": "^8.5.23",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.3.3"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

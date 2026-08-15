@@ -64,7 +64,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
           {/* Post Header */}
           <CardHeader className="border-b border-border">
             <div className="space-y-4">
-              <H1 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+              <H1 className="text-4xl md:text-5xl font-black leading-none text-foreground">
                 {post.frontmatter.title}
               </H1>
 
@@ -85,7 +85,7 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
                 prose-headings:text-foreground
                 prose-p:text-muted-foreground prose-p:leading-relaxed
                 prose-a:text-primary prose-a:font-medium prose-a:no-underline
-                hover:prose-a:text-primary/80
+                prose-a:hover:text-primary/80
                 prose-strong:text-foreground prose-strong:font-semibold
                 prose-code:bg-muted prose-code:px-2 prose-code:py-1 prose-code:rounded-md prose-code:text-sm
                 prose-pre:bg-muted prose-pre:border prose-pre:border-border
