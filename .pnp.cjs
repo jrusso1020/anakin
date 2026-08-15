@@ -7198,15 +7198,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@trysound/sax", [\
-      ["npm:0.2.0", {\
-        "packageLocation": "./.yarn/cache/@trysound-sax-npm-0.2.0-9f763d0295-7379713eca.zip/node_modules/@trysound/sax/",\
-        "packageDependencies": [\
-          ["@trysound/sax", "npm:0.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@types/cacheable-request", [\
       ["npm:6.0.3", {\
         "packageLocation": "./.yarn/cache/@types-cacheable-request-npm-6.0.3-770619032a-159f9fdb2a.zip/node_modules/@types/cacheable-request/",\
@@ -22609,7 +22600,7 @@ const RAW_RUNTIME_STATE =
           ["@types/postcss", null],\
           ["postcss", "npm:8.4.32"],\
           ["postcss-value-parser", "npm:4.2.0"],\
-          ["svgo", "npm:2.8.0"]\
+          ["svgo", "npm:2.8.3"]\
         ],\
         "packagePeers": [\
           "@types/postcss",\
@@ -24210,6 +24201,13 @@ const RAW_RUNTIME_STATE =
           ["sax", "npm:1.3.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.6.1", {\
+        "packageLocation": "./.yarn/cache/sax-npm-1.6.1-b9440264f4-bf7e7f8293.zip/node_modules/sax/",\
+        "packageDependencies": [\
+          ["sax", "npm:1.6.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["scheduler", [\
@@ -25721,16 +25719,16 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["svgo", [\
-      ["npm:2.8.0", {\
-        "packageLocation": "./.yarn/cache/svgo-npm-2.8.0-43b4f3debe-2b74544da1.zip/node_modules/svgo/",\
+      ["npm:2.8.3", {\
+        "packageLocation": "./.yarn/cache/svgo-npm-2.8.3-25dd41327c-02e2affc61.zip/node_modules/svgo/",\
         "packageDependencies": [\
-          ["svgo", "npm:2.8.0"],\
-          ["@trysound/sax", "npm:0.2.0"],\
+          ["svgo", "npm:2.8.3"],\
           ["commander", "npm:7.2.0"],\
           ["css-select", "npm:4.3.0"],\
           ["css-tree", "npm:1.1.3"],\
           ["csso", "npm:4.2.0"],\
           ["picocolors", "npm:1.0.0"],\
+          ["sax", "npm:1.6.1"],\
           ["stable", "npm:0.1.8"]\
         ],\
         "linkType": "HARD"\
