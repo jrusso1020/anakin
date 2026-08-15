@@ -26,9 +26,11 @@ const SEO = ({ description, keywords = [], title, image, children }: Props) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const siteImage = `${site.siteMetadata.siteUrl}${
-    image || site.siteMetadata.defaultImage
-  }`
+  // Use provided image or fall back to default
+  const ogImage = image || site.siteMetadata.defaultImage
+  const siteImage = ogImage.startsWith("http")
+    ? ogImage
+    : `${site.siteMetadata.siteUrl}/${ogImage.startsWith("/") ? ogImage.slice(1) : ogImage}`
 
   return (
     <>

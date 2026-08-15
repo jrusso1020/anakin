@@ -14,6 +14,9 @@ interface MarkdownRemarkI {
   excerpt: string
   timeToRead: string
   html: string
+  fields: {
+    slug: string
+  }
   frontmatter: {
     title: string
     date: string
@@ -34,7 +37,13 @@ interface BlogPostBySlugQuery {
 interface Props {
   location: Location
   data: BlogPostBySlugQuery
-  pageContext: any
+  pageContext: {
+    previous: any
+    next: any
+    ogImage?: {
+      imagePath: string
+    }
+  }
 }
 
 const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
@@ -53,24 +62,21 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
         {/* Single unified card for header and content */}
         <Card className="mb-12 overflow-hidden">
           {/* Post Header */}
-          <div className="relative">
-            <div className="absolute inset-0 gradient-mesh opacity-30" />
-            <CardHeader className="relative bg-gradient-to-br from-background/90 to-background/70 backdrop-blur-sm border-b border-border/50">
-              <div className="space-y-4">
-                <H1 className="text-4xl md:text-5xl font-black leading-normal bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent pb-2">
-                  {post.frontmatter.title}
-                </H1>
+          <CardHeader className="border-b border-border">
+            <div className="space-y-4">
+              <H1 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+                {post.frontmatter.title}
+              </H1>
 
-                <div className="space-y-4">
-                  <BlogDateAndTime
-                    date={post.frontmatter.date}
-                    timeToRead={post.timeToRead}
-                  />
-                  <Tags tags={post.frontmatter.tags} />
-                </div>
+              <div className="space-y-4">
+                <BlogDateAndTime
+                  date={post.frontmatter.date}
+                  timeToRead={post.timeToRead}
+                />
+                <Tags tags={post.frontmatter.tags} />
               </div>
-            </CardHeader>
-          </div>
+            </div>
+          </CardHeader>
 
           {/* Post Content */}
           <CardContent className="p-8 lg:p-12">
@@ -179,15 +185,29 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
 
 export const Head = ({
   data: { markdownRemark: post },
+  pageContext,
 }: {
-  data: { markdownRemark: MarkdownRemarkI }
-}) => (
-  <SEO
-    title={post.frontmatter.title}
-    description={post.frontmatter.description || post.excerpt}
-    keywords={post.frontmatter.tags}
-  />
-)
+  data: {
+    markdownRemark: MarkdownRemarkI
+  }
+  pageContext: {
+    ogImage?: {
+      imagePath: string
+    }
+  }
+}) => {
+  // Use the dynamically generated OG image path from pageContext
+  const ogImagePath = pageContext.ogImage?.imagePath
+
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      keywords={post.frontmatter.tags}
+      image={ogImagePath}
+    />
+  )
+}
 
 export default BlogPostTemplate
 
@@ -197,6 +217,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -204,6 +225,9 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       timeToRead
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

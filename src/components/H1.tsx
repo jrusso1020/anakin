@@ -13,7 +13,7 @@ const H1 = ({
   <h1
     className={cn(
       "text-4xl font-bold mb-6 mt-0 leading-normal",
-      color ? `text-${color}` : "text-primary",
+      color ? `text-${color}` : "text-foreground",
       className
     )}
   >

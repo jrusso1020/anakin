@@ -14,14 +14,14 @@ const kebabCase = (str: string) =>
     .toLowerCase()
 
 const TagsComponent = ({ tags }: Props) => (
-  <div className="flex flex-wrap gap-3">
+  <div className="flex flex-wrap gap-2">
     {tags.map((tag, index) => (
       <Link
         key={`tag-${index}`}
         to={`/tags/${kebabCase(tag)}/`}
         className={cn(
           badgeVariants({ variant: "outline" }),
-          "transition-all duration-200 hover:scale-105 hover:shadow-soft hover:bg-gradient-to-r hover:from-gradient-from hover:to-gradient-to hover:text-primary-foreground hover:border-transparent bg-gradient-to-r from-gradient-from/10 to-gradient-to/10 border-primary/30"
+          "transition-colors duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary border-border"
         )}
       >
         {tag}

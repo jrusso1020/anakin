@@ -61,6 +61,7 @@ const BlogIndex = ({ data, location }: Props) => {
 export const Head = () => (
   <SEO
     title="All posts"
+    image="/__og-image/home.png"
     keywords={[
       "boredhacking",
       "bored hacking",
