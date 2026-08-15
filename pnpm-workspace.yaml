@@ -11,4 +11,9 @@ allowBuilds:
   sharp: true
 nodeLinker: hoisted
 overrides:
+  "@types/reach__router>@types/react": 19.2.18
   sanitize-html: 2.17.7
+peerDependencyRules:
+  allowedVersions:
+    "@gatsbyjs/reach-router>react": "19"
+    "@gatsbyjs/reach-router>react-dom": "19"
