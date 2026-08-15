@@ -43,14 +43,19 @@ const Bio = () => {
           <div className="space-y-2">
             <h3 className="text-xl font-semibold text-foreground">{author}</h3>
             <p className="text-base font-medium text-muted-foreground">
-              Software Engineer
+              Engineering Lead at HeyGen
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Fullstack engineer who tries their best at design.
+              Building tools for programmable video creation.
               <br />
-              <span className="text-primary font-medium">
-                Example: this website.
-              </span>
+              <a
+                className="text-primary font-medium"
+                href="https://github.com/heygen-com/hyperframes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Focused on HyperFrames.
+              </a>
             </p>
           </div>
 
@@ -58,7 +63,7 @@ const Bio = () => {
           <div className="grid grid-cols-1 gap-3 w-full">
             <div className="flex items-center justify-center text-sm text-muted-foreground">
               <LocationIcon />
-              <span>New York, NY</span>
+              <span>San Francisco, CA</span>
             </div>
 
             <div className="flex items-center justify-center space-x-4">

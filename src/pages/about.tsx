@@ -43,7 +43,7 @@ const About = ({ data, location }: Props) => {
 
         <h2>What I&apos;m up to now</h2>
         <p>
-          Currently building cool stuff at{" "}
+          I&apos;m currently an engineering lead at{" "}
           <a
             href="https://www.heygen.com/"
             target="_blank"
@@ -51,7 +51,16 @@ const About = ({ data, location }: Props) => {
           >
             HeyGen
           </a>
-          , an AI Video Generator for Fast, Studio-Quality Video Creation.
+          , leading the team behind our video creation platform. That includes
+          HeyGen&apos;s API, MCP, and CLI, as well as{" "}
+          <a
+            href="https://github.com/heygen-com/hyperframes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HyperFrames
+          </a>
+          , our open-source code-to-video framework.
         </p>
 
         <h2>My journey so far</h2>
