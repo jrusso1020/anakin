@@ -57,7 +57,21 @@ jobs:
       - run:
           name: Format
           command: |
-            pnpm exec prettier --list-different "src/**/*.{ts,tsx}" "content/blog/**/index.md"
+            pnpm format:check
+  lint:
+    docker:
+      - image: cimg/node:22.13.1
+    working_directory: ~/anakin
+    steps:
+      - install_pnpm
+      - restore_cache:
+          key: v1-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: pnpm-packages-v1-{{ .Branch }}-{{ checksum "pnpm-lock.yaml" }}
+      - run:
+          name: Lint
+          command: |
+            pnpm lint:check
   type-check:
     docker:
       - image: cimg/node:22.13.1
@@ -125,11 +139,15 @@ workflows:
       - type-check:
           requires:
             - dependencies
+      - lint:
+          requires:
+            - dependencies
       - build
       - deploy:
           requires:
             - build
             - format
+            - lint
             - type-check
           filters:
             branches:
