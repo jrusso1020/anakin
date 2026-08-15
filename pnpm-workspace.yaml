@@ -4,6 +4,7 @@ allowBuilds:
   es5-ext: true
   gatsby: true
   gatsby-cli: true
+  git-win: false
   lmdb: true
   msgpackr-extract: true
   puppeteer: true
