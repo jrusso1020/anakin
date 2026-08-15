@@ -1,6 +1,4 @@
 import path from "path"
-import { URL } from "url"
-const siteAddress = new URL("https://boredhacking.com")
 
 import type { GatsbyConfig } from "gatsby"
 
@@ -70,14 +68,6 @@ const config: GatsbyConfig = {
           // Delays processing pageview events on route update (in milliseconds)
           delayOnRouteUpdate: 0,
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-s3",
-      options: {
-        bucketName: "boredhacking.com",
-        protocol: siteAddress.protocol.slice(0, -1),
-        hostname: siteAddress.hostname,
       },
     },
     "gatsby-plugin-catch-links",
