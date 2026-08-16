@@ -18,6 +18,7 @@ overrides:
   path-to-regexp@0.1.12: 0.1.13
   picomatch@2.3.1: 2.3.2
   puppeteer@19.11.1: 25.7.0
+  qs@6.13.0: 6.15.3
   serialize-javascript@5.0.1: 7.1.0
   serialize-javascript@6.0.2: 7.1.0
   sharp@0.32.6: 0.35.3
@@ -5926,10 +5927,6 @@ packages:
     engines: {node: '>=22.12.0'}
     hasBin: true
 
-  qs@6.13.0:
-    resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
-    engines: {node: '>=0.6'}
-
   qs@6.15.3:
     resolution: {integrity: sha512-O9gl3zCl5h5blw1KGUzQKhA5oUXSl8rwUIM5o0S3nCXMliSvy5Dzx7/DJcI+SwgICv+IneSZwhBh1oSyEHA71A==}
     engines: {node: '>=0.6'}
@@ -9898,7 +9895,7 @@ snapshots:
       http-errors: 2.0.0
       iconv-lite: 0.4.24
       on-finished: 2.4.1
-      qs: 6.13.0
+      qs: 6.15.3
       raw-body: 2.5.2
       type-is: 1.6.18
       unpipe: 1.0.0
@@ -11179,7 +11176,7 @@ snapshots:
       parseurl: 1.3.3
       path-to-regexp: 0.1.13
       proxy-addr: 2.0.7
-      qs: 6.13.0
+      qs: 6.15.3
       range-parser: 1.2.1
       safe-buffer: 5.2.1
       send: 0.19.0(supports-color@8.1.1)
@@ -12440,7 +12437,7 @@ snapshots:
     dependencies:
       es-errors: 1.3.0
       hasown: 2.0.4
-      side-channel: 1.1.0
+      side-channel: 1.1.1
 
   invariant@2.2.4:
     dependencies:
@@ -13978,10 +13975,6 @@ snapshots:
       - proxy-agent
       - utf-8-validate
       - yauzl
-
-  qs@6.13.0:
-    dependencies:
-      side-channel: 1.1.0
 
   qs@6.15.3:
     dependencies:
