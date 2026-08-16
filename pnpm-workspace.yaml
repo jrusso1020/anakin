@@ -12,6 +12,7 @@ allowBuilds:
 nodeLinker: hoisted
 overrides:
   "@types/reach__router>@types/react": 19.2.18
+  "immutable@3.7.6": 4.3.9
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
   "tar-fs@2.1.1": 2.1.4
