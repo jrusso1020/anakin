@@ -13,7 +13,7 @@ nodeLinker: hoisted
 overrides:
   "@types/reach__router>@types/react": 19.2.18
   sanitize-html: 2.17.7
-  shell-quote: 1.8.4
+  shell-quote: 1.10.0
 peerDependencyRules:
   allowedVersions:
     "@gatsbyjs/reach-router>react": "19"
