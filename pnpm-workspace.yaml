@@ -1,4 +1,5 @@
 allowBuilds:
+  "@swc/core": true
   core-js: true
   core-js-pure: true
   es5-ext: true
@@ -12,6 +13,20 @@ allowBuilds:
 nodeLinker: hoisted
 overrides:
   "@babel/plugin-transform-modules-systemjs@7.23.3": 7.29.4
+  "@parcel/bundler-default@2.8.3": 2.16.4
+  "@parcel/cache@2.8.3": 2.16.4
+  "@parcel/compressor-raw@2.8.3": 2.16.4
+  "@parcel/core@2.8.3": 2.16.4
+  "@parcel/namer-default@2.8.3": 2.16.4
+  "@parcel/optimizer-terser@2.8.3": 2.16.4
+  "@parcel/packager-js@2.8.3": 2.16.4
+  "@parcel/packager-raw@2.8.3": 2.16.4
+  "@parcel/plugin@2.8.3": 2.16.4
+  "@parcel/reporter-dev-server@2.8.3": 2.16.4
+  "@parcel/resolver-default@2.8.3": 2.16.4
+  "@parcel/runtime-js@2.8.3": 2.16.4
+  "@parcel/transformer-js@2.8.3": 2.16.4
+  "@parcel/transformer-json@2.8.3": 2.16.4
   "@types/reach__router>@types/react": 19.2.18
   "ajv@6.12.6": 6.14.0
   "ajv@8.17.1": 8.18.0
