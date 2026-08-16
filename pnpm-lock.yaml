@@ -6,6 +6,7 @@ settings:
 
 overrides:
   '@types/reach__router>@types/react': 19.2.18
+  immutable@3.7.6: 4.3.9
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
   tar-fs@2.1.1: 2.1.4
@@ -4458,9 +4459,8 @@ packages:
   immer@9.0.21:
     resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
 
-  immutable@3.7.6:
-    resolution: {integrity: sha512-AizQPcaofEtO11RZhPPHBOJRdo/20MKQF9mBLnVkBoyHi1/zXK8fzVdnEpSV9gxqtnh6Qomfp3F0xT5qP/vThw==}
-    engines: {node: '>=0.8.0'}
+  immutable@4.3.9:
+    resolution: {integrity: sha512-ObHy4YN7ycwZOUCLI1/6svfyAFu7vL8RhAvVu/bh/RZW9EPlOyDaQ9jDQWCtdqzaXUjgXZCW1migtHE7YI7UGQ==}
 
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -7478,7 +7478,7 @@ snapshots:
       fbjs: 3.0.5
       glob: 7.2.3
       graphql: 16.8.1
-      immutable: 3.7.6
+      immutable: 4.3.9
       invariant: 2.2.4
       nullthrows: 1.1.1
       relay-runtime: 12.0.0
@@ -12736,7 +12736,7 @@ snapshots:
 
   immer@9.0.21: {}
 
-  immutable@3.7.6: {}
+  immutable@4.3.9: {}
 
   import-fresh@3.3.0:
     dependencies:
