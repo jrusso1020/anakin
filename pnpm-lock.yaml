@@ -10,6 +10,7 @@ overrides:
   flatted@3.2.9: 3.4.2
   immutable@3.7.6: 4.3.9
   js-yaml@4.1.0: 4.3.1
+  lodash.template@4.5.0: 4.18.1
   minimatch@3.1.2: 3.1.4
   multer@2.0.2: 2.2.0
   path-to-regexp@0.1.10: 0.1.13
@@ -5058,8 +5059,8 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  lodash.template@4.5.0:
-    resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
+  lodash.template@4.18.1:
+    resolution: {integrity: sha512-5urZrLnV/VD6zHK5KsVtZgt7H19v51mIzoS0aBNH8yp3I8tbswrEjOABOPY8m8uB7NuibubLrMX+Y0PXsU9X+w==}
     deprecated: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
 
   lodash.templatesettings@4.2.0:
@@ -13250,7 +13251,7 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
-  lodash.template@4.5.0:
+  lodash.template@4.18.1:
     dependencies:
       lodash._reinterpolate: 3.0.0
       lodash.templatesettings: 4.2.0
@@ -15813,7 +15814,7 @@ snapshots:
       common-tags: 1.8.2
       fs-extra: 4.0.3
       glob: 7.2.3
-      lodash.template: 4.5.0
+      lodash.template: 4.18.1
       pretty-bytes: 5.6.0
       stringify-object: 3.3.0
       strip-comments: 1.0.2
