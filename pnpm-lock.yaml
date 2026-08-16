@@ -17,6 +17,8 @@ overrides:
   svgo@2.8.0: 2.8.3
   tmp@0.0.33: 0.2.7
   tmp@0.2.1: 0.2.7
+  ws@8.11.0: 8.21.3
+  ws@8.13.0: 8.21.3
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
   tar-fs@2.1.1: 2.1.4
@@ -7336,30 +7338,6 @@ packages:
   write-file-atomic@3.0.3:
     resolution: {integrity: sha512-AvHcyZ5JnSfq3ioSyjrBkH9yW4m7Ayk8/9My/DD9onKeu/94fwrMocemO2QAJFAlnnDN+ZDS+ZjAR5ua1/PV/Q==}
 
-  ws@8.11.0:
-    resolution: {integrity: sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
-  ws@8.13.0:
-    resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
     engines: {node: '>=10.0.0'}
@@ -14335,7 +14313,7 @@ snapshots:
       proxy-from-env: 1.1.0
       tar-fs: 2.1.4
       unbzip2-stream: 1.4.3
-      ws: 8.13.0
+      ws: 8.21.3
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -15018,7 +14996,7 @@ snapshots:
 
   socket.io-adapter@2.5.2:
     dependencies:
-      ws: 8.11.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -15937,10 +15915,6 @@ snapshots:
       is-typedarray: 1.0.0
       signal-exit: 3.0.7
       typedarray-to-buffer: 3.1.5
-
-  ws@8.11.0: {}
-
-  ws@8.13.0: {}
 
   ws@8.21.3: {}
 
