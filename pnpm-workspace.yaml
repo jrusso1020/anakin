@@ -12,6 +12,7 @@ allowBuilds:
 nodeLinker: hoisted
 overrides:
   "@types/reach__router>@types/react": 19.2.18
+  "flatted@3.2.9": 3.4.2
   "immutable@3.7.6": 4.3.9
   "minimatch@3.1.2": 3.1.4
   "path-to-regexp@0.1.10": 0.1.13
