@@ -120,7 +120,7 @@ jobs:
             - .
   deploy:
     docker:
-      - image: cimg/node:22.13.1
+      - image: cimg/aws:2026.07.1
     working_directory: ~/anakin
     steps:
       - attach_workspace:
@@ -130,7 +130,7 @@ jobs:
           to: "s3://boredhacking.com"
           arguments: >-
             --delete
-            --cache-control "public, max-age=0, must-revalidate"
+            --cache-control public,max-age=0,must-revalidate
       - aws-s3/copy:
           from: public
           to: "s3://boredhacking.com"
@@ -140,7 +140,7 @@ jobs:
             --include "*.js"
             --include "*.css"
             --include "static/*"
-            --cache-control "public, max-age=31536000, immutable"
+            --cache-control public,max-age=31536000,immutable
 workflows:
   version: 2.1
   build_and_deploy:
