@@ -8,6 +8,8 @@ overrides:
   '@types/reach__router>@types/react': 19.2.18
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
+  tar-fs@2.1.1: 2.1.4
+  tar-fs@3.0.4: 3.1.1
 
 importers:
 
@@ -2540,6 +2542,14 @@ packages:
   b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
 
+  b4a@1.8.1:
+    resolution: {integrity: sha512-aiqre1Nr0B/6DgE2N5vwTc+2/oQZ4Wh1t4NznYY4E00y8LCt6NqdRv81so00oo27D8MVKTpUa/MwUUtBLXCoDw==}
+    peerDependencies:
+      react-native-b4a: '*'
+    peerDependenciesMeta:
+      react-native-b4a:
+        optional: true
+
   babel-eslint@10.1.0:
     resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==}
     engines: {node: '>=6'}
@@ -2629,6 +2639,43 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  bare-events@2.9.1:
+    resolution: {integrity: sha512-Z0oHEHAFDZkffN8Qc39zNZjQlMDkPJRyyyZieU1VH7u8c5S+qHZ2S8ixdKIAxEjfHO7FJxXmJWgteOghVanIsg==}
+    peerDependencies:
+      bare-abort-controller: '*'
+    peerDependenciesMeta:
+      bare-abort-controller:
+        optional: true
+
+  bare-fs@4.8.0:
+    resolution: {integrity: sha512-fM+MhCvdQhZ7NV6S95a07gPSqjIYKn6mFaXfx266wN3ajZGl/+1AzH+ubkXQ0fFZvOe2nk9VHkzdYkQE5zMV3Q==}
+    engines: {bare: '>=1.28.0'}
+    peerDependencies:
+      bare-buffer: '*'
+    peerDependenciesMeta:
+      bare-buffer:
+        optional: true
+
+  bare-path@3.1.1:
+    resolution: {integrity: sha512-JprUlveX3QjApC1cTpsUOiscADftCGVWkzitbHsRqv84hzYwYHw2mbluddsq5TvI8mH/8Ov1f4BiMAdcB0oYnQ==}
+
+  bare-stream@2.13.3:
+    resolution: {integrity: sha512-Kc+brLqvEqGkjyfiwJmImAOqLZL7OsoLKuavx+hJjgVV3nLTOjloJyPMFxjUPerGGHrNH0fLU06jjykMLWrERQ==}
+    peerDependencies:
+      bare-abort-controller: '*'
+      bare-buffer: '*'
+      bare-events: '*'
+    peerDependenciesMeta:
+      bare-abort-controller:
+        optional: true
+      bare-buffer:
+        optional: true
+      bare-events:
+        optional: true
+
+  bare-url@2.5.2:
+    resolution: {integrity: sha512-L13PCJzKG8RGvx8V1/DdMi12ERhC3tprr7/8a94BxpmnRsFqxh5XZNdhtMxu5HPkRshYOOWRGY8lDP7ZhpG9Cg==}
 
   base-x@3.0.11:
     resolution: {integrity: sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==}
@@ -3660,6 +3707,9 @@ packages:
 
   eventemitter3@5.0.1:
     resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
+
+  events-universal@1.0.1:
+    resolution: {integrity: sha512-LUd5euvbMLpwOF8m6ivPCbhQeSiYVNb8Vs0fQ8QjXo0JTkEHpz8pxdQf0gStltaPpw0Cca8b39KxvK9cfKRiAw==}
 
   events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
@@ -6597,6 +6647,9 @@ packages:
   streamx@2.15.6:
     resolution: {integrity: sha512-q+vQL4AAz+FdfT137VF69Cc/APqUbxy+MDOImRrMvchJpigHj9GksgDU2LYbO9rx7RX6osWgxJB2WxhYv4SZAw==}
 
+  streamx@2.28.0:
+    resolution: {integrity: sha512-1Yowhzjf0ivGMrTIkY9hav5TxobO9qIVqUE41fiCGMGgc3CLlf4MY+9AHmZqBWgDTue0fY9zWjYFVyf6Diuobw==}
+
   strict-uri-encode@2.0.0:
     resolution: {integrity: sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==}
     engines: {node: '>=4'}
@@ -6782,14 +6835,11 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  tar-fs@2.1.1:
-    resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}
-
   tar-fs@2.1.4:
     resolution: {integrity: sha512-mDAjwmZdh7LTT6pNleZ05Yt65HC3E+NiQzl672vQG38jIrehtJk/J3mNwIg+vShQPcLF/LV7CMnDW6vjj6sfYQ==}
 
-  tar-fs@3.0.4:
-    resolution: {integrity: sha512-5AFQU8b9qLfZCX9zp2duONhPmZv0hGYiBPJsyUdqMjzq/mqVpy/rEUSeHk1+YitmxugaptgBh5oDGU3VsAJq4w==}
+  tar-fs@3.1.1:
+    resolution: {integrity: sha512-LZA0oaPOc2fVo82Txf3gw+AkEd38szODlptMYejQUhndHMLQ9M059uXR+AfS7DNo0NpINvSqDsvyaCrBVkptWg==}
 
   tar-stream@2.2.0:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
@@ -6797,6 +6847,9 @@ packages:
 
   tar-stream@3.1.6:
     resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
+
+  teex@1.0.1:
+    resolution: {integrity: sha512-eYE6iEI62Ni1H8oIa7KlDU6uQBtqr4Eajni3wX7rpfXD8ysFx8z0+dri+KWEPWpBsxXfxu58x/0jvTVT1ekOSg==}
 
   terser-webpack-plugin@5.3.14:
     resolution: {integrity: sha512-vkZjpUjb6OMS7dhV+tILUW6BhpDR7P2L/aQSAv+Uwk+m8KATX9EccViHTJR2qDtACKPIYndLGCyl3FMo+r2LMw==}
@@ -6818,6 +6871,9 @@ packages:
     resolution: {integrity: sha512-LBAhFyLho16harJoWMg/nZsQYgTrg5jXOn2nCYjRUcZZEdE3qa2zb8QEDRUGVZBW4rlazf2fxkg8tztybTaqWw==}
     engines: {node: '>=10'}
     hasBin: true
+
+  text-decoder@1.2.7:
+    resolution: {integrity: sha512-vlLytXkeP4xvEq2otHeJfSQIRyWxo/oZGEbXrtEEF9Hnmrdly59sUbzZ/QgyWuLYHctCHxFF4tRQZNQ9k60ExQ==}
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
@@ -9187,7 +9243,7 @@ snapshots:
       https-proxy-agent: 5.0.1(supports-color@8.1.1)
       progress: 2.0.3
       proxy-from-env: 1.1.0
-      tar-fs: 2.1.1
+      tar-fs: 2.1.4
       unbzip2-stream: 1.4.3
       yargs: 17.7.1
     optionalDependencies:
@@ -9885,6 +9941,9 @@ snapshots:
 
   b4a@1.6.4: {}
 
+  b4a@1.8.1:
+    optional: true
+
   babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
       '@babel/code-frame': 7.29.7
@@ -10032,6 +10091,40 @@ snapshots:
   bail@1.0.5: {}
 
   balanced-match@1.0.2: {}
+
+  bare-events@2.9.1:
+    optional: true
+
+  bare-fs@4.8.0:
+    dependencies:
+      bare-events: 2.9.1
+      bare-path: 3.1.1
+      bare-stream: 2.13.3(bare-events@2.9.1)
+      bare-url: 2.5.2
+      fast-fifo: 1.3.2
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+    optional: true
+
+  bare-path@3.1.1:
+    optional: true
+
+  bare-stream@2.13.3(bare-events@2.9.1):
+    dependencies:
+      b4a: 1.8.1
+      streamx: 2.28.0
+      teex: 1.0.1
+    optionalDependencies:
+      bare-events: 2.9.1
+    transitivePeerDependencies:
+      - react-native-b4a
+    optional: true
+
+  bare-url@2.5.2:
+    dependencies:
+      bare-path: 3.1.1
+    optional: true
 
   base-x@3.0.11:
     dependencies:
@@ -11325,6 +11418,13 @@ snapshots:
 
   eventemitter3@5.0.1: {}
 
+  events-universal@1.0.1:
+    dependencies:
+      bare-events: 2.9.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+    optional: true
+
   events@3.3.0: {}
 
   execa@5.1.1:
@@ -11775,7 +11875,10 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
       rss: 1.2.2
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
 
   gatsby-plugin-google-gtag@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
@@ -11809,7 +11912,10 @@ snapshots:
       gatsby-plugin-sharp: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       gatsby-source-filesystem: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
       - supports-color
 
   gatsby-plugin-manifest@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1):
@@ -11821,7 +11927,10 @@ snapshots:
       semver: 7.7.2
       sharp: 0.32.6
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
 
   gatsby-plugin-offline@6.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
@@ -11851,7 +11960,10 @@ snapshots:
       globby: 11.1.0
       lodash: 4.17.21
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
       - supports-color
 
   gatsby-plugin-postcss@6.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(postcss@8.5.23)(typescript@5.9.3)(webpack@5.98.0):
@@ -11884,7 +11996,10 @@ snapshots:
       semver: 7.7.2
       sharp: 0.32.6
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
       - supports-color
 
   gatsby-plugin-slug@2.0.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
@@ -11917,6 +12032,10 @@ snapshots:
       import-from: 4.0.0
       joi: 17.13.3
       mime: 3.0.0
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - react-native-b4a
 
   gatsby-react-router-scroll@6.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
@@ -11989,6 +12108,10 @@ snapshots:
   gatsby-sharp@1.16.0:
     dependencies:
       sharp: 0.32.6
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - react-native-b4a
 
   gatsby-source-filesystem@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(csso@4.2.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
@@ -12044,7 +12167,10 @@ snapshots:
       semver: 7.7.2
       sharp: 0.32.6
     transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
       - graphql
+      - react-native-b4a
       - supports-color
 
   gatsby-worker@2.16.0(supports-color@8.1.1):
@@ -12232,6 +12358,8 @@ snapshots:
       - '@swc/core'
       - '@types/webpack'
       - babel-eslint
+      - bare-abort-controller
+      - bare-buffer
       - bufferutil
       - clean-css
       - csso
@@ -12241,6 +12369,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - eslint-plugin-jest
       - eslint-plugin-testing-library
+      - react-native-b4a
       - sockjs-client
       - supports-color
       - type-fest
@@ -14213,7 +14342,7 @@ snapshots:
       extract-zip: 2.0.1(supports-color@8.1.1)
       https-proxy-agent: 5.0.1(supports-color@8.1.1)
       proxy-from-env: 1.1.0
-      tar-fs: 2.1.1
+      tar-fs: 2.1.4
       unbzip2-stream: 1.4.3
       ws: 8.13.0
     optionalDependencies:
@@ -14760,8 +14889,12 @@ snapshots:
       prebuild-install: 7.1.1
       semver: 7.7.2
       simple-get: 4.0.1
-      tar-fs: 3.0.4
+      tar-fs: 3.1.1
       tunnel-agent: 0.6.0
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - react-native-b4a
 
   sharp@0.35.3(@types/node@24.13.3):
     dependencies:
@@ -14984,6 +15117,15 @@ snapshots:
       fast-fifo: 1.3.2
       queue-tick: 1.0.1
 
+  streamx@2.28.0:
+    dependencies:
+      events-universal: 1.0.1
+      fast-fifo: 1.3.2
+      text-decoder: 1.2.7
+    transitivePeerDependencies:
+      - bare-abort-controller
+    optional: true
+
   strict-uri-encode@2.0.0: {}
 
   string-argv@0.3.2: {}
@@ -15195,13 +15337,6 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  tar-fs@2.1.1:
-    dependencies:
-      chownr: 1.1.4
-      mkdirp-classic: 0.5.3
-      pump: 3.0.0
-      tar-stream: 2.2.0
-
   tar-fs@2.1.4:
     dependencies:
       chownr: 1.1.4
@@ -15209,11 +15344,17 @@ snapshots:
       pump: 3.0.0
       tar-stream: 2.2.0
 
-  tar-fs@3.0.4:
+  tar-fs@3.1.1:
     dependencies:
-      mkdirp-classic: 0.5.3
       pump: 3.0.0
       tar-stream: 3.1.6
+    optionalDependencies:
+      bare-fs: 4.8.0
+      bare-path: 3.1.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - react-native-b4a
 
   tar-stream@2.2.0:
     dependencies:
@@ -15228,6 +15369,11 @@ snapshots:
       b4a: 1.6.4
       fast-fifo: 1.3.2
       streamx: 2.15.6
+
+  teex@1.0.1:
+    dependencies:
+      streamx: 2.15.6
+    optional: true
 
   terser-webpack-plugin@5.3.14(webpack@5.98.0):
     dependencies:
@@ -15244,6 +15390,11 @@ snapshots:
       acorn: 8.15.0
       commander: 2.20.3
       source-map-support: 0.5.21
+
+  text-decoder@1.2.7:
+    dependencies:
+      b4a: 1.6.4
+    optional: true
 
   text-table@0.2.0: {}
 
