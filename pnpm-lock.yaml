@@ -30,6 +30,7 @@ overrides:
   tmp@0.2.1: 0.2.7
   ws@8.11.0: 8.21.3
   ws@8.13.0: 8.21.3
+  yaml@1.10.2: 1.10.3
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
   tar-fs@2.1.1: 2.1.4
@@ -7213,8 +7214,8 @@ packages:
     resolution: {integrity: sha512-LjeKnTzVBKWiQBeE2L9ssl6WprqaUIxCSNs5tle8PaDydgu3wVFXTbMfsvF2MSErpy9TDVa092n4q6adYwJaWg==}
     engines: {node: '>= 12.13'}
 
-  yaml@1.10.2:
-    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
+  yaml@1.10.3:
+    resolution: {integrity: sha512-vIYeF1u3CjlhAFekPPAk2h/Kv4T3mAkMox5OymRiJQB0spDP10LHvt+K7G9Ny6NuuMAb25/6n1qyUjAcGNf/AA==}
     engines: {node: '>= 6'}
 
   yaml@2.9.0:
@@ -10322,7 +10323,7 @@ snapshots:
       import-fresh: 3.3.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      yaml: 1.10.2
+      yaml: 1.10.3
 
   cosmiconfig@7.1.0:
     dependencies:
@@ -10330,7 +10331,7 @@ snapshots:
       import-fresh: 3.3.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      yaml: 1.10.2
+      yaml: 1.10.3
 
   cosmiconfig@8.3.6(typescript@5.9.3):
     dependencies:
@@ -10461,7 +10462,7 @@ snapshots:
       cssnano-preset-default: 5.2.14(postcss@8.5.23)
       lilconfig: 2.1.0
       postcss: 8.5.23
-      yaml: 1.10.2
+      yaml: 1.10.3
 
   csso@4.2.0:
     dependencies:
@@ -15489,7 +15490,7 @@ snapshots:
       loader-utils: 2.0.4
       yaml: 2.9.0
 
-  yaml@1.10.2: {}
+  yaml@1.10.3: {}
 
   yaml@2.9.0: {}
 
