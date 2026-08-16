@@ -2,6 +2,8 @@ import path from "path"
 
 import type { GatsbyConfig } from "gatsby"
 
+import { pageUrl } from "./src/lib/urls"
+
 interface SiteMetadata {
   siteUrl: string
 }
@@ -34,6 +36,7 @@ interface Query {
 }
 
 const config: GatsbyConfig = {
+  trailingSlash: "always",
   siteMetadata: {
     title: "Bored Hacking",
     author: "James Russo",
@@ -197,8 +200,8 @@ const config: GatsbyConfig = {
                   ...node.frontmatter,
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  url: pageUrl(site.siteMetadata.siteUrl, node.fields.slug),
+                  guid: pageUrl(site.siteMetadata.siteUrl, node.fields.slug),
                   custom_elements: [{ "content:encoded": node.html }],
                 }
               })
