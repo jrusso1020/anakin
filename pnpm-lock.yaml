@@ -11,6 +11,7 @@ overrides:
   immutable@3.7.6: 4.3.9
   js-yaml@4.1.0: 4.3.1
   minimatch@3.1.2: 3.1.4
+  multer@2.0.2: 2.2.0
   path-to-regexp@0.1.10: 0.1.13
   path-to-regexp@0.1.12: 0.1.13
   picomatch@2.3.1: 2.3.2
@@ -5324,10 +5325,6 @@ packages:
   mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
 
-  mkdirp@0.5.6:
-    resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
-    hasBin: true
-
   moment@2.29.4:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
 
@@ -5347,8 +5344,8 @@ packages:
   msgpackr@1.10.1:
     resolution: {integrity: sha512-r5VRLv9qouXuLiIBrLpl2d5ZvPt8svdQTl5/vMvE4nzDMyEX4sgW5yWhuBBj5UmgwOTWj8CIdSXn5sAfsHAWIQ==}
 
-  multer@2.0.2:
-    resolution: {integrity: sha512-u7f2xaZ/UG8oLXHvtF/oWTRvT44p9ecwBBqTwgJVq0+4BW1g8OW01TyMEGWBHbyMOYVHXslaut7qEQ1meATXgw==}
+  multer@2.2.0:
+    resolution: {integrity: sha512-6rdyFg2kLrMh9Jee7/BMPuV9lEAd7lLW2YUpF9/YxR7njyoUwwQ0ZPh3TaIY50Sw6vlyD2HW3wGOkTS4P79xrQ==}
     engines: {node: '>= 10.16.0'}
 
   mute-stream@0.0.8:
@@ -12275,7 +12272,7 @@ snapshots:
       mini-css-extract-plugin: 1.6.2(webpack@5.98.0)
       mitt: 1.2.0
       moment: 2.29.4
-      multer: 2.0.2
+      multer: 2.2.0
       node-fetch: 2.7.0
       node-html-parser: 5.4.2
       normalize-path: 3.0.0
@@ -13571,10 +13568,6 @@ snapshots:
 
   mkdirp-classic@0.5.3: {}
 
-  mkdirp@0.5.6:
-    dependencies:
-      minimist: 1.2.8
-
   moment@2.29.4: {}
 
   ms@2.0.0: {}
@@ -13599,15 +13592,12 @@ snapshots:
     optionalDependencies:
       msgpackr-extract: 3.0.2
 
-  multer@2.0.2:
+  multer@2.2.0:
     dependencies:
       append-field: 1.0.0
       busboy: 1.6.0
       concat-stream: 2.0.0
-      mkdirp: 0.5.6
-      object-assign: 4.1.1
       type-is: 1.6.18
-      xtend: 4.0.2
 
   mute-stream@0.0.8: {}
 
