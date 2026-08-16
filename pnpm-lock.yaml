@@ -14,6 +14,8 @@ overrides:
   path-to-regexp@0.1.12: 0.1.13
   picomatch@2.3.1: 2.3.2
   svgo@2.8.0: 2.8.3
+  tmp@0.0.33: 0.2.7
+  tmp@0.2.1: 0.2.7
   sanitize-html: 2.17.7
   shell-quote: 1.10.0
   tar-fs@2.1.1: 2.1.4
@@ -5555,10 +5557,6 @@ packages:
   ordered-binary@1.5.1:
     resolution: {integrity: sha512-5VyHfHY3cd0iza71JepYG50My+YUbrFtGoUz2ooEydPyPM7Aai/JW098juLr+RG6+rDJuzNNTsEQu2DZa1A41A==}
 
-  os-tmpdir@1.0.2:
-    resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
-    engines: {node: '>=0.10.0'}
-
   own-keys@1.0.1:
     resolution: {integrity: sha512-qFOyK5PjiWZd+QQIh+1jhdb9LpxTF0qs7Pm8o5QHYZ0M3vKqSqzsZaEB6oWlxZ+q2sJBMI/Ktgd2N5ZwQoRHfg==}
     engines: {node: '>= 0.4'}
@@ -6902,13 +6900,9 @@ packages:
   title-case@3.0.3:
     resolution: {integrity: sha512-e1zGYRvbffpcHIrnuqT0Dh+gEJtDaxDSoG4JAIpq4oDFyooziLBIiYQv0GBT4FUAnUop5uZ1hiIAj7oAF6sOCA==}
 
-  tmp@0.0.33:
-    resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
-    engines: {node: '>=0.6.0'}
-
-  tmp@0.2.1:
-    resolution: {integrity: sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==}
-    engines: {node: '>=8.17.0'}
+  tmp@0.2.7:
+    resolution: {integrity: sha512-e0votIpp4Uo2AJYSzVHV6xCcawuiez3DzqDAbrTc3YxBkplN6e+dM13ZeIcZnDg/QpSuU2zfZ3rzwY8ukEnaXw==}
+    engines: {node: '>=14.14'}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -11511,7 +11505,7 @@ snapshots:
     dependencies:
       chardet: 0.7.0
       iconv-lite: 0.4.24
-      tmp: 0.0.33
+      tmp: 0.2.7
 
   extract-zip@2.0.1(supports-color@8.1.1):
     dependencies:
@@ -11800,7 +11794,7 @@ snapshots:
       node-object-hash: 2.3.10
       proper-lockfile: 4.1.2
       resolve-from: 5.0.0
-      tmp: 0.2.1
+      tmp: 0.2.7
       xdg-basedir: 4.0.0
 
   gatsby-graphiql-explorer@3.16.0: {}
@@ -12340,7 +12334,7 @@ snapshots:
       style-loader: 2.0.0(webpack@5.98.0)
       style-to-object: 0.4.4
       terser-webpack-plugin: 5.3.14(webpack@5.98.0)
-      tmp: 0.2.1
+      tmp: 0.2.7
       true-case-path: 2.2.1
       type-of: 2.0.1
       url-loader: 4.1.1(file-loader@6.2.0(webpack@5.98.0))(webpack@5.98.0)
@@ -13825,8 +13819,6 @@ snapshots:
       type-check: 0.4.0
 
   ordered-binary@1.5.1: {}
-
-  os-tmpdir@1.0.2: {}
 
   own-keys@1.0.1:
     dependencies:
@@ -15415,13 +15407,7 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  tmp@0.0.33:
-    dependencies:
-      os-tmpdir: 1.0.2
-
-  tmp@0.2.1:
-    dependencies:
-      rimraf: 3.0.2
+  tmp@0.2.7: {}
 
   to-regex-range@5.0.1:
     dependencies:
