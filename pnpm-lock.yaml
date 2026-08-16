@@ -18,6 +18,8 @@ overrides:
   path-to-regexp@0.1.12: 0.1.13
   picomatch@2.3.1: 2.3.2
   puppeteer@19.11.1: 25.7.0
+  serialize-javascript@5.0.1: 7.1.0
+  serialize-javascript@6.0.2: 7.1.0
   sharp@0.32.6: 0.35.3
   svgo@2.8.0: 2.8.3
   tmp@0.0.33: 0.2.7
@@ -5947,9 +5949,6 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
-  randombytes@2.1.0:
-    resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
-
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
@@ -6294,11 +6293,9 @@ packages:
   sentence-case@3.0.4:
     resolution: {integrity: sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==}
 
-  serialize-javascript@5.0.1:
-    resolution: {integrity: sha512-SaaNal9imEO737H2c05Og0/8LUXG7EnsZyMa8MzkmuHoELfT6txuj0cMqRj6zfPKnmQ1yasR4PCJc8x+M4JSPA==}
-
-  serialize-javascript@6.0.2:
-    resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
+  serialize-javascript@7.1.0:
+    resolution: {integrity: sha512-RNEqWOyhhUQYN9V1GfHwu9AR/g+NTciH6Z5u3/no6X3/w+04J2lVDL+svFQVXgXrEGBMG2puMVN3gq2SNGuTGw==}
+    engines: {node: '>=20.0.0'}
 
   serve-static@1.16.2:
     resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
@@ -10387,7 +10384,7 @@ snapshots:
       p-limit: 3.1.0
       postcss: 8.5.23
       schema-utils: 3.3.0
-      serialize-javascript: 5.0.1
+      serialize-javascript: 7.1.0
       source-map: 0.6.1
       webpack: 5.98.0
     optionalDependencies:
@@ -14008,10 +14005,6 @@ snapshots:
 
   quick-lru@5.1.1: {}
 
-  randombytes@2.1.0:
-    dependencies:
-      safe-buffer: 5.2.1
-
   range-parser@1.2.1: {}
 
   raw-body@2.5.2:
@@ -14444,13 +14437,7 @@ snapshots:
       tslib: 2.6.2
       upper-case-first: 2.0.2
 
-  serialize-javascript@5.0.1:
-    dependencies:
-      randombytes: 2.1.0
-
-  serialize-javascript@6.0.2:
-    dependencies:
-      randombytes: 2.1.0
+  serialize-javascript@7.1.0: {}
 
   serve-static@1.16.2(supports-color@8.1.1):
     dependencies:
@@ -14921,7 +14908,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.0
-      serialize-javascript: 6.0.2
+      serialize-javascript: 7.1.0
       terser: 5.39.0
       webpack: 5.98.0
 
