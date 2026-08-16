@@ -18,6 +18,7 @@ overrides:
   "body-parser@1.20.3": 1.20.6
   "cookie@0.5.0": 0.7.2
   "cookie@0.6.0": 0.7.2
+  "file-type@16.5.4": 21.3.2
   "flatted@3.2.9": 3.4.2
   "immutable@3.7.6": 4.3.9
   "js-yaml@4.1.0": 4.3.1
@@ -47,6 +48,9 @@ overrides:
   shell-quote: 1.10.0
   "tar-fs@2.1.1": 2.1.4
   "tar-fs@3.0.4": 3.1.1
+patchedDependencies:
+  gatsby-core-utils@4.16.0: patches/gatsby-core-utils@4.16.0.patch
+  gatsby-source-filesystem@5.16.0: patches/gatsby-source-filesystem@5.16.0.patch
 peerDependencyRules:
   allowedVersions:
     "@gatsbyjs/reach-router>react": "19"

@@ -1,0 +1,22 @@
+diff --git a/create-file-node-from-buffer.js b/create-file-node-from-buffer.js
+index 57b1e4439c37f7208d0753f987f6baf28554dd40..e77aacf2458644e25a0e52781f20da9fda135213 100644
+--- a/create-file-node-from-buffer.js
++++ b/create-file-node-from-buffer.js
+@@ -2,7 +2,6 @@
+ 
+ const fs = require(`fs-extra`);
+ const path = require(`path`);
+-const fileType = require(`file-type`);
+ const {
+   createFileNode
+ } = require(`./create-file-node`);
+@@ -74,7 +73,8 @@ async function processBufferNode({
+     // If the user did not provide an extension and we couldn't get
+     // one from remote file, try and guess one
+     if (typeof ext === `undefined`) {
+-      const filetype = await fileType.fromBuffer(buffer);
++      const { fileTypeFromBuffer } = await import(`file-type`);
++      const filetype = await fileTypeFromBuffer(buffer);
+       ext = filetype ? `.${filetype.ext}` : `.bin`;
+     }
+     filename = createFilePath(path.join(pluginCacheDir, hash), name, ext);
