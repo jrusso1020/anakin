@@ -6,6 +6,20 @@ settings:
 
 overrides:
   '@babel/plugin-transform-modules-systemjs@7.23.3': 7.29.4
+  '@parcel/bundler-default@2.8.3': 2.16.4
+  '@parcel/cache@2.8.3': 2.16.4
+  '@parcel/compressor-raw@2.8.3': 2.16.4
+  '@parcel/core@2.8.3': 2.16.4
+  '@parcel/namer-default@2.8.3': 2.16.4
+  '@parcel/optimizer-terser@2.8.3': 2.16.4
+  '@parcel/packager-js@2.8.3': 2.16.4
+  '@parcel/packager-raw@2.8.3': 2.16.4
+  '@parcel/plugin@2.8.3': 2.16.4
+  '@parcel/reporter-dev-server@2.8.3': 2.16.4
+  '@parcel/resolver-default@2.8.3': 2.16.4
+  '@parcel/runtime-js@2.8.3': 2.16.4
+  '@parcel/transformer-js@2.8.3': 2.16.4
+  '@parcel/transformer-json@2.8.3': 2.16.4
   '@types/reach__router>@types/react': 19.2.18
   ajv@6.12.6: 6.14.0
   ajv@8.17.1: 8.18.0
@@ -80,7 +94,7 @@ importers:
         version: 1.0.31
       gatsby:
         specifier: ^5.16.1
-        version: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+        version: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-cli:
         specifier: ^5.16.0
         version: 5.16.0(supports-color@8.1.1)
@@ -89,61 +103,61 @@ importers:
         version: 5.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
       gatsby-plugin-catch-links:
         specifier: ^5.16.0
-        version: 5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
+        version: 5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-plugin-dynamic-open-graph-images:
         specifier: ^1.1.4
         version: 1.1.4(supports-color@8.1.1)(yauzl@2.10.0)
       gatsby-plugin-feed:
         specifier: ^5.16.0
-        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
+        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
       gatsby-plugin-google-gtag:
         specifier: ^5.16.0
-        version: 5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       gatsby-plugin-image:
         specifier: ^3.16.0
-        version: 3.16.0(6566abfa36725edfca2b7a539d021899)
+        version: 3.16.0(c1744d0890e37d9f0f63ae4901b51a4a)
       gatsby-plugin-manifest:
         specifier: ^5.16.0
-        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       gatsby-plugin-offline:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
       gatsby-plugin-sharp:
         specifier: ^5.16.0
-        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+        version: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       gatsby-plugin-slug:
         specifier: ^2.0.0
-        version: 2.0.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
+        version: 2.0.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-plugin-typescript:
         specifier: ^5.16.0
-        version: 5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+        version: 5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       gatsby-react-router-scroll:
         specifier: ^6.16.0
         version: 6.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       gatsby-remark-copy-linked-files:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       gatsby-remark-images:
         specifier: ^7.16.0
-        version: 7.16.0(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+        version: 7.16.0(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       gatsby-remark-prismjs:
         specifier: ^7.16.0
-        version: 7.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(prismjs@1.30.0)
+        version: 7.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(prismjs@1.30.0)
       gatsby-remark-responsive-iframe:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-remark-smartypants:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-source-filesystem:
         specifier: ^5.16.0
-        version: 5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+        version: 5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       gatsby-transformer-remark:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       gatsby-transformer-sharp:
         specifier: ^5.16.0
-        version: 5.16.0(@types/node@24.13.3)(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+        version: 5.16.0(@types/node@24.13.3)(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -219,10 +233,10 @@ importers:
         version: 19.2.4(@types/react@19.2.18)
       gatsby-plugin-postcss:
         specifier: ^6.16.0
-        version: 6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+        version: 6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       gatsby-plugin-root-import:
         specifier: ^2.0.8
-        version: 2.0.9(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
+        version: 2.0.9(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))
       oxfmt:
         specifier: ^0.63.0
         version: 0.63.0
@@ -1299,19 +1313,14 @@ packages:
   '@lezer/lr@1.3.14':
     resolution: {integrity: sha512-z5mY4LStlA3yL7aHT/rqgG614cfcvklS+8oFRFBYrs4YaWLJyKKM4+nN6KopToX0o9Hj6zmH6M5kinOYuy06ug==}
 
-  '@lmdb/lmdb-darwin-arm64@2.5.2':
-    resolution: {integrity: sha512-+F8ioQIUN68B4UFiIBYu0QQvgb9FmlKw2ctQMSBfW2QBrZIxz9vD9jCGqTCPqZBRbPHAS/vG1zSXnKqnS2ch/A==}
-    cpu: [arm64]
-    os: [darwin]
-
   '@lmdb/lmdb-darwin-arm64@2.5.3':
     resolution: {integrity: sha512-RXwGZ/0eCqtCY8FLTM/koR60w+MXyvBUpToXiIyjOcBnC81tAlTUHrRUavCEWPI9zc9VgvpK3+cbumPyR8BSuA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@lmdb/lmdb-darwin-x64@2.5.2':
-    resolution: {integrity: sha512-KvPH56KRLLx4KSfKBx0m1r7GGGUMXm0jrKmNE7plbHlesZMuPJICtn07HYgQhj1LNsK7Yqwuvnqh1QxhJnF1EA==}
-    cpu: [x64]
+  '@lmdb/lmdb-darwin-arm64@2.8.5':
+    resolution: {integrity: sha512-KPDeVScZgA1oq0CiPBcOa3kHIqU+pTOwRFDIhxvmf8CTNvqdZQYp5cCKW0bUk69VygB2PuTiINFWbY78aR2pQw==}
+    cpu: [arm64]
     os: [darwin]
 
   '@lmdb/lmdb-darwin-x64@2.5.3':
@@ -1319,19 +1328,19 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@lmdb/lmdb-linux-arm64@2.5.2':
-    resolution: {integrity: sha512-aLl89VHL/wjhievEOlPocoefUyWdvzVrcQ/MHQYZm2JfV1jUsrbr/ZfkPPUFvZBf+VSE+Q0clWs9l29PCX1hTQ==}
-    cpu: [arm64]
-    os: [linux]
+  '@lmdb/lmdb-darwin-x64@2.8.5':
+    resolution: {integrity: sha512-w/sLhN4T7MW1nB3R/U8WK5BgQLz904wh+/SmA2jD8NnF7BLLoUgflCNxOeSPOWp8geP6nP/+VjWzZVip7rZ1ug==}
+    cpu: [x64]
+    os: [darwin]
 
   '@lmdb/lmdb-linux-arm64@2.5.3':
     resolution: {integrity: sha512-VJw60Mdgb4n+L0fO1PqfB0C7TyEQolJAC8qpqvG3JoQwvyOv6LH7Ib/WE3wxEW9nuHmVz9jkK7lk5HfWWgoO1Q==}
     cpu: [arm64]
     os: [linux]
 
-  '@lmdb/lmdb-linux-arm@2.5.2':
-    resolution: {integrity: sha512-5kQAP21hAkfW5Bl+e0P57dV4dGYnkNIpR7f/GAh6QHlgXx+vp/teVj4PGRZaKAvt0GX6++N6hF8NnGElLDuIDw==}
-    cpu: [arm]
+  '@lmdb/lmdb-linux-arm64@2.8.5':
+    resolution: {integrity: sha512-vtbZRHH5UDlL01TT5jB576Zox3+hdyogvpcbvVJlmU5PdL3c5V7cj1EODdh1CHPksRl+cws/58ugEHi8bcj4Ww==}
+    cpu: [arm64]
     os: [linux]
 
   '@lmdb/lmdb-linux-arm@2.5.3':
@@ -1339,9 +1348,9 @@ packages:
     cpu: [arm]
     os: [linux]
 
-  '@lmdb/lmdb-linux-x64@2.5.2':
-    resolution: {integrity: sha512-xUdUfwDJLGjOUPH3BuPBt0NlIrR7f/QHKgu3GZIXswMMIihAekj2i97oI0iWG5Bok/b+OBjHPfa8IU9velnP/Q==}
-    cpu: [x64]
+  '@lmdb/lmdb-linux-arm@2.8.5':
+    resolution: {integrity: sha512-c0TGMbm2M55pwTDIfkDLB6BpIsgxV4PjYck2HiOX+cy/JWiBXz32lYbarPqejKs9Flm7YVAKSILUducU9g2RVg==}
+    cpu: [arm]
     os: [linux]
 
   '@lmdb/lmdb-linux-x64@2.5.3':
@@ -1349,13 +1358,18 @@ packages:
     cpu: [x64]
     os: [linux]
 
-  '@lmdb/lmdb-win32-x64@2.5.2':
-    resolution: {integrity: sha512-zrBczSbXKxEyK2ijtbRdICDygRqWSRPpZMN5dD1T8VMEW5RIhIbwFWw2phDRXuBQdVDpSjalCIUMWMV2h3JaZA==}
+  '@lmdb/lmdb-linux-x64@2.8.5':
+    resolution: {integrity: sha512-Xkc8IUx9aEhP0zvgeKy7IQ3ReX2N8N1L0WPcQwnZweWmOuKfwpS3GRIYqLtK5za/w3E60zhFfNdS+3pBZPytqQ==}
     cpu: [x64]
-    os: [win32]
+    os: [linux]
 
   '@lmdb/lmdb-win32-x64@2.5.3':
     resolution: {integrity: sha512-cK+Elf3RjEzrm3SerAhrFWL5oQAsZSJ/LmjL1joIpTfEP1etJJ9CTRvdaV6XLYAxaEkfdhk/9hOvHLbR9yIhCA==}
+    cpu: [x64]
+    os: [win32]
+
+  '@lmdb/lmdb-win32-x64@2.8.5':
+    resolution: {integrity: sha512-4wvrf5BgnR8RpogHhtpCPJMKBmvyZPhhUtEwMJbXh0ni2BucpfF07jlmyM11zRqQ2XIq6PbC2j7W7UCCcm1rRQ==}
     cpu: [x64]
     os: [win32]
 
@@ -1652,128 +1666,192 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@parcel/bundler-default@2.8.3':
-    resolution: {integrity: sha512-yJvRsNWWu5fVydsWk3O2L4yIy3UZiKWO2cPDukGOIWMgp/Vbpp+2Ct5IygVRtE22bnseW/E/oe0PV3d2IkEJGg==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/bundler-default@2.16.4':
+    resolution: {integrity: sha512-Nb8peNvhfm1+660CLwssWh4weY+Mv6vEGS6GPKqzJmTMw50udi0eS1YuWFzvmhSiu1KsYcUD37mqQ1LuIDtWoA==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/cache@2.8.3':
-    resolution: {integrity: sha512-k7xv5vSQrJLdXuglo+Hv3yF4BCSs1tQ/8Vbd6CHTkOhf7LcGg6CPtLw053R/KdMpd/4GPn0QrAsOLdATm1ELtQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/cache@2.16.4':
+    resolution: {integrity: sha512-+uCyeElSga2MBbmbXpIj/WVKH7TByCrKaxtHbelfKKIJpYMgEHVjO4cuc7GUfTrUAmRUS8ZGvnX7Etgq6/jQhw==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      '@parcel/core': ^2.8.3
+      '@parcel/core': ^2.16.4
 
-  '@parcel/codeframe@2.8.3':
-    resolution: {integrity: sha512-FE7sY53D6n/+2Pgg6M9iuEC6F5fvmyBkRE4d9VdnOoxhTXtkEqpqYgX7RJ12FAQwNlxKq4suBJQMgQHMF2Kjeg==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/codeframe@2.16.4':
+    resolution: {integrity: sha512-s64aMfOJoPrXhKH+Y98ahX0O8aXWvTR+uNlOaX4yFkpr4FFDnviLcGngDe/Yo4Qq2FJZ0P6dNswbJTUH9EGxkQ==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/compressor-raw@2.8.3':
-    resolution: {integrity: sha512-bVDsqleBUxRdKMakWSlWC9ZjOcqDKE60BE+Gh3JSN6WJrycJ02P5wxjTVF4CStNP/G7X17U+nkENxSlMG77ySg==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/compressor-raw@2.16.4':
+    resolution: {integrity: sha512-IK8IpNhw61B2HKgA1JhGhO9y+ZJFRZNTEmvhN1NdLdPqvgEXm2EunT+m6D9z7xeoeT6XnUKqM0eRckEdD0OXbA==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/core@2.8.3':
-    resolution: {integrity: sha512-Euf/un4ZAiClnlUXqPB9phQlKbveU+2CotZv7m7i+qkgvFn5nAGnrV4h1OzQU42j9dpgOxWi7AttUDMrvkbhCQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/core@2.16.4':
+    resolution: {integrity: sha512-a0CgrW5A5kwuSu5J1RFRoMQaMs9yagvfH2jJMYVw56+/7NRI4KOtu612SG9Y1ERWfY55ZwzyFxtLWvD6LO+Anw==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/diagnostic@2.8.3':
-    resolution: {integrity: sha512-u7wSzuMhLGWZjVNYJZq/SOViS3uFG0xwIcqXw12w54Uozd6BH8JlhVtVyAsq9kqnn7YFkw6pXHqAo5Tzh4FqsQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/diagnostic@2.16.4':
+    resolution: {integrity: sha512-YN5CfX7lFd6yRLxyZT4Sj3sR6t7nnve4TdXSIqapXzQwL7Bw+sj79D95wTq2rCm3mzk5SofGxFAXul2/nG6gcQ==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/events@2.8.3':
-    resolution: {integrity: sha512-hoIS4tAxWp8FJk3628bsgKxEvR7bq2scCVYHSqZ4fTi/s0+VymEATrRCUqf+12e5H47uw1/ZjoqrGtBI02pz4w==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/events@2.16.4':
+    resolution: {integrity: sha512-slWQkBRAA7o0cN0BLEd+yCckPmlVRVhBZn5Pn6ktm4EzEtrqoMzMeJOxxH8TXaRzrQDYnTcnYIHFgXWd4kkUfg==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/fs-search@2.8.3':
-    resolution: {integrity: sha512-DJBT2N8knfN7Na6PP2mett3spQLTqxFrvl0gv+TJRp61T8Ljc4VuUTb0hqBj+belaASIp3Q+e8+SgaFQu7wLiQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/feature-flags@2.16.4':
+    resolution: {integrity: sha512-nYdx53siKPLYikHHxfzgjzzgxdrjquK6DMnuSgOTyIdRG4VHdEN0+NqKijRLuVgiUFo/dtxc2h+amwqFENMw8w==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/fs@2.8.3':
-    resolution: {integrity: sha512-y+i+oXbT7lP0e0pJZi/YSm1vg0LDsbycFuHZIL80pNwdEppUAtibfJZCp606B7HOjMAlNZOBo48e3hPG3d8jgQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/fs@2.16.4':
+    resolution: {integrity: sha512-maCMOiVn7oJYZlqlfxgLne8n6tSktIT1k0AeyBp4UGWCXyeJUJ+nL7QYShFpKNLtMLeF0cEtgwRAknWzbcDS1g==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      '@parcel/core': ^2.8.3
+      '@parcel/core': ^2.16.4
 
-  '@parcel/graph@2.8.3':
-    resolution: {integrity: sha512-26GL8fYZPdsRhSXCZ0ZWliloK6DHlMJPWh6Z+3VVZ5mnDSbYg/rRKWmrkhnr99ZWmL9rJsv4G74ZwvDEXTMPBg==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/graph@3.6.4':
+    resolution: {integrity: sha512-Cj9yV+/k88kFhE+D+gz0YuNRpvNOCVDskO9pFqkcQhGbsGq6kg2XpZ9V7HlYraih31xf8Vb589bZOwjKIiHixQ==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/hash@2.8.3':
-    resolution: {integrity: sha512-FVItqzjWmnyP4ZsVgX+G00+6U2IzOvqDtdwQIWisCcVoXJFCqZJDy6oa2qDDFz96xCCCynjRjPdQx2jYBCpfYw==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/logger@2.16.4':
+    resolution: {integrity: sha512-QR8QLlKo7xAy9JBpPDAh0RvluaixqPCeyY7Fvo2K7hrU3r85vBNNi06pHiPbWoDmB4x1+QoFwMaGnJOHR+/fMA==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/logger@2.8.3':
-    resolution: {integrity: sha512-Kpxd3O/Vs7nYJIzkdmB6Bvp3l/85ydIxaZaPfGSGTYOfaffSOTkhcW9l6WemsxUrlts4za6CaEWcc4DOvaMOPA==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/markdown-ansi@2.16.4':
+    resolution: {integrity: sha512-0+oQApAVF3wMcQ6d1ZfZ0JsRzaMUYj9e4U+naj6YEsFsFGOPp+pQYKXBf1bobQeeB7cPKPT3SUHxFqced722Hw==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/markdown-ansi@2.8.3':
-    resolution: {integrity: sha512-4v+pjyoh9f5zuU/gJlNvNFGEAb6J90sOBwpKJYJhdWXLZMNFCVzSigxrYO+vCsi8G4rl6/B2c0LcwIMjGPHmFQ==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/namer-default@2.16.4':
+    resolution: {integrity: sha512-CE+0lFg881sJq575EXxj2lKUn81tsS5itpNUUErHxit195m3PExyAhoXM6ed/SXxwi+uv+T5FS/jjDLBNuUFDA==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/namer-default@2.8.3':
-    resolution: {integrity: sha512-tJ7JehZviS5QwnxbARd8Uh63rkikZdZs1QOyivUhEvhN+DddSAVEdQLHGPzkl3YRk0tjFhbqo+Jci7TpezuAMw==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
-
-  '@parcel/node-resolver-core@2.8.3':
-    resolution: {integrity: sha512-12YryWcA5Iw2WNoEVr/t2HDjYR1iEzbjEcxfh1vaVDdZ020PiGw67g5hyIE/tsnG7SRJ0xdRx1fQ2hDgED+0Ww==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/node-resolver-core@3.7.4':
+    resolution: {integrity: sha512-b3VDG+um6IWW5CTod6M9hQsTX5mdIelKmam7mzxzgqg4j5hnycgTWqPMc9UxhYoUY/Q/PHfWepccNcKtvP5JiA==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      '@parcel/core': '*'
+      '@parcel/core': 2.16.4
 
-  '@parcel/optimizer-terser@2.8.3':
-    resolution: {integrity: sha512-9EeQlN6zIeUWwzrzu6Q2pQSaYsYGah8MtiQ/hog9KEPlYTP60hBv/+utDyYEHSQhL7y5ym08tPX5GzBvwAD/dA==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/optimizer-terser@2.16.4':
+    resolution: {integrity: sha512-Pi/xDNf8TxjwhauXU6QGLJtZTbH0q7unX08cG+gabO8kc3bDSU5btkoEyPejjXPlVw2ewwYc0JXT57DgqGgRSA==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/package-manager@2.8.3':
-    resolution: {integrity: sha512-tIpY5pD2lH53p9hpi++GsODy6V3khSTX4pLEGuMpeSYbHthnOViobqIlFLsjni+QA1pfc8NNNIQwSNdGjYflVA==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/package-manager@2.16.4':
+    resolution: {integrity: sha512-obWv9gZgdnkT3Kd+fBkKjhdNEY7zfOP5gVaox5i4nQstVCaVnDlMv5FwLEXwehL+WbwEcGyEGGxOHHkAFKk7Cg==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      '@parcel/core': ^2.8.3
+      '@parcel/core': ^2.16.4
 
-  '@parcel/packager-js@2.8.3':
-    resolution: {integrity: sha512-0pGKC3Ax5vFuxuZCRB+nBucRfFRz4ioie19BbDxYnvBxrd4M3FIu45njf6zbBYsI9eXqaDnL1b3DcZJfYqtIzw==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/packager-js@2.16.4':
+    resolution: {integrity: sha512-L2o39f/fhta+hxto7w8OTUKdstY+te5BmHZREckbQm0KTBg93BG7jB0bfoxLSZF0d8uuAYIVXjzeHNqha+du1g==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/packager-raw@2.8.3':
-    resolution: {integrity: sha512-BA6enNQo1RCnco9MhkxGrjOk59O71IZ9DPKu3lCtqqYEVd823tXff2clDKHK25i6cChmeHu6oB1Rb73hlPqhUA==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/packager-raw@2.16.4':
+    resolution: {integrity: sha512-A9j60G9OmbTkEeE4WRMXCiErEprHLs9NkUlC4HXCxmSrPMOVaMaMva2LdejE3A9kujZqYtYfuc8+a+jN+Nro4w==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/plugin@2.8.3':
-    resolution: {integrity: sha512-jZ6mnsS4D9X9GaNnvrixDQwlUQJCohDX2hGyM0U0bY2NWU8Km97SjtoCpWjq+XBCx/gpC4g58+fk9VQeZq2vlw==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/plugin@2.16.4':
+    resolution: {integrity: sha512-aN2VQoRGC1eB41ZCDbPR/Sp0yKOxe31oemzPx1nJzOuebK2Q6FxSrJ9Bjj9j/YCaLzDtPwelsuLOazzVpXJ6qg==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/reporter-dev-server@2.8.3':
-    resolution: {integrity: sha512-Y8C8hzgzTd13IoWTj+COYXEyCkXfmVJs3//GDBsH22pbtSFMuzAZd+8J9qsCo0EWpiDow7V9f1LischvEh3FbQ==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/profiler@2.16.4':
+    resolution: {integrity: sha512-R3JhfcnoReTv2sVFHPR2xKZvs3d3IRrBl9sWmAftbIJFwT4rU70/W7IdwfaJVkD/6PzHq9mcgOh1WKL4KAxPdA==}
+    engines: {node: '>= 16.0.0'}
 
-  '@parcel/resolver-default@2.8.3':
-    resolution: {integrity: sha512-k0B5M/PJ+3rFbNj4xZSBr6d6HVIe6DH/P3dClLcgBYSXAvElNDfXgtIimbjCyItFkW9/BfcgOVKEEIZOeySH/A==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/reporter-dev-server@2.16.4':
+    resolution: {integrity: sha512-YWvay25htQDifpDRJ0+yFh6xUxKnbfeJxYkPYyuXdxpEUhq4T0UWW0PbPCN/wFX7StgeUTXq5Poeo/+eys9m3w==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
+
+  '@parcel/resolver-default@2.16.4':
+    resolution: {integrity: sha512-wJe9XQS0hn/t32pntQpJbls3ZL8mGVVhK9L7s7BTmZT9ufnvP2nif1psJz/nbgnP9LF6mLSk43OdMJKpoStsjQ==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
     peerDependencies:
-      '@parcel/core': '*'
+      '@parcel/core': 2.16.4
 
-  '@parcel/runtime-js@2.8.3':
-    resolution: {integrity: sha512-IRja0vNKwvMtPgIqkBQh0QtRn0XcxNC8HU1jrgWGRckzu10qJWO+5ULgtOeR4pv9krffmMPqywGXw6l/gvJKYQ==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/runtime-js@2.16.4':
+    resolution: {integrity: sha512-gUKmsjg+PULQBu2QbX0QKll9tXSqHPO8NrfxHwWb2lz5xDKDos1oV0I7BoMWbHhUHkoToXZrm654oGViujtVUA==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
+
+  '@parcel/rust-darwin-arm64@2.16.4':
+    resolution: {integrity: sha512-P3Se36H9EO1fOlwXqQNQ+RsVKTGn5ztRSUGbLcT8ba6oOMmU1w7J4R810GgsCbwCuF10TJNUMkuD3Q2Sz15Q3Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@parcel/rust-darwin-x64@2.16.4':
+    resolution: {integrity: sha512-8aNKNyPIx3EthYpmVJevIdHmFsOApXAEYGi3HU69jTxLgSIfyEHDdGE9lEsMvhSrd/SSo4/euAtiV+pqK04wnA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@parcel/rust-linux-arm-gnueabihf@2.16.4':
+    resolution: {integrity: sha512-QrvqiSHaWRLc0JBHgUHVvDthfWSkA6AFN+ikV1UGENv4j2r/QgvuwJiG0VHrsL6pH5dRqj0vvngHzEgguke9DA==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@parcel/rust-linux-arm64-gnu@2.16.4':
+    resolution: {integrity: sha512-f3gBWQHLHRUajNZi3SMmDQiEx54RoRbXtZYQNuBQy7+NolfFcgb1ik3QhkT7xovuTF/LBmaqP3UFy0PxvR/iwQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@parcel/rust-linux-arm64-musl@2.16.4':
+    resolution: {integrity: sha512-cwml18RNKsBwHyZnrZg4jpecXkWjaY/mCArocWUxkFXjjB97L56QWQM9W86f2/Y3HcFcnIGJwx1SDDKJrV6OIA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@parcel/rust-linux-x64-gnu@2.16.4':
+    resolution: {integrity: sha512-0xIjQaN8hiG0F9R8coPYidHslDIrbfOS/qFy5GJNbGA3S49h61wZRBMQqa7JFW4+2T8R0J9j0SKHhLXpbLXrIg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@parcel/rust-linux-x64-musl@2.16.4':
+    resolution: {integrity: sha512-fYn21GIecHK9RoZPKwT9NOwxwl3Gy3RYPR6zvsUi0+hpFo19Ph9EzFXN3lT8Pi5KiwQMCU4rsLb5HoWOBM1FeA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@parcel/rust-win32-x64-msvc@2.16.4':
+    resolution: {integrity: sha512-TcpWC3I1mJpfP2++018lgvM7UX0P8IrzNxceBTHUKEIDMwmAYrUKAQFiaU0j1Ldqk6yP8SPZD3cvphumsYpJOQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@parcel/rust@2.16.4':
+    resolution: {integrity: sha512-RBMKt9rCdv6jr4vXG6LmHtxzO5TuhQvXo1kSoSIF7fURRZ81D1jzBtLxwLmfxCPsofJNqWwdhy5vIvisX+TLlQ==}
+    engines: {node: '>= 16.0.0'}
+    peerDependencies:
+      napi-wasm: ^1.1.2
+    peerDependenciesMeta:
+      napi-wasm:
+        optional: true
 
   '@parcel/source-map@2.1.1':
     resolution: {integrity: sha512-Ejx1P/mj+kMjQb8/y5XxDUn4reGdr+WyKYloBljpppUy8gs42T+BNoEOuRYqDVdgPc6NxduzIDoJS9pOFfV5Ew==}
     engines: {node: ^12.18.3 || >=14}
 
-  '@parcel/transformer-js@2.8.3':
-    resolution: {integrity: sha512-9Qd6bib+sWRcpovvzvxwy/PdFrLUXGfmSW9XcVVG8pvgXsZPFaNjnNT8stzGQj1pQiougCoxMY4aTM5p1lGHEQ==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/transformer-js@2.16.4':
+    resolution: {integrity: sha512-FD2fdO6URwAGBPidb3x1dDgLBt972mko0LelcSU05aC/pcKaV9mbCtINbPul1MlStzkxDelhuImcCYIyerheVQ==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
     peerDependencies:
-      '@parcel/core': ^2.8.3
+      '@parcel/core': ^2.16.4
 
-  '@parcel/transformer-json@2.8.3':
-    resolution: {integrity: sha512-B7LmVq5Q7bZO4ERb6NHtRuUKWGysEeaj9H4zelnyBv+wLgpo4f5FCxSE1/rTNmP9u1qHvQ3scGdK6EdSSokGPg==}
-    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+  '@parcel/transformer-json@2.16.4':
+    resolution: {integrity: sha512-pB3ZNqgokdkBCJ+4G0BrPYcIkyM9K1HVk0GvjzcLEFDKsoAp8BGEM68FzagFM/nVq9anYTshIaoh349GK0M/bg==}
+    engines: {node: '>= 16.0.0', parcel: ^2.16.4}
 
-  '@parcel/types@2.8.3':
-    resolution: {integrity: sha512-FECA1FB7+0UpITKU0D6TgGBpGxYpVSMNEENZbSJxFSajNy3wrko+zwBKQmFOLOiPcEtnGikxNs+jkFWbPlUAtw==}
+  '@parcel/types-internal@2.16.4':
+    resolution: {integrity: sha512-PE6Qmt5cjzBxX+6MPLiF7r+twoC+V9Skt3zyuBQ+H1c0i9o07Bbz2NKX10nvlPukfmW6Fu/1RvTLkzBZR1bU6A==}
 
-  '@parcel/utils@2.8.3':
-    resolution: {integrity: sha512-IhVrmNiJ+LOKHcCivG5dnuLGjhPYxQ/IzbnF2DKNQXWBTsYlHkJZpmz7THoeLtLliGmSOZ3ZCsbR8/tJJKmxjA==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/types@2.16.4':
+    resolution: {integrity: sha512-ctx4mBskZHXeDVHg4OjMwx18jfYH9BzI/7yqbDQVGvd5lyA+/oVVzYdpele2J2i2sSaJ87cA8nb57GDQ8kHAqA==}
+
+  '@parcel/utils@2.16.4':
+    resolution: {integrity: sha512-lkmxQHcHyOWZLbV8t+h2CGZIkPiBurLm/TS5wNT7+tq0qt9KbVwL7FP2K93TbXhLMGTmpI79Bf3qKniPM167Mw==}
+    engines: {node: '>= 16.0.0'}
 
   '@parcel/watcher-android-arm64@2.3.0':
     resolution: {integrity: sha512-f4o9eA3dgk0XRT3XhB0UWpWpLnKgrh1IwNJKJ7UJek7eTYccQ8LR7XUWFKqw6aEq5KUNlCcGvSzKqSX/vtWVVA==}
@@ -1856,11 +1934,11 @@ packages:
     resolution: {integrity: sha512-pW7QaFiL11O0BphO+bq3MgqeX/INAk9jgBldVDYjlQPO4VddoZnF22TcF9onMhnLVHuNqBJeRf+Fj7eezi/+rQ==}
     engines: {node: '>= 10.0.0'}
 
-  '@parcel/workers@2.8.3':
-    resolution: {integrity: sha512-+AxBnKgjqVpUHBcHLWIHcjYgKIvHIpZjN33mG5LG9XXvrZiqdWvouEzqEXlVLq5VzzVbKIQQcmsvRy138YErkg==}
-    engines: {node: '>= 12.0.0'}
+  '@parcel/workers@2.16.4':
+    resolution: {integrity: sha512-dkBEWqnHXDZnRbTZouNt4uEGIslJT+V0c8OH1MPOfjISp1ucD6/u9ET8k9d/PxS9h1hL53og0SpBuuSEPLDl6A==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      '@parcel/core': ^2.8.3
+      '@parcel/core': ^2.16.4
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.11':
     resolution: {integrity: sha512-7j/6vdTym0+qZ6u4XbSAxrWBGYSdCfTzySkj7WAFgDLmSyWlOrWvpyzxlFh5jtw9dn0oL/jtW+06XfFiisN3JQ==}
@@ -2038,11 +2116,101 @@ packages:
   '@socket.io/component-emitter@3.1.0':
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
 
-  '@swc/helpers@0.4.14':
-    resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
+  '@swc/core-darwin-arm64@1.16.0':
+    resolution: {integrity: sha512-SJQPl+xG/zB8bNjC/gTg3WOmOvz7EzlQD+VShfCKFYPNr2qvb+vATUY11vYEjnMWCn6wV8H8eAtjQrVflYyX5A==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [darwin]
 
-  '@swc/helpers@0.4.36':
-    resolution: {integrity: sha512-5lxnyLEYFskErRPenYItLRSge5DjrJngYKdVjRSrWfza9G6KkgHEXi0vUZiyUeMU5JfXH1YnvXZzSp8ul88o2Q==}
+  '@swc/core-darwin-x64@1.16.0':
+    resolution: {integrity: sha512-ql2JVch8V5t1i+HxiiuD4oVDI1dOku4/e3QiCkplONrm3SLitqNAP+nztHN51fSG2IgGuOwpAi3hgA+ukT5yQg==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@swc/core-linux-arm-gnueabihf@1.16.0':
+    resolution: {integrity: sha512-PcdDBaRbe39y37h1rXVkhNy7mEU7f8b34KD761C68R23EsfMsj5oDPVddRzGdSRAvwwSfH0WSNEHgYmc/AJipg==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@swc/core-linux-arm64-gnu@1.16.0':
+    resolution: {integrity: sha512-t21IUztHQ/COucy7Kk9eIlehmq08H/hYq7aRA6fZox3S5ddi6TxWPK6e5S/+aTCf6+Od9qQ+LIpjHMiTy737vA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@swc/core-linux-arm64-musl@1.16.0':
+    resolution: {integrity: sha512-d9+iajbMB87b0umgbP+Gy3yBDSDgty4Q6H5pZ8fgTb/dOoKIwwynP4L4kvWCOFg2i49kxmAAUs1uJZh9s0E+RQ==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@swc/core-linux-ppc64-gnu@1.16.0':
+    resolution: {integrity: sha512-QRpeKGOg+B0qmo3BFU+6rL/gpoKYYJ7OFSMf5DNMafohYZ/iq2qvAH9Gcrf8NxROj3iooKOVewJ+YgahH1nSLw==}
+    engines: {node: '>=10'}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@swc/core-linux-s390x-gnu@1.16.0':
+    resolution: {integrity: sha512-q+Vr/hmHCcRXT/WFzOJC+T6GGEEtq2iaTtmyLfxO7yzu4ckgcqSNkg9m181wfNhuMwfNBoBhOfwQCnLsGZ5F4g==}
+    engines: {node: '>=10'}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@swc/core-linux-x64-gnu@1.16.0':
+    resolution: {integrity: sha512-DWVBc3QnpsSgKoq8N4rmZeZa5r/XrHdLkITsExN/tvTdqPtAPDPt+Ysy33OfgBlyN8lNe4xwsXWe6DXlRkJeRQ==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@swc/core-linux-x64-musl@1.16.0':
+    resolution: {integrity: sha512-6XCgDSc1HPf/5dpjvABhKHICiBcsuZyW3hQMkn8sxel0TqprkJGp+H4iaBYIUTPixhrBub2hBPtfjcZLE6yL3w==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@swc/core-win32-arm64-msvc@1.16.0':
+    resolution: {integrity: sha512-T/+9VVCZJ3AKEth9IP3U9AJ2YscQq+7LUqRTvfR4a2q36+Ri22oOwUizpAKOqQ42vb2Y/kOa4TOcJOfHoDIT/w==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@swc/core-win32-ia32-msvc@1.16.0':
+    resolution: {integrity: sha512-Pr1lsR/PMs8ndL0UWMrW8nLZ7H7sspIxBRDdjL8f+YJ/FJNASgzfunbVVXAqj0csgIJYHPZy+OW9smjFmk1Rcg==}
+    engines: {node: '>=10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@swc/core-win32-x64-msvc@1.16.0':
+    resolution: {integrity: sha512-ktdeYLgOQdaonvsj5tJijqgpb0wk7gfF80wCFVA0kucI1hhSUIyfcGbjo5+9sdqv38OhMnTdLoA6xbqgOgPQjw==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@swc/core@1.16.0':
+    resolution: {integrity: sha512-zSdvEHxBg00WhUNtW/u58hhcdR33gjtMQvOBo8F7POWJDyjRCt/miKfhidT3hCc/118RUwNnlEAmxiihFMbK4Q==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@swc/helpers': '>=0.5.17'
+    peerDependenciesMeta:
+      '@swc/helpers':
+        optional: true
+
+  '@swc/counter@0.1.3':
+    resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
+
+  '@swc/helpers@0.5.23':
+    resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
+
+  '@swc/types@0.1.28':
+    resolution: {integrity: sha512-V6Mnml8v09QALx6K0elJ7o9K/MkVDtW3t6L+7Ou/JcWtb3xwId2AH4FeOceySd2JaO87IMw4+6vSZxLm34LPbw==}
 
   '@szmarczak/http-timer@4.0.6':
     resolution: {integrity: sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==}
@@ -2350,9 +2518,6 @@ packages:
 
   '@xtuc/long@4.2.2':
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
-
-  abortcontroller-polyfill@1.7.5:
-    resolution: {integrity: sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -3347,12 +3512,13 @@ packages:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
 
-  dotenv-expand@5.1.0:
-    resolution: {integrity: sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==}
+  dotenv-expand@11.0.7:
+    resolution: {integrity: sha512-zIHwmZPRshsCdpMDyVsqGmgyP0yT8GAgXUnkdAoJisxvf33k7yO6OuoKmcTGuXPWSsm8Oh88nZicRLA9Y0rUeA==}
+    engines: {node: '>=12'}
 
-  dotenv@7.0.0:
-    resolution: {integrity: sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==}
-    engines: {node: '>=6'}
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
 
   dotenv@8.6.0:
     resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
@@ -3936,7 +4102,7 @@ packages:
     resolution: {integrity: sha512-hc9usoJm/Tr/hS66gxl/gMIJxp+Z9W+YvtiEab3VlZJYaIgK/XysH7p65C/CMAL0qgMnIr8Imwsz+63+MkN/Kg==}
     engines: {parcel: 2.x}
     peerDependencies:
-      '@parcel/core': ^2.0.0
+      '@parcel/core': 2.16.4
 
   gatsby-plugin-catch-links@5.16.0:
     resolution: {integrity: sha512-+0bJTVIRFc13EOnEq8iPdXKDiCC6BmIBzHDLxzyEpWbfhHwOTnDgAPv51L4X0y7/mSbBLSfq+wDEEhXAyAKH2A==}
@@ -4926,11 +5092,12 @@ packages:
     resolution: {integrity: sha512-ME4Fb83LgEgwNw96RKNvKV4VTLuXfoKudAmm2lP8Kk87KaMK0/Xrx/aAkMWmT8mDb+3MlFDspfbCs7adjRxA2g==}
     engines: {node: '>=20.0.0'}
 
-  lmdb@2.5.2:
-    resolution: {integrity: sha512-V5V5Xa2Hp9i2XsbDALkBTeHXnBXh/lEmk9p22zdr7jtuOIY9TGhjK6vAvTpOOx9IKU4hJkRWZxn/HsvR1ELLtA==}
-
   lmdb@2.5.3:
     resolution: {integrity: sha512-iBA0cb13CobBSoGJLfZgnrykLlfJipDAnvtf+YwIqqzBEsTeQYsXrHaSBkaHd5wCWeabwrNvhjZoFMUrlo+eLw==}
+
+  lmdb@2.8.5:
+    resolution: {integrity: sha512-9bMdFfc80S+vSldBmG3HOuLVHnxRdNTlpzR6QDnzqCQtCzGUEAGTzBKYMeIM+I/sU4oZfgbcbS7X7F65/z/oxQ==}
+    hasBin: true
 
   loader-runner@4.3.2:
     resolution: {integrity: sha512-DFEqQ3ihfS9blba08cLfYf1NRAIEm+dDjic073DRDc3/JspI/8wYmtDsHwd3+4hwvdxSK7PGaElfTmm0awWJ4w==}
@@ -5279,6 +5446,9 @@ packages:
   msgpackr@1.10.1:
     resolution: {integrity: sha512-r5VRLv9qouXuLiIBrLpl2d5ZvPt8svdQTl5/vMvE4nzDMyEX4sgW5yWhuBBj5UmgwOTWj8CIdSXn5sAfsHAWIQ==}
 
+  msgpackr@1.12.1:
+    resolution: {integrity: sha512-4EUH9tQHnMmEgzW/MdAP0KIfa1T9AF+htl0ffe2n5vb2EKn9y2co8ccpgWko6S52Jy1PQZKwRnx5/KkYjtd9MQ==}
+
   multer@2.2.0:
     resolution: {integrity: sha512-6rdyFg2kLrMh9Jee7/BMPuV9lEAd7lLW2YUpF9/YxR7njyoUwwQ0ZPh3TaIY50Sw6vlyD2HW3wGOkTS4P79xrQ==}
     engines: {node: '>= 10.16.0'}
@@ -5321,6 +5491,9 @@ packages:
   node-addon-api@4.3.0:
     resolution: {integrity: sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==}
 
+  node-addon-api@6.1.0:
+    resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
+
   node-addon-api@7.0.0:
     resolution: {integrity: sha512-vgbBJTS4m5/KkE16t5Ly0WW9hz46swAstv0hYYwMtbG7AznRhNyfLRe8HZAiWIpcHzoO7HxhLuBQj9rJ/Ho0ZA==}
 
@@ -5339,6 +5512,10 @@ packages:
 
   node-gyp-build-optional-packages@5.0.7:
     resolution: {integrity: sha512-YlCCc6Wffkx0kHkmam79GKvDQ6x+QZkMjFGrIMxgFNILFvGSbCp2fCBC55pGTT9gVaz8Na5CLmxt/urtzRv36w==}
+    hasBin: true
+
+  node-gyp-build-optional-packages@5.1.1:
+    resolution: {integrity: sha512-+P72GAjVAbTxjjwUmwjVrqrdZROD4nf8KgpBoDxqXXTiYZZt/ud60dE5yvCSr9lRO8e8yv6kgJIC0K0PfZFVQw==}
     hasBin: true
 
   node-html-parser@5.4.2:
@@ -6084,9 +6261,6 @@ packages:
   regenerator-runtime@0.11.1:
     resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
 
-  regenerator-runtime@0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-
   regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
@@ -6303,10 +6477,6 @@ packages:
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
-
-  semver@5.7.2:
-    resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
-    hasBin: true
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -6845,6 +7015,9 @@ packages:
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
   tsutils@3.21.0:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
     engines: {node: '>= 6'}
@@ -7061,8 +7234,8 @@ packages:
   utila@0.4.0:
     resolution: {integrity: sha512-Z0DbgELS9/L/75wZbro8xAnT50pBVFQZ+hUEueGDU5FN51YSCYM+jdxsfCiHjwNP/4LCDD0i/graKpeBnOXKRA==}
 
-  utility-types@3.10.0:
-    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
+  utility-types@3.11.0:
+    resolution: {integrity: sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==}
     engines: {node: '>= 4'}
 
   utils-merge@1.0.1:
@@ -7277,9 +7450,6 @@ packages:
   xtend@4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
-
-  xxhash-wasm@0.4.2:
-    resolution: {integrity: sha512-/eyHVRJQCirEkSZ1agRSCwriMhwlyUcFkXD5TPVSLP+IPzjsqMVzZwdoczLp1SoQU0R3dxz1RpIK+4YNQbCVOA==}
 
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
@@ -8267,14 +8437,15 @@ snapshots:
 
   '@expo/sudo-prompt@9.3.2': {}
 
-  '@gatsbyjs/parcel-namer-relative-to-cwd@2.16.0(@parcel/core@2.8.3)(supports-color@8.1.1)':
+  '@gatsbyjs/parcel-namer-relative-to-cwd@2.16.0(@parcel/core@2.16.4(@swc/helpers@0.5.23))(supports-color@8.1.1)':
     dependencies:
       '@babel/runtime': 7.26.10
-      '@parcel/namer-default': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/namer-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
       - supports-color
 
   '@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
@@ -8618,40 +8789,40 @@ snapshots:
     dependencies:
       '@lezer/common': 1.1.2
 
-  '@lmdb/lmdb-darwin-arm64@2.5.2':
-    optional: true
-
   '@lmdb/lmdb-darwin-arm64@2.5.3':
     optional: true
 
-  '@lmdb/lmdb-darwin-x64@2.5.2':
+  '@lmdb/lmdb-darwin-arm64@2.8.5':
     optional: true
 
   '@lmdb/lmdb-darwin-x64@2.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-arm64@2.5.2':
+  '@lmdb/lmdb-darwin-x64@2.8.5':
     optional: true
 
   '@lmdb/lmdb-linux-arm64@2.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-arm@2.5.2':
+  '@lmdb/lmdb-linux-arm64@2.8.5':
     optional: true
 
   '@lmdb/lmdb-linux-arm@2.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-x64@2.5.2':
+  '@lmdb/lmdb-linux-arm@2.8.5':
     optional: true
 
   '@lmdb/lmdb-linux-x64@2.5.3':
     optional: true
 
-  '@lmdb/lmdb-win32-x64@2.5.2':
+  '@lmdb/lmdb-linux-x64@2.8.5':
     optional: true
 
   '@lmdb/lmdb-win32-x64@2.5.3':
+    optional: true
+
+  '@lmdb/lmdb-win32-x64@2.8.5':
     optional: true
 
   '@mischnic/json-sourcemap@0.1.1':
@@ -8808,230 +8979,309 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.78.0':
     optional: true
 
-  '@parcel/bundler-default@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/bundler-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/graph': 2.8.3
-      '@parcel/hash': 2.8.3
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/graph': 3.6.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/rust': 2.16.4
+      '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/cache@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/cache@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/fs': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/logger': 2.8.3
-      '@parcel/utils': 2.8.3
-      lmdb: 2.5.2
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/logger': 2.16.4
+      '@parcel/utils': 2.16.4
+      lmdb: 2.8.5
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@parcel/codeframe@2.8.3':
+  '@parcel/codeframe@2.16.4':
     dependencies:
       chalk: 4.1.2
 
-  '@parcel/compressor-raw@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/compressor-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/core@2.8.3':
+  '@parcel/core@2.16.4(@swc/helpers@0.5.23)':
     dependencies:
       '@mischnic/json-sourcemap': 0.1.1
-      '@parcel/cache': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/events': 2.8.3
-      '@parcel/fs': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/graph': 2.8.3
-      '@parcel/hash': 2.8.3
-      '@parcel/logger': 2.8.3
-      '@parcel/package-manager': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/cache': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/events': 2.16.4
+      '@parcel/feature-flags': 2.16.4
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/graph': 3.6.4
+      '@parcel/logger': 2.16.4
+      '@parcel/package-manager': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/profiler': 2.16.4
+      '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/types': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
-      '@parcel/workers': 2.8.3(@parcel/core@2.8.3)
-      abortcontroller-polyfill: 1.7.5
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.16.4
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       base-x: 3.0.11
-      browserslist: 4.24.4
+      browserslist: 4.28.8
       clone: 2.1.2
-      dotenv: 7.0.0
-      dotenv-expand: 5.1.0
+      dotenv: 16.6.1
+      dotenv-expand: 11.0.7
       json5: 2.2.3
-      msgpackr: 1.10.1
+      msgpackr: 1.12.1
       nullthrows: 1.1.1
-      semver: 5.7.2
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - napi-wasm
 
-  '@parcel/diagnostic@2.8.3':
+  '@parcel/diagnostic@2.16.4':
     dependencies:
       '@mischnic/json-sourcemap': 0.1.1
       nullthrows: 1.1.1
 
-  '@parcel/events@2.8.3': {}
+  '@parcel/events@2.16.4': {}
 
-  '@parcel/fs-search@2.8.3':
-    dependencies:
-      detect-libc: 1.0.3
+  '@parcel/feature-flags@2.16.4': {}
 
-  '@parcel/fs@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/fs@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/fs-search': 2.8.3
-      '@parcel/types': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/feature-flags': 2.16.4
+      '@parcel/rust': 2.16.4
+      '@parcel/types-internal': 2.16.4
+      '@parcel/utils': 2.16.4
       '@parcel/watcher': 2.3.0
-      '@parcel/workers': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@parcel/graph@2.8.3':
+  '@parcel/graph@3.6.4':
     dependencies:
+      '@parcel/feature-flags': 2.16.4
       nullthrows: 1.1.1
 
-  '@parcel/hash@2.8.3':
+  '@parcel/logger@2.16.4':
     dependencies:
-      detect-libc: 1.0.3
-      xxhash-wasm: 0.4.2
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/events': 2.16.4
 
-  '@parcel/logger@2.8.3':
-    dependencies:
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/events': 2.8.3
-
-  '@parcel/markdown-ansi@2.8.3':
+  '@parcel/markdown-ansi@2.16.4':
     dependencies:
       chalk: 4.1.2
 
-  '@parcel/namer-default@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/namer-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/node-resolver-core@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/node-resolver-core@3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/utils': 2.8.3
+      '@mischnic/json-sourcemap': 0.1.1
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/rust': 2.16.4
+      '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
-      semver: 5.7.2
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@parcel/optimizer-terser@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/optimizer-terser@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
-      '@parcel/utils': 2.8.3
+      '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
       terser: 5.39.0
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/package-manager@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/package-manager@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/fs': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/logger': 2.8.3
-      '@parcel/types': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
-      '@parcel/workers': 2.8.3(@parcel/core@2.8.3)
-      semver: 5.7.2
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/logger': 2.16.4
+      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.16.4
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@swc/core': 1.16.0(@swc/helpers@0.5.23)
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - napi-wasm
 
-  '@parcel/packager-js@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/packager-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/hash': 2.8.3
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/utils': 2.8.3
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.16.4
       globals: 13.24.0
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/packager-raw@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/packager-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/plugin@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/plugin@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/types': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/reporter-dev-server@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/profiler@2.16.4':
     dependencies:
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/events': 2.16.4
+      '@parcel/types-internal': 2.16.4
+      chrome-trace-event: 1.0.3
+
+  '@parcel/reporter-dev-server@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/codeframe': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/source-map': 2.1.1
+      '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/resolver-default@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/resolver-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/node-resolver-core': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@parcel/runtime-js@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/runtime-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
+
+  '@parcel/rust-darwin-arm64@2.16.4':
+    optional: true
+
+  '@parcel/rust-darwin-x64@2.16.4':
+    optional: true
+
+  '@parcel/rust-linux-arm-gnueabihf@2.16.4':
+    optional: true
+
+  '@parcel/rust-linux-arm64-gnu@2.16.4':
+    optional: true
+
+  '@parcel/rust-linux-arm64-musl@2.16.4':
+    optional: true
+
+  '@parcel/rust-linux-x64-gnu@2.16.4':
+    optional: true
+
+  '@parcel/rust-linux-x64-musl@2.16.4':
+    optional: true
+
+  '@parcel/rust-win32-x64-msvc@2.16.4':
+    optional: true
+
+  '@parcel/rust@2.16.4':
+    optionalDependencies:
+      '@parcel/rust-darwin-arm64': 2.16.4
+      '@parcel/rust-darwin-x64': 2.16.4
+      '@parcel/rust-linux-arm-gnueabihf': 2.16.4
+      '@parcel/rust-linux-arm64-gnu': 2.16.4
+      '@parcel/rust-linux-arm64-musl': 2.16.4
+      '@parcel/rust-linux-x64-gnu': 2.16.4
+      '@parcel/rust-linux-x64-musl': 2.16.4
+      '@parcel/rust-win32-x64-msvc': 2.16.4
 
   '@parcel/source-map@2.1.1':
     dependencies:
       detect-libc: 1.0.3
 
-  '@parcel/transformer-js@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/transformer-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/utils': 2.8.3
-      '@parcel/workers': 2.8.3(@parcel/core@2.8.3)
-      '@swc/helpers': 0.4.36
-      browserslist: 4.24.4
-      detect-libc: 1.0.3
+      '@parcel/utils': 2.16.4
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@swc/helpers': 0.5.23
+      browserslist: 4.28.8
       nullthrows: 1.1.1
-      regenerator-runtime: 0.13.11
-      semver: 5.7.2
+      regenerator-runtime: 0.14.1
+      semver: 7.8.5
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@parcel/transformer-json@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/transformer-json@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       json5: 2.2.3
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/types@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/types-internal@2.16.4':
     dependencies:
-      '@parcel/cache': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/fs': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/package-manager': 2.8.3(@parcel/core@2.8.3)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/feature-flags': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/workers': 2.8.3(@parcel/core@2.8.3)
-      utility-types: 3.10.0
+      utility-types: 3.11.0
+
+  '@parcel/types@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
+    dependencies:
+      '@parcel/types-internal': 2.16.4
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
+      - napi-wasm
 
-  '@parcel/utils@2.8.3':
+  '@parcel/utils@2.16.4':
     dependencies:
-      '@parcel/codeframe': 2.8.3
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/hash': 2.8.3
-      '@parcel/logger': 2.8.3
-      '@parcel/markdown-ansi': 2.8.3
+      '@parcel/codeframe': 2.16.4
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/logger': 2.16.4
+      '@parcel/markdown-ansi': 2.16.4
+      '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
       chalk: 4.1.2
+      nullthrows: 1.1.1
+    transitivePeerDependencies:
+      - napi-wasm
 
   '@parcel/watcher-android-arm64@2.3.0':
     optional: true
@@ -9089,17 +9339,19 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.3.0
       '@parcel/watcher-win32-x64': 2.3.0
 
-  '@parcel/workers@2.8.3(@parcel/core@2.8.3)':
+  '@parcel/workers@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.8.3
-      '@parcel/diagnostic': 2.8.3
-      '@parcel/logger': 2.8.3
-      '@parcel/types': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/utils': 2.8.3
-      chrome-trace-event: 1.0.3
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/diagnostic': 2.16.4
+      '@parcel/logger': 2.16.4
+      '@parcel/profiler': 2.16.4
+      '@parcel/types-internal': 2.16.4
+      '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
+    transitivePeerDependencies:
+      - napi-wasm
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.11(react-refresh@0.14.2)(type-fest@0.21.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.11(react-refresh@0.14.2)(type-fest@0.21.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))':
     dependencies:
       ansi-html-community: 0.0.8
       common-path-prefix: 3.0.0
@@ -9111,7 +9363,7 @@ snapshots:
       react-refresh: 0.14.2
       schema-utils: 3.3.0
       source-map: 0.7.4
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
       type-fest: 0.21.3
 
@@ -9237,14 +9489,70 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.0': {}
 
-  '@swc/helpers@0.4.14':
-    dependencies:
-      tslib: 2.6.2
+  '@swc/core-darwin-arm64@1.16.0':
+    optional: true
 
-  '@swc/helpers@0.4.36':
+  '@swc/core-darwin-x64@1.16.0':
+    optional: true
+
+  '@swc/core-linux-arm-gnueabihf@1.16.0':
+    optional: true
+
+  '@swc/core-linux-arm64-gnu@1.16.0':
+    optional: true
+
+  '@swc/core-linux-arm64-musl@1.16.0':
+    optional: true
+
+  '@swc/core-linux-ppc64-gnu@1.16.0':
+    optional: true
+
+  '@swc/core-linux-s390x-gnu@1.16.0':
+    optional: true
+
+  '@swc/core-linux-x64-gnu@1.16.0':
+    optional: true
+
+  '@swc/core-linux-x64-musl@1.16.0':
+    optional: true
+
+  '@swc/core-win32-arm64-msvc@1.16.0':
+    optional: true
+
+  '@swc/core-win32-ia32-msvc@1.16.0':
+    optional: true
+
+  '@swc/core-win32-x64-msvc@1.16.0':
+    optional: true
+
+  '@swc/core@1.16.0(@swc/helpers@0.5.23)':
     dependencies:
-      legacy-swc-helpers: '@swc/helpers@0.4.14'
-      tslib: 2.6.2
+      '@swc/counter': 0.1.3
+      '@swc/types': 0.1.28
+    optionalDependencies:
+      '@swc/core-darwin-arm64': 1.16.0
+      '@swc/core-darwin-x64': 1.16.0
+      '@swc/core-linux-arm-gnueabihf': 1.16.0
+      '@swc/core-linux-arm64-gnu': 1.16.0
+      '@swc/core-linux-arm64-musl': 1.16.0
+      '@swc/core-linux-ppc64-gnu': 1.16.0
+      '@swc/core-linux-s390x-gnu': 1.16.0
+      '@swc/core-linux-x64-gnu': 1.16.0
+      '@swc/core-linux-x64-musl': 1.16.0
+      '@swc/core-win32-arm64-msvc': 1.16.0
+      '@swc/core-win32-ia32-msvc': 1.16.0
+      '@swc/core-win32-x64-msvc': 1.16.0
+      '@swc/helpers': 0.5.23
+
+  '@swc/counter@0.1.3': {}
+
+  '@swc/helpers@0.5.23':
+    dependencies:
+      tslib: 2.8.1
+
+  '@swc/types@0.1.28':
+    dependencies:
+      '@swc/counter': 0.1.3
 
   '@szmarczak/http-timer@4.0.6':
     dependencies:
@@ -9600,8 +9908,6 @@ snapshots:
 
   '@xtuc/long@4.2.2': {}
 
-  abortcontroller-polyfill@1.7.5: {}
-
   accepts@1.3.8:
     dependencies:
       mime-types: 2.1.35
@@ -9846,14 +10152,14 @@ snapshots:
 
   babel-jsx-utils@1.1.0: {}
 
-  babel-loader@8.3.0(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  babel-loader@8.3.0(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   babel-plugin-add-module-exports@1.0.4: {}
 
@@ -9891,12 +10197,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-remove-graphql-queries@5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  babel-plugin-remove-graphql-queries@5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       '@babel/runtime': 7.26.10
       '@babel/types': 7.29.8
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
@@ -10477,7 +10783,7 @@ snapshots:
     dependencies:
       postcss: 8.5.23
 
-  css-loader@5.2.7(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  css-loader@5.2.7(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.23)
       loader-utils: 2.0.4
@@ -10489,9 +10795,9 @@ snapshots:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.7.2
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
-  css-minimizer-webpack-plugin@2.0.0(csso@4.2.0)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  css-minimizer-webpack-plugin@2.0.0(csso@4.2.0)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       cssnano: 5.1.15(postcss@8.5.23)
       jest-worker: 26.6.2
@@ -10500,7 +10806,7 @@ snapshots:
       schema-utils: 3.3.0
       serialize-javascript: 7.1.0
       source-map: 0.6.1
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
       csso: 4.2.0
 
@@ -10774,9 +11080,11 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  dotenv-expand@5.1.0: {}
+  dotenv-expand@11.0.7:
+    dependencies:
+      dotenv: 16.6.1
 
-  dotenv@7.0.0: {}
+  dotenv@16.6.1: {}
 
   dotenv@8.6.0: {}
 
@@ -11140,7 +11448,7 @@ snapshots:
 
   eslint-visitor-keys@3.4.3: {}
 
-  eslint-webpack-plugin@2.7.0(eslint@7.32.0(supports-color@8.1.1))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  eslint-webpack-plugin@2.7.0(eslint@7.32.0(supports-color@8.1.1))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@types/eslint': 7.29.0
       arrify: 2.0.1
@@ -11149,7 +11457,7 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   eslint@7.32.0(supports-color@8.1.1):
     dependencies:
@@ -11375,11 +11683,11 @@ snapshots:
     dependencies:
       flat-cache: 3.2.0
 
-  file-loader@6.2.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  file-loader@6.2.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   file-type@21.3.2(supports-color@8.1.1):
     dependencies:
@@ -11458,7 +11766,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  fork-ts-checker-webpack-plugin@6.5.3(eslint@7.32.0(supports-color@8.1.1))(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  fork-ts-checker-webpack-plugin@6.5.3(eslint@7.32.0(supports-color@8.1.1))(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@types/json-schema': 7.0.15
@@ -11474,7 +11782,7 @@ snapshots:
       semver: 7.7.2
       tapable: 1.1.3
       typescript: 5.9.3
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
       eslint: 7.32.0(supports-color@8.1.1)
 
@@ -11635,29 +11943,30 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-parcel-config@1.16.0(@parcel/core@2.8.3)(supports-color@8.1.1):
+  gatsby-parcel-config@1.16.0(@parcel/core@2.16.4(@swc/helpers@0.5.23))(supports-color@8.1.1):
     dependencies:
-      '@gatsbyjs/parcel-namer-relative-to-cwd': 2.16.0(@parcel/core@2.8.3)(supports-color@8.1.1)
-      '@parcel/bundler-default': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/compressor-raw': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/core': 2.8.3
-      '@parcel/namer-default': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/optimizer-terser': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/packager-js': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/packager-raw': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/reporter-dev-server': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/resolver-default': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/runtime-js': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/transformer-js': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/transformer-json': 2.8.3(@parcel/core@2.8.3)
+      '@gatsbyjs/parcel-namer-relative-to-cwd': 2.16.0(@parcel/core@2.16.4(@swc/helpers@0.5.23))(supports-color@8.1.1)
+      '@parcel/bundler-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/compressor-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/namer-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-terser': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/reporter-dev-server': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/resolver-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/runtime-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-json': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
+      - napi-wasm
       - supports-color
 
-  gatsby-plugin-catch-links@5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
+  gatsby-plugin-catch-links@5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
       '@babel/runtime': 7.26.10
       escape-string-regexp: 1.0.5
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
 
   gatsby-plugin-dynamic-open-graph-images@1.1.4(supports-color@8.1.1)(yauzl@2.10.0):
     dependencies:
@@ -11670,13 +11979,13 @@ snapshots:
       - utf-8-validate
       - yauzl
 
-  gatsby-plugin-feed@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1):
+  gatsby-plugin-feed@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       common-tags: 1.8.2
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       lodash.merge: 4.6.2
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
@@ -11686,15 +11995,15 @@ snapshots:
       - graphql
       - supports-color
 
-  gatsby-plugin-google-gtag@5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  gatsby-plugin-google-gtag@5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       minimatch: 3.1.4
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  gatsby-plugin-image@3.16.0(6566abfa36725edfca2b7a539d021899):
+  gatsby-plugin-image@3.16.0(c1744d0890e37d9f0f63ae4901b51a4a):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/core': 7.29.7(supports-color@8.1.1)
@@ -11702,32 +12011,32 @@ snapshots:
       '@babel/runtime': 7.26.10
       '@babel/traverse': 7.29.8(supports-color@8.1.1)
       babel-jsx-utils: 1.1.0
-      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       camelcase: 6.3.0
       chokidar: 3.6.0
       common-tags: 1.8.2
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       objectFitPolyfill: 2.3.5
       prop-types: 15.8.1
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
     optionalDependencies:
-      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
-      gatsby-source-filesystem: 5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-source-filesystem: 5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
     transitivePeerDependencies:
       - '@types/node'
       - graphql
       - supports-color
 
-  gatsby-plugin-manifest@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
+  gatsby-plugin-manifest@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       semver: 7.7.2
       sharp: 0.35.3(@types/node@24.13.3)
     transitivePeerDependencies:
@@ -11735,11 +12044,11 @@ snapshots:
       - graphql
       - supports-color
 
-  gatsby-plugin-offline@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1):
+  gatsby-plugin-offline@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       cheerio: 1.0.0-rc.12
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
       glob: 7.2.3
       idb-keyval: 3.2.0
@@ -11750,7 +12059,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-plugin-page-creator@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
+  gatsby-plugin-page-creator@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       '@babel/traverse': 7.29.8(supports-color@8.1.1)
@@ -11758,10 +12067,10 @@ snapshots:
       chokidar: 3.6.0
       fs-exists-cached: 1.0.0
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
       gatsby-page-utils: 3.16.0(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       globby: 11.1.0
       lodash: 4.18.1
     transitivePeerDependencies:
@@ -11769,21 +12078,21 @@ snapshots:
       - graphql
       - supports-color
 
-  gatsby-plugin-postcss@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  gatsby-plugin-postcss@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       postcss: 8.5.23
-      postcss-loader: 7.3.4(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      postcss-loader: 7.3.4(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
     transitivePeerDependencies:
       - typescript
       - webpack
 
-  gatsby-plugin-root-import@2.0.9(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
+  gatsby-plugin-root-import@2.0.9(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
 
-  gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
+  gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       async: 3.2.6
@@ -11791,9 +12100,9 @@ snapshots:
       debug: 4.4.3(supports-color@8.1.1)
       filenamify: 4.3.0
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       lodash: 4.18.1
       probe-image-size: 7.2.3(supports-color@8.1.1)
       semver: 7.7.2
@@ -11803,11 +12112,11 @@ snapshots:
       - graphql
       - supports-color
 
-  gatsby-plugin-slug@2.0.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
+  gatsby-plugin-slug@2.0.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
 
-  gatsby-plugin-typescript@5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  gatsby-plugin-typescript@5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6(@babel/core@7.29.7(supports-color@8.1.1))
@@ -11815,17 +12124,17 @@ snapshots:
       '@babel/plugin-proposal-optional-chaining': 7.21.0(@babel/core@7.29.7(supports-color@8.1.1))
       '@babel/preset-typescript': 7.23.3(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
       '@babel/runtime': 7.26.10
-      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-plugin-utils@4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
+  gatsby-plugin-utils@4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       fastq: 1.17.1
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
       gatsby-sharp: 1.16.0(@types/node@24.13.3)
       graphql: 16.8.1
@@ -11845,12 +12154,12 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  gatsby-remark-copy-linked-files@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  gatsby-remark-copy-linked-files@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       cheerio: 1.0.0-rc.12
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       is-relative-url: 3.0.0
       lodash: 4.18.1
       path-is-inside: 1.0.2
@@ -11859,14 +12168,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-remark-images@7.16.0(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  gatsby-remark-images@7.16.0(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       chalk: 4.1.2
       cheerio: 1.0.0-rc.12
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
-      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       is-relative-url: 3.0.0
       lodash: 4.18.1
       mdast-util-definitions: 4.0.0
@@ -11876,27 +12185,27 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-remark-prismjs@7.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(prismjs@1.30.0):
+  gatsby-remark-prismjs@7.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(prismjs@1.30.0):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       parse-numeric-range: 1.3.0
       prismjs: 1.30.0
       unist-util-visit: 2.0.3
 
-  gatsby-remark-responsive-iframe@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
+  gatsby-remark-responsive-iframe@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
       '@babel/runtime': 7.26.10
       cheerio: 1.0.0-rc.12
       common-tags: 1.8.2
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       lodash: 4.18.1
       unist-util-visit: 2.0.3
 
-  gatsby-remark-smartypants@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
+  gatsby-remark-smartypants@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       retext: 7.0.1
       retext-smartypants: 4.0.0
       unist-util-visit: 2.0.3
@@ -11913,13 +12222,13 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  gatsby-source-filesystem@5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  gatsby-source-filesystem@5.16.0(patch_hash=26f13697ce9e9583964e269f4f574635105ecb469a4ac6df564e22c411558fcb)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       chokidar: 3.6.0
       file-type: 21.3.2(supports-color@8.1.1)
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
       mime: 3.0.0
       pretty-bytes: 5.6.0
@@ -11928,10 +12237,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-transformer-remark@6.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
+  gatsby-transformer-remark@6.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
       gatsby-core-utils: 4.16.0(patch_hash=b3e891037513ecd50f1b4adf86bab121b22f08999c66592d48839ee93c7834f6)(supports-color@8.1.1)
       gray-matter: 4.0.3
       hast-util-raw: 6.1.0
@@ -11956,15 +12265,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby-transformer-sharp@5.16.0(@types/node@24.13.3)(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
+  gatsby-transformer-sharp@5.16.0(@types/node@24.13.3)(gatsby-plugin-sharp@5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1):
     dependencies:
       '@babel/runtime': 7.26.10
       bluebird: 3.7.2
       common-tags: 1.8.2
       fs-extra: 11.2.0
-      gatsby: 5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
-      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby: 5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby-plugin-sharp: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       probe-image-size: 7.2.3(supports-color@8.1.1)
       semver: 7.7.2
       sharp: 0.35.3(@types/node@24.13.3)
@@ -11982,7 +12291,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3):
+  gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/core': 7.29.7(supports-color@8.1.1)
@@ -12005,9 +12314,9 @@ snapshots:
       '@graphql-tools/load': 7.8.14(graphql@16.8.1)
       '@jridgewell/trace-mapping': 0.3.31
       '@nodelib/fs.walk': 1.2.8
-      '@parcel/cache': 2.8.3(@parcel/core@2.8.3)
-      '@parcel/core': 2.8.3
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(react-refresh@0.14.2)(type-fest@0.21.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      '@parcel/cache': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(react-refresh@0.14.2)(type-fest@0.21.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       '@sigmacomputing/babel-plugin-lodash': 3.3.5(supports-color@8.1.1)
       '@types/http-proxy': 1.17.14
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3))(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
@@ -12020,10 +12329,10 @@ snapshots:
       autoprefixer: 10.4.21(postcss@8.5.23)
       axios: 1.19.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       babel-jsx-utils: 1.1.0
-      babel-loader: 8.3.0(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      babel-loader: 8.3.0(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       babel-plugin-add-module-exports: 1.0.4
       babel-plugin-dynamic-import-node: 2.3.3
-      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+      babel-plugin-remove-graphql-queries: 5.16.0(@babel/core@7.29.7(supports-color@8.1.1))(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
       babel-preset-gatsby: 3.16.0(@babel/core@7.29.7(supports-color@8.1.1))(core-js@3.34.0)(supports-color@8.1.1)
       better-opn: 2.1.1
       bluebird: 3.7.2
@@ -12037,8 +12346,8 @@ snapshots:
       cookie: 0.7.2
       core-js: 3.34.0
       cors: 2.8.5
-      css-loader: 5.2.7(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
-      css-minimizer-webpack-plugin: 2.0.0(csso@4.2.0)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      css-loader: 5.2.7(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      css-minimizer-webpack-plugin: 2.0.0(csso@4.2.0)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       css.escape: 1.5.1
       date-fns: 2.30.0
       debug: 4.4.3(supports-color@8.1.1)
@@ -12054,14 +12363,14 @@ snapshots:
       eslint-plugin-jsx-a11y: 6.10.2(eslint@7.32.0(supports-color@8.1.1))
       eslint-plugin-react: 7.37.5(eslint@7.32.0(supports-color@8.1.1))
       eslint-plugin-react-hooks: 4.6.0(eslint@7.32.0(supports-color@8.1.1))
-      eslint-webpack-plugin: 2.7.0(eslint@7.32.0(supports-color@8.1.1))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      eslint-webpack-plugin: 2.7.0(eslint@7.32.0(supports-color@8.1.1))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       event-source-polyfill: 1.0.31
       execa: 5.1.1
       express: 4.21.0(supports-color@8.1.1)
       express-http-proxy: 1.6.3(supports-color@8.1.1)
       fastest-levenshtein: 1.0.16
       fastq: 1.17.1
-      file-loader: 6.2.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      file-loader: 6.2.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       find-cache-dir: 3.3.2
       fs-exists-cached: 1.0.0
       fs-extra: 11.2.0
@@ -12071,10 +12380,10 @@ snapshots:
       gatsby-legacy-polyfills: 3.16.0
       gatsby-link: 5.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
       gatsby-page-utils: 3.16.0(supports-color@8.1.1)
-      gatsby-parcel-config: 1.16.0(@parcel/core@2.8.3)(supports-color@8.1.1)
-      gatsby-plugin-page-creator: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
-      gatsby-plugin-typescript: 5.16.0(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
-      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-parcel-config: 1.16.0(@parcel/core@2.16.4(@swc/helpers@0.5.23))(supports-color@8.1.1)
+      gatsby-plugin-page-creator: 5.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
+      gatsby-plugin-typescript: 5.16.0(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(supports-color@8.1.1)
+      gatsby-plugin-utils: 4.16.0(@types/node@24.13.3)(gatsby@5.16.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.3)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.8.1)(supports-color@8.1.1)
       gatsby-react-router-scroll: 6.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       gatsby-script: 2.16.0(@gatsbyjs/reach-router@2.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       gatsby-worker: 2.16.0(supports-color@8.1.1)
@@ -12099,14 +12408,14 @@ snapshots:
       memoizee: 0.4.15
       micromatch: 4.0.8
       mime: 3.0.0
-      mini-css-extract-plugin: 1.6.2(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      mini-css-extract-plugin: 1.6.2(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       mitt: 1.2.0
       moment: 2.29.4
       multer: 2.2.0
       node-fetch: 2.7.0
       node-html-parser: 5.4.2
       normalize-path: 3.0.0
-      null-loader: 4.0.1(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      null-loader: 4.0.1(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       opentracing: 0.14.7
       p-defer: 3.0.0
       parseurl: 1.3.3
@@ -12115,16 +12424,16 @@ snapshots:
       platform: 1.3.6
       postcss: 8.5.23
       postcss-flexbugs-fixes: 5.0.2(postcss@8.5.23)
-      postcss-loader: 5.3.0(postcss@8.5.23)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      postcss-loader: 5.3.0(postcss@8.5.23)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       prompts: 2.4.2
       prop-types: 15.8.1
       query-string: 6.14.1
-      raw-loader: 4.0.2(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      raw-loader: 4.0.2(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       react: 19.2.8
-      react-dev-utils: 12.0.1(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      react-dev-utils: 12.0.1(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       react-dom: 19.2.8(react@19.2.8)
       react-refresh: 0.14.2
-      react-server-dom-webpack: 0.0.0-experimental-c8b778b7f-20220825(react@19.2.8)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      react-server-dom-webpack: 0.0.0-experimental-c8b778b7f-20220825(react@19.2.8)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       redux: 4.2.1
       redux-thunk: 2.4.2(redux@4.2.1)
       resolve-from: 5.0.0
@@ -12137,16 +12446,16 @@ snapshots:
       stack-trace: 0.0.10
       string-similarity: 1.2.2
       strip-ansi: 6.0.1
-      style-loader: 2.0.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      style-loader: 2.0.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       style-to-object: 0.4.4
-      terser-webpack-plugin: 5.3.14(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      terser-webpack-plugin: 5.3.14(@swc/core@1.16.0(@swc/helpers@0.5.23))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       tmp: 0.2.7
       true-case-path: 2.2.1
       type-of: 2.0.1
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       uuid: 11.1.1
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
-      webpack-dev-middleware: 5.3.4(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack-dev-middleware: 5.3.4(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       webpack-merge: 5.10.0
       webpack-stats-plugin: 1.1.3
       webpack-virtual-modules: 0.6.2
@@ -12158,6 +12467,7 @@ snapshots:
       - '@minify-html/node'
       - '@swc/core'
       - '@swc/css'
+      - '@swc/helpers'
       - '@swc/html'
       - '@types/node'
       - '@types/webpack'
@@ -12174,6 +12484,7 @@ snapshots:
       - eslint-plugin-testing-library
       - html-minifier-terser
       - lightningcss
+      - napi-wasm
       - sockjs-client
       - supports-color
       - type-fest
@@ -13001,21 +13312,6 @@ snapshots:
       rfdc: 1.4.1
       wrap-ansi: 9.0.0
 
-  lmdb@2.5.2:
-    dependencies:
-      msgpackr: 1.10.1
-      node-addon-api: 4.3.0
-      node-gyp-build-optional-packages: 5.0.3
-      ordered-binary: 1.5.1
-      weak-lru-cache: 1.2.2
-    optionalDependencies:
-      '@lmdb/lmdb-darwin-arm64': 2.5.2
-      '@lmdb/lmdb-darwin-x64': 2.5.2
-      '@lmdb/lmdb-linux-arm': 2.5.2
-      '@lmdb/lmdb-linux-arm64': 2.5.2
-      '@lmdb/lmdb-linux-x64': 2.5.2
-      '@lmdb/lmdb-win32-x64': 2.5.2
-
   lmdb@2.5.3:
     dependencies:
       msgpackr: 1.10.1
@@ -13030,6 +13326,21 @@ snapshots:
       '@lmdb/lmdb-linux-arm64': 2.5.3
       '@lmdb/lmdb-linux-x64': 2.5.3
       '@lmdb/lmdb-win32-x64': 2.5.3
+
+  lmdb@2.8.5:
+    dependencies:
+      msgpackr: 1.10.1
+      node-addon-api: 6.1.0
+      node-gyp-build-optional-packages: 5.1.1
+      ordered-binary: 1.5.1
+      weak-lru-cache: 1.2.2
+    optionalDependencies:
+      '@lmdb/lmdb-darwin-arm64': 2.8.5
+      '@lmdb/lmdb-darwin-x64': 2.8.5
+      '@lmdb/lmdb-linux-arm': 2.8.5
+      '@lmdb/lmdb-linux-arm64': 2.8.5
+      '@lmdb/lmdb-linux-x64': 2.8.5
+      '@lmdb/lmdb-win32-x64': 2.8.5
 
   loader-runner@4.3.2: {}
 
@@ -13379,11 +13690,11 @@ snapshots:
 
   mimic-response@4.0.0: {}
 
-  mini-css-extract-plugin@1.6.2(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  mini-css-extract-plugin@1.6.2(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
       webpack-sources: 1.4.3
 
   minimatch@3.1.4:
@@ -13417,6 +13728,10 @@ snapshots:
     optional: true
 
   msgpackr@1.10.1:
+    optionalDependencies:
+      msgpackr-extract: 3.0.2
+
+  msgpackr@1.12.1:
     optionalDependencies:
       msgpackr-extract: 3.0.2
 
@@ -13458,6 +13773,8 @@ snapshots:
 
   node-addon-api@4.3.0: {}
 
+  node-addon-api@6.1.0: {}
+
   node-addon-api@7.0.0: {}
 
   node-fetch@2.7.0:
@@ -13468,6 +13785,10 @@ snapshots:
 
   node-gyp-build-optional-packages@5.0.7:
     optional: true
+
+  node-gyp-build-optional-packages@5.1.1:
+    dependencies:
+      detect-libc: 2.1.2
 
   node-html-parser@5.4.2:
     dependencies:
@@ -13508,11 +13829,11 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  null-loader@4.0.1(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  null-loader@4.0.1(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   nullthrows@1.1.1: {}
 
@@ -13852,21 +14173,21 @@ snapshots:
     dependencies:
       postcss: 8.5.23
 
-  postcss-loader@5.3.0(postcss@8.5.23)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  postcss-loader@5.3.0(postcss@8.5.23)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       cosmiconfig: 7.1.0
       klona: 2.0.6
       postcss: 8.5.23
       semver: 7.7.2
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
-  postcss-loader@7.3.4(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  postcss-loader@7.3.4(postcss@8.5.23)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       cosmiconfig: 8.3.6(typescript@5.9.3)
       jiti: 1.21.6
       postcss: 8.5.23
       semver: 7.7.2
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     transitivePeerDependencies:
       - typescript
 
@@ -14164,11 +14485,11 @@ snapshots:
       iconv-lite: 0.7.3
       unpipe: 1.0.0
 
-  raw-loader@4.0.2(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  raw-loader@4.0.2(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   rc@1.2.8:
     dependencies:
@@ -14177,7 +14498,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-dev-utils@12.0.1(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  react-dev-utils@12.0.1(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@babel/code-frame': 7.29.7
       address: 1.2.2
@@ -14188,7 +14509,7 @@ snapshots:
       escape-string-regexp: 4.0.0
       filesize: 8.0.7
       find-up: 5.0.0
-      fork-ts-checker-webpack-plugin: 6.5.3(eslint@7.32.0(supports-color@8.1.1))(typescript@5.9.3)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      fork-ts-checker-webpack-plugin: 6.5.3(eslint@7.32.0(supports-color@8.1.1))(typescript@5.9.3)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       global-modules: 2.0.0
       globby: 11.1.0
       gzip-size: 6.0.0
@@ -14203,7 +14524,7 @@ snapshots:
       shell-quote: 1.10.0
       strip-ansi: 6.0.1
       text-table: 0.2.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -14224,13 +14545,13 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825(react@19.2.8)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825(react@19.2.8)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       acorn: 6.4.2
       loose-envify: 1.4.0
       neo-async: 2.6.2
       react: 19.2.8
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   react@19.2.8: {}
 
@@ -14278,8 +14599,6 @@ snapshots:
   regenerate@1.4.2: {}
 
   regenerator-runtime@0.11.1: {}
-
-  regenerator-runtime@0.13.11: {}
 
   regenerator-runtime@0.14.1: {}
 
@@ -14550,8 +14869,6 @@ snapshots:
     dependencies:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
-
-  semver@5.7.2: {}
 
   semver@6.3.1: {}
 
@@ -14976,11 +15293,11 @@ snapshots:
     dependencies:
       '@tokenizer/token': 0.3.0
 
-  style-loader@2.0.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  style-loader@2.0.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   style-to-object@0.3.0:
     dependencies:
@@ -15048,23 +15365,26 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  terser-webpack-plugin@5.3.14(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  terser-webpack-plugin@5.3.14(@swc/core@1.16.0(@swc/helpers@0.5.23))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.0
       serialize-javascript: 7.1.0
       terser: 5.39.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+    optionalDependencies:
+      '@swc/core': 1.16.0(@swc/helpers@0.5.23)
 
-  terser-webpack-plugin@5.6.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  terser-webpack-plugin@5.6.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.39.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
+      '@swc/core': 1.16.0(@swc/helpers@0.5.23)
       cssnano: 5.1.15(postcss@8.5.23)
       csso: 4.2.0
       lightningcss: 1.32.0
@@ -15132,6 +15452,8 @@ snapshots:
   tslib@2.4.1: {}
 
   tslib@2.6.2: {}
+
+  tslib@2.8.1: {}
 
   tsutils@3.21.0(typescript@5.9.3):
     dependencies:
@@ -15346,14 +15668,14 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  url-loader@4.1.1(file-loader@6.2.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)))(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  url-loader@4.1.1(file-loader@6.2.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)))(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       loader-utils: 2.0.4
       mime-types: 2.1.35
       schema-utils: 3.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
     optionalDependencies:
-      file-loader: 6.2.0(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      file-loader: 6.2.0(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
 
   use-sync-external-store@1.5.0(react@19.2.8):
     dependencies:
@@ -15363,7 +15685,7 @@ snapshots:
 
   utila@0.4.0: {}
 
-  utility-types@3.10.0: {}
+  utility-types@3.11.0: {}
 
   utils-merge@1.0.1: {}
 
@@ -15403,14 +15725,14 @@ snapshots:
 
   webidl-conversions@3.0.1: {}
 
-  webpack-dev-middleware@5.3.4(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
+  webpack-dev-middleware@5.3.4(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)):
     dependencies:
       colorette: 2.0.20
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.3.0
-      webpack: 5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)
 
   webpack-merge@5.10.0:
     dependencies:
@@ -15429,7 +15751,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23):
+  webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -15453,7 +15775,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.104.1(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
+      terser-webpack-plugin: 5.6.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.104.1(@swc/core@1.16.0(@swc/helpers@0.5.23))(cssnano@5.1.15(postcss@8.5.23))(csso@4.2.0)(lightningcss@1.32.0)(postcss@8.5.23))
       watchpack: 2.5.2
       webpack-sources: 3.5.1
     transitivePeerDependencies:
@@ -15651,8 +15973,6 @@ snapshots:
   xstate@4.38.3: {}
 
   xtend@4.0.2: {}
-
-  xxhash-wasm@0.4.2: {}
 
   y18n@4.0.3: {}
 
