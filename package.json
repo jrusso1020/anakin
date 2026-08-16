@@ -85,7 +85,7 @@
     "format:check": "oxfmt --check \"src/**/*.{ts,tsx}\" \"content/blog/**/index.md\"",
     "start": "pnpm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "test": "node --experimental-strip-types --test src/lib/*.test.mjs",
     "type-check": "tsc --noEmit",
     "lint": "oxlint --fix src",
     "lint:check": "oxlint src",

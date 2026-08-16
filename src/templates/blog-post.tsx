@@ -205,6 +205,7 @@ export const Head = ({
       description={post.frontmatter.description || post.excerpt}
       keywords={post.frontmatter.tags}
       image={ogImagePath}
+      pathname={post.fields.slug}
     />
   )
 }
