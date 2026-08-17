@@ -130,6 +130,7 @@ jobs:
           to: "s3://boredhacking.com"
           arguments: >-
             --delete
+            --acl public-read
             --cache-control public,max-age=0,must-revalidate
       - aws-s3/copy:
           from: public
@@ -140,6 +141,7 @@ jobs:
             --include "*.js"
             --include "*.css"
             --include "static/*"
+            --acl public-read
             --cache-control public,max-age=31536000,immutable
 workflows:
   version: 2.1
