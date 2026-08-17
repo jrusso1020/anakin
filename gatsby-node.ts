@@ -47,7 +47,15 @@ export const createPages: GatsbyNode["createPages"] = async ({
   graphql,
   actions,
 }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createRedirect({
+    fromPath: "/barely-look-at-code-engineering-judgment/",
+    toPath: "/coding-with-ai-agents-2026/",
+    isPermanent: true,
+    redirectInBrowser: true,
+    statusCode: 301,
+  })
 
   // Create default OG image for the homepage
   const defaultOgImage = createOpenGraphImage(createPage, {
