@@ -87,11 +87,6 @@ const config: GatsbyConfig = {
       options: {
         path: `${__dirname}/content/blog`,
         name: "blog",
-        ignore: [
-          "**/barely-look-at-code-engineering-judgment/outline.md",
-          "**/barely-look-at-code-engineering-judgment/motion-prototypes/**",
-          "**/barely-look-at-code-engineering-judgment/storyboards-only/**",
-        ],
       },
     },
     {
