@@ -143,6 +143,16 @@ jobs:
             --include "static/*"
             --acl public-read
             --cache-control public,max-age=31536000,immutable
+      - run:
+          name: Configure permanent redirects
+          command: |
+            aws s3api put-object \
+              --bucket boredhacking.com \
+              --key barely-look-at-code-engineering-judgment/index.html \
+              --website-redirect-location /coding-with-ai-agents-2026/ \
+              --content-type text/html \
+              --cache-control public,max-age=3600 \
+              --acl public-read
 workflows:
   version: 2.1
   build_and_deploy:
