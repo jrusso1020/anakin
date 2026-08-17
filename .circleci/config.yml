@@ -153,6 +153,24 @@ jobs:
               --content-type text/html \
               --cache-control public,max-age=3600 \
               --acl public-read
+      - run:
+          name: Invalidate redirected paths
+          command: |
+            blog_distribution_id="$(aws cloudfront list-distributions \
+              --query "DistributionList.Items[?Aliases.Quantity > \`0\` && contains(Aliases.Items, 'boredhacking.com')].Id | [0]" \
+              --output text)"
+
+            if [ -z "$blog_distribution_id" ] || [ "$blog_distribution_id" = "None" ]; then
+              echo "Could not find the CloudFront distribution for boredhacking.com" >&2
+              exit 1
+            fi
+
+            aws cloudfront create-invalidation \
+              --distribution-id "$blog_distribution_id" \
+              --paths \
+                "/barely-look-at-code-engineering-judgment" \
+                "/barely-look-at-code-engineering-judgment/" \
+                "/barely-look-at-code-engineering-judgment/index.html"
 workflows:
   version: 2.1
   build_and_deploy:
