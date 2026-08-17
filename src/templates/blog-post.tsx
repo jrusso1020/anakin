@@ -1,5 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import {
+  GatsbyImage,
+  getImage,
+  type IGatsbyImageData,
+} from "gatsby-plugin-image"
 import { DiscussionEmbed } from "disqus-react"
 
 import Layout from "src/components/layout"
@@ -22,6 +27,13 @@ interface MarkdownRemarkI {
     date: string
     description?: string
     tags: string[]
+    banner?: {
+      publicURL: string
+      childImageSharp?: {
+        gatsbyImageData: IGatsbyImageData
+      }
+    }
+    bannerAlt?: string
   }
 }
 interface BlogPostBySlugQuery {
@@ -55,6 +67,9 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
     identifier: post.id,
     title: post.frontmatter.title,
   }
+  const bannerImage = getImage(
+    post.frontmatter.banner?.childImageSharp?.gatsbyImageData ?? null
+  )
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -78,6 +93,17 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
             </div>
           </CardHeader>
 
+          {bannerImage && (
+            <div className="border-b border-border bg-muted">
+              <GatsbyImage
+                image={bannerImage}
+                alt={post.frontmatter.bannerAlt || post.frontmatter.title}
+                className="block w-full"
+                imgStyle={{ objectFit: "cover" }}
+              />
+            </div>
+          )}
+
           {/* Post Content */}
           <CardContent className="p-8 lg:p-12">
             <div
@@ -91,7 +117,8 @@ const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
                 prose-pre:bg-muted prose-pre:border prose-pre:border-border
                 prose-blockquote:border-l-primary prose-blockquote:bg-muted/50 prose-blockquote:p-4 prose-blockquote:rounded-r-lg
                 prose-ul:text-muted-foreground prose-ol:text-muted-foreground
-                prose-li:text-muted-foreground"
+                prose-li:text-muted-foreground
+                prose-video:w-full prose-video:rounded-xl prose-video:border prose-video:border-border prose-video:bg-muted prose-video:shadow-sm"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </CardContent>
@@ -196,8 +223,8 @@ export const Head = ({
     }
   }
 }) => {
-  // Use the dynamically generated OG image path from pageContext
-  const ogImagePath = pageContext.ogImage?.imagePath
+  const ogImagePath =
+    post.frontmatter.banner?.publicURL || pageContext.ogImage?.imagePath
 
   return (
     <SEO
@@ -206,6 +233,7 @@ export const Head = ({
       keywords={post.frontmatter.tags}
       image={ogImagePath}
       pathname={post.fields.slug}
+      twitterCard={post.frontmatter.banner ? "summary_large_image" : "summary"}
     />
   )
 }
@@ -234,6 +262,18 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        bannerAlt
+        banner {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(
+              width: 1200
+              layout: CONSTRAINED
+              quality: 90
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
   }

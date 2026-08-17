@@ -9,6 +9,7 @@ interface Props {
   title: string
   image?: string
   pathname?: string
+  twitterCard?: "summary" | "summary_large_image"
   children?: React.ReactNode
 }
 
@@ -18,6 +19,7 @@ const SEO = ({
   title,
   image,
   pathname,
+  twitterCard = "summary",
   children,
 }: Props) => {
   const { site } = useStaticQuery(graphql`
@@ -55,7 +57,7 @@ const SEO = ({
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content={twitterCard} />
       <meta name="twitter:image" content={siteImage} />
       <meta name="twitter:creator" content={site.siteMetadata?.author || ""} />
       <meta name="twitter:title" content={title} />
